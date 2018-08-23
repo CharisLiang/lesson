@@ -1,0 +1,4 @@
+var tempform = document.createElement("form");  
+    tempform.action = url;  
+    tempform.method = "post"; 
+    tempform.submit();

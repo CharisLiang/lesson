@@ -1,0 +1,12 @@
+ <div style="background-image:url('../Public/images/login_bg.jpg');
+ 	      background-repeat:no-repeat;
+
+	      background-attachment:fixed;
+
+	      background-position:top;
+
+	      width:792px; 
+
+	      height:600px;">
+
+</div>
