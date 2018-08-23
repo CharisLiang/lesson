@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/ -->
+<html lang="zh-CN"><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="张鑫旭的个人博客_web前端技术文章_小tip: 使用CSS将图片转换成黑白(灰色、置灰)">
+<meta name="keywords" content="web前端,HTML5,CSS3,jQuery,SVG,canvas">
+<meta name="author" content="张鑫旭,zhangxinxu">
+<title>小tip: 使用CSS将图片转换成黑白(灰色、置灰) «  张鑫旭-鑫空间-鑫生活</title>
+<link rel="stylesheet" href="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/style.css">
+<link rel="pingback" href="http://www.zhangxinxu.com/wordpress/xmlrpc.php">
+ 
+<link rel="alternate" type="application/rss+xml" title="张鑫旭-鑫空间-鑫生活 » Feed" href="http://www.zhangxinxu.com/wordpress/feed/">
+<link rel="alternate" type="application/rss+xml" title="张鑫旭-鑫空间-鑫生活 » 评论Feed" href="http://www.zhangxinxu.com/wordpress/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="张鑫旭-鑫空间-鑫生活 » 小tip: 使用CSS将图片转换成黑白(灰色、置灰)评论Feed" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/feed/">
+<link rel="stylesheet" id="wp-pagenavi-css" href="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/pagenavi-css.css" type="text/css" media="all">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.zhangxinxu.com/wordpress/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.zhangxinxu.com/wordpress/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="说说CSS学习中的瓶颈" href="http://www.zhangxinxu.com/wordpress/2012/07/bottleneck-css-study/">
+<link rel="next" title="有趣：256个class选择器可以干掉1个id选择器" href="http://www.zhangxinxu.com/wordpress/2012/08/256-class-selector-beat-id-selector/">
+<meta name="generator" content="WordPress 4.1.18">
+<link rel="canonical" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/">
+<link rel="shortlink" href="http://www.zhangxinxu.com/wordpress/?p=2547">
+<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+<link href="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/bdsstyle.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/getnum"></script></head>
+<body class="single single-post postid-2547 single-format-standard"><iframe frameborder="0" style="display: none;" src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/saved_resource.html"></iframe><div id="bdshare_s" style="display: block;"><iframe id="bdsIfr" style="position:absolute;display:none;z-index:9999;" frameborder="0" src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/saved_resource(1).html"></iframe><div id="bdshare_l" style="display: none;"><div id="bdshare_l_c"><h6>分享到</h6><ul><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_mshare mshare">一键分享</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_qzone qqkj">QQ空间</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_tsina xlwb">新浪微博</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_bdysc bdysc">百度云收藏</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_renren rrw">人人网</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_tqq txwb">腾讯微博</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_bdxc bdxc">百度相册</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_kaixin001 kxw">开心网</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_tqf txpy">腾讯朋友</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_tieba bdtb">百度贴吧</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_douban db">豆瓣网</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_tsohu shwb">搜狐微博</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_bdhome bdhome">百度新首页</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_sqq sqq">QQ好友</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_thx thx">和讯微博</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="bds_more">更多...</a></li></ul><p><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" class="goWebsite">百度分享</a></p></div></div></div>
+<div id="page">
+<div id="header" role="banner">
+	<div id="headerimg">
+		<a href="http://www.zhangxinxu.com/" class="page_logo">张鑫旭-鑫空间-鑫生活</a>
+		<div class="description">it's my whole life!</div>
+	</div>
+    <div id="menubar">
+<ul class="menu_tab">
+<li class="">
+<a href="http://www.zhangxinxu.com/" class="boss">网站首页</a>
+<a href="http://www.zhangxinxu.com/php/microCode.php">我的微码</a>
+<a href="http://www.zhangxinxu.com/php/advise.php">建议反馈</a>
+</li>
+<li class="on">
+<a class="boss" href="http://www.zhangxinxu.com/wordpress/">前端技术</a>
+<a href="http://www.zhangxinxu.com/wordpress/?cat=3">css</a>
+<a href="http://www.zhangxinxu.com/wordpress/?cat=5">js/jQuery</a>
+<a href="http://www.zhangxinxu.com/wordpress/category/html/">HTML</a>
+</li>
+<li class="">
+<a class="boss" href="http://www.zhangxinxu.com/life/">生活与创作</a>
+<a href="http://www.zhangxinxu.com/life/?cat=3">生活</a>
+<a href="http://www.zhangxinxu.com/life/?cat=5">散文</a>
+<a href="http://www.zhangxinxu.com/life/?cat=4">小说</a>
+</li>
+<li class="">
+<span class="boss">前端在线资源</span>
+<a href="http://www.zhangxinxu.com/css3/">CSS3参考</a>
+<a href="http://www.zhangxinxu.com/jq/api14/">jQuery1.4参考</a>
+</li>
+</ul><form method="get" id="searchform" action="http://www.zhangxinxu.com/wordpress/">
+<label class="hidden" for="s">Search for:</label>
+<div><input type="search" placeholder="翻页太辛苦，试试直接搜索" value="" name="s" id="s">
+<input type="submit" id="searchsubmit" data-value="Search" value="搜索">
+</div>
+</form>
+    </div>
+</div>
+<script type="text/javascript" async="" src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/ga.js.下载"></script><script src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/ca-pub-0090627341039040.js.下载"></script><script>
+var isSlideHide = false;
+if (window.localStorage) {
+	var slideHideTime = +localStorage.slideHideTime;
+	var slideNowTime = +new Date();
+	if (screen.width < 1600 && slideNowTime - slideHideTime < 1000*60*30) {
+		// 不足半小时
+		isSlideHide = true;
+		document.getElementById("page").className = "slide_hide";
+	} else if (slideHideTime > slideNowTime) {
+		localStorage.removeItem('slideHideTime');
+	}
+}
+</script>
+<div class="the_main">
+	<div id="content" class="widecolumn" role="main">
+    <div class="shink_rel"><a href="javascript:" id="shinkSlide" class="shink_a" title="收起右边栏" style="display: inline;">►</a></div>
+<script>if (window.localStorage && window.isSlideHide) {
+	(function() {
+		var eleShink = document.getElementById("shinkSlide");	
+		eleShink.title = "展开右边栏";
+		// 左箭头
+		eleShink.innerHTML = "&#x25c4;";
+	})();
+}</script>
+	
+		<div class="navigation">
+			<div class="alignleft">« <a href="http://www.zhangxinxu.com/wordpress/2012/07/bottleneck-css-study/" rel="prev">说说CSS学习中的瓶颈</a></div>
+			<div class="alignright"><a href="http://www.zhangxinxu.com/wordpress/2012/08/256-class-selector-beat-id-selector/" rel="next">有趣：256个class选择器可以干掉1个id选择器</a> »</div>
+		</div>
+
+		<div class="post-2547 post type-post status-publish format-standard hentry category-css category-svg-graphic tag-filter tag-grayscale tag-svg tag-741 tag-206" id="post-2547">
+			<h2>小tip: 使用CSS将图片转换成黑白(灰色、置灰)<span id="qrCode" class="qr_code"><img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/api.php"></span></h2>
+			<div class="entry">
+            	<div class="postmetadata alt">
+					<small>
+												这篇文章发布于 2012年08月19日，星期日，20:41，归类于 <a href="http://www.zhangxinxu.com/wordpress/category/css/" rel="category tag">css相关</a>, <a href="http://www.zhangxinxu.com/wordpress/category/graphic/svg-graphic/" rel="category tag">SVG相关</a>。                        阅读 124618 次, 今日 2 次					</small>
+				</div>
+				<p class="link">by <a href="http://www.zhangxinxu.com/">zhangxinxu</a> from <a href="http://www.zhangxinxu.com/">http://www.zhangxinxu.com</a><br>
+本文地址：<a href="http://www.zhangxinxu.com/wordpress/?p=2547">http://www.zhangxinxu.com/wordpress/?p=2547</a></p>
+<p><span class="s">//zxx: 最近很积极地折腾手机页面的些东西，加上其他一些人生重要的事，所以木有更新。</span></p>
+<p>可能早就知道，像汶川这种糟糕的日子网站全灰在IE下是可以轻松实现的(<code>filter: gray;</code>)，不过，当时，其他浏览器是无解的。不过，时代发展，如今，CSS3的逐步推进，我们也开始看到“黑白效果”大规模应用于实际的可能。</p>
+<p><img alt="彩色照片CSS黑白示意图 张鑫旭-鑫空间-鑫生活" data-src="http://image.zhangxinxu.com/image/blog/201208/2012-08-19_155221.jpg" title="彩色照片CSS黑白示意图" class="alignnone" width="540" height="218" src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/2012-08-19_155221.jpg"></p>
+<h3>CSS3 greyscale 滤镜实现</h3>
+<p>如下测试代码：</p>
+<div class="zxx_code">
+<pre>.gray { 
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    
+    filter: grayscale(100%);
+	
+    filter: gray;
+}</pre>
+</div>
+<p>HTML代码：</p>
+<div class="zxx_code">
+<pre>&lt;img src="mm1.jpg" /&gt;
+&lt;img src="mm1.jpg" class="gray" /&gt;</pre>
+</div>
+<p>如果你手上的浏览器是Chrome18+, 您可以狠狠地点击这里：<a class="a_link" target="_blank" href="http://www.zhangxinxu.com/study/201208/css3-grayscale-filter.html">CSS3 greyscale 滤镜与照片黑白</a></p>
+<p>可以看到类似文章一开始展示的黑白对比效果图。</p>
+<p>其他些浏览器，如FireFox很快就会跟上实现。当然，要实现（比方说）FireFox 4浏览器上照片变黑白的效果，也是可以的。可以使用SVG的灰度滤镜效果。</p>
+<h3>SVG滤镜实现</h3>
+<p>我们新建一个空白文本文件，比如说：<code>gray.txt</code>. 拷贝进去如下的XML代码：</p>
+<div class="zxx_code">
+<pre>&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;filter id="grayscale"&gt;
+        &lt;feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/&gt;
+    &lt;/filter&gt;
+&lt;/svg&gt;</pre>
+</div>
+<p>然后，修改后缀<code>.txt</code> → <code>.svg</code>. 然后就可以调用了~~</p>
+<p><img alt="修改文本文件后缀变成SVG文件 张鑫旭-鑫空间-鑫生活" data-src="http://image.zhangxinxu.com/image/blog/201208/2012-08-19_161120.png" title="修改文本文件后缀变成SVG文件" class="alignnone" width="116" height="100" src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/2012-08-19_161120.png"></p>
+<p>如下CSS调用代码：</p>
+<div class="zxx_code">
+<pre>filter: url(gray.svg#grayscale);</pre>
+</div>
+<p>然后，效果就出来了。如果你手上的浏览器是FireFox4+，您可以狠狠地点击这里：<a class="a_link" target="_blank" href="http://www.zhangxinxu.com/study/201208/css3-grayscale-filter-use-svg.html">SVG滤镜实现照片黑白demo</a></p>
+<h3>别忘了IE浏览器</h3>
+<p>IE下实现上面已经提过，就是：</p>
+<div class="zxx_code">
+<pre>filter: gray;</pre>
+</div>
+<p>至少IE7~9都是支持的。最近较懒，IE6懒得去测，支持与否不知。经验来看，应该是支持的。</p>
+<h3>我需要一个一统江山的方法</h3>
+<p>一统江山（完全兼容），如果单纯想通过CSS，也是可以的，你所要做的就是：天天拿个鱼竿去黄浦江钓鱼，年复一年，日复一日……然后，两年后，只要两年，把上面两个demo页面F5一下，就可以了！很简单吧！</p>
+<p>如果嫌上面的做法过于伦敦，且你也不是一根筋，到是有个一统江山的方法，不过不是CSS的干货，一个貌似有点名气的<a href="http://james.padolsey.com/demos/grayscale" target="_blank">Greyscale.js</a>。 </p>
+<p>用法很简单，引用JavaScript文件，如下：</p>
+<div class="zxx_code">
+<pre>&lt;script src="http://james.padolsey.com/demos/grayscale/grayscale.js"&gt;&lt;/script&gt;</pre>
+</div>
+<p>然后，一句话：</p>
+<div class="zxx_code">
+<pre>grayscale(document.getElementById("thisImage"));</pre>
+</div>
+<p>或DOM元素集：</p>
+<div class="zxx_code">
+<pre>grayscale(document.getElementsByTagName("img"));</pre>
+</div>
+<p>如果你喜欢使用jQuery，还可以使用：</p>
+<div class="zxx_code">
+<pre>grayscale($("#thisImage"));</pre>
+</div>
+<p>很简单吧。</p>
+<p><strong>实现原理</strong>：IE浏览器下是添加灰度滤镜，这个大家都懂的。其他浏览器貌似使用Canvas中的<code>getImageData</code>方法，然后对每个像素点进行灰度转换~~</p>
+<p>因此，在现代浏览器下，对于该方法，图片的灰度处理有两个局限性：<br>
+1. <strong>速度</strong>。300*300这张一般般大小的图片变灰就要数秒之久；<br>
+2. <strong>跨域</strong>。安全性机制，无法转换跨域的图片为黑白色。</p>
+<p>您可以狠狠地点击这里：<a class="a_link" target="_blank" href="http://www.zhangxinxu.com/study/201208/js-grayscale.html">Greyscale.js照片变灰兼容性实现demo</a></p>
+<p>截图跟上面的一致，略。</p>
+<p><strong>补充于2015年12月21日</strong><br>
+很多人邮件问，IE10, IE11这两个高不成低不就的浏览器怎么办？</p>
+<p>我个人都是借助SVG实现（专门为IE10-IE12）的，讲<a href="http://www.zhangxinxu.com/wordpress/?p=3804" target="_blank">毛玻璃效果</a>的时候有类似实现。</p>
+<p>1. 页面载入（可以请求载入，或者直接放在HTML代码中）上面gray.txt对应的SVG文件，也就是：</p>
+<div class="zxx_code">
+<pre>&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;filter id="<span style="color:#cd0000;">grayscale</span>"&gt;
+        &lt;feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/&gt;
+    &lt;/filter&gt;
+&lt;/svg&gt;</pre>
+</div>
+<p>2. 然后将图片转为SVG图片引用，<code>filter</code>属性值指向<code>grayscale</code>(上面红色的<code>id</code>值)。例如</p>
+<div class="zxx_code">
+<pre>&lt;svg&gt;
+    &lt;image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="zxx.jpg" x="0" y="0" width="256" height="190" <span style="color:#cd0000;">filter="url('#grayscale')</span>"&gt;&lt;/image&gt;
+&lt;/svg&gt;</pre>
+</div>
+<p>over~</p>
+<p class="link">本文为原创文章，转载请注明来自<a href="http://www.zhangxinxu.com/">张鑫旭-鑫空间-鑫生活</a>[<a href="http://www.zhangxinxu.com/">http://www.zhangxinxu.com</a>]<br>
+<a href="http://www.zhangxinxu.com/wordpress/?p=2547">http://www.zhangxinxu.com/wordpress/?p=2547</a></p>
+<p>（本篇完）<span class="ins_txt">// 想要打赏？点击<a href="javascript:" id="alipayA" title="点击显示二维码">这里</a>。有话要说？点击<a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#comment" title="点击定位到评论">这里</a>。</span></p>
+<div id="daITxz" class="da_article da_bottom">
+                <div class="da_ht">
+                    <span class="l hidden">想找个师兄入门前端？不妨</span>
+                    <a href="javascript:" class="r hidden" title="不敢兴趣">×</a>
+                </div>
+                <a href="http://course.ptteng.com/" target="_blank" class="da_bottom_ht" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;ITxz&#39;, &#39;xzSchool&#39;, &#39;Not float&#39;]);"></a>
+            </div><div class="similarity"><div class="similar_title">相关文章</div><ul><li><a href="http://www.zhangxinxu.com/wordpress/2013/11/css-svg-image-blur/">小tip: 使用CSS将图片转换成模糊(毛玻璃)效果</a> (1.000)</li><li><a href="http://www.zhangxinxu.com/wordpress/2010/07/css%e5%ae%9e%e7%8e%b0%e8%b7%a8%e6%b5%8f%e8%a7%88%e5%99%a8%e7%9a%84box-shadow%e7%9b%92%e9%98%b4%e5%bd%b1%e6%95%88%e6%9e%9c2/">CSS实现跨浏览器的box-shadow盒阴影效果(2)</a> (0.830)</li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/svg-feature-support-bugs/">SVG特征、支持以及一些实际使用问题</a> (0.635)</li><li><a href="http://www.zhangxinxu.com/wordpress/2015/02/image-local-blur-background-attachment-fixed/">图片动态局部毛玻璃模糊效果的实现</a> (0.535)</li><li><a href="http://www.zhangxinxu.com/wordpress/2010/04/css%e5%ae%9e%e7%8e%b0%e5%85%bc%e5%ae%b9%e6%80%a7%e7%9a%84%e6%b8%90%e5%8f%98%e8%83%8c%e6%99%afgradient%e6%95%88%e6%9e%9c/">CSS实现兼容性的渐变背景(gradient)效果</a> (0.465)</li><li><a href="http://www.zhangxinxu.com/wordpress/2011/05/ie%e4%b8%8d%e6%94%af%e6%8c%81css3%e5%a4%9a%e8%83%8c%e6%99%afmultiple-backgrounds%e7%9a%84%e6%9b%bf%e4%bb%a3%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88/">小tip:IE不支持CSS3多背景的替代解决方案</a> (0.465)</li><li><a href="http://www.zhangxinxu.com/wordpress/2013/04/es5%e6%96%b0%e5%a2%9e%e6%95%b0%e7%bb%84%e6%96%b9%e6%b3%95/">ES5中新增的Array方法详细说明</a> (0.465)</li><li><a href="http://www.zhangxinxu.com/wordpress/2016/01/understand-css-stacking-context-order-z-index/">深入理解CSS中的层叠上下文和层叠顺序</a> (0.465)</li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/">CSS3 filter:drop-shadow滤镜与box-shadow区别应用</a> (0.465)</li><li><a href="http://www.zhangxinxu.com/wordpress/2016/06/png-icon-change-color-by-css/">PNG格式小图标的CSS任意颜色赋色技术</a> (0.465)</li><li><a href="http://www.zhangxinxu.com/wordpress/2009/12/%e7%bf%bb%e8%af%91-ie78font-face%e5%b5%8c%e5%85%a5%e5%ad%97%e4%bd%93%e4%b8%8e%e6%96%87%e5%ad%97%e5%b9%b3%e6%bb%91/">翻译-IE7/8@font-face嵌入字体与文字平滑</a> (RANDOM - 0.365)</li></ul></div><!-- Tag -->				<div class="wp_share_box">
+                	<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+<span class="bds_more">分享到：</span>
+<a class="bds_tsina" title="分享到新浪微博" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#"></a>
+<a class="bds_qzone" title="分享到QQ空间" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#"></a>
+<a class="bds_tqq" title="分享到腾讯微博" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#"></a>
+<a class="bds_t163" title="分享到网易微博" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#"></a>
+<a class="bds_douban" title="分享到豆瓣网" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#"></a>
+<a class="bds_tsohu" title="分享到搜狐微博" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#"></a>
+<a class="shareCount" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=1954626" src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/bds_s_v2.js.下载"></script>
+
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END --> 
+                </div>
+								<p>标签： <a href="http://www.zhangxinxu.com/wordpress/tag/filter/" rel="tag">filter</a>, <a href="http://www.zhangxinxu.com/wordpress/tag/grayscale/" rel="tag">grayscale</a>, <a href="http://www.zhangxinxu.com/wordpress/tag/svg/" rel="tag">SVG</a>, <a href="http://www.zhangxinxu.com/wordpress/tag/%e5%9b%be%e7%89%87%e9%bb%91%e7%99%bd/" rel="tag">图片黑白</a>, <a href="http://www.zhangxinxu.com/wordpress/tag/%e6%bb%a4%e9%95%9c/" rel="tag">滤镜</a></p>			</div>
+		</div>
+        
+        <h3 class="da_title">赞助商推荐<span class="sup_span">(<a href="http://www.zhangxinxu.com/sp/support.html" target="_blank">我也要赞助</a>)</span>：</h3>
+        <div class="ad_col2">
+            <!-- 妙味 -->
+            <div id="adMW" class="da_zf_x da_bottom">
+				<div class="da_ym">
+                    <span class="l hidden">这里有最全的web前端开发视频</span>
+                    <a href="javascript:" class="r hidden" title="不敢兴趣">×</a>
+                </div>
+            	<a href="http://www.miaov.com/index.php/news/newsDetail/nid/135" target="_blank" class="da_bottom_y" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;MWAD&#39;, &#39;MiaoWei&#39;, &#39;Not float&#39;]);"></a>
+            	<!-- <a href="/sp/support.html" target="_blank" class="da_bottom_y"></a> -->
+            </div>
+        </div>
+        <div class="ad_col2">
+            <div id="adYideng" class="da_bottom">
+                <div class="da_yd">
+                    <span class="l hidden">如果你有1~3年前端开发经验，不妨</span>
+                    <a href="javascript:" class="r hidden" title="不敢兴趣">×</a>
+                </div>
+                <a href="http://www.yidengxuetang.com/recruit/?f=zhangxinxu.com" target="_blank" class="da_bottom_w" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;YIDENG&#39;, &#39;yideng&#39;, &#39;Not float&#39;]);"></a>
+            </div>
+            
+        </div>
+        
+        <div id="GGj" class="da_zf_x da_bottom">
+            <div class="da_zf">
+                <span class="l hidden">google广告</span>
+                <a href="javascript:" class="r hidden" title="不敢兴趣">×</a>
+            </div>
+            <!--<a href="http://www.zhufengpeixun.cn/customize/node/index.html" target="_blank" class="da_bottom_n" onClick="_gaq.push(['_trackEvent', 'ZHUFENG', 'zhufeng', 'Not float']);"></a>-->
+            <div style="height:90px;">
+                <script async="" src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/adsbygoogle.js.下载"></script>
+<!-- 728x90, 大型横幅广告 -->
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-0090627341039040" data-ad-slot="4686885989" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:728px;height:90px;" src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/saved_resource(2).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+	﻿
+<div id="respond">
+<h3 id="comments" class="respond_title">发表评论（目前30条评论）</h3>
+<div id="cancel-comment-reply"> 
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#respond" style="display:none;">点击这里取消回复。</a></small>
+</div> 
+
+
+<form action="http://www.zhangxinxu.com/wordpress/wp-comments-post.php" method="post" id="commentform" novalidate="">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required="true" required="">
+<label for="author"><small>名称 (必须)</small></label></p>
+
+<p><input type="email" name="email" id="email" value="" size="22" tabindex="2" aria-required="true" required="">
+<label for="email"><small>邮件地址(不会被公开) (必须)</small></label></p>
+
+<p><input type="url" name="url" id="url" value="" size="22" tabindex="3">
+<label for="url"><small>网站</small></label></p>
+
+
+<!--<p><small><strong>XHTML：</strong>您可以使用这些标签：<code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="提交评论"><span id="commRem" class="ml20" style="color:#cd0000;"></span>
+<input type="hidden" name="comment_post_ID" value="2547" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+ 
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="876d408fd3"></p><p style="display: none;"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="1498438239357"></form>
+
+</div>
+
+
+<!-- You can start editing here. -->
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	<ol class="commentlist">
+			<li class="comment even thread-even depth-1" id="comment-349891">
+				<div id="div-comment-349891" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/ca3ef6ba7dd30103bae7bc710259b39b" class="avatar avatar-32" height="32" width="32">			<cite class="fn">早班火车</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-349891">
+			2017年03月5日 15:43</a>		</div>
+
+		<p>想请求前辈，类似网易云音乐页面的ajax请求怎么把参数请求过来？</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=349891#respond" onclick="return addComment.moveForm( &quot;div-comment-349891&quot;, &quot;349891&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给早班火车">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-313472">
+				<div id="div-comment-313472" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/e951a787fccf4641dd47ae25c3a77412" class="avatar avatar-32" height="32" width="32">			<cite class="fn">feng</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-313472">
+			2016年03月19日 11:48</a>		</div>
+
+		<p>请问chrome下无法使用Greyscale.js了啊  有没有什么处理办法？？？比较着急   求解啊</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=313472#respond" onclick="return addComment.moveForm( &quot;div-comment-313472&quot;, &quot;313472&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给feng">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-312045">
+				<div id="div-comment-312045" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/f4871ca6305d76069baf3c85da23f271" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://czxoo.com/" rel="external nofollow" class="url">.</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-312045">
+			2016年01月24日 15:45</a>		</div>
+
+		<p>…</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=312045#respond" onclick="return addComment.moveForm( &quot;div-comment-312045&quot;, &quot;312045&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给.">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-295460">
+				<div id="div-comment-295460" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/15990b9a5153a74c97565586f1f3b0a7" class="avatar avatar-32" height="32" width="32">			<cite class="fn">叨叨客</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-295460">
+			2015年09月14日 15:56</a>		</div>
+
+		<p>IE10的确不支持，IE11有些机器不支持、</p>
+<p>win10的edge浏览器也不支持，要郁闷死了。怎么解决啊，鑫哥能再研究研究么，Greyscale.js这种方法暂时么法考虑。虽然可以</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=295460#respond" onclick="return addComment.moveForm( &quot;div-comment-295460&quot;, &quot;295460&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给叨叨客">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-140811">
+				<div id="div-comment-140811" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/8b5a0aebd54dde320ff84dea7783c296" class="avatar avatar-32" height="32" width="32">			<cite class="fn">能解决IE10以上的兼容吗？</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-140811">
+			2014年10月13日 15:28</a>		</div>
+
+		<p>这几天做项目刚好遇到这个问题，试了一下文章中的方法，效果非常好，很激动的说。。。可是比较遗憾的是IE10以上都不能兼容，希望楼主能帮忙解决。</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=140811#respond" onclick="return addComment.moveForm( &quot;div-comment-140811&quot;, &quot;140811&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给能解决IE10以上的兼容吗？">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-108706">
+				<div id="div-comment-108706" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/5bea61a3fa7ec20a00cd5c961de2e6f8" class="avatar avatar-32" height="32" width="32">			<cite class="fn">jane</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-108706">
+			2014年08月1日 19:14</a>		</div>
+
+		<p>我用grayscale.js也没反应，不知道哪里调用错了…… SVG FF下有用 但整个都变灰的</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=108706#respond" onclick="return addComment.moveForm( &quot;div-comment-108706&quot;, &quot;108706&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给jane">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-89264">
+				<div id="div-comment-89264" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/08b2361bb4bf0fa08206b40e3ffffc70" class="avatar avatar-32" height="32" width="32">			<cite class="fn">grayscale</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-89264">
+			2014年06月16日 19:25</a>		</div>
+
+		<p>grayscale(document.getElementById(“thisImage”));请问这一句写在哪里啊？</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=89264#respond" onclick="return addComment.moveForm( &quot;div-comment-89264&quot;, &quot;89264&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给grayscale">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-87488">
+				<div id="div-comment-87488" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/9001f95badbcc301651bfeb0e64b4c66" class="avatar avatar-32" height="32" width="32">			<cite class="fn">前端菜鸟</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-87488">
+			2014年06月12日 17:32</a>		</div>
+
+		<p>grayscale.js  貌似不支持其他网站调用过来的图片</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=87488#respond" onclick="return addComment.moveForm( &quot;div-comment-87488&quot;, &quot;87488&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给前端菜鸟">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-50493">
+				<div id="div-comment-50493" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/2537c439fbe2e10c2fad5c364c60b63e" class="avatar avatar-32" height="32" width="32">			<cite class="fn">garfield</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-50493">
+			2013年12月4日 15:17</a>		</div>
+
+		<p>FF下使用 svg 貌似木有用呢，调用js方法，FF可以了，谷歌又不行了！</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=50493#respond" onclick="return addComment.moveForm( &quot;div-comment-50493&quot;, &quot;50493&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给garfield">回复</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment odd alt depth-2 parent" id="comment-58279">
+				<div id="div-comment-58279" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/9951a245d1faa6140151841b5950610d" class="avatar avatar-32" height="32" width="32">			<cite class="fn">王文杰</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-58279">
+			2014年01月20日 10:43</a>		</div>
+
+		<p>给你一个我的成功例子，博主的ff上svg是引入式，我的也不好使，然后我用了下面的<br>
+.maskon{background:#000;z-index:3;<br>
+-webkit-filter: grayscale(100%);<br>
+-moz-filter: grayscale(100%);<br>
+-ms-filter: grayscale(100%);<br>
+-o-filter: grayscale(100%);<br>
+filter: grayscale(100%);<br>
+filter:url(“data:image/svg+xml;utf8,#grayscale”);<br>
+filter: gray;<br>
+-ms-filter:”progid:DXImageTransform.Microsoft.Alpha(Opacity=10)”;<br>
+filter:alpha(opacity=10);<br>
+opacity: .1;<br>
+overflow:hidden;}</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=58279#respond" onclick="return addComment.moveForm( &quot;div-comment-58279&quot;, &quot;58279&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给王文杰">回复</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-3" id="comment-58280">
+				<div id="div-comment-58280" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/9951a245d1faa6140151841b5950610d" class="avatar avatar-32" height="32" width="32">			<cite class="fn">王文杰</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-58280">
+			2014年01月20日 10:45</a>		</div>
+
+		<p>怎么个情况啊，我回复的filter:url(“data:image/svg+xml;utf8,#grayscale”);这一段是很长的代码。直接给我优化了，参考资料http://www.karlhorky.com/2012/06/cross-browser-image-grayscale-with-css.html</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=58280#respond" onclick="return addComment.moveForm( &quot;div-comment-58280&quot;, &quot;58280&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给王文杰">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-48012">
+				<div id="div-comment-48012" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/8f5c49f7799c84174f60f388ce3f130b" class="avatar avatar-32" height="32" width="32">			<cite class="fn">WingMeng</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-48012">
+			2013年11月17日 21:32</a>		</div>
+
+		<p>旭哥，这个特效不错，我拿来做按钮不可用状态的显示效果了：</p>
+<p>  当需要在视觉上传达出“按钮不可用”的信息时，只需为按钮addClass，按钮恢复可用时removeClass ，控制很方便。</p>
+<p>  测试了IE6-8，Chorme都正常，单Firefox不支持——加了 变黑白特效 class的按钮直接在页面上消失了，取消那个svg属性后按钮显示出来了，难道是Firefox不支持这个特效？</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=48012#respond" onclick="return addComment.moveForm( &quot;div-comment-48012&quot;, &quot;48012&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给WingMeng">回复</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-2" id="comment-108707">
+				<div id="div-comment-108707" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/5bea61a3fa7ec20a00cd5c961de2e6f8" class="avatar avatar-32" height="32" width="32">			<cite class="fn">jane</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-108707">
+			2014年08月1日 19:15</a>		</div>
+
+		<p>你调用的SVG的路径不对</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=108707#respond" onclick="return addComment.moveForm( &quot;div-comment-108707&quot;, &quot;108707&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给jane">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1 parent" id="comment-44923">
+				<div id="div-comment-44923" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/181a684f5879c8bb76d224d01dfd83e1" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://dandan500.com/" rel="external nofollow" class="url">蛋蛋五百金</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-44923">
+			2013年10月27日 17:59</a>		</div>
+
+		<p>不知道具体怎么用grayscale.js<br>
+我用了{filter: url(“data:image/svg+xml;utf8,#grayscale”); /* Firefox 10+ */<br>
+    filter: gray; /* IE6-9 */<br>
+    -webkit-filter: grayscale(100%); /* Chrome 19+ &amp; Safari 6+ */<br>
+    -o-filter: grayscale(100%); /* Opera  */}<br>
+以上注释的各版本浏览器都通过。</p>
+<p>但是我有个问题，img border也跟着变gray了，能帮我怎么保住border的原有颜色不变吗？<br>
+<a href="http://jsfiddle.net/dandan500/FZWnM/1/" rel="nofollow">http://jsfiddle.net/dandan500/FZWnM/1/</a></p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=44923#respond" onclick="return addComment.moveForm( &quot;div-comment-44923&quot;, &quot;44923&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给蛋蛋五百金">回复</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-2" id="comment-44924">
+				<div id="div-comment-44924" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/181a684f5879c8bb76d224d01dfd83e1" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://dandan500.com/" rel="external nofollow" class="url">蛋蛋五百金</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-44924">
+			2013年10月27日 18:00</a>		</div>
+
+		<p>忘了注明 /* Opera 15+ */</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=44924#respond" onclick="return addComment.moveForm( &quot;div-comment-44924&quot;, &quot;44924&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给蛋蛋五百金">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-33134">
+				<div id="div-comment-33134" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/17d9ef5dd28e75dc2f6b8b8753bd64ee" class="avatar avatar-32" height="32" width="32">			<cite class="fn">rambo</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-33134">
+			2013年04月22日 09:48</a>		</div>
+
+		<p>补充一下</p>
+<p>filter: url(“data:image/svg+xml;utf8,&lt;svg xmlns=’http://www.w3.org/2000/svg’&gt;&lt;filter id=’grayscale’&gt;&lt;feColorMatrix type=’matrix’ values=’0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0’/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale”);</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=33134#respond" onclick="return addComment.moveForm( &quot;div-comment-33134&quot;, &quot;33134&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给rambo">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-33133">
+				<div id="div-comment-33133" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/17d9ef5dd28e75dc2f6b8b8753bd64ee" class="avatar avatar-32" height="32" width="32">			<cite class="fn">rambo</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-33133">
+			2013年04月22日 09:40</a>		</div>
+
+		<p>html{<br>
+	-webkit-filter: grayscale(100%);<br>
+	filter: url(“data:image/svg+xml;utf8,#grayscale”);<br>
+	-webkit-filter: grayscale(1);  /*谷歌*/<br>
+	 filter: gray;  /*ie6789   这个必须放到最后*/<br>
+}<br>
+/*ie 10 sare oper 如果在必须变灰色的情况下 可以尝试使用 楼主推荐的 grayscale.js<br>
+  在这里 再次想雅安 加油<br>
+*/</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=33133#respond" onclick="return addComment.moveForm( &quot;div-comment-33133&quot;, &quot;33133&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给rambo">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-24012">
+				<div id="div-comment-24012" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/8ebca4f29d2e965d43a460b5de1b3fad" class="avatar avatar-32" height="32" width="32">			<cite class="fn">rachel</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-24012">
+			2012年11月26日 11:11</a>		</div>
+
+		<p>ff 和ie6下统统的不支持</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=24012#respond" onclick="return addComment.moveForm( &quot;div-comment-24012&quot;, &quot;24012&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给rachel">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-22699">
+				<div id="div-comment-22699" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/13cdf11d72cc00936a95381f150de35e" class="avatar avatar-32" height="32" width="32">			<cite class="fn">magic</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-22699">
+			2012年10月29日 12:38</a>		</div>
+
+		<p>谷歌下貌似不行，能给个本地运行的demo吗?</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=22699#respond" onclick="return addComment.moveForm( &quot;div-comment-22699&quot;, &quot;22699&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给magic">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-21342">
+				<div id="div-comment-21342" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/e4eb93c0096f3429769e4351981be46a" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://moface.me/" rel="external nofollow" class="url">Moface</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-21342">
+			2012年09月18日 14:56</a>		</div>
+
+		<p>确实，Safari下CSS3和SVG的方法都不好用，而js方法效率实在也是有问题的。</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=21342#respond" onclick="return addComment.moveForm( &quot;div-comment-21342&quot;, &quot;21342&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给Moface">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-21252">
+				<div id="div-comment-21252" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/04d92e0a3d14bd0e2d3387b2b1f513ef" class="avatar avatar-32" height="32" width="32">			<cite class="fn">moongong</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-21252">
+			2012年09月14日 10:42</a>		</div>
+
+		<p>SVG滤镜实现方法，gray.svg文件需要放在什么目录下？调用以后图片变空白了。</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=21252#respond" onclick="return addComment.moveForm( &quot;div-comment-21252&quot;, &quot;21252&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给moongong">回复</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="comment-21356">
+				<div id="div-comment-21356" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/3e58242902fa8f33162f3f10df892c68" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://www.zhangxinxu.com/" rel="external nofollow" class="url">张 鑫旭</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-21356">
+			2012年09月18日 18:31</a>		</div>
+
+		<p>@moongong 是不是跨域了，或者file://形式调用？</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=21356#respond" onclick="return addComment.moveForm( &quot;div-comment-21356&quot;, &quot;21356&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给张 鑫旭">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-21021">
+				<div id="div-comment-21021" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/8e95f1bf8cc22c368ca116ec2154f026" class="avatar avatar-32" height="32" width="32">			<cite class="fn">Tamashii</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-21021">
+			2012年09月5日 20:13</a>		</div>
+
+		<p>确切地说，是三个例子里面只有最后的那个JS的例子变灰了</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=21021#respond" onclick="return addComment.moveForm( &quot;div-comment-21021&quot;, &quot;21021&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给Tamashii">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-21020">
+				<div id="div-comment-21020" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/8e95f1bf8cc22c368ca116ec2154f026" class="avatar avatar-32" height="32" width="32">			<cite class="fn">Tamashii</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-21020">
+			2012年09月5日 20:11</a>		</div>
+
+		<p>那个……我是用的是Safari浏览器，可是你的例子里的照片没有变灰啊……</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=21020#respond" onclick="return addComment.moveForm( &quot;div-comment-21020&quot;, &quot;21020&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给Tamashii">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-21013">
+				<div id="div-comment-21013" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/88f523e1f1ee393d4045501584424d20" class="avatar avatar-32" height="32" width="32">			<cite class="fn">澳加美联</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-21013">
+			2012年09月5日 14:57</a>		</div>
+
+		<p>文章很是不错</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=21013#respond" onclick="return addComment.moveForm( &quot;div-comment-21013&quot;, &quot;21013&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给澳加美联">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-20869">
+				<div id="div-comment-20869" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/42b15f1c436d7c0e6bfe28a01ec362e2" class="avatar avatar-32" height="32" width="32">			<cite class="fn">Nancy</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-20869">
+			2012年08月29日 16:49</a>		</div>
+
+		<p>-o-filter: grayscale(100%);     Oprea下没生效哦</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=20869#respond" onclick="return addComment.moveForm( &quot;div-comment-20869&quot;, &quot;20869&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给Nancy">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-20703">
+				<div id="div-comment-20703" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/8cffd7dfdddb779859b0f12e936034f0" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://www.weberzone.net/" rel="external nofollow" class="url">weber</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-20703">
+			2012年08月23日 09:34</a>		</div>
+
+		<p>之前遇到过这个问题，也尝试过这个filter这个属性，不单单只有让图片变灰，你懂的~ 兼容性是个问题，目前safair 要6.0才能支持，我找了new pad 和iPhone4 测试，都失败了<br>
+ o(︶︿︶)o 唉</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=20703#respond" onclick="return addComment.moveForm( &quot;div-comment-20703&quot;, &quot;20703&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给weber">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-20677">
+				<div id="div-comment-20677" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/f2d8d5c8e7891c2c56f678860f3059d6" class="avatar avatar-32" height="32" width="32">			<cite class="fn">t</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-20677">
+			2012年08月22日 16:40</a>		</div>
+
+		<p>IE 10 已经放弃 filter 了。。。</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=20677#respond" onclick="return addComment.moveForm( &quot;div-comment-20677&quot;, &quot;20677&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给t">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-20604">
+				<div id="div-comment-20604" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/487f87505f619bf9ea08f26bb34f8118" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://123.com/" rel="external nofollow" class="url">渔人</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-20604">
+			2012年08月20日 16:11</a>		</div>
+
+		<p>嘎嘎，我是来看你的渔获的~</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=20604#respond" onclick="return addComment.moveForm( &quot;div-comment-20604&quot;, &quot;20604&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给渔人">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-20579">
+				<div id="div-comment-20579" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/d9e2d3000aaff22cda5003efcbb0160a" class="avatar avatar-32" height="32" width="32">			<cite class="fn">scholl</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/comment-page-1/#comment-20579">
+			2012年08月19日 22:14</a>		</div>
+
+		<p>filter: gray; 在IE6下不支持</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/?replytocom=20579#respond" onclick="return addComment.moveForm( &quot;div-comment-20579&quot;, &quot;20579&quot;, &quot;respond&quot;, &quot;2547&quot; )" aria-label="回复给scholl">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+ 
+
+
+
+	
+	</div>
+</div>
+	<div id="sidebar" role="complementary">
+        <div id="zxx_intro" class="sldebar_out">
+            <div class="silebar_inner" itemscope="" itemtype="http://data-vocabulary.org/Person">
+                <img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/zxx_90_0824.jpg" itemprop="photo" class="zxx_head_image">
+                <div class="zxx_some_info">
+                    <p class="mb5"><span itemprop="name" class="fn">张鑫旭</span><sup><a itemprop="url" href="http://www.zhangxinxu.com/life/about/">more</a></sup>，09年<a href="http://www.hust.edu.cn/" target="_blank">华中科技大学</a>毕业，现<span itemprop="location">上海</span>，就职于<a href="http://www.yuewen.com/" itemprop="organization" target="_blank">阅文集团</a>，专注<span itemprop="role">web前端</span>偏前领域，钓鱼爱好者。</p>
+                    <p>邮箱：<span style="font-family:arial;">zhangxinxu@zhangxinxu.com</span></p>
+                    <p>关注我：<a href="http://weibo.com/zhangxinxu" target="_blank" rel="nofollow">新浪微博</a> <a href="https://www.zhihu.com/people/iamzhangxinxu/activities" target="_blank" rel="nofollow">知乎</a></p>
+                </div>
+                <div class="clear"></div>                
+            </div>
+        </div>
+        
+        <div id="topAdOut" class="sldebar_out top_ad_out" style="display:block!important;">
+        	<a href="javascriot:" id="slideA" class="slide_a">关闭</a>
+            <div class="top_ad" style="display:block!important;">
+            	<div id="adSlideX" class="ad_slide_x" style="display: block !important; left: -336px;">
+                    <div class="ad_inner">
+                        <a href="http://www.yidengxuetang.com/recruit/?hmsr=zxx_gaoduan_web_0204" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;YIDENG&#39;, &#39;yideng&#39;, &#39;Top Ad&#39;]);"><img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/zhijia.png" width="336" height="300"></a>
+                    </div><div class="ad_inner">
+                        <a href="http://www.zhinengshe.com/?utm_source=zxx-web&amp;utm_medium=banner&amp;utm_term=s2&amp;utm_content=2016&amp;utm_campaign=zz" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;zhNsh&#39;, &#39;zhiNshe&#39;, &#39;Top Ad&#39;]);"><img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/zhiNshe-n.png" srcset="http://image.zhangxinxu.com/image/blog/201607/zhiNshe.png 2x" width="336" height="300"></a>
+                    </div><div class="ad_inner" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;MWAD&#39;, &#39;MiaoWei&#39;, &#39;Top Ad&#39;]);">
+                        <a href="http://www.miaov.com/index.php/news/newsDetail/nid/135" target="_blank"><img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/mv336X300-60.jpg" width="336" height="300"></a>
+                    </div>
+                </div>
+                <!-- 索引 -->
+                <div id="adIndexX" class="ad_index_x">
+                	<a href="javascript:" class="ad_index_a">1</a>
+                    <a href="javascript:" class="ad_index_a active">2</a>
+                    <a href="javascript:" class="ad_index_a">3</a>
+                </div>
+            </div>
+        </div><script>if (window.location != window.parent.location) { window.parent.location = window.location; }</script>    	<div class="sldebar_out">
+            <div class="silebar_inner slide_list">
+                <ul>
+                    <li id="search-3" class="widget widget_search"><form method="get" id="searchform" action="http://www.zhangxinxu.com/wordpress/">
+<label class="hidden" for="s">Search for:</label>
+<div><input type="search" placeholder="翻页太辛苦，试试直接搜索" value="" name="s" id="s">
+<input type="submit" id="searchsubmit" data-value="Search" value="搜索">
+</div>
+</form>
+</li><li id="categories-4" class="widget widget_categories"><h2 class="widgettitle">文章分类</h2>		<ul>
+	<li class="cat-item cat-item-3"><a href="http://www.zhangxinxu.com/wordpress/category/css/">css相关</a> (240)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://www.zhangxinxu.com/wordpress/category/graphic/">graphic相关</a> (69)
+<ul class="children">
+	<li class="cat-item cat-item-81"><a href="http://www.zhangxinxu.com/wordpress/category/graphic/as3%e8%8f%9c%e5%8d%95/">as3菜单</a> (32)
+</li>
+	<li class="cat-item cat-item-896"><a href="http://www.zhangxinxu.com/wordpress/category/graphic/canvas-graphic/">canvas相关</a> (11)
+</li>
+	<li class="cat-item cat-item-895"><a href="http://www.zhangxinxu.com/wordpress/category/graphic/svg-graphic/">SVG相关</a> (24)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-1097"><a href="http://www.zhangxinxu.com/wordpress/category/html/">HTML相关</a> (24)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://www.zhangxinxu.com/wordpress/category/js/">js相关</a> (126)
+<ul class="children">
+	<li class="cat-item cat-item-60"><a href="http://www.zhangxinxu.com/wordpress/category/js/jquery-about/">jquery相关</a> (44)
+</li>
+	<li class="cat-item cat-item-180"><a href="http://www.zhangxinxu.com/wordpress/category/js/js%e5%ae%9e%e4%be%8b/">js实例</a> (64)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-648"><a href="http://www.zhangxinxu.com/wordpress/category/mobile/">mobile相关</a> (11)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://www.zhangxinxu.com/wordpress/category/ps/">ps相关</a> (13)
+</li>
+	<li class="cat-item cat-item-7"><a href="http://www.zhangxinxu.com/wordpress/category/web/">web综合</a> (42)
+</li>
+	<li class="cat-item cat-item-198"><a href="http://www.zhangxinxu.com/wordpress/category/%e5%a4%96%e6%96%87%e7%bf%bb%e8%af%91/">外文翻译</a> (37)
+</li>
+		</ul>
+</li><li id="archives-3" class="widget widget_archive"><h2 class="widgettitle">文章存档</h2>		<ul>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2017/06/">2017年六月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2017/05/">2017年五月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2017/04/">2017年四月</a>&nbsp;(1)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2017/03/">2017年三月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2017/02/">2017年二月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2017/01/">2017年一月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/12/">2016年十二月</a>&nbsp;(2)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/11/">2016年十一月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/10/">2016年十月</a>&nbsp;(2)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/09/">2016年九月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/08/">2016年八月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/07/">2016年七月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/06/">2016年六月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/05/">2016年五月</a>&nbsp;(2)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/04/">2016年四月</a>&nbsp;(2)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/03/">2016年三月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/02/">2016年二月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/01/">2016年一月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/12/">2015年十二月</a>&nbsp;(2)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/11/">2015年十一月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/10/">2015年十月</a>&nbsp;(1)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/08/">2015年八月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/07/">2015年七月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/06/">2015年六月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/05/">2015年五月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/04/">2015年四月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/03/">2015年三月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/02/">2015年二月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/01/">2015年一月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/12/">2014年十二月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/11/">2014年十一月</a>&nbsp;(1)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/10/">2014年十月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/09/">2014年九月</a>&nbsp;(1)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/08/">2014年八月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/07/">2014年七月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/06/">2014年六月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/05/">2014年五月</a>&nbsp;(1)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/04/">2014年四月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/03/">2014年三月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/02/">2014年二月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/01/">2014年一月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/12/">2013年十二月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/11/">2013年十一月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/10/">2013年十月</a>&nbsp;(1)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/09/">2013年九月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/08/">2013年八月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/07/">2013年七月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/06/">2013年六月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/05/">2013年五月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/04/">2013年四月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/03/">2013年三月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/02/">2013年二月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/01/">2013年一月</a>&nbsp;(10)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/12/">2012年十二月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/11/">2012年十一月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/10/">2012年十月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/09/">2012年九月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/08/">2012年八月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/07/">2012年七月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/06/">2012年六月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/05/">2012年五月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/04/">2012年四月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/03/">2012年三月</a>&nbsp;(9)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/02/">2012年二月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/01/">2012年一月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/12/">2011年十二月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/11/">2011年十一月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/10/">2011年十月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/09/">2011年九月</a>&nbsp;(9)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/08/">2011年八月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/07/">2011年七月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/06/">2011年六月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/05/">2011年五月</a>&nbsp;(8)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/04/">2011年四月</a>&nbsp;(8)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/03/">2011年三月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/02/">2011年二月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/01/">2011年一月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/12/">2010年十二月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/11/">2010年十一月</a>&nbsp;(8)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/10/">2010年十月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/09/">2010年九月</a>&nbsp;(10)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/08/">2010年八月</a>&nbsp;(10)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/07/">2010年七月</a>&nbsp;(10)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/06/">2010年六月</a>&nbsp;(8)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/05/">2010年五月</a>&nbsp;(11)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/04/">2010年四月</a>&nbsp;(14)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/03/">2010年三月</a>&nbsp;(11)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/02/">2010年二月</a>&nbsp;(1)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/01/">2010年一月</a>&nbsp;(16)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2009/12/">2009年十二月</a>&nbsp;(14)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2009/11/">2009年十一月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2009/10/">2009年十月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2009/09/">2009年九月</a>&nbsp;(36)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2009/08/">2009年八月</a>&nbsp;(12)</li>
+		</ul>
+</li>		<li id="recent-posts-3" class="widget widget_recent_entries">		<h2 class="widgettitle">最新文章</h2>		<ul>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/06/html5-web-audio-api-js-ux-voice/">利用HTML5 Web Audio API给网页JS交互增加声音</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/06/webkit-text-stroke-css-text-shadow/">-webkit-text-stroke文字描边CSS属性及展开</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/06/ten-question-about-frontend-zhihu/">我对知乎前端相关问题的十问十答</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/05/jquery-guide-js-plugin/">jquery.guide.js新版上线操作向导镂空提示jQuery插件</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/05/canvas-picture-watermark-synthesis/">小tips:使用canvas在前端实现图片水印合成</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/05/electron-node-js-desktop-application-experience/">使用electron构建跨平台Node.js桌面应用经验分享</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/05/html-accesskey/">HTML accesskey属性与web自定义键盘快捷访问</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/05/html-tabindex/">HTML tabindex属性与web网页键盘无障碍访问</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/05/html-area-map/">HTML &lt;area&gt;&lt;map&gt;标签及在实际开发中的应用</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/04/css-focus-js-improve-accessibility-keyboard/">CSS :focus伪类JS focus事件提高网站键盘可访问性</a>
+						</li>
+				</ul>
+		</li><li id="overall-top-10-posts" class="widget widget_dailytopten_overall"><h2 class="widgettitle">热门总排行</h2><ul>
+<li><a href="http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/">好吧，CSS3 3D transform变换，不过如此！</a> (427373)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2011/09/%e5%9f%ba%e4%ba%8ehtml5%e7%9a%84%e5%8f%af%e9%a2%84%e8%a7%88%e5%a4%9a%e5%9b%be%e7%89%87ajax%e4%b8%8a%e4%bc%a0/">基于HTML5的可预览多图片Ajax上传</a> (392174)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/12/jquery-powerfloat%e4%b8%87%e8%83%bd%e6%b5%ae%e5%8a%a8%e5%b1%82%e4%b8%8b%e6%8b%89%e5%b1%82%e6%8f%92%e4%bb%b6/">jQuery powerFloat万能浮动层下拉层插件</a> (371151)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/03/every-browser-support-html5-video/">让所有浏览器支持HTML5 video视频标签</a> (335093)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/12/css-box-flex%e5%b1%9e%e6%80%a7%ef%bc%8c%e7%84%b6%e5%90%8e%e5%bc%b9%e6%80%a7%e7%9b%92%e5%ad%90%e6%a8%a1%e5%9e%8b%e7%ae%80%e4%bb%8b/">CSS box-flex属性，然后弹性盒子模型简介</a> (320149)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/11/%e6%8b%9c%e6%8b%9c%e4%ba%86%e6%b5%ae%e5%8a%a8%e5%b8%83%e5%b1%80-%e5%9f%ba%e4%ba%8edisplayinline-block%e7%9a%84%e5%88%97%e8%a1%a8%e5%b8%83%e5%b1%80/">拜拜了,浮动布局-基于display:inline-block的列表布局</a> (306442)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/01/jquery-pagination-ajax%e5%88%86%e9%a1%b5%e6%8f%92%e4%bb%b6%e4%b8%ad%e6%96%87%e8%af%a6%e8%a7%a3/">jQuery Pagination Ajax分页插件中文详解</a> (301296)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/04/%e8%ae%a9ie6ie7ie8%e6%b5%8f%e8%a7%88%e5%99%a8%e6%94%af%e6%8c%81css3%e5%b1%9e%e6%80%a7/">让IE6/IE7/IE8浏览器支持CSS3属性</a> (291290)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%e7%9f%a9%e9%98%b5/">理解CSS3 transform中的Matrix(矩阵)</a> (268509)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2009/09/%e5%85%b3%e4%ba%8e%e6%96%87%e5%ad%97%e5%86%85%e5%ae%b9%e6%ba%a2%e5%87%ba%e7%94%a8%e7%82%b9%e7%82%b9%e7%82%b9-%e7%9c%81%e7%95%a5%e5%8f%b7%e8%a1%a8%e7%a4%ba/">关于文字内容溢出用点点点(...)省略号表示</a> (241433)</li>
+</ul>
+</li><li id="daily-top-10-posts" class="widget widget_dailytopten"><h2 class="widgettitle">今日热门</h2><ul>
+<li><a href="http://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%e5%8e%bb%e9%99%a4%e9%97%b4%e8%b7%9d/">去除inline-block元素间间距的N种方法</a> (27)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2012/09/new-viewport-relative-units-vw-vh-vm-vmin/">视区相关单位vw, vh..简介以及可实际应用场景</a> (18)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/03/every-browser-support-html5-video/">让所有浏览器支持HTML5 video视频标签</a> (13)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2017/06/ten-question-about-frontend-zhihu/">我对知乎前端相关问题的十问十答</a> (13)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%e7%9f%a9%e9%98%b5/">理解CSS3 transform中的Matrix(矩阵)</a> (13)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/">好吧，CSS3 3D transform变换，不过如此！</a> (12)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/12/css-box-flex%e5%b1%9e%e6%80%a7%ef%bc%8c%e7%84%b6%e5%90%8e%e5%bc%b9%e6%80%a7%e7%9b%92%e5%ad%90%e6%a8%a1%e5%9e%8b%e7%ae%80%e4%bb%8b/">CSS box-flex属性，然后弹性盒子模型简介</a> (11)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2012/09/javascript-html-json-template/">基于HTML模板和JSON数据的JavaScript交互</a> (11)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/11/%e6%8b%9c%e6%8b%9c%e4%ba%86%e6%b5%ae%e5%8a%a8%e5%b8%83%e5%b1%80-%e5%9f%ba%e4%ba%8edisplayinline-block%e7%9a%84%e5%88%97%e8%a1%a8%e5%b8%83%e5%b1%80/">拜拜了,浮动布局-基于display:inline-block的列表布局</a> (11)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2014/09/apng-history-character-maker-editor/">APNG历史、特性简介以及APNG制作演示</a> (10)</li>
+</ul>
+</li>                </ul>
+            </div>
+        </div>
+	</div>
+<div id="footer" role="contentinfo">
+<p>
+Powered by <a href="http://wordpress.org/">WordPress</a> | Designed by <a href="http://www.zhangxinxu.com/">zhangxinxu</a><br>
+Copyright© 2009-2017 张鑫旭-鑫空间-鑫生活<br>
+<a target="_blank" href="http://www.miibeian.gov.cn/">鄂ICP备09015569号</a>
+</p>
+</div>
+<script src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/logger.js.下载"></script></div>
+
+
+<script type="text/javascript" src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/form.js.下载"></script>
+<script type="text/javascript" src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/comment-reply.min.js.下载"></script>
+
+<div id="footbar" role="toolbar" class="">
+	<div class="foot_yy_x hidden" id="footYyX">
+    	<div class="foot_yy_title">
+        	<span class="l">我的应用</span>
+            <a href="javascript:" class="r" id="footYYClose">-</a>
+        </div>
+        <div class="ml10 mr10 foot_yy_dv">工具与应用</div>
+        <div class="mt5">
+        	<a class="foot_yy_a" href="http://www.zhangxinxu.com/sp/base64.html">图片转base64(拖进来)</a>
+			<a class="foot_yy_a" href="http://browserhacks.com/">浏览器hack</a>
+            <a class="foot_yy_a" href="http://cubic-bezier.com/">CSS贝塞尔曲线可视化</a>
+            <a class="foot_yy_a" href="http://www.zhangxinxu.com/sp/css-compress-mini.html">CSS在线压缩工具</a>
+            <a class="foot_yy_a" href="http://www.zhangxinxu.com/sp/calculator.html">简易在线计算器</a>
+        </div>
+        <div class="ml10 mr10 foot_yy_dv">在线资源</div>
+        <div class="mt5">
+        	<a class="foot_yy_a" href="http://www.zhangxinxu.com/jq/api14/">jQuery 1.4 API中文版</a>
+            <a class="foot_yy_a" href="http://www.zhangxinxu.com/GitHub/demo-Snap.svg/demo/basic/">Snap.svg中文文档</a>
+            <a class="foot_yy_a" href="http://www.zhangxinxu.com/jq/stylus/">stylus中文版参考文档</a>
+            <a class="foot_yy_a" href="http://www.zhangxinxu.com/css3/">CSS3中文共享参考指南</a>
+            <a class="foot_yy_a" href="http://www.zhangxinxu.com/sp/character.html">非主流字符及字符图案</a>
+            <a class="foot_yy_a" href="http://www.zhangxinxu.com/jq/mt/">MooTools 1.2中文文档</a>
+        </div>
+        <div>&nbsp;</div>
+        <a href="javascript:" class="foot_yy foot_yy_on nowrap" id="footYYOff"><img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/zxx_ico.png" class="vimg"> 我的应用</a>
+    </div>
+    <a href="javascript:" class="foot_yy nowrap" id="footYYShow"><img src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/zxx_ico.png" class="vimg"> 我的应用</a>
+    <span class="foot_rss l">
+    	<a class="foot_rss_a" href="http://www.zhangxinxu.com/wordpress/?feed=rss2">文章(RSS)</a>
+         
+    </span>
+    <a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/#" id="backToTop" class="foot_top">返回顶部↑</a>
+	<a href="http://www.zhangxinxu.com/wordpress/wp-login.php" class="foot_login"><i class="icon-male"></i>登录</a>
+</div>
+
+<script src="./小tip_ 使用CSS将图片转换成黑白(灰色、置灰) « 张鑫旭-鑫空间-鑫生活_files/script-min.js.下载"></script>
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-11205167-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<div id="daITxzFloat" class="da_article da_bottom hidden" style="display: none; bottom: 0px;">
+                <div class="da_ht">
+                    <span class="l hidden">想找个师兄入门前端？不妨</span>
+                    <a href="javascript:" class="r hidden" title="不敢兴趣">×</a>
+                </div>
+                <a href="http://course.ptteng.com/" target="_blank" class="da_bottom_ht" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;ITxz&#39;, &#39;xzSchool&#39;, &#39;float&#39;]);"></a>
+            </div></body></html>

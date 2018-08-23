@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>我是黄渤，我在盗墓笔记等你！</title>
+<meta content="" name="Keywords" />
+<meta content="" name="description"/>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">
+var domain = 'http://vda.a135.net/';
+</script>
+<script type="text/javascript" src="js/y.js"></script>
+<script type="text/javascript">
+	function awtracepost(u,c){var t,m=Math.round(Math.random()*9999),n=(new Date()).getTime()+'_'+m,i=window[n]=new Image();i.src=u;i.onerror=function(){window[n]=null;if(c)c&&c()};i.onload=i.onreadystatechange=function(e){if(!this.readyState||this.readyState==='loaded'||this.readyState==='complete'){if(c)c&&c();i.onload=i.onreadystatechange=null}}}
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?f21d55d74ad8ce64bc371dc6ccae9c52";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+function awtracepost(u,c){var t,m=Math.round(Math.random()*9999),n=(new Date()).getTime()+'_'+m,i=window[n]=new Image();i.src=u;i.onerror=function(){window[n]=null;if(c)c&&c()};i.onload=i.onreadystatechange=function(e){if(!this.readyState||this.readyState==='loaded'||this.readyState==='complete'){if(c)c&&c();i.onload=i.onreadystatechange=null}}}	var s_id="6685,30531,0,0,0", g_id="146", z_id="2220313960", m_id="10388",m_width="1400",bt=getTimestamp(),ip="3682658669",timestamp="1494491998",sub_info="|0|0|0|0|0";
+if(m_id != '') {
+	if (g_id == '' || z_id == '?') {
+		window.location.reload();
+	}
+}
+	yz.begin();
+
+</script>
+
+</head>
+<body style="background:#000000; border:0;margin-top:0px;padding:0px" onload="yz.load();" >
+<center style="margin-top:10px">
+<div id="flashContent">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100%" height="700" id="mySwf" align="middle"  >
+<param name="movie" value="http://static.uuzu.com/usr/uploads/201702/20170221150235_31517.swf"  />
+<param name="quality" value="high" />
+<param name="bicolor" value="#000000" />
+<param name="play" value="true" />
+<param name="loop" value="true" />
+<param name="wmode" value="opaque" />
+<param name="scale" value="showall" />
+<param name="menu" value="true" />
+<param name="devicefont" value="false" />
+<param name="salign" value="" />
+<param name="allowScriptAccess" value="always" />
+<param name="FlashVars" value="_code=170223QvtqUOA|146|2220313960|10388|0|{placement}|0|0|{keywordid}|1|0|0|0|0|0|0&plat_host=cb.uuzu.com&game_name=盗墓笔记&passport_name=&_show=0" />
+<embed src="http://static.uuzu.com/usr/uploads/201702/20170221150235_31517.swf" allowScriptAccess="always" width="100%" height="700" wmode="opaque"  FlashVars="_code=170223QvtqUOA|146|2220313960|10388|0|{placement}|0|0|{keywordid}|1|0|0|0|0|0|0&plat_host=cb.uuzu.com&game_name=盗墓笔记&passport_name=&_show=0"  pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="mySwf"></embed>
+</object>
+</div>
+
+
+			<style type="text/css">
+			.footbar{color:#999;line-height:25px;margin:10px auto;padding:18px 0 10px;text-align: center;width:960px;font-size:12px;}
+			.footbar a{color:#666;text-decoration:none;}
+		</style>
+		<div class="footbar">
+			<p class="gsname">上海游族信息技术有限公司(<a href="http://www.youzu.com">www.youzu.com</a>)</p>
+			<p class="gsname">地址：上海市徐汇区宜山路711号华鑫中心2号楼 -游族大厦 电话：021-33676512</p>
+			<p class="beianhao">
+				<a href="http://pic.uuzu.com/uuzu_2012/images/layout/ICP1.jpg" target="_blank">沪B2-20090105号</a>
+				<a href="http://www.miibeian.gov.cn" target="_blank">沪ICP备09058784号</a> 
+				<a href="http://pic.youzu.com/youzu/images/layout/net.jpg?009" target="_blank">沪网文[2015]0819-219号</a> 
+				<a href="http://pic.uuzu.com/uuzu_2012/images/layout/publish.jpg" target="_blank">新出网证(沪)字33号</a>
+				<a href="#">文网游备字  [2013]W-RPG155号</a>
+			</p>
+		</div>
+	</center>
+<script>
+function loadcomplete() {
+	yz.complete();
+}
+
+function success(pt,pw) {
+			yz.encode(pt,pw,callback);
+	}
+function old_login(pt,pw) {
+	yz.encode(pt,pw,loginCall);
+}
+function loginCall(track) {
+	document.body.onunload = null;
+	window.onbeforeunload = null;
+		var  go="http://passport.youzu.com/api/gameLoginV2/direct/game_id/146?";//code
+			
+	location = go+"&track="+track; 	
+}
+function download(track) {	
+	var track ='';
+	if(navigator.userAgent.indexOf("Mac OS X")>0) {
+		var url ="http://cdn.games.uuzuonline.com/135/client/pack/nslm2mac.zip";
+	} else {
+		var url ="http://cdn.games.uuzuonline.com/135/client/pack/nslm2win.zip";
+	}
+		awtracepost('http://hm.baidu.com/hm.gif?ep=%7Bid%3Aregister4%2CeventType%3Aclick%7D&et=1&nv=0&si=f21d55d74ad8ce64bc371dc6ccae9c52&st=4&v=pixel-1.0&rnd=' + Math.floor(Math.random() * Math.pow(2, 31)),function(){ location.href= 'http://cdn.games.uuzuonline.com/135/client/pack/nslm2win.zip&track='+track});	
+}
+
+function callback(track) {
+	document.body.onunload = null;
+	window.onbeforeunload = null;
+
+			awtracepost('http://hm.baidu.com/hm.gif?ep=%7Bid%3Aregister4%2CeventType%3Aclick%7D&et=1&nv=0&si=f21d55d74ad8ce64bc371dc6ccae9c52&st=4&v=pixel-1.0&rnd=' + Math.floor(Math.random() * Math.pow(2, 31)),function(){ location.href= 'http://passport.youzu.com/api/gameLoginV2/direct/game_id/146?serv=s2220313960.dm.youzu.com&track='+track});	
+}
+function error(msg) {
+	alert(msg);
+}
+
+
+function thirdLogin(args) {
+	var successUrl = 'http%3A%2F%2Fvda.a135.net%2Fx.php%3FgameId%3D146%26serverId%3D2220313960%26q%3D170223QvtqUOA',_code='170223QvtqUOA|146|2220313960|10388|0|{placement}|0|0|{keywordid}|1|0|0|0|0|0|0';
+	window.onbeforeunload=null;
+	if(args=='qq') {
+		window.open('http://passport.youzu.com/openid/connect/platform/qq/?from=ad&successUrl='+successUrl+'&_code='+_code, 'oauth2Login_10755' ,'height=525,width=585, toolbar=no, menubar=no, scrollbars=no, status=no, location=yes, resizable=yes');
+	}else if (args=='sina') {
+
+		window.open('http://passport.youzu.com/openid/connect/platform/sina/?from=ad&successUrl='+successUrl+'&_code='+_code, 'oauth2Login_10755' ,'height=525,width=585, toolbar=no, menubar=no, scrollbars=no, status=no, location=yes, resizable=yes');
+
+	}else if (args=='wechat') {
+
+		window.open('http://passport.youzu.com/openid/connect/platform/weixin/?from=ad&successUrl='+successUrl+'&_code='+_code, 'oauth2Login_10755' ,'height=525,width=585, toolbar=no, menubar=no, scrollbars=no, status=no, location=yes, resizable=yes');
+
+	}
+
+}
+
+</script>
+
+
+
+</body>
+</html>	

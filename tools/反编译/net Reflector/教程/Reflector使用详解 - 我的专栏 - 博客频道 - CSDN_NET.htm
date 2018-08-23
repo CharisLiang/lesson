@@ -1,0 +1,950 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0057)http://blog.csdn.net/lgx040605112/article/details/6199958 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+          
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/tracking.js" type="text/javascript" charset="utf-8"></SCRIPT>
+      
+<SCRIPT type="text/javascript">
+        var protocol = window.location.protocol;
+        document.write('<script type="text/javascript" src="' + protocol + '//csdnimg.cn/pubfooter/js/repoAddr2.js?v=' + Math.random() + '"></' + 'script>');
+    </SCRIPT>
+    
+<META http-equiv="Cache-Control" content="no-siteapp"><LINK href="#" rel="alternate" 
+media="handheld">     <TITLE>Reflector使用详解 - 我的专栏         - 博客频道 - 
+CSDN.NET</TITLE>     
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">     
+<META name="description" content="mark.0000.saber.0000.mark">     
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/jquery.js" type="text/javascript"></SCRIPT>
+       
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/jquery-version.js" type="text/javascript"></SCRIPT>
+     
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/ad.js" type="text/javascript"></SCRIPT>
+         <!--new top-->                <LINK href="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/index.css" 
+rel="stylesheet">         <!--new top-->           <!-- ad begin -->          
+<SCRIPT language="javascript" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/tracking(1).js" type="text/javascript"></SCRIPT>
+     <!-- ad end-->     <LINK href="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/style.css" 
+rel="Stylesheet" type="text/css">     <LINK title="RSS" id="RSSLink" href="/lgx040605112/rss/list" 
+rel="alternate" type="application/rss+xml">     <LINK href="http://c.csdnimg.cn/public/favicon.ico" 
+rel="shortcut icon">     <LINK href="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/default.css" 
+rel="stylesheet" type="text/css">  
+<META name="GENERATOR" content="MSHTML 11.00.9600.17728"></HEAD> 
+<BODY><!-- 广告位开始 -->         <INS data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57" 
+data-revive-zoneid="149"></INS>     <!-- 广告位结束 -->              <!--new top-->   
+  
+<SCRIPT id="toolbar-tpl-scriptId" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/html.js" type="text/javascript" skin="black" prod="blog" fixed="true"></SCRIPT>
+      <!--new top-->     
+<DIV id="container">
+<DIV id="header">
+<DIV class="header">
+<DIV id="blog_title">
+<H2><A href="http://blog.csdn.net/lgx040605112">我的专栏</A></H2>
+<H3></H3>
+<DIV class="clear"></DIV></DIV>
+<DIV class="clear"></DIV></DIV></DIV>
+<DIV id="navigator">
+<DIV class="navigator_bg"></DIV>
+<DIV class="navigator">
+<UL>
+  <LI id="btnContents"><A href="http://blog.csdn.net/lgx040605112?viewmode=contents"><SPAN 
+  onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_mulu'])"><IMG 
+  src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/ico_list.gif">目录视图</SPAN></A></LI> 
+                  
+  <LI id="btnView"><A 
+  href="http://blog.csdn.net/lgx040605112?viewmode=list"><SPAN onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_zhaiyao'])"><IMG 
+  src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/ico_summary.gif">摘要视图</SPAN></A></LI> 
+                  
+  <LI id="btnRss"><A href="http://blog.csdn.net/lgx040605112/rss/list"><SPAN 
+  onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_RSS'])"><IMG 
+  src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/ico_rss.gif">订阅</SPAN></A></LI> 
+                                         </UL></DIV></DIV>
+<SCRIPT type="text/javascript">
+    var username = "lgx040605112";
+    var _blogger = username;
+    var blog_address = "http://blog.csdn.net/lgx040605112";
+    var static_host = "http://static.blog.csdn.net";
+    var currentUserName = "love520monv";  
+</SCRIPT>
+         
+<DIV id="body">
+<DIV id="main">
+<DIV class="main">
+<DIV class="ad_class">
+<DIV class="notice tracking-ad" data-mod="popu_3"><A href="http://ask.csdn.net/subjects/3"><FONT 
+color="red">【专家问答】郭神驾到 </FONT></A> &nbsp;&nbsp;&nbsp;<A href="http://huiyi.csdn.net/activity/product/goods_list?project_id=2947"><FONT 
+color="blue">chinapub读书会 第9期：深入解析Linux</FONT></A>&nbsp;&nbsp;&nbsp; <A href="http://edu.csdn.net/huiyiCourse/detail/126"><FONT 
+color="red">【免费公开课】Python黑客编程之局域网嗅探和敏感信息探测</FONT></A> &nbsp;&nbsp;&nbsp;
+</DIV></DIV><!-- 广告位开始 --> <INS data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57" 
+data-revive-zoneid="72"></INS> <!-- 广告位结束 -->   <LINK href="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/comment1.css" 
+rel="stylesheet" type="text/css"> <LINK href="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/style1.css" 
+rel="stylesheet" type="text/css"> 
+<SCRIPT language="JavaScript" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/jquery.cookie.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/main.js" type="text/javascript"></SCRIPT>
+ <LINK href="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/markdown_views.css" 
+rel="stylesheet"> <LINK href="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/category.css" 
+rel="stylesheet"> 
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/MathJax.js" type="text/javascript"></SCRIPT>
+  
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/web-storage-cache.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/web-storage-cache.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/replace.min.js" type="text/javascript"></SCRIPT>
+   
+<SCRIPT type="text/ecmascript">
+      window.quickReplyflag = true;
+           
+            var isBole = false;
+            
+          
+    </SCRIPT>
+ 
+<DIV class="details" id="article_details">
+<DIV class="article_title"><SPAN class="ico ico_type_Original"></SPAN>     
+<H1><SPAN class="link_title"><A href="http://blog.csdn.net/lgx040605112/article/details/6199958"> 
+       Reflector使用详解                     </A></SPAN>     </H1> </DIV>
+<DIV class="article_manage clearfix">
+<DIV class="article_l"><SPAN class="link_categories">            标签：             
+  <A onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);" 
+href="http://www.csdn.net/tag/.net" target="_blank">.net</A><A onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);" 
+href="http://www.csdn.net/tag/tools" target="_blank">tools</A><A onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);" 
+href="http://www.csdn.net/tag/assembly" target="_blank">assembly</A><A onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);" 
+href="http://www.csdn.net/tag/menu" target="_blank">menu</A><A onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);" 
+href="http://www.csdn.net/tag/sql%20server" target="_blank">sql server</A><A 
+onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);" 
+href="http://www.csdn.net/tag/delphi" target="_blank">delphi</A>             
+</SPAN>         </DIV>
+<DIV class="article_r"><SPAN class="link_postdate">2011-02-22 14:28</SPAN>       
+      <SPAN title="阅读次数" class="link_view">11908人阅读</SPAN>             <SPAN 
+title="评论次数" class="link_comments"><A onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])" 
+href="http://blog.csdn.net/lgx040605112/article/details/6199958#comments">评论</A>(2)</SPAN> 
+            <SPAN class="link_collect tracking-ad" data-mod="popu_171"><A title="收藏" 
+onclick="javascript:collectArticle('Reflector使用详解','6199958');return false;" 
+href="javascript:void(0);">收藏</A></SPAN>              <SPAN 
+class="link_report"><A title="举报" onclick="javascript:report(6199958,2);return false;" 
+href="http://blog.csdn.net/lgx040605112/article/details/6199958#report">举报</A></SPAN> 
+        </DIV></DIV>
+<DIV class="embody" id="embody" style="display: none;"><SPAN 
+class="embody_t">本文章已收录于：</SPAN>         
+<DIV class="embody_c" id="lib" 
+value='{"err":0,"msg":"ok","data":[]}'></DIV></DIV>
+<STYLE type="text/css">.embody{
+                padding:10px 10px 10px;
+                margin:0 -20px;
+                border-bottom:solid 1px #ededed;                
+            }
+            .embody_b{
+                margin:0 ;
+                padding:10px 0;
+            }
+            .embody .embody_t,.embody .embody_c{
+                display: inline-block;
+                margin-right:10px;
+            }
+            .embody_t{
+                font-size: 12px;
+                color:#999;
+            }
+            .embody_c{
+                font-size: 12px;
+            }
+            .embody_c img,.embody_c em{
+                display: inline-block;
+                vertical-align: middle;               
+            }
+             .embody_c img{               
+                width:30px;
+                height:30px;
+            }
+            .embody_c em{
+                margin: 0 20px 0 10px;
+                color:#333;
+                font-style: normal;
+            }
+    </STYLE>
+     
+<SCRIPT type="text/javascript">
+        $(function () {
+            var lib = eval("("+$("#lib").attr("value")+")");
+            var html = "";
+            if (lib.err == 0) {
+                $.each(lib.data, function (i) {
+                    var obj = lib.data[i];
+                    //html += '<img src="' + obj.logo + '"/>' + obj.name + "&nbsp;&nbsp;";
+                    html += ' <a href="' + obj.url + '" target="_blank">';
+                    html += ' <img src="' + obj.logo + '">';
+                    html += ' <em><b>' + obj.name + '</b></em>';
+                    html += ' </a>';
+                });
+                if (html != "") {
+                    setTimeout(function () {
+                        $("#lib").html(html);
+                        /*
+                        var testhtml = "";
+                        testhtml += '<a href="#">';
+                        testhtml += '<img src="http://img.knowledge.csdn.net/upload/base/1455589744328_328.jpg">';
+                        testhtml += '<em>Android知识库</em>';
+                        testhtml += '</a>';
+                        $(".embody_c").html(testhtml);
+                        */
+                        $("#embody").show();
+                    }, 100);
+                }
+            }          
+            
+        });
+    </SCRIPT>
+       
+<DIV class="category clearfix">
+<DIV class="category_l"><IMG src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/category_icon.jpg"> 
+            <SPAN>分类：</SPAN>         </DIV>
+<DIV class="category_r"><LABEL onclick="GetCategoryArticles('783762','lgx040605112','top','6199958');"><SPAN 
+onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_fenlei']);">ASP.Net<EM>（4）</EM></SPAN> 
+                      <IMG class="arrow-down" style="display: inline;" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/arrow_triangle%2520_down.jpg"> 
+                      <IMG class="arrow-up" style="display: none;" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/arrow_triangle_up.jpg"> 
+                        
+<DIV class="subItem">
+<DIV class="subItem_t"><A href="http://blog.csdn.net/lgx040605112/article/category/783762" 
+target="_blank">作者同类文章</A><I class="J_close">X</I></DIV>
+<UL class="subItem_l" id="top_783762"></UL></DIV></LABEL>                        
+                <LABEL onclick="GetCategoryArticles('787594','lgx040605112','top','6199958');"><SPAN 
+onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_fenlei']);">C#<EM>（2）</EM></SPAN> 
+                      <IMG class="arrow-down" style="display: inline;" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/arrow_triangle%2520_down.jpg"> 
+                      <IMG class="arrow-up" style="display: none;" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/arrow_triangle_up.jpg"> 
+                        
+<DIV class="subItem">
+<DIV class="subItem_t"><A href="http://blog.csdn.net/lgx040605112/article/category/787594" 
+target="_blank">作者同类文章</A><I class="J_close">X</I></DIV>
+<UL class="subItem_l" id="top_787594"></UL></DIV></LABEL>                        
+    </DIV></DIV>
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/category.js" type="text/javascript"></SCRIPT>
+          
+<DIV class="bog_copyright">
+<P class="copyright_p">版权声明：本文为博主原创文章，未经博主允许不得转载。</P></DIV>
+<DIV class="article_content" id="article_content">
+<P><SPAN style="font-size: 13px;">&nbsp;&nbsp;&nbsp; Reflector是由微软员工Lutz 
+Roeder编写的免费程序。Reflector的出现使.NET程序员眼前豁然开朗，因为这个免费工具可以将.NET程序集中的中间语言反编译成C#或者Visual 
+Basic代码。除了能将中间语言转换为C#或Visual 
+Basic以外，Reflector还能够提供程序集中类及其成员的概要信息、提供查看程序集中中间语言的能力以及提供对第三方插件的支持。</SPAN></P>
+<P><A href="http://www.vancl.com/?source=lgx040605112&amp;psId=106" target="_blank"><IMG 
+width="700" height="300" alt="" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/700x300_20130829_114626.jpg" 
+border="0"></A></P>
+<P><SPAN style="font-size: 13px;">1、下载Reflector，下载地址：</SPAN><A href="http://reflector.red-gate.com/"><SPAN 
+style="font-size: 13px;">http://reflector.red-gate.com/</SPAN></A><SPAN style="font-size: 13px;">；</SPAN></P>
+<P><SPAN style="font-size: 13px;">2、解压后，双击Reflector.exe，如果有选择默认版本的.Net 
+Framework，根据需要选择即可。你选择的版本不同则出现的默认程序集也不同，我选择的是.Net3.5；</SPAN></P>
+<P><SPAN style="font-size: 13px;"><IMG alt="" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/0_1298355879xsEv.jpg"></SPAN></P>
+<P><SPAN 
+style="font-size: 13px;">3、点击file-open选择要反编译的DLL，打开后程序集的命名空间会出现在列表中；</SPAN></P>
+<P><SPAN 
+style="font-size: 13px;">4、点击树形列表中的类，右边就会出现相应的反编译代码。反编译后的代码和原代码基本没有什么区别；</SPAN></P>
+<P><SPAN style="font-size: 13px;"><SPAN style="font-size: 13px;"><IMG alt="" 
+src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/0_1298356035D1ed.png"></SPAN></SPAN></P>
+<P><SPAN 
+style="font-size: 13px;">5、如果想把反编译后的代码导入到文件中，我们可以使用Reflector.FileDisassembler这个Reflector插件，下面介绍Reflector.FileDisassembler插件用法；</SPAN></P>
+<P><SPAN style="font-size: 13px;">6、Reflector.FileDisassembler的下载地址：</SPAN><A 
+href="http://www.denisbauer.com/NETTools/FileDisassembler.aspx"><SPAN style="font-size: 13px;">http://www.denisbauer.com/NETTools/FileDisassembler.aspx</SPAN></A>；<BR><SPAN 
+style="font-size: 13px;">7、运行Reflector，点击View—add-ins…—Add,选择Reflector.FileDisassembler.dll 
+(下载Reflector. FileDisassembler解压后的文件中有)添加成功后，Close关闭对话框。在tools菜单中会有file 
+disassembler选项；</SPAN></P>
+<P><SPAN style="font-size: 13px;"><IMG alt="" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/0_1298356103hAPe.jpg"></SPAN></P>
+<P><SPAN style="font-size: 13px;">8、选择Tools—File Disassembler；</SPAN></P>
+<P><SPAN 
+style="font-size: 13px;">9、选择需反编译的类文件，点击Generate按钮，此时需要选择输入文件名，也可以直接点击OK。Reflector将会自动创建一个文件夹并生产类文件，该文件的路径在Reflector.exe的目录下；</SPAN></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><SPAN style="font-size: 13px;"></SPAN></P>
+<P>另外还有一些Reflector的相关插件下载：</P>
+<P>
+<TABLE border="0">
+  <TBODY>
+  <TR>
+    <TD><STRONG>Reflector.FileDisassembler<BR></STRONG>This add-in can be used 
+      to dump the disassembler output to files for any Reflector supported 
+      language.<BR><A href="http://www.denisbauer.com/NETTools/FileDisassembler.aspx"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Website</SPAN></SPAN></A><A href="http://www.denisbauer.com/Download.aspx?File=Reflector.FileDisassembler.zip"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Download</SPAN></SPAN></A> 
+      <P>&nbsp;</P></TD></TR>
+  <TR>
+    <TD><STRONG>Reflector.CodeMetrics</STRONG> <BR>Analyses .NET assemblies 
+      and shows design quality metrics. The menu item is registered under the 
+      "Tools" menu.<BR><A href="http://projectdistributor.net/Projects/Project.aspx?projectId=43"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Website</SPAN></SPAN></A><A href="http://projectdistributor.net/GetFile.aspx?type=b&amp;id=55"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Download</SPAN></SPAN></A> 
+      <P>&nbsp;</P></TD></TR>
+  <TR>
+    <TD><STRONG>Reflector.SQL2005Browser<BR></STRONG>This add-in allows to 
+      browse .NET assemblies stored in SQL Server 2005 (Yukon) databases.<BR><A 
+      href="http://www.denisbauer.com/NETTools/SQL2005Browser.aspx"><SPAN style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Website</SPAN></SPAN></A><A href="http://www.denisbauer.com/Download.aspx?File=Reflector.SQL2005Browser.zip"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Download</SPAN></SPAN></A> 
+      <P>&nbsp;</P></TD></TR>
+  <TR>
+    <TD><STRONG>Reflector.DelphiLanguage</STRONG> <BR>The Delphi view that is 
+      used inside .NET Reflector provided as a language add-in.<BR><A href="http://www.sawatzki.de/download.htm"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Website</SPAN></SPAN></A><A href="http://www.sawatzki.de/Download/Delphi"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Download</SPAN></SPAN></A> 
+      <P>&nbsp;</P></TD></TR>
+  <TR>
+    <TD><STRONG>Reflector.McppLanguage</STRONG> <BR>This add-in extends 
+      Reflector with a Managed C++ language rendering module. <BR><A href="http://www.testdriven.net/reflector"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Website</SPAN></SPAN></A><A href="http://www.testdriven.net/downloads/Reflector.Mcpp"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Download</SPAN></SPAN></A> 
+      <P>&nbsp;</P></TD></TR>
+  <TR>
+    <TD><STRONG>Reflector.ChromeLanguage</STRONG> <BR>This add-in extends 
+      Reflector with a Chrome language rendering module. <BR><A href="http://www.remobjects.com/freedownloads.asp?id=57039A86-4B91-40CE-B1FA-A6170083C14C"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Website</SPAN></SPAN></A><A href="http://www.remobjects.com/download.asp?id=%7BC0459C4A-EBA9-421F-99DB-73696FD8C24B%7D"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Download</SPAN></SPAN></A> 
+      <P>&nbsp;</P></TD></TR>
+  <TR>
+    <TD><STRONG>Reflector.Diff</STRONG> <BR>This add-in shows differences 
+      between two versions of the same assembly. <BR><A href="http://home.imaginet.co.za/codingsanity/ReflectorDiff.htm"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Website</SPAN></SPAN></A><A href="http://home.imaginet.co.za/codingsanity/files/Reflector.Diff.dll"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Download</SPAN></SPAN></A> 
+      <P>&nbsp;</P></TD></TR>
+  <TR>
+    <TD><STRONG>Reflector.VisualStudio</STRONG> <BR>This program is hosting 
+      .NET Reflector inside the Visual Studio 2003 IDE. Run 
+      Reflector.VisualStudio.exe to register the add-in with Visual 
+      Studio.<BR><A href="http://www.testdriven.net/reflector"><SPAN style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Website</SPAN></SPAN></A><A href="http://www.testdriven.net/downloads/ReflectorVsAddin.zip"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Download</SPAN></SPAN></A> 
+      <P>&nbsp;</P></TD></TR>
+  <TR>
+    <TD><STRONG>Reflector.ClassView</STRONG> <BR>Shows class definitions as 
+      plain text with color coding. The menu item is registered under the 
+      "Tools" menu.<BR><A href="http://workspaces.gotdotnet.com/reflector"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Website</SPAN></SPAN></A><A href="http://workspaces.gotdotnet.com/reflector"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Download</SPAN></SPAN></A> 
+      <P>&nbsp;</P></TD></TR>
+  <TR>
+    <TD><STRONG>Reflector.CodeModelView</STRONG> <BR>This add-in shows the 
+      underlying code model objects for a selected node in .NET Reflector. The 
+      menu item is registered under the "Tools" menu.<BR><A href="http://workspaces.gotdotnet.com/reflector" 
+      target="_blank"><SPAN style="text-decoration: underline;"><SPAN style="color: rgb(0, 128, 0);">Website</SPAN></SPAN></A><A 
+      href="http://workspaces.gotdotnet.com/reflector" target="_blank"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Download</SPAN></SPAN></A> 
+      <P>&nbsp;</P></TD></TR>
+  <TR>
+    <TD><STRONG>Reflector.FileGenerator</STRONG> <BR>This add-in can be used 
+      to dump the disassembler output to files for any Reflector supported 
+      language.<BR><A 
+      href="http://www.jasonbock.net/JB/Code/FileGenerator.zip"><SPAN style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Download</SPAN></SPAN></A> 
+      <P>&nbsp;</P></TD></TR>
+  <TR>
+    <TD><STRONG>Reflector.Graph</STRONG> <BR>This add-in draws assembly 
+      dependency graphs and IL graphs. <BR><A href="http://projectdistributor.net/Projects/Project.aspx?projectId=44"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Website</SPAN></SPAN></A><A href="http://projectdistributor.net/GetFile.aspx?type=b&amp;id=56"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Download</SPAN></SPAN></A> 
+      <P>&nbsp;</P></TD></TR>
+  <TR>
+    <TD><STRONG>Reflector.OpenRunningAssembly</STRONG> <BR>Opens an assembly 
+      or dependency from a process running on the system. The menu item is 
+      registered under the "Tools" menu.<BR><A href="http://weblogs.asp.net/kdente/archive/2004/06/20/160780.aspx"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Website</SPAN></SPAN></A><A href="http://www.denteworld.com/files/OpenRunningAssemblyAddin_05.zip"><SPAN 
+      style="text-decoration: underline;"><SPAN 
+      style="color: rgb(0, 128, 0);">Download</SPAN></SPAN></A></TD></TR></TBODY></TABLE>
+<P></P>
+<P></P>
+<P></P>
+<P><A href="http://www.vancl.com/?source=lgx040605112&amp;psId=106" target="_blank"></A></P></DIV><!-- Baidu Button BEGIN --> 
+<DIV class="bdsharebuttonbox tracking-ad" style="float: right;" data-mod="popu_172"><A 
+class="bds_more" style='background-position: 0px 0px !important; background-image: url("http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=d754dcc0.png") !important;' 
+href="http://blog.csdn.net/lgx040605112/article/details/6199958#" data-cmd="more"></A> 
+<A title="分享到QQ空间" class="bds_qzone" style="background-position: 0px -52px !important;" 
+href="http://blog.csdn.net/lgx040605112/article/details/6199958#" data-cmd="qzone"></A> 
+<A title="分享到新浪微博" class="bds_tsina" style="background-position: 0px -104px !important;" 
+href="http://blog.csdn.net/lgx040605112/article/details/6199958#" data-cmd="tsina"></A> 
+<A title="分享到腾讯微博" class="bds_tqq" style="background-position: 0px -260px !important;" 
+href="http://blog.csdn.net/lgx040605112/article/details/6199958#" 
+data-cmd="tqq"></A> <A title="分享到人人网" class="bds_renren" style="background-position: 0px -208px !important;" 
+href="http://blog.csdn.net/lgx040605112/article/details/6199958#" data-cmd="renren"></A> 
+<A title="分享到微信" class="bds_weixin" style="background-position: 0px -1612px !important;" 
+href="http://blog.csdn.net/lgx040605112/article/details/6199958#" data-cmd="weixin"></A> 
+</DIV>
+<SCRIPT>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</SCRIPT>
+ <!-- Baidu Button END -->    <LINK href="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/blog_detail.css" 
+rel="stylesheet">     <!--172.16.140.14--> <!-- Baidu Button BEGIN --> 
+<SCRIPT id="bdshare_js" type="text/javascript" data="type=tools&amp;uid=1536434"></SCRIPT>
+ 
+<SCRIPT id="bdshell_js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</SCRIPT>
+ <!-- Baidu Button END -->          
+<DIV id="digg" articleid="6199958">
+<DL class="digg digg_enable" id="btnDigg" onclick="btndigga();">
+  <DT>顶</DT>
+  <DD>0</DD></DL>
+<DL class="digg digg_enable" id="btnBury" onclick="btnburya();">
+  <DT>踩</DT>
+  <DD>0</DD></DL></DIV>
+<DIV class="tracking-ad" data-mod="popu_222"><A 
+href="javascript:void(0);">&nbsp;</A>   </DIV>
+<DIV class="tracking-ad" data-mod="popu_223"><A 
+href="javascript:void(0);">&nbsp;</A></DIV>
+<SCRIPT type="text/javascript">
+                function btndigga() {
+                    $(".tracking-ad[data-mod='popu_222'] a").click();
+                }
+                function btnburya() {
+                    $(".tracking-ad[data-mod='popu_223'] a").click();
+                }
+            </SCRIPT>
+    
+<UL class="article_next_prev">
+  <LI class="prev_article"><SPAN onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_shangyipian']);location.href='/lgx040605112/article/details/6179350';">上一篇</SPAN><A 
+  onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_shangyipian'])" 
+  href="http://blog.csdn.net/lgx040605112/article/details/6179350">Intelligencia.UrlRewriter.dll实现URL重写 
+  </A></LI>
+  <LI class="next_article"><SPAN onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_xiayipian']);location.href='/lgx040605112/article/details/6224070';">下一篇</SPAN><A 
+  onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_xiayipian'])" 
+  href="http://blog.csdn.net/lgx040605112/article/details/6224070">codeproject中的控件源码</A></LI></UL>
+<DIV style="height: 10px; clear: both;"></DIV>
+<DIV class="similar_article" style="display: none;">
+<H4>我的同类文章</H4>
+<DIV class="similar_c" style="margin: 20px 0px 0px;">
+<DIV class="similar_c_t"><LABEL class="similar_cur"><SPAN style="cursor: pointer;" 
+onclick="GetCategoryArticles('783762','lgx040605112','foot','6199958');">ASP.Net<EM>（4）</EM></SPAN> 
+                                </LABEL>                                 
+<LABEL><SPAN style="cursor: pointer;" onclick="GetCategoryArticles('787594','lgx040605112','foot','6199958');">C#<EM>（2）</EM></SPAN> 
+                                </LABEL>                     </DIV>
+<DIV class="similar_wrap tracking-ad" style="max-height: 195px;" data-mod="popu_141"><A 
+style="display: none;" href="http://blog.csdn.net/">http://blog.csdn.net/</A>    
+                     
+<UL class="similar_list fl"></UL>
+<UL class="similar_list fr"></UL></DIV></DIV></DIV>
+<SCRIPT type="text/javascript">
+        $(function () {
+            GetCategoryArticles('783762', 'lgx040605112','foot','6199958');
+        });
+    </SCRIPT>
+       </DIV>
+<DIV id="suggest"></DIV>
+<SCRIPT language="javascript" type="text/javascript">     
+             $(function(){
+                 $.get("/lgx040605112/svc/GetSuggestContent/6199958",function(data){
+                     $("#suggest").html(data);
+                 });     
+             });             
+         </SCRIPT>
+  
+<STYLE>
+.blog-ass-articl dd {
+color: #369;
+width: 99%; /*修改行*/
+float: left;
+overflow: hidden;
+font: normal normal 12px/23px "SimSun";
+height: 23px;
+margin: 0;
+padding: 0 0 0 10px;
+margin-right: 30px;
+background: url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;
+}
+</STYLE>
+  <LINK href="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/replace.css" 
+rel="stylesheet"> 
+<DIV class="tracking-ad" id="relate" data-mod="popu_218">
+<DIV class="relate_t">
+<H3><SPAN>参考知识库</SPAN></H3></DIV>
+<DIV class="relate_c"></DIV></DIV>
+<DL class="blog-ass-articl" id="res-relatived">
+  <DIV class="embody embody_b" id="libkeyparent" style="display: none;"><SPAN 
+  class="embody_t">更多资料请参考：</SPAN>             
+  <DIV class="embody_c" id="libkey"></DIV></DIV>
+  <DT><SPAN>猜你在找</SPAN></DT>
+  <DIV id="adCollege" style="width: 42%; float: left;">
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/job_reco.js" type="text/javascript"></SCRIPT>
+           
+<SCRIPT type="text/javascript">
+            csdn.position.showEdu({
+                sourceType: "blog",
+                searchType: "detail",
+                searchKey: "6199958",
+                username: "love520monv",
+                recordcount: "5",
+                containerId: "adCollege" //容器DIV的id。 
+            });
+        </SCRIPT>
+       </DIV>
+  <DIV class="tracking-ad" id="res" style="width: 42%; margin-right: 30px; float: left;" 
+  data-mod="popu_36"></DIV></DL>
+<SCRIPT type="text/javascript">
+    $(function () {
+        setTimeout(function () {
+            var searchtitletags = 'Reflector使用详解' + ',' + $("#tags").html();
+            searchService({
+                index: 'blog',
+                query: searchtitletags,
+                from: 5,
+                size: 5,
+                appendTo: '#res',
+                url: 'recommend',
+                his: 2,
+                client: "blog_cf_enhance",
+                tmpl: '<dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="#{ url }" title="#{ title }" strategy="#{ strategy }">#{ title }</a></dd>'
+            });
+        }, 500);
+    });    
+
+ </SCRIPT>
+      
+<DIV id="ad_cen"><!-- 广告位开始 --> <INS data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57" 
+data-revive-zoneid="71"></INS> <!-- 广告位结束 -->    </DIV>
+<DIV class="comment_class">
+<DIV class="panel_head" id="comment_title"><SPAN 
+class="see_comment">查看评论</SPAN><A name="comments"></A></DIV>
+<DIV id="comment_list"></DIV>
+<DIV id="comment_bar"></DIV>
+<DIV id="comment_form"></DIV>
+<DIV class="announce">* 以上用户言论只代表其个人观点，不代表CSDN网站的观点或立场<A name="reply"></A><A 
+name="quote"></A></DIV></DIV>
+<SCRIPT type="text/javascript">
+    var fileName = '6199958';
+    var commentscount = 2;
+    var islock = false
+</SCRIPT>
+ 
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/comment.js" type="text/javascript"></SCRIPT>
+     
+<DIV id="ad_bot"></DIV>
+<DIV id="report_dialog"></DIV>
+<DIV id="d-top" style="bottom: 60px;"><A title="快速回复" class="btn btn-top q-reply" 
+id="quick-reply" style="display: none;"><IMG alt="快速回复" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/blog-icon-reply.png"> 
+        </A>        <A title="返回顶部" class="btn btn-top backtop" id="d-top-a" 
+style="display: none;" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_huidaodingbu'])"><IMG 
+alt="TOP" 
+src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/top.png">     </A> 
+</DIV>
+<SCRIPT type="text/javascript">
+    $(function ()
+    {
+        $("#ad_frm_0").height("90px");
+        
+        setTimeout(function(){
+            $("#ad_frm_2").height("200px");
+        },1000);    
+    });
+  
+</SCRIPT>
+ 
+<STYLE type="text/css">
+    .tag_list
+    {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid #D7CBC1;
+        color: #000000;
+        font-size: 12px;
+        line-height: 20px;
+        list-style: none outside none;
+        margin: 10px 2% 0 1%;
+        padding: 1px;
+    }
+    .tag_list h5
+    {
+        background: none repeat scroll 0 0 #E0DBD3;
+        color: #47381C;
+        font-size: 12px;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 5px;
+        margin: 0;
+    }
+    .tag_list h5 a
+    {
+        color: #47381C;
+    }
+    .classify
+    {
+        margin: 10px 0;
+        padding: 4px 12px 8px;
+    }
+    .classify a
+    {
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+</STYLE>
+ 
+<DIV class="tag_list" style="display: none;"></DIV>
+<SCRIPT language="javascript" type="text/javascript">     
+      $(function(){
+              setTimeout(function(){
+                  $.get("/lgx040605112/svc/GetTagContent",function(data){
+                      $(".tag_list").html(data).show();
+                  });     
+              });
+          },500);                       
+ </SCRIPT>
+ 
+<DIV id="pop_win" style="background: 0px 0px rgb(255, 255, 255); border: 1px solid rgb(220, 220, 220); border-image: none; left: 630px; top: 222.5px; display: none; position: absolute; z-index: 10000; opacity: 1;"></DIV>
+<DIV id="popup_mask"></DIV>
+<STYLE>
+    #popup_mask
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 9999;
+        left: 0px;
+        top: 0px;
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+        display: none;
+    }
+
+</STYLE>
+ 
+<SCRIPT type="text/javascript">
+    $(function(){
+        setTimeout(function(){
+            $(".comment_body:contains('回复')").each(function(index,item){
+                var u=$(this).text().split('：')[0].toString().replace("回复","")
+                var thisComment=$(this);
+                if(u)
+                {
+                    $.getJSON("https://passport.csdn.net/get/nick?callback=?", {users: u}, function(a) {
+                        if(a!=null&&a.data!=null&&a.data.length>0)
+                        {
+                            nick=a.data[0].n; 
+                            if(u!=nick)
+                            {
+                                thisComment.text(thisComment.text().replace(u,nick));  
+                            }
+                        }       
+                    });  
+                }
+            });         
+
+        },200);  
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },5000);
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },10000);
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },15000);
+        
+        setTimeout(function(){
+            $("a img[src='http://js.tongji.linezing.com/stats.gif']").parent().css({"position":"absolute","left":"50%"});
+        },300);
+    });
+
+    function loginbox(){
+        var $logpop=$("#pop_win");
+        $logpop.html('<iframe src="https://passport.csdn.net/account/loginbox?service=http://static.blog.csdn.net/callback.htm" frameborder="0" height="600" width="400" scrolling="no"></iframe>');
+
+        $('#popup_mask').css({
+            opacity: 0.5,
+            width: $( document ).width() + 'px',
+            height:  $( document ).height() + 'px'
+        });
+        $('#popup_mask').css("display","block");
+ 
+        $logpop.css( {
+            top: ($( window ).height() - $logpop.height())/ 2  + $( window 
+       ).scrollTop() + 'px',
+            left:($( window ).width() - $logpop.width())/ 2
+        } );
+ 
+        setTimeout( function () {
+            $logpop.show();
+            $logpop.css( {
+                opacity: 1
+            } );
+        }, 200 );
+ 
+        $('#popup_mask').unbind("click");
+        $('#popup_mask').bind("click", function(){
+            $('#popup_mask').hide();
+            var $clopop = $("#pop_win");
+            $("#common_ask_div_sc").css("display","none");
+            $clopop.css( {
+                opacity: 0
+            } );
+            setTimeout( function () {
+                $clopop.hide();
+            }, 350 );
+            return false;
+        });
+    }   
+
+</SCRIPT>
+  
+<SCRIPT language="javascript" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/async_new.js" type="text/javascript"></SCRIPT>
+                              
+<DIV class="clear"></DIV></DIV></DIV>
+<DIV id="side">
+<DIV class="side">
+<DIV class="panel" id="panel_Profile">
+<UL class="panel_head"><SPAN>个人资料</SPAN></UL>
+<UL class="panel_body profile">
+  <DIV id="blog_userface"><A href="http://my.csdn.net/lgx040605112" target="_blank"><IMG 
+  title="访问我的空间" style="max-width: 90%;" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/1_lgx040605112.jpg"> 
+      </A>     <BR><SPAN><A class="user_name" href="http://my.csdn.net/lgx040605112" 
+  target="_blank">lgx040605112</A></SPAN></DIV>
+  <DIV class="interact"><A title="[加关注]" class="attent" id="span_add_follow" 
+  href="javascript:void(0);"></A>  <A title="[发私信]" class="letter" onclick="window.open('http://msg.csdn.net/letters/model?receiver=lgx040605112','_blank','height=350,width=700');_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_sixin'])" 
+  href="javascript:void(0);"></A>  </DIV>
+  <DIV id="blog_medal">
+  <DIV id="bms_box"></DIV></DIV>
+  <UL id="blog_rank">
+    <LI>访问：<SPAN>25122次</SPAN></LI>
+    <LI>积分：<SPAN>381</SPAN> </LI>
+    <LI>等级： <SPAN 
+    style="display: inline-block; position: relative; z-index: 1;"><IMG id="leveImg" 
+    style="vertical-align: middle;" alt="" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/blog2.png"> 
+                
+    <DIV id="smallTittle" style="border: 2px solid rgb(221, 221, 221); border-image: none; left: -24px; top: 25px; width: 101px; height: 32px; text-align: center; line-height: 32px; display: none; position: absolute; z-index: 999; background-color: rgb(255, 255, 255);">
+    <DIV style="left: 42%; top: -8px; width: 0px; height: 0px; border-right-color: transparent; border-bottom-color: rgb(234, 234, 234); border-left-color: transparent; border-right-width: 10px; border-bottom-width: 8px; border-left-width: 10px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; position: absolute;"></DIV> 
+               积分：381 </DIV></SPAN>  </LI>
+    <LI>排名：<SPAN>千里之外</SPAN></LI></UL>
+  <UL id="blog_statistics">
+    <LI>原创：<SPAN>11篇</SPAN></LI>
+    <LI>转载：<SPAN>7篇</SPAN></LI>
+    <LI>译文：<SPAN>1篇</SPAN></LI>
+    <LI>评论：<SPAN>2条</SPAN></LI></UL></UL></DIV>
+<DIV class="panel" id="panel_Search">
+<UL class="panel_head"><SPAN>文章搜索</SPAN></UL>
+<UL class="panel_body">
+  <FORM class="form_search" id="frmSearch" action="http://so.csdn.net/search" 
+  target="_blank"><SPAN><INPUT title="请输入关键字" class="blogsearch" id="inputSearch" type="text"></SPAN> 
+          <INPUT title="search in blog" id="btnSubmit" type="button" value="搜索"> 
+          <INPUT name="q" id="inputQ" type="hidden">         
+<INPUT name="t" type="hidden" value="blog">         <A id="btnSearchBlog" 
+  target="_blank"></A>         </FORM></UL></DIV>
+<SCRIPT type="text/javascript">
+    $(function () {
+        $("#btnSubmit").click(function () {           
+            search();
+        });
+
+        $("#frmSearch").submit(function () {
+            search();
+            return false;
+        });
+
+        function search()
+        {
+            var url = "http://so.csdn.net/so/search/s.do?q=" + encodeURIComponent($("#inputSearch").val()) + "&u=" + username + "&t=blog";
+            window.location.href = url;
+        }   
+    });
+</SCRIPT>
+
+<DIV class="panel" id="panel_Category"> 
+<UL class="panel_head"><SPAN>文章分类</SPAN></UL>
+<UL class="panel_body">
+  <LI><A onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); " 
+  href="http://blog.csdn.net/lgx040605112/article/category/783762">ASP.Net</A><SPAN>(5)</SPAN> 
+                  </LI>
+  <LI><A onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); " 
+  href="http://blog.csdn.net/lgx040605112/article/category/787594">C#</A><SPAN>(3)</SPAN> 
+                  </LI>
+  <LI><A onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); " 
+  href="http://blog.csdn.net/lgx040605112/article/category/757731">HTML</A><SPAN>(3)</SPAN> 
+                  </LI>
+  <LI><A onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); " 
+  href="http://blog.csdn.net/lgx040605112/article/category/792982">Javascript</A><SPAN>(3)</SPAN> 
+                  </LI>
+  <LI><A onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); " 
+  href="http://blog.csdn.net/lgx040605112/article/category/647166">SQL server 
+  2005数据库</A><SPAN>(4)</SPAN>                 </LI>
+  <LI><A onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); " 
+  href="http://blog.csdn.net/lgx040605112/article/category/647170">Windows 
+  Form</A><SPAN>(1)</SPAN>                 </LI>
+  <LI><A onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); " 
+  href="http://blog.csdn.net/lgx040605112/article/category/647167">WPF</A><SPAN>(0)</SPAN> 
+                  </LI>
+  <LI><A onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); " 
+  href="http://blog.csdn.net/lgx040605112/article/category/826890">其他</A><SPAN>(1)</SPAN> 
+                  </LI>
+  <LI><A onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); " 
+  href="http://blog.csdn.net/lgx040605112/article/category/647171">经典算法</A><SPAN>(1)</SPAN> 
+                  </LI></UL></DIV>
+<DIV class="panel" id="panel_Archive">
+<UL class="panel_head"><SPAN>文章存档</SPAN></UL>
+<UL class="panel_body">
+  <DIV id="archive_list"><!--归档统计--> 
+  <LI><A 
+  href="http://blog.csdn.net/lgx040605112/article/month/2013/05">2013年05月</A><SPAN>(2)</SPAN></LI>
+  <LI><A 
+  href="http://blog.csdn.net/lgx040605112/article/month/2012/08">2012年08月</A><SPAN>(1)</SPAN></LI>
+  <LI><A 
+  href="http://blog.csdn.net/lgx040605112/article/month/2012/05">2012年05月</A><SPAN>(1)</SPAN></LI>
+  <LI><A 
+  href="http://blog.csdn.net/lgx040605112/article/month/2011/09">2011年09月</A><SPAN>(1)</SPAN></LI>
+  <LI><A 
+  href="http://blog.csdn.net/lgx040605112/article/month/2011/08">2011年08月</A><SPAN>(1)</SPAN></LI>
+  <LI><A 
+  href="http://blog.csdn.net/lgx040605112/article/month/2011/06">2011年06月</A><SPAN>(1)</SPAN></LI>
+  <LI><A 
+  href="http://blog.csdn.net/lgx040605112/article/month/2011/05">2011年05月</A><SPAN>(1)</SPAN></LI>
+  <LI><A 
+  href="http://blog.csdn.net/lgx040605112/article/month/2011/03">2011年03月</A><SPAN>(4)</SPAN></LI>
+  <LI><A 
+  href="http://blog.csdn.net/lgx040605112/article/month/2011/02">2011年02月</A><SPAN>(2)</SPAN></LI>
+  <LI><A 
+  href="http://blog.csdn.net/lgx040605112/article/month/2011/01">2011年01月</A><SPAN>(1)</SPAN></LI>
+  <LI><A 
+  href="http://blog.csdn.net/lgx040605112/article/month/2010/11">2010年11月</A><SPAN>(3)</SPAN></LI>
+  <LI><A 
+  href="http://blog.csdn.net/lgx040605112/article/month/2010/01">2010年01月</A><SPAN>(1)</SPAN></LI></DIV></UL></DIV>
+<DIV class="panel" id="hotarticls">
+<UL class="panel_head"><SPAN>阅读排行    </SPAN> </UL>
+<UL class="panel_body itemlist">
+  <LI><A title="Reflector使用详解" href="http://blog.csdn.net/lgx040605112/article/details/6199958">Reflector使用详解</A><SPAN>(11900)</SPAN> 
+  </LI>
+  <LI><A title="使用JS在textarea在光标处插入内容" href="http://blog.csdn.net/lgx040605112/article/details/6763077">使用JS在textarea在光标处插入内容</A><SPAN>(1889)</SPAN> 
+  </LI>
+  <LI><A title="C#中文排序（拼音和笔画）" href="http://blog.csdn.net/lgx040605112/article/details/6042316">C#中文排序（拼音和笔画）</A><SPAN>(1617)</SPAN> 
+  </LI>
+  <LI><A title="codeproject中的控件源码" href="http://blog.csdn.net/lgx040605112/article/details/6224070">codeproject中的控件源码</A><SPAN>(1244)</SPAN> 
+  </LI>
+  <LI><A title="C#有向图拓扑排序" href="http://blog.csdn.net/lgx040605112/article/details/5247775">C#有向图拓扑排序</A><SPAN>(1235)</SPAN> 
+  </LI>
+  <LI><A title="Intelligencia.UrlRewriter.dll实现URL重写 " href="http://blog.csdn.net/lgx040605112/article/details/6179350">Intelligencia.UrlRewriter.dll实现URL重写 
+  </A><SPAN>(548)</SPAN> </LI>
+  <LI><A title="16 款基于jQuery的图片缩放效果插件推荐" href="http://blog.csdn.net/lgx040605112/article/details/7845911">16 
+  款基于jQuery的图片缩放效果插件推荐</A><SPAN>(446)</SPAN> </LI>
+  <LI><A title="定义游标时使用动态SQL" href="http://blog.csdn.net/lgx040605112/article/details/6039069">定义游标时使用动态SQL</A><SPAN>(284)</SPAN> 
+  </LI>
+  <LI><A title="免费才是王道：盘点开发者须知的25个免费数据可视化工具" href="http://blog.csdn.net/lgx040605112/article/details/8909447">免费才是王道：盘点开发者须知的25个免费数据可视化工具</A><SPAN>(268)</SPAN> 
+  </LI>
+  <LI><A title="SQL注入解决方案" href="http://blog.csdn.net/lgx040605112/article/details/6126548">SQL注入解决方案</A><SPAN>(252)</SPAN> 
+  </LI></UL></DIV>
+<DIV class="panel" id="hotarticls2">
+<UL class="panel_head"><SPAN>评论排行</SPAN></UL>
+<UL class="panel_body itemlist">
+  <LI><A title="Reflector使用详解" href="http://blog.csdn.net/lgx040605112/article/details/6199958">Reflector使用详解</A><SPAN>(2)</SPAN> 
+  </LI>
+  <LI><A title="开发者需知的10类工具" href="http://blog.csdn.net/lgx040605112/article/details/8909510">开发者需知的10类工具</A><SPAN>(0)</SPAN> 
+  </LI>
+  <LI><A title="IE6/IE7/IE8/Firefox/Chrome/Safari的CSS hack兼容一览表" href="http://blog.csdn.net/lgx040605112/article/details/6228565">IE6/IE7/IE8/Firefox/Chrome/Safari的CSS 
+  hack兼容一览表</A><SPAN>(0)</SPAN> </LI>
+  <LI><A title="Javascript 读cookie " href="http://blog.csdn.net/lgx040605112/article/details/6228159">Javascript 
+  读cookie </A><SPAN>(0)</SPAN> </LI>
+  <LI><A title="codeproject中的控件源码" href="http://blog.csdn.net/lgx040605112/article/details/6224070">codeproject中的控件源码</A><SPAN>(0)</SPAN> 
+  </LI>
+  <LI><A title="Intelligencia.UrlRewriter.dll实现URL重写 " href="http://blog.csdn.net/lgx040605112/article/details/6179350">Intelligencia.UrlRewriter.dll实现URL重写 
+  </A><SPAN>(0)</SPAN> </LI>
+  <LI><A title="SQL注入解决方案" href="http://blog.csdn.net/lgx040605112/article/details/6126548">SQL注入解决方案</A><SPAN>(0)</SPAN> 
+  </LI>
+  <LI><A title="C#中文排序（拼音和笔画）" href="http://blog.csdn.net/lgx040605112/article/details/6042316">C#中文排序（拼音和笔画）</A><SPAN>(0)</SPAN> 
+  </LI>
+  <LI><A title="定义游标时使用动态SQL" href="http://blog.csdn.net/lgx040605112/article/details/6039069">定义游标时使用动态SQL</A><SPAN>(0)</SPAN> 
+  </LI>
+  <LI><A title="去掉链接中的虚线边框" href="http://blog.csdn.net/lgx040605112/article/details/6032697">去掉链接中的虚线边框</A><SPAN>(0)</SPAN> 
+  </LI></UL></DIV>
+<DIV class="panel tracking-ad" id="homepageArticles" data-mod="popu_4">
+<UL class="panel_head"><SPAN>推荐文章</SPAN></UL>
+<UL class="panel_body" id="ad_commend">
+  <UL>
+    <LI><A href="http://blog.csdn.net/evan_man/article/details/51328628" target="_blank">*EventBus的使用与深入学习</A></LI>
+    <LI><A href="http://blog.csdn.net/xuehuayous/article/details/51324656" 
+    target="_blank">*Android 拍照、选择图片并裁剪</A></LI>
+    <LI><A href="http://blog.csdn.net/u013831257/article/details/50784565" 
+    target="_blank">* 安卓自定义View进阶-Path基本操作</A></LI>
+    <LI><A href="http://blog.csdn.net/je930502/article/details/50650231" target="_blank">*Ceph架构</A></LI>
+    <LI><A href="http://blog.csdn.net/gj19890923/article/details/51333899" 
+    target="_blank">*neutron-server的启动流程(一)</A></LI>
+    <LI><A href="http://blog.csdn.net/xueshanhaizi/article/details/51321382" 
+    target="_blank">*Android事件分发机制浅析</A></LI></UL></UL></DIV>
+<DIV class="panel" id="newcomments">
+<UL class="panel_head"><SPAN>最新评论</SPAN></UL>
+<UL class="panel_body itemlist">
+  <LI><A href="http://blog.csdn.net/lgx040605112/article/details/6199958#comments">Reflector使用详解</A> 
+      
+  <P style="margin: 0px;"><A class="user_name" href="http://blog.csdn.net/ironxue">ironxue</A>: 
+  好工具啊，顶了。只不过插件的地址失效了。     </P></LI>
+  <LI><A href="http://blog.csdn.net/lgx040605112/article/details/6199958#comments">Reflector使用详解</A> 
+      
+  <P style="margin: 0px;"><A class="user_name" href="http://blog.csdn.net/yelinhappy21">yelinhappy21</A>: 
+      </P></LI></UL></DIV></DIV>
+<DIV class="clear"></DIV></DIV>
+<DIV class="clear"></DIV></DIV>
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/cnick.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/newblog.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/showblogmedal.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/JavaScript1.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">document.write("<img src=http://counter.csdn.net/pv.aspx?id=24 border=0 width=0 height=0>");</SCRIPT>
+ 
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/counter.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/ad-blog.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+    $(function () {
+        function __get_code_toolbar(snippet_id) {
+            return $("<span class='tracking-ad' data-mod='popu_167'><a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "' target='_blank' title='在CODE上查看代码片'  style='text-indent:0;'><img src='https://code.csdn.net/assets/CODE_ico.png' width=12 height=12 alt='在CODE上查看代码片' style='position:relative;top:1px;left:2px;'/></a></span>"
+                    + "<span class='tracking-ad' data-mod='popu_170'><a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "/fork' target='_blank' title='派生到我的代码片' style='text-indent:0;'><img src='https://code.csdn.net/assets/ico_fork.svg' width=12 height=12 alt='派生到我的代码片' style='position:relative;top:2px;left:2px;'/></a></span>");
+        }
+        
+        $("[code_snippet_id]").each(function () {
+            __s_id = $(this).attr("code_snippet_id");
+            if (__s_id != null && __s_id != "" && __s_id != 0 && parseInt(__s_id) > 70020) {
+                __code_tool = __get_code_toolbar(__s_id);
+                $(this).prev().find(".tools").append(__code_tool);
+            }
+        });
+
+        $(".bar").show();
+    });
+</SCRIPT>
+     </DIV><!--new top-->         
+<SCRIPT id="csdn-toolbar-id" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/toolbar.js" type="text/javascript" subcount="5" count="5" wrapid="note1" btnid="header_notice_num"></SCRIPT>
+      <!--new top-->        <LINK href="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/ask_float_block.css" 
+rel="stylesheet" type="text/css">     
+<SCRIPT language="JavaScript" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/wmd.js" type="text/javascript"></SCRIPT>
+     
+<SCRIPT language="JavaScript" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/showdown.js" type="text/javascript"></SCRIPT>
+     
+<SCRIPT language="JavaScript" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/prettify.js" type="text/javascript"></SCRIPT>
+     
+<SCRIPT language="JavaScript" src="Reflector使用详解%20-%20我的专栏%20-%20博客频道%20-%20CSDN_NET_files/ask_float_block.js" type="text/javascript"></SCRIPT>
+      
+<DIV id="a52b5334d" style="width: 1px; height: 1px; display: none;">
+<SCRIPT id="adJs52b5334"></SCRIPT>
+                     
+<SCRIPT>document.getElementById("adJs52b5334").src = "http://ads.csdn.net/js/opt/52b5334.js?t=" + Math.random();</SCRIPT>
+    </DIV></BODY></HTML>

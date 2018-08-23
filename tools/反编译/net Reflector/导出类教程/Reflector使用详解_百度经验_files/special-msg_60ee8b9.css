@@ -1,0 +1,123 @@
+.dialog-dubangbang {
+	background: none; border: 0px currentColor; border-image: none;
+}
+.dialog-dubangbang .ui-widget-header {
+	height: 0px; display: none;
+}
+.dialog-dubangbang .ui-dialog-buttonpane {
+	height: 0px; display: none;
+}
+.dialog-dubangbang .ui-dialog-content {
+	overflow: visible;
+}
+.dialog-dubangbang header {
+	background: rgb(115, 195, 114); padding: 15px 0px; position: relative;
+}
+.dialog-dubangbang h1 {
+	text-align: center; color: rgb(255, 255, 255); font-size: 26px;
+}
+.dialog-dubangbang .content {
+	background: rgb(255, 255, 255); padding: 20px 0px; width: 100%; text-align: center; line-height: 1.5; font-size: 18px;
+}
+.dialog-dubangbang span {
+	color: rgb(255, 108, 0);
+}
+.dialog-dubangbang em {
+	color: rgb(255, 108, 0);
+}
+.dialog-dubangbang em {
+	font-style: normal;
+}
+.dialog-dubangbang span {
+	padding: 0px 2px; font-size: 24px;
+}
+.dialog-dubangbang .close-btn {
+	background: rgb(103, 182, 110); margin: 15px auto 0px; padding: 10px 0px; border-radius: 5px; width: 164px; text-align: center; color: rgb(255, 255, 255); font-size: 22px;
+}
+.dialog-dubangbang .close-x {
+	top: 50%; width: 24px; height: 25px; right: 15px; margin-top: -13px; position: absolute; background-repeat: no-repeat;
+}
+.dialog-dubangbang .i-smile {
+	left: -40px; top: -50px; width: 211px; height: 134px; position: absolute; background-repeat: no-repeat;
+}
+.income-share-dialog {
+	border: 0px currentColor; border-image: none;
+}
+.income-share-dialog a {
+	outline: 0px;
+}
+.income-share-dialog .ui-dialog-titlebar {
+	background: rgb(57, 179, 73); color: rgb(255, 255, 255);
+}
+.income-share-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+	width: 13px; height: 13px; background-repeat: no-repeat;
+}
+.income-share-dialog .ui-dialog-content {
+	padding: 0px; font-size: 14px; position: relative;
+}
+.income-share-dialog .ui-dialog-content .sun {
+	left: 50%; top: -20px; width: 181px; height: 182px; margin-left: -90px; position: absolute; background-repeat: no-repeat;
+}
+.income-share-dialog .ui-dialog-content .money {
+	left: 0px; top: 130px; width: 100%; text-align: center; position: absolute;
+}
+.income-share-dialog .ui-dialog-content .money span {
+	margin: 0px 5px; height: 26px; color: rgb(249, 170, 51); line-height: 26px; font-size: 26px;
+}
+.income-share-dialog .ui-dialog-content .share-container {
+	background: rgb(244, 244, 244); padding: 0px; width: 100%; height: 130px; text-align: center; bottom: 0px; border-top-color: rgb(232, 232, 232); border-top-width: 1px; border-top-style: solid; position: absolute;
+}
+.income-share-dialog .ui-dialog-content .share-container .bdsharebuttonbox {
+	margin: 20px auto 0px; width: 160px;
+}
+.income-share-dialog .ui-dialog-content .share-container .desc {
+	margin-top: 20px;
+}
+.income-share-dialog .ui-dialog-content .share-container .desc a {
+	color: rgb(81, 154, 242);
+}
+.income-share-dialog .ui-dialog-content .share-container .desc a:link {
+	color: rgb(81, 154, 242);
+}
+.income-share-dialog .ui-dialog-content .share-container .bdshare-button-style0-32 .bds_tsina {
+	background-position: 0px -104px !important;
+}
+.income-share-dialog .ui-dialog-content .share-container .bdshare-button-style0-32 .bds_qzone {
+	background-position: 0px -52px !important;
+}
+.income-share-dialog .ui-dialog-content .share-container .bdshare-button-style0-32 .bds_tqq {
+	background-position: 0px -260px !important;
+}
+.income-share-dialog .ui-dialog-buttonpane {
+	height: 0px; display: none;
+}
+#bdshare_weixin_qrcode_dialog {
+	z-index: 111001;
+}
+.bdshare_popup_box {
+	z-index: 111000;
+}
+.dialog-dubangbang .close-x {
+	background-position: -187px 0px;
+}
+.dialog-dubangbang .i-smile {
+	background-position: 0px -28px;
+}
+.income-share-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+	background-position: -198px -165px;
+}
+.income-share-dialog .ui-dialog-content .sun {
+	background-position: -30px -181px;
+}
+.dialog-dubangbang .close-x {
+	background-image: url("http://exp.bdstatic.com/static/common-jquery/pkg/special-msg_z_ad9528a.png");
+}
+.dialog-dubangbang .i-smile {
+	background-image: url("http://exp.bdstatic.com/static/common-jquery/pkg/special-msg_z_ad9528a.png");
+}
+.income-share-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+	background-image: url("http://exp.bdstatic.com/static/common-jquery/pkg/special-msg_z_ad9528a.png");
+}
+.income-share-dialog .ui-dialog-content .sun {
+	background-image: url("http://exp.bdstatic.com/static/common-jquery/pkg/special-msg_z_ad9528a.png");
+}

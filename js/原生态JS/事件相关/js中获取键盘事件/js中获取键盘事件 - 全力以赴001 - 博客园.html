@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://www.cnblogs.com/huzi007/p/3866272.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>js中获取键盘事件 - 全力以赴001 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./js中获取键盘事件 - 全力以赴001 - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./js中获取键盘事件 - 全力以赴001 - 博客园_files/bundle-summerGarden.css">
+<link id="mobile-style" media="only screen and (max-width: 768px)" type="text/css" rel="stylesheet" href="./js中获取键盘事件 - 全力以赴001 - 博客园_files/bundle-summerGarden-mobile.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/huzi007/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/huzi007/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/huzi007/wlwmanifest.xml">
+<script async="" src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/analytics.js.下载"></script><script type="text/javascript" src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/encoder.js.下载"></script><script src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/jquery.js.下载" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'huzi007', cb_enable_mathjax=false;var isLogined=true;</script>
+<script src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/blog-common.js.下载" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/huzi007/"><img id="blogLogo" src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/huzi007/">全力以赴001</a></h1>
+<h2></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+	<li><a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a></li>
+	<li><a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/huzi007/">首页</a></li>
+	<li><a href="http://news.cnblogs.com/">新闻</a></li>
+	<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+	<li><a id="blog_nav_contact" accesskey="9" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E5%85%A8%E5%8A%9B%E4%BB%A5%E8%B5%B4001">联系</a></li>
+	<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+	<li><a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/huzi007/rss">订阅</a>
+	<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/huzi007/rss"><img src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/xml.gif" alt="订阅"></a></li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<!--done-->
+随笔- 470&nbsp;
+文章- 0&nbsp;
+评论- 35&nbsp;
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/huzi007/p/3866272.html">js中获取键盘事件</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><div class="cnblogs_code"><div>按 Ctrl+C 复制代码</div><textarea style="width: 1085.78px; height: 288.622px; font-family: &quot;Courier New&quot;; font-size: 12px; line-height: 1.5;"></textarea><div>按 Ctrl+C 复制代码</div></div>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #008080;">  1</span> <span style="color: #000000;">js 里面的键盘事件经常用到，所以收集了键盘事件对应的键码来分享下：
+</span><span style="color: #008080;">  2</span> keyCode 8 =<span style="color: #000000;"> BackSpace BackSpace
+</span><span style="color: #008080;">  3</span> keyCode 9 =<span style="color: #000000;"> Tab Tab
+</span><span style="color: #008080;">  4</span> keyCode 12 =<span style="color: #000000;"> Clear
+</span><span style="color: #008080;">  5</span> keyCode 13 =<span style="color: #000000;"> Enter
+</span><span style="color: #008080;">  6</span> keyCode 16 =<span style="color: #000000;"> Shift_L
+</span><span style="color: #008080;">  7</span> keyCode 17 =<span style="color: #000000;"> Control_L
+</span><span style="color: #008080;">  8</span> keyCode 18 =<span style="color: #000000;"> Alt_L
+</span><span style="color: #008080;">  9</span> keyCode 19 =<span style="color: #000000;"> Pause
+</span><span style="color: #008080;"> 10</span> keyCode 20 =<span style="color: #000000;"> Caps_Lock
+</span><span style="color: #008080;"> 11</span> keyCode 27 =<span style="color: #000000;"> Escape Escape
+</span><span style="color: #008080;"> 12</span> keyCode 32 =<span style="color: #000000;"> space
+</span><span style="color: #008080;"> 13</span> keyCode 33 =<span style="color: #000000;"> Prior
+</span><span style="color: #008080;"> 14</span> keyCode 34 =<span style="color: #000000;"> Next
+</span><span style="color: #008080;"> 15</span> keyCode 35 =<span style="color: #000000;"> End
+</span><span style="color: #008080;"> 16</span> keyCode 36 =<span style="color: #000000;"> Home
+</span><span style="color: #008080;"> 17</span> keyCode 37 =<span style="color: #000000;"> Left
+</span><span style="color: #008080;"> 18</span> keyCode 38 =<span style="color: #000000;"> Up
+</span><span style="color: #008080;"> 19</span> keyCode 39 =<span style="color: #000000;"> Right
+</span><span style="color: #008080;"> 20</span> keyCode 40 =<span style="color: #000000;"> Down
+</span><span style="color: #008080;"> 21</span> keyCode 41 =<span style="color: #000000;"> Select
+</span><span style="color: #008080;"> 22</span> keyCode 42 =<span style="color: #000000;"> Print
+</span><span style="color: #008080;"> 23</span> keyCode 43 =<span style="color: #000000;"> Execute
+</span><span style="color: #008080;"> 24</span> keyCode 45 =<span style="color: #000000;"> Insert
+</span><span style="color: #008080;"> 25</span> keyCode 46 =<span style="color: #000000;"> Delete
+</span><span style="color: #008080;"> 26</span> keyCode 47 =<span style="color: #000000;"> Help
+</span><span style="color: #008080;"> 27</span> keyCode 48 = 0<span style="color: #000000;"> equal braceright
+</span><span style="color: #008080;"> 28</span> keyCode 49 = 1<span style="color: #000000;"> exclam onesuperior
+</span><span style="color: #008080;"> 29</span> keyCode 50 = 2<span style="color: #000000;"> quotedbl twosuperior
+</span><span style="color: #008080;"> 30</span> keyCode 51 = 3<span style="color: #000000;"> section threesuperior
+</span><span style="color: #008080;"> 31</span> keyCode 52 = 4<span style="color: #000000;"> dollar
+</span><span style="color: #008080;"> 32</span> keyCode 53 = 5<span style="color: #000000;"> percent
+</span><span style="color: #008080;"> 33</span> keyCode 54 = 6<span style="color: #000000;"> ampersand
+</span><span style="color: #008080;"> 34</span> keyCode 55 = 7<span style="color: #000000;"> slash braceleft
+</span><span style="color: #008080;"> 35</span> keyCode 56 = 8<span style="color: #000000;"> parenleft bracketleft
+</span><span style="color: #008080;"> 36</span> keyCode 57 = 9<span style="color: #000000;"> parenright bracketright
+</span><span style="color: #008080;"> 37</span> keyCode 65 =<span style="color: #000000;"> a A
+</span><span style="color: #008080;"> 38</span> keyCode 66 =<span style="color: #000000;"> b B
+</span><span style="color: #008080;"> 39</span> keyCode 67 =<span style="color: #000000;"> c C
+</span><span style="color: #008080;"> 40</span> keyCode 68 =<span style="color: #000000;"> d D
+</span><span style="color: #008080;"> 41</span> keyCode 69 =<span style="color: #000000;"> e E EuroSign
+</span><span style="color: #008080;"> 42</span> keyCode 70 =<span style="color: #000000;"> f F
+</span><span style="color: #008080;"> 43</span> keyCode 71 =<span style="color: #000000;"> g G
+</span><span style="color: #008080;"> 44</span> keyCode 72 =<span style="color: #000000;"> h H
+</span><span style="color: #008080;"> 45</span> keyCode 73 =<span style="color: #000000;"> i I
+</span><span style="color: #008080;"> 46</span> keyCode 74 =<span style="color: #000000;"> j J
+</span><span style="color: #008080;"> 47</span> keyCode 75 =<span style="color: #000000;"> k K
+</span><span style="color: #008080;"> 48</span> keyCode 76 =<span style="color: #000000;"> l L
+</span><span style="color: #008080;"> 49</span> keyCode 77 =<span style="color: #000000;"> m M mu
+</span><span style="color: #008080;"> 50</span> keyCode 78 =<span style="color: #000000;"> n N
+</span><span style="color: #008080;"> 51</span> keyCode 79 =<span style="color: #000000;"> o O
+</span><span style="color: #008080;"> 52</span> keyCode 80 =<span style="color: #000000;"> p P
+</span><span style="color: #008080;"> 53</span> keyCode 81 =<span style="color: #000000;"> q Q at
+</span><span style="color: #008080;"> 54</span> keyCode 82 =<span style="color: #000000;"> r R
+</span><span style="color: #008080;"> 55</span> keyCode 83 =<span style="color: #000000;"> s S
+</span><span style="color: #008080;"> 56</span> keyCode 84 =<span style="color: #000000;"> t T
+</span><span style="color: #008080;"> 57</span> keyCode 85 =<span style="color: #000000;"> u U
+</span><span style="color: #008080;"> 58</span> keyCode 86 =<span style="color: #000000;"> v V
+</span><span style="color: #008080;"> 59</span> keyCode 87 =<span style="color: #000000;"> w W
+</span><span style="color: #008080;"> 60</span> keyCode 88 =<span style="color: #000000;"> x X
+</span><span style="color: #008080;"> 61</span> keyCode 89 =<span style="color: #000000;"> y Y
+</span><span style="color: #008080;"> 62</span> keyCode 90 =<span style="color: #000000;"> z Z
+</span><span style="color: #008080;"> 63</span> keyCode 96 =<span style="color: #000000;"> KP_0 KP_0
+</span><span style="color: #008080;"> 64</span> keyCode 97 =<span style="color: #000000;"> KP_1 KP_1
+</span><span style="color: #008080;"> 65</span> keyCode 98 =<span style="color: #000000;"> KP_2 KP_2
+</span><span style="color: #008080;"> 66</span> keyCode 99 =<span style="color: #000000;"> KP_3 KP_3
+</span><span style="color: #008080;"> 67</span> keyCode 100 =<span style="color: #000000;"> KP_4 KP_4
+</span><span style="color: #008080;"> 68</span> keyCode 101 =<span style="color: #000000;"> KP_5 KP_5
+</span><span style="color: #008080;"> 69</span> keyCode 102 =<span style="color: #000000;"> KP_6 KP_6
+</span><span style="color: #008080;"> 70</span> keyCode 103 =<span style="color: #000000;"> KP_7 KP_7
+</span><span style="color: #008080;"> 71</span> keyCode 104 =<span style="color: #000000;"> KP_8 KP_8
+</span><span style="color: #008080;"> 72</span> keyCode 105 =<span style="color: #000000;"> KP_9 KP_9
+</span><span style="color: #008080;"> 73</span> keyCode 106 =<span style="color: #000000;"> KP_Multiply KP_Multiply
+</span><span style="color: #008080;"> 74</span> keyCode 107 =<span style="color: #000000;"> KP_Add KP_Add
+</span><span style="color: #008080;"> 75</span> keyCode 108 =<span style="color: #000000;"> KP_Separator KP_Separator
+</span><span style="color: #008080;"> 76</span> keyCode 109 =<span style="color: #000000;"> KP_Subtract KP_Subtract
+</span><span style="color: #008080;"> 77</span> keyCode 110 =<span style="color: #000000;"> KP_Decimal KP_Decimal
+</span><span style="color: #008080;"> 78</span> keyCode 111 =<span style="color: #000000;"> KP_Divide KP_Divide
+</span><span style="color: #008080;"> 79</span> keyCode 112 =<span style="color: #000000;"> F1
+</span><span style="color: #008080;"> 80</span> keyCode 113 =<span style="color: #000000;"> F2
+</span><span style="color: #008080;"> 81</span> keyCode 114 =<span style="color: #000000;"> F3
+</span><span style="color: #008080;"> 82</span> keyCode 115 =<span style="color: #000000;"> F4
+</span><span style="color: #008080;"> 83</span> keyCode 116 =<span style="color: #000000;"> F5
+</span><span style="color: #008080;"> 84</span> keyCode 117 =<span style="color: #000000;"> F6
+</span><span style="color: #008080;"> 85</span> keyCode 118 =<span style="color: #000000;"> F7
+</span><span style="color: #008080;"> 86</span> keyCode 119 =<span style="color: #000000;"> F8
+</span><span style="color: #008080;"> 87</span> keyCode 120 =<span style="color: #000000;"> F9
+</span><span style="color: #008080;"> 88</span> keyCode 121 =<span style="color: #000000;"> F10
+</span><span style="color: #008080;"> 89</span> keyCode 122 =<span style="color: #000000;"> F11
+</span><span style="color: #008080;"> 90</span> keyCode 123 =<span style="color: #000000;"> F12
+</span><span style="color: #008080;"> 91</span> keyCode 124 =<span style="color: #000000;"> F13
+</span><span style="color: #008080;"> 92</span> keyCode 125 =<span style="color: #000000;"> F14
+</span><span style="color: #008080;"> 93</span> keyCode 126 =<span style="color: #000000;"> F15
+</span><span style="color: #008080;"> 94</span> keyCode 127 =<span style="color: #000000;"> F16
+</span><span style="color: #008080;"> 95</span> keyCode 128 =<span style="color: #000000;"> F17
+</span><span style="color: #008080;"> 96</span> keyCode 129 =<span style="color: #000000;"> F18
+</span><span style="color: #008080;"> 97</span> keyCode 130 =<span style="color: #000000;"> F19
+</span><span style="color: #008080;"> 98</span> keyCode 131 =<span style="color: #000000;"> F20
+</span><span style="color: #008080;"> 99</span> keyCode 132 =<span style="color: #000000;"> F21
+</span><span style="color: #008080;">100</span> keyCode 133 =<span style="color: #000000;"> F22
+</span><span style="color: #008080;">101</span> keyCode 134 =<span style="color: #000000;"> F23
+</span><span style="color: #008080;">102</span> keyCode 135 =<span style="color: #000000;"> F24
+</span><span style="color: #008080;">103</span> keyCode 136 =<span style="color: #000000;"> Num_Lock
+</span><span style="color: #008080;">104</span> keyCode 137 =<span style="color: #000000;"> Scroll_Lock
+</span><span style="color: #008080;">105</span> keyCode 187 =<span style="color: #000000;"> acute grave
+</span><span style="color: #008080;">106</span> keyCode 188 =<span style="color: #000000;"> comma semicolon
+</span><span style="color: #008080;">107</span> keyCode 189 =<span style="color: #000000;"> minus underscore
+</span><span style="color: #008080;">108</span> keyCode 190 =<span style="color: #000000;"> period colon
+</span><span style="color: #008080;">109</span> keyCode 192 =<span style="color: #000000;"> numbersign apostrophe
+</span><span style="color: #008080;">110</span> keyCode 210 =<span style="color: #000000;"> plusminus hyphen macron
+</span><span style="color: #008080;">111</span> keyCode 211 =
+<span style="color: #008080;">112</span> keyCode 212 =<span style="color: #000000;"> copyright registered
+</span><span style="color: #008080;">113</span> keyCode 213 =<span style="color: #000000;"> guillemotleft guillemotright
+</span><span style="color: #008080;">114</span> keyCode 214 =<span style="color: #000000;"> masculine ordfeminine
+</span><span style="color: #008080;">115</span> keyCode 215 =<span style="color: #000000;"> ae AE
+</span><span style="color: #008080;">116</span> keyCode 216 =<span style="color: #000000;"> cent yen
+</span><span style="color: #008080;">117</span> keyCode 217 =<span style="color: #000000;"> questiondown exclamdown
+</span><span style="color: #008080;">118</span> keyCode 218 =<span style="color: #000000;"> onequarter onehalf threequarters
+</span><span style="color: #008080;">119</span> keyCode 220 =<span style="color: #000000;"> less greater bar
+</span><span style="color: #008080;">120</span> keyCode 221 =<span style="color: #000000;"> plus asterisk asciitilde
+</span><span style="color: #008080;">121</span> keyCode 227 =<span style="color: #000000;"> multiply division
+</span><span style="color: #008080;">122</span> keyCode 228 =<span style="color: #000000;"> acircumflex Acircumflex
+</span><span style="color: #008080;">123</span> keyCode 229 =<span style="color: #000000;"> ecircumflex Ecircumflex
+</span><span style="color: #008080;">124</span> keyCode 230 =<span style="color: #000000;"> icircumflex Icircumflex
+</span><span style="color: #008080;">125</span> keyCode 231 =<span style="color: #000000;"> ocircumflex Ocircumflex
+</span><span style="color: #008080;">126</span> keyCode 232 =<span style="color: #000000;"> ucircumflex Ucircumflex
+</span><span style="color: #008080;">127</span> keyCode 233 =<span style="color: #000000;"> ntilde Ntilde
+</span><span style="color: #008080;">128</span> keyCode 234 =<span style="color: #000000;"> yacute Yacute
+</span><span style="color: #008080;">129</span> keyCode 235 =<span style="color: #000000;"> oslash Ooblique
+</span><span style="color: #008080;">130</span> keyCode 236 =<span style="color: #000000;"> aring Aring
+</span><span style="color: #008080;">131</span> keyCode 237 =<span style="color: #000000;"> ccedilla Ccedilla
+</span><span style="color: #008080;">132</span> keyCode 238 =<span style="color: #000000;"> thorn THORN
+</span><span style="color: #008080;">133</span> keyCode 239 =<span style="color: #000000;"> eth ETH
+</span><span style="color: #008080;">134</span> keyCode 240 =<span style="color: #000000;"> diaeresis cedilla currency
+</span><span style="color: #008080;">135</span> keyCode 241 =<span style="color: #000000;"> agrave Agrave atilde Atilde
+</span><span style="color: #008080;">136</span> keyCode 242 =<span style="color: #000000;"> egrave Egrave
+</span><span style="color: #008080;">137</span> keyCode 243 =<span style="color: #000000;"> igrave Igrave
+</span><span style="color: #008080;">138</span> keyCode 244 =<span style="color: #000000;"> ograve Ograve otilde Otilde
+</span><span style="color: #008080;">139</span> keyCode 245 =<span style="color: #000000;"> ugrave Ugrave
+</span><span style="color: #008080;">140</span> keyCode 246 =<span style="color: #000000;"> adiaeresis Adiaeresis
+</span><span style="color: #008080;">141</span> keyCode 247 =<span style="color: #000000;"> ediaeresis Ediaeresis
+</span><span style="color: #008080;">142</span> keyCode 248 =<span style="color: #000000;"> idiaeresis Idiaeresis
+</span><span style="color: #008080;">143</span> keyCode 249 =<span style="color: #000000;"> odiaeresis Odiaeresis
+</span><span style="color: #008080;">144</span> keyCode 250 =<span style="color: #000000;"> udiaeresis Udiaeresis
+</span><span style="color: #008080;">145</span> keyCode 251 =<span style="color: #000000;"> ssharp question backslash
+</span><span style="color: #008080;">146</span> keyCode 252 =<span style="color: #000000;"> asciicircum degree
+</span><span style="color: #008080;">147</span> keyCode 253 = 3<span style="color: #000000;"> sterling
+</span><span style="color: #008080;">148</span> keyCode 254 =<span style="color: #000000;"> Mode_switch
+</span><span style="color: #008080;">149</span> <span style="color: #000000;">使用event对象的keyCode属性判断输入的键值
+</span><span style="color: #008080;">150</span> eg：<span style="color: #0000ff;">if</span>(event.keyCode==13)alert(“enter!<span style="color: #000000;">”);
+</span><span style="color: #008080;">151</span> <span style="color: #000000;">键值对应表
+</span><span style="color: #008080;">152</span> A　　0X65 　U 　　0X85
+<span style="color: #008080;">153</span> B　　0X66　 V　　 0X86
+<span style="color: #008080;">154</span> C　　0X67　 W　　 0X87
+<span style="color: #008080;">155</span> D　　0X68　 X 　　0X88
+<span style="color: #008080;">156</span> E　　0X69　 Y　　 0X89
+<span style="color: #008080;">157</span> F　　0X70　 Z　　 0X90
+<span style="color: #008080;">158</span> G　　0X71　 0　　 0X48
+<span style="color: #008080;">159</span> H　　0X72　 1　　 0X49
+<span style="color: #008080;">160</span> I　　0X73　 2　　 0X50
+<span style="color: #008080;">161</span> J　　0X74　 3 　　0X51
+<span style="color: #008080;">162</span> K　　0X75　 4 　　0X52
+<span style="color: #008080;">163</span> L　　0X76　 5 　　0X53
+<span style="color: #008080;">164</span> M　　0X77　 6　　 0X54
+<span style="color: #008080;">165</span> N　　0X78 　7 　　0X55
+<span style="color: #008080;">166</span> O　　0X79 　8 　　0X56
+<span style="color: #008080;">167</span> P　　0X80 　9 　　0X57
+<span style="color: #008080;">168</span> Q　　0X81　ESC　　0X1B
+<span style="color: #008080;">169</span> R　　0X82　CTRL 　0X11
+<span style="color: #008080;">170</span> S　　0X83　SHIFT　0X10
+<span style="color: #008080;">171</span> T　　0X84　ENTER　0XD
+<span style="color: #008080;">172</span> 如果要使用组合键，则可以判断是否同时按下了这几个键，比如ctrl键、shift键以及alt键的组合使用就可以判断是否多按下了ctrl键、shift键以及alt键</pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>感谢网络各路大神提供。</p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag">标签: <a href="http://www.cnblogs.com/huzi007/tag/js/">js</a></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(3866272,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;1f6f9d5f-5598-e111-aa3f-842b2b196315&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/huzi007/" target="_blank"><img src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/20170322095647.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/huzi007/">全力以赴001</a><br>
+            <a href="http://home.cnblogs.com/u/huzi007/followees">关注 - 135</a><br>
+            <a href="http://home.cnblogs.com/u/huzi007/followers">粉丝 - 67</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;1f6f9d5f-5598-e111-aa3f-842b2b196315&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(3866272,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">5</span>
+    </div>
+    <div class="buryit" onclick="votePost(3866272,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/huzi007/p/3866059.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/huzi007/p/3866059.html" title="发布于2014-07-24 17:10">java时间比较</a><br><a href="http://www.cnblogs.com/huzi007/p/3867566.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/huzi007/p/3867566.html" title="发布于2014-07-25 11:18">c3p0链接池</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2014-07-24 18:23</span> <a href="http://www.cnblogs.com/huzi007/">全力以赴001</a> 阅读(<span id="post_view_count">68353</span>) 评论(<span id="post_comment_count">2</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=3866272" rel="nofollow">编辑</a> <a href="http://www.cnblogs.com/huzi007/p/3866272.html#" onclick="AddToWz(3866272);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=117007,cb_entryId=3866272,cb_blogApp=currentBlogApp,cb_blogUserGuid='1f6f9d5f-5598-e111-aa3f-842b2b196315',cb_entryCreatedDate='2014/7/24 18:23:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<!--done-->
+<br>
+<div class="feedback_area_title">发表评论</div>
+<div class="feedbackNoItems"></div>
+	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3558862,&#39;CW3M9fNG3jEwyVMER+WPEecdJY48J3U0XzMX5MMaVE8hdupmWqNt0A==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3558862,&#39;CW3M9fNG3jEwyVMER+WPEecdJY48J3U0XzMX5MMaVE8hdupmWqNt0A==&#39;)">引用</a></span>
+				</div>
+				<a href="http://www.cnblogs.com/huzi007/p/3866272.html#3558862" class="layer">#1楼</a><a name="3558862" id="comment_anchor_3558862"></a> <span class="comment_date">2016-11-17 21:28</span> | <a id="a_comment_author_3558862" href="http://www.cnblogs.com/csu-mtc/" target="_blank">漠丶叹尘</a> <a href="http://msg.cnblogs.com/send/%E6%BC%A0%E4%B8%B6%E5%8F%B9%E5%B0%98" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3558862" class="blog_comment_body">怎么实现键盘连续按下的事件~~</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3558862,&#39;Digg&#39;,this)">支持(1)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3558862,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3558862_avatar" style="display:none;">http://pic.cnblogs.com/face/1028798/20160919130854.png</span><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3584602,&#39;zObLutxdhlL8mnmr8DimUbtFzBTS/l87r+0h4lXOkJWDHj52wL86sg==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3584602,&#39;zObLutxdhlL8mnmr8DimUbtFzBTS/l87r+0h4lXOkJWDHj52wL86sg==&#39;)">引用</a></span>
+				</div>
+				<a href="http://www.cnblogs.com/huzi007/p/3866272.html#3584602" class="layer">#2楼</a><a name="3584602" id="comment_anchor_3584602"></a><span id="comment-maxId" style="display:none;">3584602</span><span id="comment-maxDate" style="display:none;">2016/12/19 16:38:05</span> <span class="comment_date">2016-12-19 16:38</span> | <a id="a_comment_author_3584602" href="http://home.cnblogs.com/u/1010542/" target="_blank">风声碎雨</a> <a href="http://msg.cnblogs.com/send/%E9%A3%8E%E5%A3%B0%E7%A2%8E%E9%9B%A8" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3584602" class="blog_comment_body">如果同时按下多个键呢？能同时实现不同键的功能吗</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3584602,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3584602,&#39;Bury&#39;,this)">反对(0)</a></div><br>
+			</div>
+		</div>
+	<div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="http://www.cnblogs.com/huzi007/p/3866272.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://www.cnblogs.com/huzi007/p/3866272.html#top">返回顶部</a></div>
+<div id="comment_form_container">
+<div id="commentform_title">发表评论</div>
+<span id="tip_comment" style="color:Red"></span>
+<p>
+昵称：<input type="text" id="tbCommentAuthor" class="author" disabled="disabled" size="50" value="lch_2016">
+</p>
+<div class="commentbox_main">
+<div class="commentbox_title">
+<div class="commentbox_title_left">评论内容：</div>
+<div class="commentbox_title_right">
+<img id="ubb_quote" class="comment_icon" src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/quote.gif" alt="引用" title="添加引用" onclick="insertUBB(&#39;tbCommentBody&#39;,&#39;quote&#39;)">
+<img id="ubb_bold" class="comment_icon" src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/b.png" alt="粗体" title="添加粗体" onclick="insertUBB(&#39;tbCommentBody&#39;,&#39;b&#39;)">
+<img id="ubb_url" class="comment_icon" src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/lk.png" alt="链接" title="添加链接" onclick="insertUbbUrl(&#39;tbCommentBody&#39;)">
+<img id="ubb_indent" class="comment_icon" src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/indent.png" alt="缩进" title="添加首行缩进" onclick="insertIndent(&#39;tbCommentBody&#39;)">
+<img id="ubb_code" class="comment_icon" src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/InsertCode.gif" alt="代码" title="添加代码" onclick="insertUbbCode()">
+<img id="ubb_img" class="comment_icon" src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/img.gif" alt="图片" title="上传图片" onclick="OpenImageUploadWindow();">
+</div>
+</div>
+<div class="clear"></div>
+<textarea id="tbCommentBody" class="comment_textarea"></textarea>
+</div>
+<p id="commentbox_opt">
+<input id="btn_comment_submit" type="button" class="comment_btn" value="提交评论">
+<span id="span_comment_canceledit" style="display:none"><a href="javascript:void(0);" onclick="return CancelCommentEdit()">不改了</a></span>
+<a href="javascript:void(0);" onclick="return logout();">退出</a>
+        <a id="commentbox_opt_sub" href="javascript:void(0);" title="订阅后有新评论时会邮件通知您" onclick="commentManager.Subscribe()">订阅评论</a>
+</p>
+<div id="tip_comment2" style="color:Red"></div>
+<p>
+[Ctrl+Enter快捷键提交]
+</p>
+<div style="display:none">
+<span id="comment_edit_id"></span><span id="span_parentcomment_id"></span>
+<span id="span_parent_id"></span>
+<span id="span_comment_replyto"></span>
+<span id="span_comment_posted"></span>
+</div>
+</div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】50万行VC++源码: 大型组态工控、电力仿真CAD与GIS源码库</a><br><a href="http://www.gcpowertools.com.cn/products/spreadjs/?utm_source=cnblogs&amp;utm_medium=blogpage&amp;utm_term=bottom&amp;utm_content=SpreadJS&amp;utm_campaign=community" target="_blank">【推荐】可嵌入您系统的“在线Excel”！SpreadJS 纯前端表格控件</a><br></div>
+<div id="opt_under_post"></div>
+<div id="cnblogs_c1" class="c_ad_block"><a href="http://click.aliyun.com/m/26126/" target="_blank"><img width="300" height="250" src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/24442-20170830182528765-2055545967.png" alt="阿里云0830"></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/577450/" target="_blank">董明珠称从没认为格力手机失败：让人用完不后悔</a><br> ·  <a href="http://news.cnblogs.com/n/577449/" target="_blank">中国搞定超级金属：飞机火箭发动机全靠它了！</a><br> ·  <a href="http://news.cnblogs.com/n/577448/" target="_blank">聚美优品连遭股东炮轰 董事长陈欧回应被指避重就轻</a><br> ·  <a href="http://news.cnblogs.com/n/577447/" target="_blank">谷歌的野心：让1亿部Android手机具有AR功能</a><br> ·  <a href="http://news.cnblogs.com/n/577446/" target="_blank">西部数据玩的是哪出？先告东芝再致信道歉</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="cnblogs_c2" class="c_ad_block"><a href="https://www.jiguang.cn/devservice?source=bky&amp;hmsr=%E5%8D%9A%E5%AE%A2%E5%9B%AD&amp;hmpl=&amp;hmcu=&amp;hmkw=&amp;hmci=" target="_blank"><img width="468" height="60" src="./js中获取键盘事件 - 全力以赴001 - 博客园_files/24442-20170901112708499-388259391.gif" alt="极光0901"></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/575829/" target="_blank">做到这一点，你也可以成为优秀的程序员</a><br> ·  <a href="http://kb.cnblogs.com/page/566880/" target="_blank">写给立志做码农的大学生</a><br> ·  <a href="http://kb.cnblogs.com/page/569057/" target="_blank">架构腐化之谜</a><br> ·  <a href="http://kb.cnblogs.com/page/572854/" target="_blank">学会思考，而不只是编程</a><br> ·  <a href="http://kb.cnblogs.com/page/574767/" target="_blank">编写Shell脚本的最佳实践</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/huzi007/">全力以赴001</a><br>园龄：<a href="http://home.cnblogs.com/u/huzi007/" title="入园时间：2012-05-07">5年3个月</a><br>粉丝：<a href="http://home.cnblogs.com/u/huzi007/followers/">67</a><br>关注：<a href="http://home.cnblogs.com/u/huzi007/followees/">135</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;1f6f9d5f-5598-e111-aa3f-842b2b196315&#39;)">+加关注</a></div></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="calendar"><div id="blog-calendar" style=""><table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="Calendar">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2017/08/01&#39;);return false;">&lt;</a></td><td align="center">2017年9月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2017/10/01&#39;);return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" align="center" abbr="日" scope="col">日</th><th class="CalDayHeader" align="center" abbr="一" scope="col">一</th><th class="CalDayHeader" align="center" abbr="二" scope="col">二</th><th class="CalDayHeader" align="center" abbr="三" scope="col">三</th><th class="CalDayHeader" align="center" abbr="四" scope="col">四</th><th class="CalDayHeader" align="center" abbr="五" scope="col">五</th><th class="CalDayHeader" align="center" abbr="六" scope="col">六</th></tr><tr><td class="CalOtherMonthDay" align="center">27</td><td class="CalOtherMonthDay" align="center">28</td><td class="CalOtherMonthDay" align="center">29</td><td class="CalOtherMonthDay" align="center">30</td><td class="CalOtherMonthDay" align="center">31</td><td align="center">1</td><td class="CalWeekendDay" align="center">2</td></tr><tr><td class="CalWeekendDay" align="center">3</td><td class="CalTodayDay" align="center">4</td><td align="center">5</td><td align="center">6</td><td align="center">7</td><td align="center">8</td><td class="CalWeekendDay" align="center">9</td></tr><tr><td class="CalWeekendDay" align="center">10</td><td align="center">11</td><td align="center">12</td><td align="center">13</td><td align="center">14</td><td align="center">15</td><td class="CalWeekendDay" align="center">16</td></tr><tr><td class="CalWeekendDay" align="center">17</td><td align="center">18</td><td align="center">19</td><td align="center">20</td><td align="center">21</td><td align="center">22</td><td class="CalWeekendDay" align="center">23</td></tr><tr><td class="CalWeekendDay" align="center">24</td><td align="center">25</td><td align="center">26</td><td align="center">27</td><td align="center">28</td><td align="center">29</td><td class="CalWeekendDay" align="center">30</td></tr><tr><td class="CalOtherMonthDay" align="center">1</td><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td><td class="CalOtherMonthDay" align="center">7</td></tr>
+</tbody></table></div><script type="text/javascript">loadBlogDefaultCalendar();</script></div>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+<div id="widget_my_google" class="div_my_zzk"><input type="text" name="google_q" id="google_q" onkeydown="return google_go_enter(event)" class="input_my_zzk">&nbsp;<input onclick="google_go()" type="button" value="谷歌搜索" class="btn_my_zzk"></div>
+</div>
+</div>
+
+</div><div id="sidebar_shortcut" class="sidebar-block">
+<div class="catListLink">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/huzi007/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="http://www.cnblogs.com/huzi007/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="http://www.cnblogs.com/huzi007/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="http://www.cnblogs.com/huzi007/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="http://www.cnblogs.com/huzi007/tag/" title="我的博客的标签列表">我的标签</a></li>
+<li><a id="itemListLink" onclick="this.blur();WarpClass(&#39;itemListLink&#39;, &#39;itemListLin_con&#39;);return false;" href="http://www.cnblogs.com/huzi007/p/3866272.html#">更多链接</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+<ul>
+
+</ul>
+</div>
+</div></div><div id="sidebar_toptags" class="sidebar-block">
+<div class="catListTag">
+<h3 class="catListTitle">我的标签</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/huzi007/tag/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java学习笔记</a>(99)</li><li><a href="http://www.cnblogs.com/huzi007/tag/javaWeb%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">javaWeb学习笔记</a>(88)</li><li><a href="http://www.cnblogs.com/huzi007/tag/java%E5%B8%B8%E8%A7%81%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">java常见设计模式</a>(23)</li><li><a href="http://www.cnblogs.com/huzi007/tag/Extjs%E5%AD%A6%E4%B9%A0/">Extjs学习</a>(23)</li><li><a href="http://www.cnblogs.com/huzi007/tag/scala/">scala</a>(23)</li><li><a href="http://www.cnblogs.com/huzi007/tag/java%E5%A4%9A%E7%BA%BF%E7%A8%8B/">java多线程</a>(20)</li><li><a href="http://www.cnblogs.com/huzi007/tag/springMvc/">springMvc</a>(18)</li><li><a href="http://www.cnblogs.com/huzi007/tag/Struts2/">Struts2</a>(18)</li><li><a href="http://www.cnblogs.com/huzi007/tag/Spring/">Spring</a>(16)</li><li><a href="http://www.cnblogs.com/huzi007/tag/Oracle/">Oracle</a>(14)</li><li><a href="http://www.cnblogs.com/huzi007/tag/">更多</a></li>
+</ul>
+</div></div><div id="sidebar_categories">
+<div class="catListPostArchive">
+<h3 class="catListTitle">随笔档案<span style="font-size:11px;font-weight:normal">(470)</span></h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/huzi007/archive/2017/08.html">2017年8月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/huzi007/archive/2017/07.html">2017年7月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/huzi007/archive/2017/06.html">2017年6月 (27)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="http://www.cnblogs.com/huzi007/archive/2017/05.html">2017年5月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_4" href="http://www.cnblogs.com/huzi007/archive/2017/04.html">2017年4月 (8)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_5" href="http://www.cnblogs.com/huzi007/archive/2017/03.html">2017年3月 (11)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_6" href="http://www.cnblogs.com/huzi007/archive/2017/02.html">2017年2月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_7" href="http://www.cnblogs.com/huzi007/archive/2017/01.html">2017年1月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_8" href="http://www.cnblogs.com/huzi007/archive/2016/12.html">2016年12月 (19)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_9" href="http://www.cnblogs.com/huzi007/archive/2016/11.html">2016年11月 (15)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_10" href="http://www.cnblogs.com/huzi007/archive/2016/10.html">2016年10月 (11)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_11" href="http://www.cnblogs.com/huzi007/archive/2016/09.html">2016年9月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_12" href="http://www.cnblogs.com/huzi007/archive/2016/08.html">2016年8月 (19)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_13" href="http://www.cnblogs.com/huzi007/archive/2016/07.html">2016年7月 (7)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_14" href="http://www.cnblogs.com/huzi007/archive/2016/06.html">2016年6月 (7)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_15" href="http://www.cnblogs.com/huzi007/archive/2016/05.html">2016年5月 (12)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_16" href="http://www.cnblogs.com/huzi007/archive/2016/04.html">2016年4月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_17" href="http://www.cnblogs.com/huzi007/archive/2016/03.html">2016年3月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_18" href="http://www.cnblogs.com/huzi007/archive/2016/02.html">2016年2月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_19" href="http://www.cnblogs.com/huzi007/archive/2016/01.html">2016年1月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_20" href="http://www.cnblogs.com/huzi007/archive/2015/12.html">2015年12月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_21" href="http://www.cnblogs.com/huzi007/archive/2015/11.html">2015年11月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_22" href="http://www.cnblogs.com/huzi007/archive/2015/10.html">2015年10月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_23" href="http://www.cnblogs.com/huzi007/archive/2015/09.html">2015年9月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_24" href="http://www.cnblogs.com/huzi007/archive/2015/08.html">2015年8月 (9)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_25" href="http://www.cnblogs.com/huzi007/archive/2015/07.html">2015年7月 (15)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_26" href="http://www.cnblogs.com/huzi007/archive/2015/06.html">2015年6月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_27" href="http://www.cnblogs.com/huzi007/archive/2015/03.html">2015年3月 (5)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_28" href="http://www.cnblogs.com/huzi007/archive/2015/02.html">2015年2月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_29" href="http://www.cnblogs.com/huzi007/archive/2015/01.html">2015年1月 (8)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_30" href="http://www.cnblogs.com/huzi007/archive/2014/12.html">2014年12月 (8)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_31" href="http://www.cnblogs.com/huzi007/archive/2014/11.html">2014年11月 (7)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_32" href="http://www.cnblogs.com/huzi007/archive/2014/10.html">2014年10月 (7)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_33" href="http://www.cnblogs.com/huzi007/archive/2014/09.html">2014年9月 (19)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_34" href="http://www.cnblogs.com/huzi007/archive/2014/08.html">2014年8月 (9)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_35" href="http://www.cnblogs.com/huzi007/archive/2014/07.html">2014年7月 (30)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_36" href="http://www.cnblogs.com/huzi007/archive/2014/06.html">2014年6月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_37" href="http://www.cnblogs.com/huzi007/archive/2014/05.html">2014年5月 (11)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_38" href="http://www.cnblogs.com/huzi007/archive/2014/04.html">2014年4月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_39" href="http://www.cnblogs.com/huzi007/archive/2014/03.html">2014年3月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_40" href="http://www.cnblogs.com/huzi007/archive/2014/02.html">2014年2月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_41" href="http://www.cnblogs.com/huzi007/archive/2014/01.html">2014年1月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_42" href="http://www.cnblogs.com/huzi007/archive/2013/12.html">2013年12月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_43" href="http://www.cnblogs.com/huzi007/archive/2013/11.html">2013年11月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_44" href="http://www.cnblogs.com/huzi007/archive/2013/08.html">2013年8月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_45" href="http://www.cnblogs.com/huzi007/archive/2013/06.html">2013年6月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_46" href="http://www.cnblogs.com/huzi007/archive/2013/05.html">2013年5月 (23)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_47" href="http://www.cnblogs.com/huzi007/archive/2013/04.html">2013年4月 (27)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_48" href="http://www.cnblogs.com/huzi007/archive/2013/03.html">2013年3月 (16)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_49" href="http://www.cnblogs.com/huzi007/archive/2013/02.html">2013年2月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_50" href="http://www.cnblogs.com/huzi007/archive/2013/01.html">2013年1月 (15)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_51" href="http://www.cnblogs.com/huzi007/archive/2012/12.html">2012年12月 (9)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_52" href="http://www.cnblogs.com/huzi007/archive/2012/11.html">2012年11月 (7)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_53" href="http://www.cnblogs.com/huzi007/archive/2012/10.html">2012年10月 (12)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_54" href="http://www.cnblogs.com/huzi007/archive/2012/09.html">2012年9月 (7)</a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_recentcomments" class="sidebar-block"><div id="recent_comments_wrap">
+<div class="catListComment">
+<h3 class="catListTitle">最新评论</h3>
+
+	<div id="RecentCommentsBlock"><ul>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/huzi007/p/5550440.html#3730892">1. Re:Java中ArrayList和LinkedList区别</a></li>
+        <li class="recent_comment_body">timeList,addList的add方法索引传入是不是传错了main方法的 System.out.println("LinkedList查找"+N+"条耗时："+timeList(list2));......</li>
+        <li class="recent_comment_author">--dyh200896</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/huzi007/p/4595787.html#3679184">2. Re:java根据本地Ip获取mac地址</a></li>
+        <li class="recent_comment_body">楼主，这个方法只能是查本机吗？还有那些其他的ip呢</li>
+        <li class="recent_comment_author">--超人与西瓜</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/huzi007/p/4279807.html#3658653">3. Re:OGNL表达式</a></li>
+        <li class="recent_comment_body">很好，很详细</li>
+        <li class="recent_comment_author">--WesTward</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/huzi007/p/3817751.html#3605879">4. Re:Eclipse中安装TestNG插件</a></li>
+        <li class="recent_comment_body">安装中途总是提示版本不同怎么办？</li>
+        <li class="recent_comment_author">--噗噗猪猪</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/huzi007/p/3866272.html#3584602">5. Re:js中获取键盘事件</a></li>
+        <li class="recent_comment_body">如果同时按下多个键呢？能同时实现不同键的功能吗</li>
+        <li class="recent_comment_author">--风声碎雨</li>
+</ul>
+</div>
+</div>
+</div></div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/huzi007/p/3866272.html">1. js中获取键盘事件(68349)</a></li><li><a href="http://www.cnblogs.com/huzi007/archive/2012/09/21/2697088.html">2. js中的Ajax经典示例(46191)</a></li><li><a href="http://www.cnblogs.com/huzi007/p/4236150.html">3. java实现ftp文件的上传与下载(28909)</a></li><li><a href="http://www.cnblogs.com/huzi007/p/5550440.html">4. Java中ArrayList和LinkedList区别(14890)</a></li><li><a href="http://www.cnblogs.com/huzi007/p/4174519.html">5. 关于URL编码/javascript/js url 编码/url的三个js编码函数(13525)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topcommentedposts" class="sidebar-block"><div id="topfeedback_posts_wrap">
+<div class="catListFeedback">
+<h3 class="catListTitle">评论排行榜</h3>
+	<div id="TopFeedbackPostsBlock"><ul><li><a href="http://www.cnblogs.com/huzi007/p/4236150.html">1. java实现ftp文件的上传与下载(8)</a></li><li><a href="http://www.cnblogs.com/huzi007/archive/2012/09/22/2698176.html">2. 接口与抽象类的区别(3)</a></li><li><a href="http://www.cnblogs.com/huzi007/archive/2012/12/11/2813748.html">3. 管理Hibernate的缓存(2)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div class="RecentComment">
+	<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/huzi007/p/3866272.html">1. js中获取键盘事件(5)</a></li><li><a href="http://www.cnblogs.com/huzi007/p/4236150.html">2. java实现ftp文件的上传与下载(4)</a></li><li><a href="http://www.cnblogs.com/huzi007/archive/2012/09/21/2697088.html">3. js中的Ajax经典示例(3)</a></li><li><a href="http://www.cnblogs.com/huzi007/p/3905291.html">4. java进阶书籍推荐(2)</a></li><li><a href="http://www.cnblogs.com/huzi007/p/3885114.html">5. java设计模式--创建模式--建造者模式(2)</a></li></ul></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2017 全力以赴001
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+</body></html>

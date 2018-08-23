@@ -1,0 +1,24 @@
+.redbox-dialog {
+	background: 0px 0px; border: 0px currentColor; border-image: none;
+}
+.redbox-dialog-title {
+	display: none;
+}
+.redbox-dialog-content {
+	background: 0px 0px;
+}
+.redbox-dialog-content .redbox-close {
+	background: url("http://exp.bdstatic.com/static/activity/widget/ui/redbox/img/close-btn_b6c81c9.png") no-repeat; top: 6px; width: 19px; height: 19px; right: 50px; display: block; position: absolute; z-index: 101;
+}
+.redbox-dialog-content .redbox-div-bg {
+	background: rgb(237, 237, 237); border: 1px solid rgb(216, 216, 216); border-image: none; top: 0px; width: 400px; height: 350px; position: absolute; z-index: 1;
+}
+.redbox-dialog-content .redbox-title {
+	left: 100px; top: 20px; text-align: center; color: rgb(255, 255, 255); font-size: 18px; position: absolute; z-index: 100;
+}
+.redbox-dialog-content .redbox-img-bg {
+	background: url("http://exp.bdstatic.com/static/activity/widget/ui/redbox/img/redbox_05728a2.png") no-repeat center; left: 35px; top: 80px; width: 380px; height: 223px; position: absolute; z-index: 100; _background: 0 0;
+}
+.redbox-dialog-content .draw-redbox {
+	left: 147px; top: 205px; width: 130px; height: 43px; position: absolute; z-index: 100;
+}

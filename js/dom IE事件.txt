@@ -1,0 +1,86 @@
+javascript事件在IE和DOM浏览器的差异总结 
+1、事件处理函数
+
+在IE中：
+
+每个元素和windows对象都有两个方法：attachEvent（）和detachEvent（）,看名字就知道第一个是添加事件处理函数，第二个是移除。
+1    [object].attachEvent("name_of_event_handler","function_to_attach")
+2    [object].detachEvent("name_of_event_handler","function_to_remove")
+
+这种方法可以添加多个事件处理函数
+
+在DOM浏览器中：
+addEventListener（）和removeEventListener（）来分配和移除事件处理函数。他有三个参数：事件名称、要分配的函数、处理函数是用于冒泡阶段还是捕获阶段（捕获阶段为true）。
+1    [object].addEventListener("name_of_event",fnhander,bcapture)
+2    [object].removeEventListener("name_of_event",fnhander,bcapture)
+
+同样也可以添加多个事件处理函数
+
+2、事件对象的定位
+
+在IE中：
+事件对象是windows对象的一个属性event，事件处理函数必须这样访问事件对象：
+1    oDiv.onclick = function(){
+2        var var oEvent = window.event;
+3     
+4    }
+
+在DOM中：
+而在DOM标准中event对象必须作为唯一的参数传递给事件处理函数,所以要这么做：
+1    oDiv.onclick = function(){
+2        var oEvent = argunments[0]
+3    }
+
+或者
+1    oDiv.onclick = function(oEvent){
+2     
+3    }
+
+所以要用不同的方法来获取event对象
+所以我们经常见到这种写法
+1    e =  event || window.event
+
+逻辑或操作符作用于两个对象时第一个对象非空，返回第一个对象，否则返回第二个对象。
+
+还有在arguments属性，在event对象中总是事件处理函数的第一个参数，也就是说可以访问事件处理函数的agreements[0]来获取event对象
+3、获取目标
+
+在IE中：
+IE目标包含在event对象的srcElement属性中：
+1    var oTarget = oEvent.srcElement;
+
+在DOM中：
+目标包含在target属性中：
+1    var oTarget = oEvent.target;
+
+IE目标只能是元素、文档或者窗口；DOM兼容的浏览器也允许把文本节点作为目标
+4、获取字符代码
+
+IE和DOM都支持event对象的keyCode属性，他会返回按下按键的数值代码
+
+在IE中：
+1    var oCharCode = oEvent .keyCode;
+
+在DOM中：
+1    var oCharCode = oEvent .charCode;
+5、阻止默认行为
+
+在IE中：
+1    oEvent.returnValue = false;
+
+在DOM中：
+1    oEvent.preventDefault();
+6、停止冒泡
+
+在IE中：
+1    oEvent.cancelBubble = true;
+
+在DOM中：
+1    oEvent.stopPropagation();
+7、获取事件源
+
+在IE中：
+1    oEvent.target
+
+在DOM中：
+1    oEvent.srcElement   

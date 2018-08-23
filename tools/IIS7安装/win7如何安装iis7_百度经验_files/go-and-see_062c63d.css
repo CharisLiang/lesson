@@ -1,0 +1,45 @@
+.dialog-go {
+	background: none; border: 0px currentColor !important; border-image: none !important;
+}
+.dialog-go .ui-widget-header {
+	height: 0px; display: none;
+}
+.dialog-go .ui-dialog-buttonpane {
+	height: 0px; display: none;
+}
+.dialog-go .ui-dialog-content {
+	padding: 0px !important; overflow: visible !important;
+}
+.dialog-go header {
+	background: rgb(115, 195, 114); position: relative;
+}
+.dialog-go h1 {
+	margin: 0px auto; text-align: center; color: rgb(255, 255, 255); line-height: 61px; font-size: 26px; position: relative;
+}
+.dialog-go .dialog-go-title-deco {
+	background: url("http://exp.bdstatic.com/static/common-jquery/widget/js/logic/msg/go-and-see/img/dialog-go-title-deco_4954849.png?__sprite") no-repeat center; left: 50%; top: -20px; width: 288px; height: 61px; margin-left: -155px; position: absolute;
+}
+.dialog-go .content {
+	background: rgb(255, 255, 255); padding: 0px; width: 100%; text-align: center; line-height: 1.5; font-size: 18px;
+}
+.dialog-go span {
+	color: rgb(255, 108, 0);
+}
+.dialog-go em {
+	color: rgb(255, 108, 0);
+}
+.dialog-go em {
+	font-style: normal;
+}
+.dialog-go span {
+	padding: 0px 2px; font-size: 24px;
+}
+.dialog-go .close-btn {
+	background: rgb(103, 182, 110); margin: 15px auto 0px; padding: 10px 0px; border-radius: 5px; width: 164px; text-align: center; color: rgb(255, 255, 255); font-size: 22px;
+}
+.dialog-go .close-x {
+	top: 50%; right: 15px; margin-top: -13px; position: absolute;
+}
+.dialog-go .go-close {
+	background: url("http://exp.bdstatic.com/static/common-jquery/widget/js/logic/msg/go-and-see/img/go-close_305f742.png?__sprite") no-repeat; width: 25px; height: 25px;
+}

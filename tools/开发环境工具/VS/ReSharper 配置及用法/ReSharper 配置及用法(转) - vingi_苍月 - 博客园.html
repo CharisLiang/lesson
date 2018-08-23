@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://www.cnblogs.com/vingi/articles/2881708.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReSharper 配置及用法(转) - vingi_苍月 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/bundle-gray.css">
+<link id="mobile-style" media="only screen and (max-width: 768px)" type="text/css" rel="stylesheet" href="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/bundle-gray-mobile.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/vingi/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/vingi/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/vingi/wlwmanifest.xml">
+<script src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/jquery.js.下载" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'vingi', cb_enable_mathjax=false;var isLogined=true;</script>
+<script src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/blog-common.js.下载" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<div id="banner"><div id="bnr_pic">
+<!--done-->
+<div class="header">
+	<div class="headerText">
+		<a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/vingi/">苍月居</a><br>
+	</div>
+	<div class="headerDis"></div>
+</div>
+</div></div>
+<div id="main">
+	<!-- left starts -->
+	<div id="left">
+	<div id="left_border">
+		<div id="mystats">
+			<br>
+				<div id="blog_stats">
+<!--done-->
+<div class="blogStats">
+随笔- 0&nbsp;
+文章- 107&nbsp;
+评论- 27&nbsp;
+
+</div></div>
+			
+		</div>
+		<div id="mylinks">
+<!--done-->
+<a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a>&nbsp;&nbsp;<a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/vingi/">首页</a>&nbsp;&nbsp;<a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a>&nbsp;&nbsp;<a id="MyLinks1_NewArticleLink" class="menu" href="http://www.cnblogs.com/EnterMyBlog.aspx?NewArticle=1">新文章</a>&nbsp;&nbsp;<a id="blog_nav_contact" accesskey="9" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/vingi_%E8%8B%8D%E6%9C%88">联系</a>&nbsp;&nbsp;<a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a>&nbsp;&nbsp;<a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/vingi/rss">订阅</a>&nbsp;<a id="blog_nav_rss_image" href="http://www.cnblogs.com/vingi/rss"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/xml.gif" alt="订阅"></a></div>
+		<div id="topics">
+			
+<div id="post_detail">
+<!--done-->
+<div class="post">
+	<div class="postTitle">
+		<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/vingi/articles/2881708.html">ReSharper 配置及用法(转)</a>
+	</div>
+	<div id="cnblogs_post_body"><p>1:安装后，Resharper会用他自己的英文智能提示，替换掉 vs2010的智能提示，所以我们要换回到vs2010的智能提示</p>
+<p><a href="http://images.cnitblog.com/blog/451114/201212/27162305-0e84a7b696034dd2bfa207cff9fba5f8.jpg"><img title="3](1[KECO85FI{JZ@TE$NKE" src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/27162318-552e98336dc34418a5b238e76e7b23d8.jpg" alt="3](1[KECO85FI{JZ@TE$NKE" width="621" height="322" border="0" data-pinit="registered"></a></p>
+<p>2:快捷键。是使用vs2010的快捷键还是使用 Resharper的快捷键呢？我是使用re的快捷键</p>
+<p><a href="http://images.cnitblog.com/blog/451114/201212/27162320-0343feba407d44f78e253472d5d55122.jpg"><img title="_]BA}4Y457W2E0T%{A73PK5" src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/27162323-c2a633764406499eb28e8dc554411e48.jpg" alt="_]BA}4Y457W2E0T%{A73PK5" width="682" height="410" border="0" data-pinit="registered"></a></p>
+<p>3:</p>
+<p>esharper安装后，会做几件事情，这几件事情对于除此使用者，比较麻烦，因此归纳总结一下，以资参考。</p>
+<p>(1)、会将选项——文本编辑器——C#——常规——自动列出成员 这个选择框的勾选去掉。这样当你使用某个方法的时候，便不会提示参数，是一个很郁闷的事情。</p>
+<p>可以手动勾上。</p>
+<p>(2)、会将选项——文本编辑器——C#——高级——显示实时语义错误、在编辑中用下划线标识错误这两个选项去掉。这个本来没有什么，但是如果卸载了Resharper，</p>
+<p>vs编辑器变不会实时提示错误。因此卸载Resharper后，需要把这两个选项重新勾选上。</p>
+<p>4: use&nbsp; var</p>
+<p>use implicitly typed local variable declaration</p>
+<p><a href="http://images.cnitblog.com/blog/451114/201212/27163705-ff3b62cf50534758a1487074e2bfa54e.png"><img title="image" src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/27163710-c8b0c18a498b46189024877784213ee2.png" alt="image" width="1008" height="667" border="0" data-pinit="registered"></a></p>
+<p>5:按 alt+enter 能解决很多问题。下面是快捷键大全。</p>
+<p><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/2012092117083798.png" alt="" width="1311" height="776" data-pinit="registered"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>6:&nbsp;&nbsp; Alt+F7将你光标所在位置的变量的所有使用以列表的方式显示出来，显示结果的窗体可以像其他窗体那样停靠。</p>
+<p>它的优点包括：</p>
+<ul>
+<li>可以从所有使用中挑选只显示read usage或者write usage，有时我们只是想知道某个变量在哪里被改变了。找到的位置前的图标也告诉你这点。</li>
+<li>可以在下方预览，即使我们列出所有使用，也不想跳转到每个使用它的地方，这时预览可以帮你大忙。</li>
+<li>当你在代码编辑器中改动了某些使用时，比如删除了某行，那么在查找结果的窗体中，会用删除线表示出来。</li>
+<li>默认的是寻找解决方案中所有的使用，并且按照命名空间来组织，非常便于选择。</li>
+</ul>
+<p>我现在已经记不起来在没有Alt+F7之前我是怎么查找的。反正现在我几乎不怎么样Ctrl+F了，除非我忘记了某个变量的名字。如果是这样，多半这个名字需要refactor，那也是Resharper的另一大块功能所在。也许有人对这个功能嗤之以鼻，但是用过CAB的人都知道，订阅和发布某个事件的签名，完全是字符串，如果你不用搜索来找到它的话，你都不知道这个控件的鼠标点下去，到底有多少个处理程序在背后开始工作了。用了Alt+F7来搜索这个字符串，等于在查找背后所有的调用者。</p>
+<p>不过提示你，当光标停留在一个类型上时，要慎用Alt+F7，假设是一个string，你应该能想象到得找到多少个使用</p>
+<p>&nbsp;</p>
+<p>7:威力无比的Alt+Enter回车</p>
+<p>万能的Alt+Enter能够帮你完成很多编写代码过程中的dirty&nbsp;work，总结起来大概是这么些：</p>
+<ul>
+<li>帮你实现某个接口或抽象基类的方法；</li>
+<li>提供你处理当前警告的一些建议；</li>
+<li>为你提供处理当前错误的一些建议（不一定是真的错误）；</li>
+<li>为你简化当前的臃肿代码；</li>
+</ul>
+<p>&nbsp;</p>
+<p>8:&nbsp; Ctrl + F11&nbsp;&nbsp; 当我们看别人的代码，或者是看自己的代码的时候，总是觉得代码太多，于是我们就用 region来把代码进行了封装注释，可是这样之后别人看代码就很郁闷，Resharper的&nbsp; File Structure&nbsp;功能，就可以把region和你的方法都展示出来。</p>
+<p>说了这么多，其实就是把对象浏览器和region的长处结合起来，既可以清晰的分类，又能一目了然的找到需要的方法。Resharper这时帮上你的大忙了。用Ctrl+F11，就弹出一个像右边这样的窗口来。</p>
+<p>这里面，按照你的region来显示，这样读你的代码的人也受益了。每个方法的参数，返回值都如UML一样列出来。</p>
+<ul>
+<li>如果需要浏览到某个方法，直接双击它的名字；</li>
+<li>如果要把某几个方法装进一个新的region，则可以选中方法，点工具栏上的像框的那个图标；点叉则会删除这个region并把相应的方法移到外面来。</li>
+<li>如果要调整某个方法的位置，比如把它移到别的region里面去，只需要在这里拖动这个方法即可。</li>
+<li>更可喜的是，你想要的从这里浏览、找到所有使用和重构的功能也在这里提供了，在某个方法上右键你就能开始操作。</li>
+</ul>
+<p><a href="http://images.cnitblog.com/blog/451114/201212/27165851-e986f6c0c96f4986820c0f4f9144c7c4.png"><img title="image" src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/27165854-f4f0799f0f83423ea8fcbeb1348ffad3.png" alt="image" width="869" height="566" border="0" data-pinit="registered"></a></p>
+<p>&nbsp;</p>
+<p>9:<a href="http://www.cnblogs.com/renji/archive/2007/12/09/resharper_refactor1.html">重构才是王道（上）</a></p>
+<p>重构是一种精神，证明你在致力于提供高效的、精炼的、健壮的代码，而不是凌乱的、晦涩的、漏洞百出的代码。&nbsp;<br>在Visual Studio 2005中，微软第一次提供了重构工具。但是不够，远远不够。我们需要的重构是非常广义的，我们想要对代码进行快速的调整，快到我在想什么我的工具就能做什么。这才是追求重构的境界。所以在这个意义上，几乎Resharper为你提供了巨大的生产力。&nbsp;<br>Visual Studio 2005提供的重构包括了如下：</p>
+<ol>
+<li>封装字段</li>
+<li>提取方法</li>
+<li>提取接口</li>
+<li>提升局部变量</li>
+<li>移除参数</li>
+<li>重命名</li>
+<li>重新排列参数</li>
+
+</ol>
+<p>这些方法在Resharper中全部都支持（但Resharper的重构远不止这些），它们对应的变成了：</p>
+<ol>
+<li>封装字段 —— Introduce Field</li>
+<li>提取方法 —— Extract Method</li>
+<li>提取接口 —— Extract Interface&nbsp;<span style="text-decoration: underline;">（另增加了Extract Superclass提取为基类）</span></li>
+<li>提升局部变量 —— Introduce Variable</li>
+<li>移除参数 —— 移到Change Signature（改变方法签名）中</li>
+<li>重命名 —— Rename&nbsp;<span style="text-decoration: underline;">（Resharper会根据对象的类型名称，提供你几个可选的最合适的名称）</span></li>
+<li>重新排列参数 —— 移到Change Signature（改变方法签名）中</li>
+
+</ol>
+<blockquote>
+<p>我知道很多人都声称自己E文不好，但是，这确实都是很简单的单词，难不倒任何人的。这些重构的功能是人所共知的，下面就告诉大家一些Resharper特有的，首先，重构的快捷键是Ctrl+Shift+R：&nbsp;<br>1、对于类，除了提取接口、基类，你还可以移动它到其他的命名空间和移动到别的文件里，这是一个实用的功能，也许你不信，但是我这真的有个人，把所有的business entity都写在一个DataObject.cs里面。你难以想象，我打开它时嘴张了多大。&nbsp;<br>2、对于字段，提供了：</p>
+<ul>
+<li>Safe Delete，会检测所有使用到的地方，并询问如何删除；</li>
+<li>Pull Member Up和Push Member Down，可以把这个字段在基类和继承类中移动；</li>
+<li>Use base type where possible，尽可能的使用基类，由于ArcGIS平台是基于com组件的，很多时候我们需要的是IGeometry, IPointCollection这样的接口所公开的属性或者方法，于是你没有必要保存一个polygon对象，而可以使用基类型；</li>
+<li>Encapsulate Field，封装字段，但是这个功能远没有另一个提供同样功能的操作有用。我可以在后文中来讲。</li>
+
+</ul>
+<p>3、对于方法，提供了：</p>
+<ul>
+<li>与字段类似的功能，此外；</li>
+<li>Change Signature，更改函数签名，包括更改名称，返回值类型，参数的各种信息，添加和删除参数，相当实用。如果你是在重写方法上操作，会提示你是否到基类中更改。</li>
+<li>Make Static，如果Resharper检测到这个方法并没有与非静态成员相关联的话，往往会自动地提示你（以黄色横杠的形式出现）可以改为static，如果你自作主张的对一些方法进行修改也无不妥，但后果自负。</li>
+<li>Extract class from parameter，如果你的参数有七个八个，那是否考虑用一个类来封装这些参数呢，于是这个功能应运而生。</li>
+<li>Method to Property，顾名思义，如果还在使用GetField()或者SetField(..)的话，你一定是从非.net星来的。</li>
+
+</ul>
+<p>4、在方法体内部：&nbsp;<br>Extract Method，不用介绍了吧。&nbsp;<br>Introduce Variable/Parameter/Field，取决于你光标所在的对象，可以提供转化的功能。&nbsp;<br>Inline Variable：就是把：</p>
+<p>IPoint point = new PointClass();&nbsp;<br>point.PutCoords(_point.X, _point.Y);</p>
+<p>变成这样子：</p>
+<p>new PointClass().PutCoords(_point.X, _point.Y); //这是个糟糕的例子</p>
+<p>５、重命名：&nbsp;<br>为什么重命名值得挑出来讲，因为Resharper提供了命名建议这一金子般的功能。于是，想改名为易读性强的名字，不是那么费脑子的事情了。Resharper会根据这个变量的类型，为你提供几个备选名字，名字列表是列在光标位置上的（对方法重命名会弹出对话框），你只需要用方向键选择并敲回车即可，这种名字多是将类型的名字首字母改为小写得来的，甚至刨根到基类的类型名，你还可以在此基础上加以改进。如果你还在用i,j这种晦涩的名称，请迅速的把他们改为outIndex, pointCount之类可读的名称。&nbsp;<br>Resharper其实提供了更先进的功能，在你命名一个变量时，就有快捷键为你提供备选名字，但是Ctrl+Space是我们宝贵的输入法切换键，于是，我对变量名的敲定，往往是先起了一个较烂的，然后重命名的。&nbsp;<br>还有一些更广义上的，帮助你对代码进行调整的功能，我另写一篇吧，不然太长了。</p>
+
+</blockquote>
+<p>&nbsp;</p>
+<p><a href="http://www.cnblogs.com/renji/archive/2007/12/09/resharper_refactor2.html">重构才是王道（下）</a></p>
+<p><span style="text-decoration: underline;">插入代码</span>&nbsp;<br>Resharper的Alt+Insert快捷键提供给你插入代码的功能。由于这两个键非常难按（这是我的感受），真正在使用的时候，我用的是Alt-R-C-G，意指打开Resharper菜单——Code——Generate，都只需要你的左手，这样你可以右手一边比划，一边还在写代码，多酷啊。</p>
+<ul>
+<li>生成的代码中最常用的是构造函数和属性，当你没有私有字段的时候，只会生成一个空的默认构造函数，而且没有生成属性的功能。在你有私有字段的情况下，生成之前会让你选择哪些私有字段需要作为构造函数的参数，并生成初始化的代码，这样编写重载极其方便。生成属性也类似。</li>
+<li>再次常用的就是重写基类或者接口的方法了。选择Implement Interface Member或者Override Inheritate Member，Resharper会查找当前类的基类或接口，然后按继承层次列出来，根据你的选择重写或实现这些方法。</li>
+<li>不是太常用的是生成Equals和GetHashCode方法，在我的应用场景中很少重写它们。但是根据《.NET设计规范》，不管是值类型还是引用类型的Equals都建议重写，并且应该重写GetHaseCode方法，因为它们相互依赖。如果你有这个需求，那么生成这三个函数一定能够帮你的大忙。</li>
+
+</ul>
+<blockquote>
+<p><span style="text-decoration: underline;">包围代码</span>&nbsp;<br>Visual Studio也提供了外侧代码这个功能，你可以按Ctrl+K,Ctrl+S来激活这个功能，虽然我并没有任何鄙视Visual Studio的意思，但是Resharper的快捷键确实更加合理（我在按下Ctrl的时候真的很难按下S），条目也更加清晰。Resharper中这个功能的快捷键是Ctrl+Alt+J，然后你就可以选择将当前行的代码包围到try-catch块或者using中了。这是很高效的方法，我们倾向于在开发的早期尽量不捕获异常，而在中后期才加入异常处理机制。于是你某一个时期有大量的工作是把他们扩到try-catch块中。而你要使用支持dispose对象时，最好的方法是使用using块。（卖蛋糕的，当我知道我的代码不是最优的时候，我总是寝食难安），这里自然也有把代码扩到region块中的功能，也是常用功能之一。&nbsp;<br><span style="text-decoration: underline;">调整方法的位置</span>&nbsp;<br>前面我曾说过，如果要调整方法的位置，可以在代码结构窗口中拖放操作。如果你觉得只是把一个方法移动到前面去，却不得不打开代码结构窗口太过重量级，那么有轻量级的方法：当光标位于方法的名称上时，用Ctrl+Shift+上下键就可以移动方法的位置，包括方法的xml注释，但如果你用的不是三个/的xml注释而是两个/的，那么就对不起了。&nbsp;<br><span style="text-decoration: underline;">其他琐碎的功能</span>&nbsp;<br>你肯定常常会复制粘贴当前行的代码，例如在使用StringBuilder.Append的时候，Ctrl+D可以简化你Ctrl+C,Ctrl+V的工作。&nbsp;<br>曾经有一个组合键可以注释掉当前行，还有另一个是取消注释，但是我已经淡忘了，因为Ctrl+/才应该是真正属于它的快捷键，再次按下就可以取消注释。&nbsp;<br>关于Resharper的重构功能就是这些，我可能天真地把很多额外功能都算在重构里了，但是它确实能够帮助你快速的对代码进行调整和优化。所以，请不要深究我对重构的概念认识是不是混乱。</p>
+
+</blockquote>
+<p>增强的浏览功能</p>
+<p><span style="text-decoration: underline;">浏览参数的方式</span>&nbsp;<br>输入方法的时候，我们已经习惯了由IDE提供给我们的参数提示，极大了方便了我们选择重载方法。在没有Resharper的环境下，Visual Studio已经做到了。那么为什么Resharper还要增强这个功能并大获好评的。试问，Visual Studio那窄窄的一行参数提示有没有让你觉得憋屈。我们有19寸的大屏幕，1600的分辨率，却不得不盯着那窄条条，小心翼翼的按着上下键寻找我们需要的重载。至少，开发Resharper的家伙是受不了这种憋屈的，于是大开大阖版的参数列表出现了，长长的参数重载被以列表的形式展现出来，当你在使用GDT+方法，看到巨大的参数重载时，你会从心底里发出感叹：卖蛋糕的。&nbsp;<br>同时，Resharper展示参数的快捷键变成了Ctrl+P，如果你觉得屏蔽了打印的快捷键简直是在开玩笑的话，那么问问你自己有多少次打印过自己的代码。&nbsp;<br><span style="text-decoration: underline;">浏览打开过的文档</span>&nbsp;<br>我窃以为你已经知道了在Visual Studio中切换文档的方式，它们包括：&nbsp;<br>Ctrl+Alt+上下方向键，可以在打开的文档中切换；&nbsp;<br>Ctrl+Tab，不仅可以在文档之前切换，并可以切换到解决方案文件夹，属性视图去，需要按左右键。&nbsp;<br>但是怎么样打开最近编辑后关闭的文件呢，Visual Studio很客气的又没有提供此功能，于是留给了Resharper。在我这里这个快捷键是Ctrl+E,Ctrl+E，没错，按两次。如果你的不是，那么在Resharper-View-Recent Files菜单下看看它是什么。因为你会时常用到。打开一个文件的列表，用方向键选择并回车就会在编辑器中打开。&nbsp;<br>很多人说Resharper的性能问题，我想，一个可能的原因是打开的文档太多了，如果你有时刻关闭不需要的文档的习惯，性能或许不会那么差，并且你可以随时打开这些你关闭了的文档，就像在已经打开的文档中切换一样的方便。&nbsp;<br>我的团队中没有用到敏捷开发那些高级的东西，但是我们还是保持着每次改动都仅涉及两三个文件的好习惯，并且频繁的commite到源代码服务器上去。所以，我每次真正要编辑的文件不多，性能不是问题。&nbsp;<br>和大家分享了很多Resharper使用的技巧，点点滴滴都已经融入我日常的开发工作中了。当然很不全面，例如与Nunit的集成，由于我们不是测试驱动，所以没有任何体验，自然也不敢大放厥词；也很主观，我觉得它好，你可能觉得它不好，萝卜青菜各有所爱。再说，它也不是没有白痴的地方，在文档上点右键增加的一个Close All功能，可以关闭所有打开的文档，关闭了干什么，对着一个空白的屏幕发呆么？我觉得原生的“除此之外全部关闭”就够了。还有一个定位的功能（Locate in Solution Explorer），真是没用，如果你在VS选项中设置了，在解决方案管理器中跟踪活动项，那么VS自动就给你定位了。&nbsp;<br>不管怎么说，它带给我更快更方便的开发体验，把我从一些琐碎的，不人性化的功能中解放出来。从这一点上来说，我很希望越来越多的人喜欢上它，开始用它，并帮助它更好的发展。</p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="http://www.cnblogs.com/vingi/category/390809.html" target="_blank">C#</a></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(2881708,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;57009c87-cfd4-de11-ba8f-001cf0cd104b&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/vingi/" target="_blank"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/sample_face.gif" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/vingi/">vingi_苍月</a><br>
+            <a href="http://home.cnblogs.com/u/vingi/followees">关注 - 5</a><br>
+            <a href="http://home.cnblogs.com/u/vingi/followers">粉丝 - 36</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;57009c87-cfd4-de11-ba8f-001cf0cd104b&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(2881708,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">20</span>
+    </div>
+    <div class="buryit" onclick="votePost(2881708,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">1</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+	<div class="postDesc"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/speech.gif" align="absmiddle">&nbsp;posted on <span id="post-date">2013-01-29 16:57</span> <a href="http://www.cnblogs.com/vingi/">vingi_苍月</a> 阅读(<span id="post_view_count">24646</span>) 评论(<span id="post_comment_count">11</span>) &nbsp;<a href="https://i.cnblogs.com/EditArticles.aspx?postid=2881708" rel="nofollow">编辑</a> <a href="http://www.cnblogs.com/vingi/articles/2881708.html#" onclick="AddToWz(2881708);return false;">收藏</a></div>
+</div>
+<script type="text/javascript">var allowComments=true,cb_blogId=63153,cb_entryId=2881708,cb_blogApp=currentBlogApp,cb_blogUserGuid='57009c87-cfd4-de11-ba8f-001cf0cd104b',cb_entryCreatedDate='2013/1/29 16:57:00';loadViewCount(cb_entryId);</script>
+
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<!--done-->
+<br>
+<div class="feedback_area_title">评论</div>
+<div class="feedbackNoItems"></div>
+	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					<span style="color:#006699"><a href="http://www.cnblogs.com/vingi/articles/2881708.html#2716416" class="layer">#1楼</a><a name="2716416" id="comment_anchor_2716416"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(2716416,&#39;s5pVHBVQqSL2Smcs1jlVS4fR1VEdEwJSNiBYDZ9ZLHW9PPGpqBQRZw==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(2716416,&#39;s5pVHBVQqSL2Smcs1jlVS4fR1VEdEwJSNiBYDZ9ZLHW9PPGpqBQRZw==&#39;)">引用</a></span>
+				</div>
+				<div style="padding-left:30px;"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/arrow.gif" align="absmiddle">&nbsp;<a id="a_comment_author_2716416" class="feedbackmanagelink" href="http://www.cnblogs.com/dubuyunjie/" target="_blank">dubuyunjie</a> <a href="http://msg.cnblogs.com/send/dubuyunjie" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><font style="color:gray;font-size:10px;font-weight:normal;"> |  <span class="comment_date">2013-06-29 21:52</span></font>
+				</div>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2716416" class="blog_comment_body">请问博主我的sharper的重命名是灰色的，怎么办啊</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2716416,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2716416,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2716416_avatar" style="display:none;">http://pic.cnblogs.com/face/463049/20130629183010.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					<span style="color:#006699"><a href="http://www.cnblogs.com/vingi/articles/2881708.html#2757744" class="layer">#2楼</a><a name="2757744" id="comment_anchor_2757744"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(2757744,&#39;mTNN+iqBaSWU2zD7S2z/0P5tEsy486KLiwhpXZLGFLYsNQGwKWxflw==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(2757744,&#39;mTNN+iqBaSWU2zD7S2z/0P5tEsy486KLiwhpXZLGFLYsNQGwKWxflw==&#39;)">引用</a></span>
+				</div>
+				<div style="padding-left:30px;"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/arrow.gif" align="absmiddle">&nbsp;<a id="a_comment_author_2757744" class="feedbackmanagelink" href="http://www.cnblogs.com/World-of-Illusion/" target="_blank">Claude He</a> <a href="http://msg.cnblogs.com/send/Claude%20He" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><font style="color:gray;font-size:10px;font-weight:normal;"> |  <span class="comment_date">2013-08-22 12:37</span></font>
+				</div>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2757744" class="blog_comment_body">转载请提供原文出处！</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2757744,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2757744,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					<span style="color:#006699"><a href="http://www.cnblogs.com/vingi/articles/2881708.html#2801128" class="layer">#3楼</a><a name="2801128" id="comment_anchor_2801128"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(2801128,&#39;rS10/lMOARAyl3pq8tcYNEwOxcCo03oLMyXMwafqGLqAGYEWDTZCMA==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(2801128,&#39;rS10/lMOARAyl3pq8tcYNEwOxcCo03oLMyXMwafqGLqAGYEWDTZCMA==&#39;)">引用</a></span>
+				</div>
+				<div style="padding-left:30px;"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/arrow.gif" align="absmiddle">&nbsp;<a id="a_comment_author_2801128" class="feedbackmanagelink" href="http://www.cnblogs.com/ChenXu-net/" target="_blank">陈大欠</a> <a href="http://msg.cnblogs.com/send/%E9%99%88%E5%A4%A7%E6%AC%A0" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><font style="color:gray;font-size:10px;font-weight:normal;"> |  <span class="comment_date">2013-10-24 14:32</span></font>
+				</div>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2801128" class="blog_comment_body">很棒~</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2801128,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2801128,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2801128_avatar" style="display:none;">http://pic.cnblogs.com/face/438982/20130913150936.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					<span style="color:#006699"><a href="http://www.cnblogs.com/vingi/articles/2881708.html#2844448" class="layer">#4楼</a><a name="2844448" id="comment_anchor_2844448"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(2844448,&#39;VVdJ+iLtmY/yGBBXPGXNI3kgUsZOtfXI8UUX2M/9MdIuzLYxnEDHlA==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(2844448,&#39;VVdJ+iLtmY/yGBBXPGXNI3kgUsZOtfXI8UUX2M/9MdIuzLYxnEDHlA==&#39;)">引用</a></span>
+				</div>
+				<div style="padding-left:30px;"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/arrow.gif" align="absmiddle">&nbsp;<a id="a_comment_author_2844448" class="feedbackmanagelink" href="http://www.cnblogs.com/JiangXiaoTian/" target="_blank">The Mechanic</a> <a href="http://msg.cnblogs.com/send/The%20Mechanic" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><font style="color:gray;font-size:10px;font-weight:normal;"> |  <span class="comment_date">2013-12-25 18:10</span></font>
+				</div>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2844448" class="blog_comment_body">LZ,<br>5:按 alt+enter 能解决很多问题。下面是快捷键大全。<br>下面的图使用什么软件做的？</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2844448,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2844448,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					<span style="color:#006699"><a href="http://www.cnblogs.com/vingi/articles/2881708.html#2880184" class="layer">#5楼</a><a name="2880184" id="comment_anchor_2880184"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(2880184,&#39;Ue9J2qSeaQCOFhuEQXJxI70vRWaF5L4+aUWaEeT9w+xSEfzCP9xETA==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(2880184,&#39;Ue9J2qSeaQCOFhuEQXJxI70vRWaF5L4+aUWaEeT9w+xSEfzCP9xETA==&#39;)">引用</a></span>
+				</div>
+				<div style="padding-left:30px;"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/arrow.gif" align="absmiddle">&nbsp;<a id="a_comment_author_2880184" class="feedbackmanagelink" href="http://home.cnblogs.com/u/297859/" target="_blank">6572789</a> <a href="http://msg.cnblogs.com/send/6572789" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><font style="color:gray;font-size:10px;font-weight:normal;"> |  <span class="comment_date">2014-02-21 16:25</span></font>
+				</div>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2880184" class="blog_comment_body">不错</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2880184,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2880184,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					<span style="color:#006699"><a href="http://www.cnblogs.com/vingi/articles/2881708.html#2889459" class="layer">#6楼</a><a name="2889459" id="comment_anchor_2889459"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(2889459,&#39;9zFMG0besukVP508Bph0BSdZPJtx7e5VhOJGTUWJDkovZ9B8qsl7sw==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(2889459,&#39;9zFMG0besukVP508Bph0BSdZPJtx7e5VhOJGTUWJDkovZ9B8qsl7sw==&#39;)">引用</a></span>
+				</div>
+				<div style="padding-left:30px;"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/arrow.gif" align="absmiddle">&nbsp;<a id="a_comment_author_2889459" class="feedbackmanagelink" href="http://www.cnblogs.com/czcz1024/" target="_blank">czcz1024</a> <a href="http://msg.cnblogs.com/send/czcz1024" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><font style="color:gray;font-size:10px;font-weight:normal;"> |  <span class="comment_date">2014-03-06 10:06</span></font>
+				</div>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2889459" class="blog_comment_body">我还真觉得Locate in Solution Explorer是个好功能<br>因为我默认是关闭 在解决方案管理器中跟踪活动项 <br>个人习惯不一样</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2889459,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2889459,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2889459_avatar" style="display:none;">http://pic.cnblogs.com/face/150916/20140117094712.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					<span style="color:#006699"><a href="http://www.cnblogs.com/vingi/articles/2881708.html#2893548" class="layer">#7楼</a><a name="2893548" id="comment_anchor_2893548"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(2893548,&#39;6NLN13LBO+2FMLrk6BcchynRdz9M6eShcQ2VJUYA493TkmOKHJjWgQ==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(2893548,&#39;6NLN13LBO+2FMLrk6BcchynRdz9M6eShcQ2VJUYA493TkmOKHJjWgQ==&#39;)">引用</a></span>
+				</div>
+				<div style="padding-left:30px;"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/arrow.gif" align="absmiddle">&nbsp;<a id="a_comment_author_2893548" class="feedbackmanagelink" href="http://home.cnblogs.com/u/317378/" target="_blank">liudegui</a> <a href="http://msg.cnblogs.com/send/liudegui" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><font style="color:gray;font-size:10px;font-weight:normal;"> |  <span class="comment_date">2014-03-12 10:39</span></font>
+				</div>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2893548" class="blog_comment_body">从哪儿转的？</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2893548,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2893548,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					<span style="color:#006699"><a href="http://www.cnblogs.com/vingi/articles/2881708.html#2897190" class="layer">#8楼</a><a name="2897190" id="comment_anchor_2897190"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(2897190,&#39;/2UQXnXKVr2DZxKo0GrDoBStJxwHF7WgFkS5lXxlDYI3zvaICMz44w==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(2897190,&#39;/2UQXnXKVr2DZxKo0GrDoBStJxwHF7WgFkS5lXxlDYI3zvaICMz44w==&#39;)">引用</a></span>
+				</div>
+				<div style="padding-left:30px;"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/arrow.gif" align="absmiddle">&nbsp;<a id="a_comment_author_2897190" class="feedbackmanagelink" href="http://home.cnblogs.com/u/300230/" target="_blank">路正遥</a> <a href="http://msg.cnblogs.com/send/%E8%B7%AF%E6%AD%A3%E9%81%A5" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><font style="color:gray;font-size:10px;font-weight:normal;"> |  <span class="comment_date">2014-03-17 16:48</span></font>
+				</div>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2897190" class="blog_comment_body">R#的配置还是比较难找的，个人更倾向于通过xml配置，还没有找到相关的文档。。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2897190,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2897190,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					<span style="color:#006699"><a href="http://www.cnblogs.com/vingi/articles/2881708.html#2902462" class="layer">#9楼</a><a name="2902462" id="comment_anchor_2902462"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(2902462,&#39;W1cjh8ecnQNPBwcX/AAXroxmnUhfGxW1xMBW0ks5jloJlNOk9e/vYg==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(2902462,&#39;W1cjh8ecnQNPBwcX/AAXroxmnUhfGxW1xMBW0ks5jloJlNOk9e/vYg==&#39;)">引用</a></span>
+				</div>
+				<div style="padding-left:30px;"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/arrow.gif" align="absmiddle">&nbsp;<a id="a_comment_author_2902462" class="feedbackmanagelink" href="http://www.cnblogs.com/kuibono/" target="_blank">kuibono</a> <a href="http://msg.cnblogs.com/send/kuibono" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><font style="color:gray;font-size:10px;font-weight:normal;"> |  <span class="comment_date">2014-03-25 09:08</span></font>
+				</div>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2902462" class="blog_comment_body"><a href="http://www.cnblogs.com/vingi/articles/2881708.html#2844448" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2844448);">@</a>
+瓦罐<br>看样子是 xmind</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2902462,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2902462,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2902462_avatar" style="display:none;">http://pic.cnblogs.com/face/u95475.jpg</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					<span style="color:#006699"><a href="http://www.cnblogs.com/vingi/articles/2881708.html#3006926" class="layer">#10楼</a><a name="3006926" id="comment_anchor_3006926"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3006926,&#39;isDo86oNqtY48sSyyoP7/vPKJdJnMIamvgPGSGkYrGDDq+1kP16xOQ==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3006926,&#39;isDo86oNqtY48sSyyoP7/vPKJdJnMIamvgPGSGkYrGDDq+1kP16xOQ==&#39;)">引用</a></span>
+				</div>
+				<div style="padding-left:30px;"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/arrow.gif" align="absmiddle">&nbsp;<a id="a_comment_author_3006926" class="feedbackmanagelink" href="http://www.cnblogs.com/VAllen/" target="_blank">VAllen</a> <a href="http://msg.cnblogs.com/send/VAllen" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><font style="color:gray;font-size:10px;font-weight:normal;"> |  <span class="comment_date">2014-08-13 16:33</span></font>
+				</div>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3006926" class="blog_comment_body">Mark</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3006926,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3006926,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3006926_avatar" style="display:none;">http://pic.cnblogs.com/face/402416/20140826101834.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					<span style="color:#006699"><a href="http://www.cnblogs.com/vingi/articles/2881708.html#3007315" class="layer">#11楼</a><a name="3007315" id="comment_anchor_3007315"></a><span id="comment-maxId" style="display:none;">3007315</span><span id="comment-maxDate" style="display:none;">2014/8/14 9:07:36</span></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(3007315,&#39;isDo86oNqtY48sSyyoP7/vPKJdJnMIamvgPGSGkYrGDDq+1kP16xOQ==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(3007315,&#39;isDo86oNqtY48sSyyoP7/vPKJdJnMIamvgPGSGkYrGDDq+1kP16xOQ==&#39;)">引用</a></span>
+				</div>
+				<div style="padding-left:30px;"><img src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/arrow.gif" align="absmiddle">&nbsp;<a id="a_comment_author_3007315" class="feedbackmanagelink" href="http://www.cnblogs.com/VAllen/" target="_blank">VAllen</a> <a href="http://msg.cnblogs.com/send/VAllen" title="发送站内短消息" class="sendMsg2This">&nbsp;</a><font style="color:gray;font-size:10px;font-weight:normal;"> |  <span class="comment_date">2014-08-14 09:07</span></font>
+				</div>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3007315" class="blog_comment_body">为什么要取消var的提示？</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3007315,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3007315,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3007315_avatar" style="display:none;">http://pic.cnblogs.com/face/402416/20140826101834.png</span>
+			</div>
+		</div>
+	<div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="http://www.cnblogs.com/vingi/articles/2881708.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://www.cnblogs.com/vingi/articles/2881708.html#top">返回顶部</a></div>
+<div id="comment_form_container">
+<div id="commentform_title">发表评论</div>
+<span id="tip_comment" style="color:Red"></span>
+<p>
+昵称：<input type="text" id="tbCommentAuthor" class="author" disabled="disabled" size="50" value="lch_2016">
+</p>
+<div class="commentbox_main">
+<div class="commentbox_title">
+<div class="commentbox_title_left">评论内容：</div>
+<div class="commentbox_title_right">
+<img id="ubb_quote" class="comment_icon" src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/quote.gif" alt="引用" title="添加引用" onclick="insertUBB(&#39;tbCommentBody&#39;,&#39;quote&#39;)">
+<img id="ubb_bold" class="comment_icon" src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/b.png" alt="粗体" title="添加粗体" onclick="insertUBB(&#39;tbCommentBody&#39;,&#39;b&#39;)">
+<img id="ubb_url" class="comment_icon" src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/lk.png" alt="链接" title="添加链接" onclick="insertUbbUrl(&#39;tbCommentBody&#39;)">
+<img id="ubb_indent" class="comment_icon" src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/indent.png" alt="缩进" title="添加首行缩进" onclick="insertIndent(&#39;tbCommentBody&#39;)">
+<img id="ubb_code" class="comment_icon" src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/InsertCode.gif" alt="代码" title="添加代码" onclick="insertUbbCode()">
+<img id="ubb_img" class="comment_icon" src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/img.gif" alt="图片" title="上传图片" onclick="OpenImageUploadWindow();">
+</div>
+</div>
+<div class="clear"></div>
+<textarea id="tbCommentBody" class="comment_textarea"></textarea>
+</div>
+<p id="commentbox_opt">
+<input id="btn_comment_submit" type="button" class="comment_btn" value="提交评论">
+<span id="span_comment_canceledit" style="display:none"><a href="javascript:void(0);" onclick="return CancelCommentEdit()">不改了</a></span>
+<a href="javascript:void(0);" onclick="return logout();">退出登录</a>
+        <a id="commentbox_opt_sub" href="javascript:void(0);" title="订阅后有新评论时会邮件通知您" onclick="commentManager.Subscribe()">订阅评论</a>
+</p>
+<div id="tip_comment2" style="color:Red"></div>
+<p>
+[Ctrl+Enter快捷键提交]
+</p>
+<div style="display:none">
+<span id="comment_edit_id"></span><span id="span_parentcomment_id"></span>
+<span id="span_parent_id"></span>
+<span id="span_comment_replyto"></span>
+<span id="span_comment_posted"></span>
+</div>
+</div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】50万行VC++源码: 大型组态工控、电力仿真CAD与GIS源码库</a><br><a href="http://vcloud.163.com/?adchannel=bp_cnblogs2" target="_blank">【推荐】用1%的研发投入，搭载3倍性能的网易视频云技术</a><br><a href="http://rongcloud.cn/reports/journal2" target="_blank">【推荐】融云发布 App 社交化白皮书 IM 提升活跃超 8 倍</a><br></div>
+<div id="opt_under_post"></div>
+<div id="ad_c1" class="c_ad_block"><a href="http://www.gcpowertools.com.cn/products/activereports_overview.htm?utm_source=cnblogs&amp;utm_medium=blogpage&amp;utm_term=bottom&amp;utm_content=AR&amp;utm_campaign=community" target="_blank"><img width="300" height="250" src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/24442-20161115165230123-1587531896.png" alt=""></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/557576/" target="_blank">Google收购Qwiklabs 教开发人员云技能</a><br> ·  <a href="http://news.cnblogs.com/n/557583/" target="_blank">10个习惯助你成为一名优秀的程序员</a><br> ·  <a href="http://news.cnblogs.com/n/557582/" target="_blank">大疆Mavic上榜《时代》25大科技发明，无人机迎两重变化</a><br> ·  <a href="http://news.cnblogs.com/n/557581/" target="_blank">“你可能有兴趣”的广告，其实网站主也不太喜欢？</a><br> ·  <a href="http://news.cnblogs.com/n/557577/" target="_blank">谷歌在蒙特利尔新成立人工智能实验室 搜罗全球人才</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="ad_c2" class="c_ad_block"><a href="https://www.jiguang.cn/devservice/?from=cnblogs01" target="_blank"><img width="468" height="60" src="./ReSharper 配置及用法(转) - vingi_苍月 - 博客园_files/24442-20161114133622451-1554357151.jpg" alt=""></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/555750/" target="_blank">循序渐进地代码重构</a><br> ·  <a href="http://kb.cnblogs.com/page/554496/" target="_blank">技术的正宗与野路子</a><br> ·  <a href="http://kb.cnblogs.com/page/553682/" target="_blank">陈皓：什么是工程师文化？</a><br> ·  <a href="http://kb.cnblogs.com/page/551422/" target="_blank">没那么难，谈CSS的设计模式</a><br> ·  <a href="http://kb.cnblogs.com/page/550625/" target="_blank">程序猿媳妇儿注意事项</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+		</div>
+	</div>
+	</div>
+	<!-- left ends -->
+	<!-- right starts -->
+	<div id="right">
+		<!-- 右侧工具部分 -->
+		<div id="right_content">
+	
+			
+<!--done-->
+<h1 class="listtitle" style="padding-top:14px;padding-left:42px;">公告</h1>
+<div class="newsItem">
+	<div id="blog-news"><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/vingi/">vingi_苍月</a><br>园龄：<a href="http://home.cnblogs.com/u/vingi/" title="入园时间：2009-11-19">7年</a><br>粉丝：<a href="http://home.cnblogs.com/u/vingi/followers/">36</a><br>关注：<a href="http://home.cnblogs.com/u/vingi/followees/">5</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;57009c87-cfd4-de11-ba8f-001cf0cd104b&#39;)">+加关注</a></div></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+	
+			<div id="calendar"><div id="blog-calendar" style=""><table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="Calendar">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2016/10/01&#39;);return false;">&lt;</a></td><td align="center">2016年11月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2016/12/01&#39;);return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" align="center" abbr="日" scope="col">日</th><th class="CalDayHeader" align="center" abbr="一" scope="col">一</th><th class="CalDayHeader" align="center" abbr="二" scope="col">二</th><th class="CalDayHeader" align="center" abbr="三" scope="col">三</th><th class="CalDayHeader" align="center" abbr="四" scope="col">四</th><th class="CalDayHeader" align="center" abbr="五" scope="col">五</th><th class="CalDayHeader" align="center" abbr="六" scope="col">六</th></tr><tr><td class="CalOtherMonthDay" align="center">30</td><td class="CalOtherMonthDay" align="center">31</td><td align="center">1</td><td align="center">2</td><td align="center">3</td><td align="center">4</td><td class="CalWeekendDay" align="center">5</td></tr><tr><td class="CalWeekendDay" align="center">6</td><td align="center">7</td><td align="center">8</td><td align="center">9</td><td align="center">10</td><td align="center">11</td><td class="CalWeekendDay" align="center">12</td></tr><tr><td class="CalWeekendDay" align="center">13</td><td align="center">14</td><td align="center">15</td><td align="center">16</td><td align="center">17</td><td align="center">18</td><td class="CalWeekendDay" align="center">19</td></tr><tr><td class="CalWeekendDay" align="center">20</td><td align="center">21</td><td class="CalTodayDay" align="center">22</td><td align="center">23</td><td align="center">24</td><td align="center">25</td><td class="CalWeekendDay" align="center">26</td></tr><tr><td class="CalWeekendDay" align="center">27</td><td align="center">28</td><td align="center">29</td><td align="center">30</td><td class="CalOtherMonthDay" align="center">1</td><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td></tr><tr><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td><td class="CalOtherMonthDay" align="center">7</td><td class="CalOtherMonthDay" align="center">8</td><td class="CalOtherMonthDay" align="center">9</td><td class="CalOtherMonthDay" align="center">10</td></tr>
+</tbody></table></div><script type="text/javascript">loadBlogDefaultCalendar();</script></div>
+			
+				<div id="leftcontentcontainer">
+					<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+
+</div>
+</div>
+
+</div><div id="sidebar_shortcut" class="sidebar-block">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/vingi/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="http://www.cnblogs.com/vingi/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="http://www.cnblogs.com/vingi/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="http://www.cnblogs.com/vingi/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="http://www.cnblogs.com/vingi/tag/" title="我的博客的标签列表">我的标签</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+
+</div></div><div id="sidebar_toptags" class="sidebar-block">
+<h3 class="catListTitle">我的标签</h3>
+<div id="MyTag">
+<ul>
+<li><a href="http://www.cnblogs.com/vingi/tag/linux/">linux</a>(1)</li>
+</ul>
+</div></div><div id="sidebar_categories">
+<!--done-->
+
+		<h1 class="catListTitle">文章分类<span style="font-size:11px;font-weight:normal">(110)</span></h1>
+		
+				<div>
+			
+				<div class="catList">
+				 <a id="CatList_LinkList_0_Link_0" class="listitem" href="http://www.cnblogs.com/vingi/category/390809.html">C#(45)</a>
+				</div>
+			
+				<div class="catList">
+				 <a id="CatList_LinkList_0_Link_1" class="listitem" href="http://www.cnblogs.com/vingi/category/390810.html">CSS(7)</a>
+				</div>
+			
+				<div class="catList">
+				 <a id="CatList_LinkList_0_Link_2" class="listitem" href="http://www.cnblogs.com/vingi/category/390812.html">JS(10)</a>
+				</div>
+			
+				<div class="catList">
+				 <a id="CatList_LinkList_0_Link_3" class="listitem" href="http://www.cnblogs.com/vingi/category/390820.html">Linux(9)</a>
+				</div>
+			
+				<div class="catList">
+				 <a id="CatList_LinkList_0_Link_4" class="listitem" href="http://www.cnblogs.com/vingi/category/661038.html">MariaDB(2)</a>
+				</div>
+			
+				<div class="catList">
+				 <a id="CatList_LinkList_0_Link_5" class="listitem" href="http://www.cnblogs.com/vingi/category/390814.html">NoSQL(5)</a>
+				</div>
+			
+				<div class="catList">
+				 <a id="CatList_LinkList_0_Link_6" class="listitem" href="http://www.cnblogs.com/vingi/category/390821.html">Other(8)</a>
+				</div>
+			
+				<div class="catList">
+				 <a id="CatList_LinkList_0_Link_7" class="listitem" href="http://www.cnblogs.com/vingi/category/404671.html">Python(16)</a>
+				</div>
+			
+				<div class="catList">
+				 <a id="CatList_LinkList_0_Link_8" class="listitem" href="http://www.cnblogs.com/vingi/category/401790.html">Ruby(3)</a>
+				</div>
+			
+				<div class="catList">
+				 <a id="CatList_LinkList_0_Link_9" class="listitem" href="http://www.cnblogs.com/vingi/category/390813.html">SQL(5)</a>
+				</div>
+			
+				</div>
+			
+	
+</div><div id="sidebar_recentcomments" class="sidebar-block"><div id="recent_comments_wrap">
+<h3 class="catListTitle">最新评论</h3>
+<div class="RecentComment" id="RecentComments">
+	<div id="RecentCommentsBlock"><ul>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/vingi/articles/2868933.html#3541800">1. Re:检测到在集成的托管管道模式下不适用的ASP.NET设置的解决方法(转)</a></li>
+        <li class="recent_comment_body">这个问题困扰我一段时间了，今天终于解惑了，感谢楼主，大赞</li>
+        <li class="recent_comment_author">--小离子</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/vingi/articles/4334948.html#3522249">2. Re:C#使用DotRas完成ADSL自动重连</a></li>
+        <li class="recent_comment_body">楼主，可以实现动态更新账号和密码吗？</li>
+        <li class="recent_comment_author">--OK121</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/vingi/articles/2868933.html#3409552">3. Re:检测到在集成的托管管道模式下不适用的ASP.NET设置的解决方法(转)</a></li>
+        <li class="recent_comment_body">抓住了问题的本质</li>
+        <li class="recent_comment_author">--hollyspirit</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/vingi/articles/4334948.html#3400803">4. Re:C#使用DotRas完成ADSL自动重连</a></li>
+        <li class="recent_comment_body">解决大问题，这个写法才是正确的，网上的其他写法都会提示“系统无法为这个连接找到电话簿项目”</li>
+        <li class="recent_comment_author">--郭明锋</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/vingi/articles/4109498.html#3282925">5. Re:sublime text 3 plugin LiveReload的应用 for chrome</a></li>
+        <li class="recent_comment_body">html页面必须放在服务器下面吗</li>
+        <li class="recent_comment_author">--梦想.家</li>
+</ul>
+</div>
+</div>
+</div></div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap" style="display: none;">
+<h3 class="catListTitle">阅读排行榜</h3>
+<div class="RecentComment" id="TopViewPosts"> 
+	<div id="TopViewPostsBlock"></div>
+</div>
+</div></div><div id="sidebar_topcommentedposts" class="sidebar-block"><div id="topfeedback_posts_wrap" style="display: none;">
+<h3 class="catListTitle">评论排行榜</h3>
+<div class="RecentComment" id="TopCommentsPosts">
+	<div id="TopFeedbackPostsBlock"></div>
+</div></div></div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap" style="display: none;">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div class="RecentComment">
+	<div id="TopDiggPostsBlock"></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+				</div>
+			
+		</div>
+		<!-- //右侧工具部分 -->
+	</div>
+	<!-- right ends -->
+	<div class="clear"></div>
+</div>
+<div id="footer">
+<!--done-->
+Copyright ©2016 vingi_苍月</div>
+
+
+
+</body></html>

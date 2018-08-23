@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://www.cnblogs.com/youring2/p/3551460.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net - Qi Fei - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net - Qi Fei - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net - Qi Fei - 博客园_files/bundle-CodingLife.css">
+<link type="text/css" rel="stylesheet" href="./Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net - Qi Fei - 博客园_files/48401.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/youring2/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/youring2/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/youring2/wlwmanifest.xml">
+<script src="./Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net - Qi Fei - 博客园_files/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'youring2', cb_enable_mathjax=false;</script>
+<script src="./Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net - Qi Fei - 博客园_files/blog-common.js" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/youring2/"><img id="blogLogo" src="./Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net - Qi Fei - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/youring2/">Qi Fei's Blog</a></h1>
+<h2><div>
+<span>优秀是一种习惯</span>
+</div></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li></li>
+<li><a id="MyLinks1_MyHomeLink" class="menu" href="http://www.cnblogs.com/youring2/">首页</a></li>
+<li><a id="MyLinks1_NewPostLink" class="menu" rel="nofollow" href="http://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="MyLinks1_ContactLink" class="menu" rel="nofollow" href="http://msg.cnblogs.com/send/Qi%20Fei">联系</a></li>
+<li><a id="MyLinks1_Syndication" class="menu" href="http://www.cnblogs.com/youring2/rss">订阅</a>
+<!--<a id="MyLinks1_XMLLink" class="aHeaderXML" href="http://www.cnblogs.com/youring2/rss"><img src="http://www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="MyLinks1_Admin" class="menu" rel="nofollow" href="http://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/youring2/p/3551460.html">Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><p>Ext.Net是一个对ExtJS进行封装了的.net控件库，可以在ASP.NET WebForm和MVC中使用。从今天开始记录我的学习笔记，这是第一篇，今天学习了如何在WebForm中使用Ext.Net控件库。</p>
+<h2>下载Ext.Net</h2>
+<p>首先要去Ext.Net网站上下载Ext.Net，我先学习的是WebForm版：</p>
+<p><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="./Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net - Qi Fei - 博客园_files/5735633628334704397.png" alt="image" width="1027" height="159" border="0"></p>
+<p>当前版本是2.4.0，压缩包里面包含了不同版本，分别用在相应.net版本的程序中。</p>
+<h2>在项目中引用</h2>
+<p>要使用Ext.Net，首先创建一个WebForm程序，我们这里使用4.0版。</p>
+<p>在引用管理器中，浏览到解压的目录，然后添加下面的引用：</p>
+<p><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="./Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net - Qi Fei - 博客园_files/5100435584960646903.png" alt="image" width="581" height="133" border="0"></p>
+<h2>配置Web.config</h2>
+<p>尽管添加了引用，此时还不能算是完工。要想正确的使用Ext.Net，还需要对Web.config进行修改。</p>
+<h3>第一步，添加httphandler和httpmodule节点的配置</h3>
+<p>经典模式配置：</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: #a31515;">httpHandlers</span><span style="color: blue;">&gt;
+  &lt;</span><span style="color: #a31515;">add </span><span style="color: red;">path</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">*/ext.axd</span><span style="color: black;">" </span><span style="color: red;">verb</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">*</span><span style="color: black;">" </span><span style="color: red;">type</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">Ext.Net.ResourceHandler</span><span style="color: black;">"  </span><span style="color: red;">validate</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">false</span><span style="color: black;">" </span><span style="color: blue;">/&gt;
+&lt;/</span><span style="color: #a31515;">httpHandlers</span><span style="color: blue;">&gt;
+&lt;</span><span style="color: #a31515;">httpModules</span><span style="color: blue;">&gt;
+  &lt;</span><span style="color: #a31515;">add </span><span style="color: red;">name</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">DirectRequestModule</span><span style="color: black;">" </span><span style="color: red;">type</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">Ext.Net.DirectRequestModule, Ext.Net</span><span style="color: black;">" </span><span style="color: blue;">/&gt;
+&lt;/</span><span style="color: #a31515;">httpModules</span><span style="color: blue;">&gt;</span></pre>
+<p>集成模式配置：</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: #a31515;">modules</span><span style="color: blue;">&gt;
+  &lt;</span><span style="color: #a31515;">add </span><span style="color: red;">name</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">DirectRequestModule</span><span style="color: black;">" </span><span style="color: red;">preCondition</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">managedHandler</span><span style="color: black;">"
+       </span><span style="color: red;">type</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">Ext.Net.DirectRequestModule, Ext.Net</span><span style="color: black;">" </span><span style="color: blue;">/&gt;
+&lt;/</span><span style="color: #a31515;">modules</span><span style="color: blue;">&gt;
+&lt;</span><span style="color: #a31515;">handlers</span><span style="color: blue;">&gt;
+  &lt;</span><span style="color: #a31515;">add </span><span style="color: red;">name</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">DirectRequestHandler</span><span style="color: black;">" </span><span style="color: red;">verb</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">*</span><span style="color: black;">" </span><span style="color: red;">path</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">*/ext.axd</span><span style="color: black;">"
+       </span><span style="color: red;">preCondition</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">integratedMode</span><span style="color: black;">" </span><span style="color: red;">type</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">Ext.Net.ResourceHandler</span><span style="color: black;">" </span><span style="color: blue;">/&gt;
+&lt;/</span><span style="color: #a31515;">handlers</span><span style="color: blue;">&gt;</span></pre>
+<p>要想经典模式和集成模式共存，还需要再system.webServer节点中添加下面的配置：</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: #a31515;">validation </span><span style="color: red;">validateIntegratedModeConfiguration</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">false</span><span style="color: black;">" </span><span style="color: blue;">/&gt;</span></pre>
+<h3>第二步，配置页面控件</h3>
+<p>要在页面中使用Ext.Net的控件，需要添加针对Ext.Net控件的配置：</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: #a31515;">pages</span><span style="color: blue;">&gt;
+  &lt;</span><span style="color: #a31515;">controls</span><span style="color: blue;">&gt;
+    &lt;</span><span style="color: #a31515;">add </span><span style="color: red;">tagPrefix</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">ext</span><span style="color: black;">" </span><span style="color: red;">namespace</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">Ext.Net</span><span style="color: black;">" </span><span style="color: red;">assembly</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">Ext.Net</span><span style="color: black;">"</span><span style="color: blue;">/&gt;
+  &lt;/</span><span style="color: #a31515;">controls</span><span style="color: blue;">&gt;
+&lt;/</span><span style="color: #a31515;">pages</span><span style="color: blue;">&gt;</span></pre>
+<h3>第三步，添加Ext.Net全局配置节点</h3>
+<p>在完成上面两个步骤之后，我们已经可以在页面中使用Ext.Net控件了。</p>
+<p><img style="background-image: none; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="./Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net - Qi Fei - 博客园_files/5120050672796197478.png" alt="image" width="302" height="199" border="0"></p>
+<p>那么我们为什么还要进行第三步配置呢？第三步配置添加了全局的配置，例如我们要使用全局的皮肤，而不是每一个页面都去设置。</p>
+<p>要添加全局配置，首先要在配置文件中添加自定义节点：</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: #a31515;">configSections</span><span style="color: blue;">&gt;
+  &lt;</span><span style="color: #a31515;">section </span><span style="color: red;">name</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">extnet</span><span style="color: black;">" </span><span style="color: red;">type</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">Ext.Net.GlobalConfig</span><span style="color: black;">" </span><span style="color: red;">requirePermission</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">false</span><span style="color: black;">" </span><span style="color: blue;">/&gt;
+&lt;/</span><span style="color: #a31515;">configSections</span><span style="color: blue;">&gt;</span></pre>
+<p>接下来是配置项：</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: #a31515;">extnet </span><span style="color: red;">theme</span><span style="color: blue;">=</span><span style="color: black;">"</span><span style="color: blue;">Neptune</span><span style="color: black;">" </span><span style="color: blue;">/&gt;</span></pre>
+<p>在这里我们只设置了全局的皮肤，使用ExtJS 4.2.1中的Neptune皮肤。</p>
+<h2>在页面中的简单用法</h2>
+<p>在完成了配置之后，我们就可以在页面中使用Ext.Net控件了。</p>
+<p>首先，在需要使用Ext.Net控件的页面中添加资源引用，就像使用ScriptManager一样，需要在页面中添加如下控件：</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">ResourceManager </span><span style="color: red;">runat</span><span style="color: blue;">="server"&gt;&lt;/</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">ResourceManager</span><span style="color: blue;">&gt;</span></pre>
+<p>有了这个控件，就等于我们已经在页面中添加了ExtJS的引用。</p>
+<p>接下来我们来看看上面那个示例窗口的代码：</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Window </span><span style="color: red;">runat</span><span style="color: blue;">="server" 
+    </span><span style="color: red;">ID</span><span style="color: blue;">="win" 
+    </span><span style="color: red;">Title</span><span style="color: blue;">="示例窗口" 
+    </span><span style="color: red;">Width</span><span style="color: blue;">="300" 
+    </span><span style="color: red;">Height</span><span style="color: blue;">="200" 
+    </span><span style="color: red;">AutoShow</span><span style="color: blue;">="true"&gt;
+&lt;/</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Window</span><span style="color: blue;">&gt;</span></pre>
+<p>然后运行页面，可以看到我们刚才的示例窗口。</p>
+<p>如果你对ExtJS有所了解，那么你会发现，Ext.Net在很大程度上模拟了ExtJS的写法，大大的提高了我们的生产力。</p>
+<p>今天算是一个开篇，我会将自己的Ext.Net学习历程通过日志的形式记录下来的。加油！</p>
+<p>&nbsp;</p>
+<h2>补充：关于Ext.Net版权的问题</h2>
+<p>Ext.Net 是一个开源的项目，有收费授权和免费授权两种，两个版本之间基本上没有什么区别，我们可以在学习的时候使用免费的授权，如果以后需要商业授权，可以去官网买一套，授权版包含了ExtJS的授权，你可以在Ext.Net官网查看相应授权的价格。</p>
+<p>原文链接：<a href="http://www.qeefee.com/article/extnet-learn-01-using-extnet-in-webform">http://www.qeefee.com/article/extnet-learn-01-using-extnet-in-webform</a></p></div><div id="MySignature" style="display: block;"><div class="ad">
+
+
+</div>
+
+<div class="favor">
+<p>如果认为此文对您有帮助，别忘了支持一下哦！</p>
+</div>
+
+
+<div class="content">
+<div>作者：<a href="http://youring2.cnblogs.com/" target="_blank" style="color:red;">齐飞</a></div>
+<div>来源：<a href="http://youring2.cnblogs.com/" style="color:red;" target="_blank">http://youring2.cnblogs.com/</a></div>
+<div>声明：本博客原创文字只代表本人工作中在某一时间内总结的观点或结论，与本人所在单位没有直接利益关系。非商业，未授权，贴子请以现状保留，转载时必须保留此段声明，且在文章页面明显位置给出原文连接。</div>
+</div></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="http://www.cnblogs.com/youring2/category/553040.html">Ext.Net</a></div>
+<div id="EntryTag">标签: <a href="http://www.cnblogs.com/youring2/tag/Ext.Net/">Ext.Net</a></div>
+<div id="blog_post_info"><div id="green_channel">
+<a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(3551460,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+<a id="green_channel_follow" onclick="c_follow();" href="javascript:void(0);">关注我</a>
+<a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a><a id="green_channel_contact" href="http://msg.cnblogs.com/send/Qi%20Fei" target="_blank">联系我</a>
+<a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net - Qi Fei - 博客园_files/icon_weibo_24.png" alt=""></a>
+<a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net - Qi Fei - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+<div id="author_profile_info" class="author_profile_info">
+<a href="http://home.cnblogs.com/u/youring2/" target="_blank"><img src="./Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net - Qi Fei - 博客园_files/20131111152539.png" class="author_avatar" alt=""></a>
+<div id="author_profile_detail" class="author_profile_info">
+<a href="http://home.cnblogs.com/u/youring2/">Qi Fei</a><br>
+<a href="http://home.cnblogs.com/u/youring2/followees">关注 - 23</a><br>
+<a href="http://home.cnblogs.com/u/youring2/followers">粉丝 - 900</a>
+</div>
+</div>
+<div class="clear"></div>
+<div id="author_profile_honor"></div>
+<div id="author_profile_follow">
+    <a href="javascript:void(0);" onclick="c_follow();return false;">+加关注</a>
+</div>
+</div>
+<div id="div_digg">										
+    <div class="diggit" onclick="votePost(3551460,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">1</span>
+    </div>
+	<div class="buryit" onclick="votePost(3551460,&#39;Bury&#39;)"> 
+		<span class="burynum" id="bury_count">0</span>
+	</div>
+	<div class="clear"></div>	
+	<div class="diggword" id="digg_tips">
+    (请您对文章做出评价)
+    </div>	
+</div>
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/youring2/p/3547682.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/youring2/p/3547682.html" title="发布于2014-02-13 11:03">【转】好的用户界面-界面设计的一些技巧</a><br><a href="http://www.cnblogs.com/youring2/p/3551463.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/youring2/p/3551463.html" title="发布于2014-02-16 16:09">Ext.Net学习笔记02：Ext.Net用法概览</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2014-02-16 16:08</span> <a href="http://www.cnblogs.com/youring2/">Qi Fei</a> 阅读(<span id="post_view_count">2718</span>) 评论(<span id="post_comment_count">1</span>)  <a href="http://i.cnblogs.com/EditPosts.aspx?postid=3551460" rel="nofollow">编辑</a> <a href="http://www.cnblogs.com/youring2/p/3551460.html#" onclick="AddToWz(3551460);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,isLogined=false,cb_blogId=48401,cb_entryId=3551460,cb_blogApp=currentBlogApp,cb_blogUserGuid='bf03470b-63cf-dd11-9e4d-001cf0cd104b',cb_entryCreatedDate='2014/2/16 16:08:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<br>
+<div class="feedback_area_title">评论列表</div>
+<div class="feedbackNoItems"></div>	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/youring2/p/3551460.html#3157284" class="layer">#1楼</a><a name="3157284" id="comment_anchor_3157284"></a><span id="comment-maxId" style="display:none;">3157284</span><span id="comment-maxDate" style="display:none;">2015/4/7 11:40:59</span>  <span class="comment_date">2015-04-07 11:40</span> <a id="a_comment_author_3157284" href="http://www.cnblogs.com/hetong/" target="_blank">和同</a> <a href="http://msg.cnblogs.com/send/%E5%92%8C%E5%90%8C" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3157284" class="blog_comment_body">此篇已看 继续下一篇  mark</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3157284,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3157284,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3157284_avatar" style="display:none;">http://pic.cnblogs.com/face/631409/20150625100827.png</span>
+			</div>
+		</div>
+	<div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="http://www.cnblogs.com/youring2/p/3551460.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://www.cnblogs.com/youring2/p/3551460.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】50万行VC++源码: 大型组态工控、电力仿真CAD与GIS源码库</a><br><a href="http://www.rongcloud.cn/" target="_blank">【推荐】融云即时通讯云－豆果美食、Faceu等亿级APP都在用</a><br><a href="http://www.gcpowertools.com.cn/products/activereports/excel.htm?utm_source=cnblogs&amp;utm_medium=blogpage&amp;utm_term=bottom&amp;utm_content=AR&amp;utm_campaign=community" target="_blank">【推荐】报表开发别头大！类Excel 复杂报表开发实例，即学即用</a><br><a href="http://group.cnblogs.com/topic/74774.html" target="_blank">【推荐】福利Time，讯飞开放平台注册即送好礼！</a><br><a href="http://group.cnblogs.com/topic/74539.html" target="_blank">【推荐】阿里云万网域名：.xin .com将推出重磅优惠</a><br></div>
+<div id="opt_under_post"></div>
+<div id="ad_c1" class="c_ad_block"><a href="https://www.wilddog.com/?utm_source=cnblog&amp;utm_medium=banner&amp;utm_content=contenct_bottom&amp;utm_campaign=suzhoucodingcamp" target="_blank"><img width="300" height="250" src="./Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net - Qi Fei - 博客园_files/cnblogs-300x250-x2-1.jpg" alt=""></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/547666/" target="_blank">易到用车彭钢：滴滴Uber模式已做到极致，要靠差异化生存</a><br> ·  <a href="http://news.cnblogs.com/n/547665/" target="_blank">我打赌你不知道苹果手机能做这十件事</a><br> ·  <a href="http://news.cnblogs.com/n/547664/" target="_blank">一枚火箭用四次 贝索斯的廉价太空游越来越靠谱</a><br> ·  <a href="http://news.cnblogs.com/n/547663/" target="_blank">有戏有料有野心，一部反映硅谷创业的美剧《硅谷》是怎么炼成的？</a><br> ·  <a href="http://news.cnblogs.com/n/547661/" target="_blank">什么值得买：一家论坛式导购网站的自我修养</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="ad_c2" class="c_ad_block"><a href="https://www.jiguang.cn/?from=cnblogs01" target="_blank"><img width="468" height="60" src="./Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net - Qi Fei - 博客园_files/24442-20160613130538213-1713265809.jpg" alt=""></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/547656/" target="_blank">情感化设计中的手绘应用表现</a><br> ·  <a href="http://kb.cnblogs.com/page/547526/" target="_blank">学习如何学习</a><br> ·  <a href="http://kb.cnblogs.com/page/547251/" target="_blank">一个32岁入门的70后程序员给我的启示</a><br> ·  <a href="http://kb.cnblogs.com/page/539205/" target="_blank">技术发展瓶颈的突破</a><br> ·  <a href="http://kb.cnblogs.com/page/536334/" target="_blank">高效编程之道：好好休息</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+$(function () {
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);    
+});
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/youring2/">Qi Fei</a><br>园龄：<a href="http://home.cnblogs.com/u/youring2/" title="入园时间：2008-11-27">7年6个月</a><br>粉丝：<a href="http://home.cnblogs.com/u/youring2/followers/">900</a><br>关注：<a href="http://home.cnblogs.com/u/youring2/followees/">23</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="cnblogs.UserManager.FollowBlogger(&#39;bf03470b-63cf-dd11-9e4d-001cf0cd104b&#39;)">+加关注</a></div></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block"></div><div id="sidebar_recentposts" class="sidebar-block">
+<div class="catListEssay">
+<h3 class="catListTitle">最新随笔</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/youring2/p/4929149.html">1. SQL Server编程（06）触发器</a></li><li><a href="http://www.cnblogs.com/youring2/p/4917447.html">2. SQL Server编程（05）游标【转载】</a></li><li><a href="http://www.cnblogs.com/youring2/p/4917393.html">3. SQL Server编程（04）基本语法【转载】</a></li><li><a href="http://www.cnblogs.com/youring2/p/4917333.html">4. SQL Server编程（03）自定义存储过程</a></li><li><a href="http://www.cnblogs.com/youring2/p/4916400.html">5. SQL Server编程（02）自定义函数</a></li><li><a href="http://www.cnblogs.com/youring2/p/4916396.html">6. SQL Server编程（01）流程控制</a></li><li><a href="http://www.cnblogs.com/youring2/p/4908258.html">7. 适可而止：YAGNI原则</a></li><li><a href="http://www.cnblogs.com/youring2/p/4908244.html">8. DRY原则</a></li><li><a href="http://www.cnblogs.com/youring2/p/4908240.html">9. SOLID原则</a></li><li><a href="http://www.cnblogs.com/youring2/p/4894536.html">10. 在C#中使用官方驱动操作MongoDB</a></li>
+</ul>
+</div>
+</div><div id="sidebar_categories">
+<div id="sidebar_postcategory" class="catListPostCategory sidebar-block">
+<h3 class="catListTitle">随笔分类<span style="font-size:11px;font-weight:normal">(403)</span></h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/youring2/category/165527.html">【00】CSharp(51)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/youring2/category/165538.html">【01】ASP.NET(56)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/youring2/category/307177.html">【02】ASP.NET MVC(21)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="http://www.cnblogs.com/youring2/category/749032.html">【03】SQL Server(6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_4" href="http://www.cnblogs.com/youring2/category/311100.html">【04】数据结构和算法(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_5" href="http://www.cnblogs.com/youring2/category/311101.html">【05】设计模式和原则(6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_6" href="http://www.cnblogs.com/youring2/category/373901.html">【06】解决方案和实践(6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_7" href="http://www.cnblogs.com/youring2/category/385981.html">【07】翻译(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_8" href="http://www.cnblogs.com/youring2/category/170307.html">【08】零金碎玉(63)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_9" href="http://www.cnblogs.com/youring2/category/193388.html">cpp(16)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_10" href="http://www.cnblogs.com/youring2/category/386158.html">dojo(4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_11" href="http://www.cnblogs.com/youring2/category/553040.html">Ext.Net(24)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_12" href="http://www.cnblogs.com/youring2/category/406783.html">ExtJS(36)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_13" href="http://www.cnblogs.com/youring2/category/387021.html">javascript(36)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_14" href="http://www.cnblogs.com/youring2/category/386640.html">jquery(5)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_15" href="http://www.cnblogs.com/youring2/category/311205.html">linq(4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_16" href="http://www.cnblogs.com/youring2/category/437879.html">Lucene.net(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_17" href="http://www.cnblogs.com/youring2/category/745890.html">MongoDB(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_18" href="http://www.cnblogs.com/youring2/category/385980.html">ORM(10)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_19" href="http://www.cnblogs.com/youring2/category/459649.html">Web前端(8)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_20" href="http://www.cnblogs.com/youring2/category/290638.html">Windows Phone(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_21" href="http://www.cnblogs.com/youring2/category/289337.html">WPF(4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_22" href="http://www.cnblogs.com/youring2/category/459659.html">操作系统(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_23" href="http://www.cnblogs.com/youring2/category/531313.html">读书笔记(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_24" href="http://www.cnblogs.com/youring2/category/165578.html">数据库开发(19)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_25" href="http://www.cnblogs.com/youring2/category/459651.html">网站建设(10)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_26" href="http://www.cnblogs.com/youring2/category/386636.html">正则表达式(4)</a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/youring2/archive/2013/03/01/2938661.html">1. jquery easyui datagrid使用参考(92333)</a></li><li><a href="http://www.cnblogs.com/youring2/archive/2012/07/13/2590010.html">2. SWFUpload 2.5.0版 官方说明文档 中文翻译版(83916)</a></li><li><a href="http://www.cnblogs.com/youring2/archive/2009/11/07/1597786.html">3. C#中正则表达式的使用(69418)</a></li><li><a href="http://www.cnblogs.com/youring2/archive/2013/03/08/2949455.html">4. WebAPI用法(62694)</a></li><li><a href="http://www.cnblogs.com/youring2/p/3269503.html">5. ExtJS 4.2 教程-01：Hello ExtJS(45735)</a></li></ul></div>
+</div>
+</div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2016 Qi Fei
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+</body></html>

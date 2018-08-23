@@ -1,0 +1,69 @@
+.msg-container {
+	width: 180px;
+}
+.msg-container .msg-detail {
+	display: none;
+}
+.msg-container .msg-brief {
+	height: 18px;
+}
+.msg-container .msg-brief p {
+	color: rgb(45, 100, 179);
+}
+.msg-container .msg-brief p b {
+	padding: 0px 2px; color: rgb(255, 120, 0);
+}
+.msg-container .msg-brief .close-msg {
+	background: url("http://img.baidu.com/img/iknow/exp/global/notice-icon.png") no-repeat 0px -40px; width: 14px; height: 14px; float: right; display: none; cursor: pointer;
+}
+.msg-container .hover.msg-brief p {
+	display: none;
+}
+.msg-container .hover.msg-brief .close-msg {
+	display: block;
+}
+.msg-container .n-item {
+	padding: 4px 13px 4px 10px; height: 18px; position: relative;
+}
+.msg-container .n-item a {
+	float: left;
+}
+.msg-container .n-item a:hover {
+	text-decoration: none;
+}
+.msg-container .n-item b {
+	padding: 0px 2px; color: rgb(255, 120, 0); font-size: 12px; cursor: pointer;
+}
+.msg-container .n-item span {
+	width: 19px; height: 18px; float: right;
+}
+.msg-container .n-item .item-close {
+	background: url("http://img.baidu.com/img/iknow/exp/global/close_icon.gif") no-repeat 0px 0px; top: 5px; width: 19px; height: 18px; right: -2px; line-height: 18; display: none; position: absolute; cursor: pointer;
+}
+.msg-container .n-item:hover .item-close {
+	display: inline-block;
+}
+.msg-container .n-cms-in {
+	height: auto; border-top-color: rgb(248, 240, 219); border-top-width: 1px; border-top-style: solid; position: relative;
+}
+.msg-container .n-cms-in span {
+	top: 4px; right: 6px; position: absolute;
+}
+.msg-container .n-cms {
+	padding: 4px 25px 4px 10px; height: auto; position: relative;
+}
+.msg-container .n-cms span {
+	top: 4px; right: 6px; position: absolute;
+}
+.msg-container .has-border-top {
+	border-top-color: rgb(248, 240, 219); border-top-width: 1px; border-top-style: solid;
+}
+.que-rol-pop {
+	margin: 25px 20px 0px; font-family: "Microsoft Yahei","Î¢ÈíÑÅºÚ",arial,"ËÎÌå",sans-serif;
+}
+.que-rol-pop h3 {
+	background: url("http://img.baidu.com/img/iknow/exp/uc/uc-income-sprite.png") no-repeat -225px -313px; color: rgb(51, 51, 51); padding-left: 30px; font-size: 16px; font-weight: 700; margin-bottom: 15px;
+}
+.que-rol-pop p {
+	color: rgb(51, 51, 51); padding-left: 3px; font-size: 14px;
+}

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://www.cnblogs.com/youring2/p/3551463.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园_files/bundle-CodingLife.css">
+<link type="text/css" rel="stylesheet" href="./Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园_files/48401.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/youring2/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/youring2/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/youring2/wlwmanifest.xml">
+<script src="./Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园_files/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'youring2', cb_enable_mathjax=false;</script>
+<script src="./Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园_files/blog-common.js" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/youring2/"><img id="blogLogo" src="./Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/youring2/">Qi Fei's Blog</a></h1>
+<h2><div>
+<span>优秀是一种习惯</span>
+</div></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li></li>
+<li><a id="MyLinks1_MyHomeLink" class="menu" href="http://www.cnblogs.com/youring2/">首页</a></li>
+<li><a id="MyLinks1_NewPostLink" class="menu" rel="nofollow" href="http://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="MyLinks1_ContactLink" class="menu" rel="nofollow" href="http://msg.cnblogs.com/send/Qi%20Fei">联系</a></li>
+<li><a id="MyLinks1_Syndication" class="menu" href="http://www.cnblogs.com/youring2/rss">订阅</a>
+<!--<a id="MyLinks1_XMLLink" class="aHeaderXML" href="http://www.cnblogs.com/youring2/rss"><img src="http://www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="MyLinks1_Admin" class="menu" rel="nofollow" href="http://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/youring2/p/3551463.html">Ext.Net学习笔记02：Ext.Net用法概览</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><p>这两天越来越觉得Ext.Net很强大，如果运用熟练可以极大的提高编程效率。如果你也要学习<a href="http://www.qeefee.com/zt-extnet">Ext.Net</a>，推荐你看一下《Ext.Net Web 应用程序开发教程》。</p>
+<p>上一篇介绍了<a href="http://www.qeefee.com/article/extnet-learn-01-using-extnet-in-webform">如何在ASP.NET WebForm中使用Ext.Net</a>，这一篇将介绍我今天的学习心得，看看<a href="http://www.qeefee.com/zt-extnet">Ext.Net</a>的概览。</p>
+<h2>Ext.Net与ExtJS代码比较</h2>
+<p>上一篇中我们创建了一个使用Ext.Net创建了一个window窗口，代码非常简单：</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Window </span><span style="color: red;">runat</span><span style="color: blue;">="server"
+    </span><span style="color: red;">ID</span><span style="color: blue;">="win"
+    </span><span style="color: red;">Title</span><span style="color: blue;">="示例窗口"
+    </span><span style="color: red;">Width</span><span style="color: blue;">="300"
+    </span><span style="color: red;">Height</span><span style="color: blue;">="200"
+    </span><span style="color: red;">AutoShow</span><span style="color: blue;">="true"&gt;
+&lt;/</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Window</span><span style="color: blue;">&gt;</span></pre>
+<p>如果我们使用ExtJS代码来创建这个窗口，代码会是什么样的呢？请看下面：</p>
+<pre class="code"><span style="color: black;">Ext.create(</span><span style="color: #a31515;">"Ext.window.Window"</span><span style="color: black;">, {
+    id:</span><span style="color: #a31515;">"win2"</span><span style="color: black;">,
+    title: </span><span style="color: #a31515;">"示例窗口2"</span><span style="color: black;">,
+    height: 200,
+    width: 300,
+    autoShow: </span><span style="color: blue;">true
+</span><span style="color: black;">});</span></pre>
+<p>看这两段代码是不是很像，Ext.Net只是将ExtJS的配置属性进行了封装，作为空间的属性，可以在Visual Studio中进行非常友好的智能提示，效率提升不止一倍啊。</p>
+<p>另外，Ext.Net还支持控件的嵌套定义，跟ExtJS中的items配置项、buttons配置项一样，请看下面的代码：</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Window </span><span style="color: red;">runat</span><span style="color: blue;">="server"
+    </span><span style="color: red;">ID</span><span style="color: blue;">="win"
+    </span><span style="color: red;">Title</span><span style="color: blue;">="示例窗口"
+    </span><span style="color: red;">Width</span><span style="color: blue;">="300"
+    </span><span style="color: red;">Height</span><span style="color: blue;">="200"
+    </span><span style="color: red;">Layout</span><span style="color: blue;">="FitLayout"
+    </span><span style="color: red;">AutoShow</span><span style="color: blue;">="true"&gt;
+    &lt;</span><span style="color: maroon;">Items</span><span style="color: blue;">&gt;
+        &lt;</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">FormPanel </span><span style="color: red;">runat</span><span style="color: blue;">="server" </span><span style="color: red;">ID</span><span style="color: blue;">="extForm" </span><span style="color: red;">BodyPadding</span><span style="color: blue;">="5"&gt;
+            &lt;</span><span style="color: maroon;">Items</span><span style="color: blue;">&gt;
+                &lt;</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">TextField </span><span style="color: red;">runat</span><span style="color: blue;">="server" </span><span style="color: red;">ID</span><span style="color: blue;">="txtName" </span><span style="color: red;">FieldLabel</span><span style="color: blue;">="姓名"&gt;&lt;/</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">TextField</span><span style="color: blue;">&gt;
+                &lt;</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">NumberField </span><span style="color: red;">runat</span><span style="color: blue;">="server" </span><span style="color: red;">ID</span><span style="color: blue;">="txtAge" </span><span style="color: red;">FieldLabel</span><span style="color: blue;">="年龄"&gt;&lt;/</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">NumberField</span><span style="color: blue;">&gt;
+            &lt;/</span><span style="color: maroon;">Items</span><span style="color: blue;">&gt;
+            &lt;</span><span style="color: maroon;">Buttons</span><span style="color: blue;">&gt;
+                &lt;</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Button </span><span style="color: red;">runat</span><span style="color: blue;">="server" </span><span style="color: red;">ID</span><span style="color: blue;">="btnSave"
+                    </span><span style="color: red;">Icon</span><span style="color: blue;">="DatabaseSave" </span><span style="color: red;">Text</span><span style="color: blue;">="保存"</span><span style="color: blue;">&gt;
+                &lt;/</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Button</span><span style="color: blue;">&gt;
+            &lt;/</span><span style="color: maroon;">Buttons</span><span style="color: blue;">&gt;
+        &lt;/</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">FormPanel</span><span style="color: blue;">&gt;
+    &lt;/</span><span style="color: maroon;">Items</span><span style="color: blue;">&gt;
+&lt;/</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Window</span><span style="color: blue;">&gt;</span></pre>
+<p>这仍然是我们的window，新的效果如下：</p>
+<p><img style="background-image: none; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="./Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园_files/5227023770073887793.png" alt="image" width="304" height="223" border="0"></p>
+<p>很酷吧，接下来我们一起看看它的事件机制。</p>
+<h2>Ext.Net的事件处理</h2>
+<p>Ext.Net中的事件分为客户端事件和服务器端事件，客户端事件需要页面中JS来处理，服务器端事件则会无刷新的提交给服务器，在服务器处理完成并将结果显示在页面中。</p>
+<p>拿我们上面窗口中的保存按钮为例，我们来介绍一下如何处理客户端事件。</p>
+<h3>客户端事件处理</h3>
+<p>首先，我们来添加一个客户端的单击事件：</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Button </span><span style="color: red;">runat</span><span style="color: blue;">="server" </span><span style="color: red;">ID</span><span style="color: blue;">="btnSave"
+    </span><span style="color: red;">Icon</span><span style="color: blue;">="DatabaseSave" </span><span style="color: red;">Text</span><span style="color: blue;">="保存"&gt;
+    &lt;</span><span style="color: maroon;">Listeners</span><span style="color: blue;">&gt;
+        &lt;</span><span style="color: maroon;">Click </span><span style="color: red;">Handler</span><span style="color: blue;">="Ext.MessageBox.alert('提示', '保存按钮被单击')" /&gt;
+    &lt;/</span><span style="color: maroon;">Listeners</span><span style="color: blue;">&gt;
+&lt;/</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Button</span><span style="color: blue;">&gt;</span></pre>
+<p>跟ExtJS中的写法一样，使用listeners来添加事件。当我们在Listeners标签中输入左尖括号以后，visual studio 会提示我们所有可用的事件：</p>
+<p><img style="background-image: none; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="./Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园_files/5560122805969457102.png" alt="image" width="234" height="233" border="0"></p>
+<p>这种编程方式实在是太快了，效率完全可以达到ExtJS熟练的水平（题外话，套用一句广告词：根本停不下来……）。</p>
+<p>Handler 属性保存一段JS代码，如果要添加一个处理方法，则需要使用Fn属性：</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Button </span><span style="color: red;">runat</span><span style="color: blue;">="server" </span><span style="color: red;">ID</span><span style="color: blue;">="btnSave"
+    </span><span style="color: red;">Icon</span><span style="color: blue;">="DatabaseSave" </span><span style="color: red;">Text</span><span style="color: blue;">="保存"&gt;
+    &lt;</span><span style="color: maroon;">Listeners</span><span style="color: blue;">&gt;
+        &lt;</span><span style="color: maroon;">Click </span><span style="color: red;">Fn</span><span style="color: blue;">="fnSave" /&gt;
+    &lt;/</span><span style="color: maroon;">Listeners</span><span style="color: blue;">&gt;
+&lt;/</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Button</span><span style="color: blue;">&gt;</span></pre>
+<p>注意，使用Fn属性的时候，需要确保我们的页面中已经定义了fnSave方法：</p>
+<pre class="code"><span style="color: blue;">function </span><span style="color: black;">fnSave() {
+    </span><span style="color: green;">//此处添加保存的处理逻辑
+    </span><span style="color: black;">Ext.MessageBox.alert(</span><span style="color: #a31515;">'提示'</span><span style="color: black;">, </span><span style="color: #a31515;">'保存按钮被单击'</span><span style="color: black;">)
+}</span></pre>
+<p>此处只使用了click事件，完整是事件列表可以参考ExtJS API文档。</p>
+<p>&nbsp;</p>
+<h3>服务器端事件处理</h3>
+<p>既然使用了Ext.Net服务器控件，恐怕大家更希望使用服务器端事件吧。<a href="http://www.qeefee.com/zt-extnet">Ext.Net</a>服务器事件需要在DirectEvents中定义，它是Ext.Net独有的。DirectEvents将被回发到服务器进行处理，并将处理结果展示在页面中（如果有更新页面的话）。</p>
+<p>来看一下DirectEvents</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Button </span><span style="color: red;">runat</span><span style="color: blue;">="server" </span><span style="color: red;">ID</span><span style="color: blue;">="btnSave"
+    </span><span style="color: red;">Icon</span><span style="color: blue;">="DatabaseSave" </span><span style="color: red;">Text</span><span style="color: blue;">="保存"&gt;
+    &lt;</span><span style="color: maroon;">DirectEvents</span><span style="color: blue;">&gt;
+        &lt;</span><span style="color: maroon;">Click </span><span style="color: red;">OnEvent</span><span style="color: blue;">="btnSave_DirectClick"&gt;&lt;/</span><span style="color: maroon;">Click</span><span style="color: blue;">&gt;
+    &lt;/</span><span style="color: maroon;">DirectEvents</span><span style="color: blue;">&gt;
+&lt;/</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Button</span><span style="color: blue;">&gt;</span></pre>
+<p>对应的服务器处理方法如下：</p>
+<pre class="code"><span style="color: blue;">protected void </span><span style="color: black;">btnSave_DirectClick(</span><span style="color: blue;">object </span><span style="color: black;">sender, </span><span style="color: #2b91af;">DirectEventArgs </span><span style="color: black;">e)
+{
+    </span><span style="color: #2b91af;">X</span><span style="color: black;">.MessageBox.Alert(</span><span style="color: #a31515;">"提示"</span><span style="color: black;">, </span><span style="color: #a31515;">"保存按钮被单击"</span><span style="color: black;">).Show();
+}</span></pre>
+<p>如果我们需要在执行服务器端处理的时候显示遮罩层，可以在Click中添加配置节点：</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Button </span><span style="color: red;">runat</span><span style="color: blue;">="server" </span><span style="color: red;">ID</span><span style="color: blue;">="btnSave"
+    </span><span style="color: red;">Icon</span><span style="color: blue;">="DatabaseSave" </span><span style="color: red;">Text</span><span style="color: blue;">="保存"&gt;
+    &lt;</span><span style="color: maroon;">DirectEvents</span><span style="color: blue;">&gt;
+        &lt;</span><span style="color: maroon;">Click </span><span style="color: red;">OnEvent</span><span style="color: blue;">="btnSave_DirectClick"&gt;
+            <span style="background-color: #ffff00;">&lt;</span></span></pre>
+<p><span style="background-color: #ffff00;"><span style="color: maroon;">EventMask </span><span style="color: red;">ShowMask</span><span style="color: blue;">="true" </span><span style="color: red;">Msg</span></span></p>
+<pre class="code"><span style="color: blue;"><span style="background-color: #ffff00;">="正在加载..." /&gt;</span>
+        &lt;/</span><span style="color: maroon;">Click</span><span style="color: blue;">&gt;
+    &lt;/</span><span style="color: maroon;">DirectEvents</span><span style="color: blue;">&gt;
+&lt;/</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Button</span><span style="color: blue;">&gt;</span></pre>
+<p>另外，Ext.Net Direct Events还可以传递自定义参数：</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Button </span><span style="color: red;">runat</span><span style="color: blue;">="server" </span><span style="color: red;">ID</span><span style="color: blue;">="btnSave"
+    </span><span style="color: red;">Icon</span><span style="color: blue;">="DatabaseSave" </span><span style="color: red;">Text</span><span style="color: blue;">="保存"&gt;
+    &lt;</span><span style="color: maroon;">DirectEvents</span><span style="color: blue;">&gt;
+        &lt;</span><span style="color: maroon;">Click </span><span style="color: red;">OnEvent</span><span style="color: blue;">="btnSave_DirectClick"&gt;
+            <span style="background-color: #ffff00;">&lt;</span></span><span style="color: maroon;"><span style="background-color: #ffff00;">ExtraParams</span></span><span style="color: blue;"><span style="background-color: #ffff00;">&gt;</span>
+                <span style="background-color: #ffff00;">&lt;</span></span></pre>
+<p><span style="background-color: #ffff00;"><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Parameter </span><span style="color: red;">Name</span><span style="color: blue;">="param1" </span><span style="color: red;">Value</span></span></p>
+<pre class="code"><span style="color: blue;"><span style="background-color: #ffff00;">="自定义参数值" /&gt;</span>
+            <span style="background-color: #ffff00;">&lt;/</span></span><span style="color: maroon;"><span style="background-color: #ffff00;">ExtraParams</span></span><span style="color: blue;"><span style="background-color: #ffff00;">&gt;</span>
+            &lt;</span><span style="color: maroon;">EventMask </span><span style="color: red;">ShowMask</span><span style="color: blue;">="true" </span><span style="color: red;">Msg</span><span style="color: blue;">="正在加载..." /&gt;
+        &lt;/</span><span style="color: maroon;">Click</span><span style="color: blue;">&gt;
+    &lt;/</span><span style="color: maroon;">DirectEvents</span><span style="color: blue;">&gt;
+&lt;/</span><span style="color: maroon;">ext</span><span style="color: blue;">:</span><span style="color: maroon;">Button</span><span style="color: blue;">&gt;</span></pre>
+<p>在服务器端的处理方法中，我们可以轻易的获取到这个参数值：</p>
+<pre class="code"><span style="color: blue;">protected void </span><span style="color: black;">btnSave_DirectClick(</span><span style="color: blue;">object </span><span style="color: black;">sender, </span><span style="color: #2b91af;">DirectEventArgs </span><span style="color: black;">e)
+{
+    </span></pre>
+<p><span style="background-color: #ffff00;"><span style="color: blue;">string </span><span style="color: black;">param1 = e.ExtraParams[</span><span style="color: #a31515;">"param1"</span></span></p>
+<pre class="code"><span style="color: black;"><span style="background-color: #ffff00;">];</span>
+    </span><span style="color: #2b91af;">X</span><span style="color: black;">.MessageBox.Alert(</span><span style="color: #a31515;">"提示"</span><span style="color: black;">, </span><span style="color: #a31515;">"保存按钮被单击，传入的参数值：" </span><span style="color: black;">+ param1).Show();
+}</span></pre>
+<p>Ext.Net中的DirectEvents所支持的事件类型同样可以参考<a href="http://www.qeefee.com/zt-extjs">ExtJS的API文档</a>。</p>
+<p>另外Ext.Net还有一个自定义的MessageBus机制，今天还没有吃透，明天继续！</p>
+<p>原文链接：<a href="http://www.qeefee.com/article/extnet-learn-02-extnet-overview">Ext.Net用法概览</a></p>
+<p>以上内容来自<a href="http://www.qeefee.com/zt-extnet">Ext.Net教程</a></p></div><div id="MySignature" style="display: block;"><div class="ad">
+
+
+</div>
+
+<div class="favor">
+<p>如果认为此文对您有帮助，别忘了支持一下哦！</p>
+</div>
+
+
+<div class="content">
+<div>作者：<a href="http://youring2.cnblogs.com/" target="_blank" style="color:red;">齐飞</a></div>
+<div>来源：<a href="http://youring2.cnblogs.com/" style="color:red;" target="_blank">http://youring2.cnblogs.com/</a></div>
+<div>声明：本博客原创文字只代表本人工作中在某一时间内总结的观点或结论，与本人所在单位没有直接利益关系。非商业，未授权，贴子请以现状保留，转载时必须保留此段声明，且在文章页面明显位置给出原文连接。</div>
+</div></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="http://www.cnblogs.com/youring2/category/553040.html">Ext.Net</a></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info"><div id="green_channel">
+<a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(3551463,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+<a id="green_channel_follow" onclick="c_follow();" href="javascript:void(0);">关注我</a>
+<a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a><a id="green_channel_contact" href="http://msg.cnblogs.com/send/Qi%20Fei" target="_blank">联系我</a>
+<a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园_files/icon_weibo_24.png" alt=""></a>
+<a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+<div id="author_profile_info" class="author_profile_info">
+<a href="http://home.cnblogs.com/u/youring2/" target="_blank"><img src="./Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园_files/20131111152539.png" class="author_avatar" alt=""></a>
+<div id="author_profile_detail" class="author_profile_info">
+<a href="http://home.cnblogs.com/u/youring2/">Qi Fei</a><br>
+<a href="http://home.cnblogs.com/u/youring2/followees">关注 - 23</a><br>
+<a href="http://home.cnblogs.com/u/youring2/followers">粉丝 - 900</a>
+</div>
+</div>
+<div class="clear"></div>
+<div id="author_profile_honor"></div>
+<div id="author_profile_follow">
+    <a href="javascript:void(0);" onclick="c_follow();return false;">+加关注</a>
+</div>
+</div>
+<div id="div_digg">										
+    <div class="diggit" onclick="votePost(3551463,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">3</span>
+    </div>
+	<div class="buryit" onclick="votePost(3551463,&#39;Bury&#39;)"> 
+		<span class="burynum" id="bury_count">0</span>
+	</div>
+	<div class="clear"></div>	
+	<div class="diggword" id="digg_tips">
+    (请您对文章做出评价)
+    </div>	
+</div>
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/youring2/p/3551460.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/youring2/p/3551460.html" title="发布于2014-02-16 16:08">Ext.Net学习笔记01：在ASP.NET WebForm中使用Ext.Net</a><br><a href="http://www.cnblogs.com/youring2/p/3551465.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/youring2/p/3551465.html" title="发布于2014-02-16 16:10">Ext.Net学习笔记03：Ext.Net MessageBus用法</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2014-02-16 16:09</span> <a href="http://www.cnblogs.com/youring2/">Qi Fei</a> 阅读(<span id="post_view_count">1376</span>) 评论(<span id="post_comment_count">5</span>)  <a href="http://i.cnblogs.com/EditPosts.aspx?postid=3551463" rel="nofollow">编辑</a> <a href="http://www.cnblogs.com/youring2/p/3551463.html#" onclick="AddToWz(3551463);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,isLogined=false,cb_blogId=48401,cb_entryId=3551463,cb_blogApp=currentBlogApp,cb_blogUserGuid='bf03470b-63cf-dd11-9e4d-001cf0cd104b',cb_entryCreatedDate='2014/2/16 16:09:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<br>
+<div class="feedback_area_title">评论列表</div>
+<div class="feedbackNoItems"></div>	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/youring2/p/3551463.html#3142799" class="layer">#1楼</a><a name="3142799" id="comment_anchor_3142799"></a>  <span class="comment_date">2015-03-17 15:53</span> <a id="a_comment_author_3142799" href="http://www.cnblogs.com/yinyunpan/" target="_blank">攀攀</a> <a href="http://msg.cnblogs.com/send/%E6%94%80%E6%94%80" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3142799" class="blog_comment_body">蛮好用</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3142799,&#39;Digg&#39;,this)">支持(2)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3142799,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/youring2/p/3551463.html#3157678" class="layer">#2楼</a><a name="3157678" id="comment_anchor_3157678"></a>  <span class="comment_date">2015-04-07 20:42</span> <a id="a_comment_author_3157678" href="http://www.cnblogs.com/hetong/" target="_blank">和同</a> <a href="http://msg.cnblogs.com/send/%E5%92%8C%E5%90%8C" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3157678" class="blog_comment_body">看完 继续mark 顺便说声 谢谢你！齐飞。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3157678,&#39;Digg&#39;,this)">支持(1)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3157678,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3157678_avatar" style="display:none;">http://pic.cnblogs.com/face/631409/20150625100827.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/youring2/p/3551463.html#3170999" class="layer">#3楼</a><a name="3170999" id="comment_anchor_3170999"></a>  <span class="comment_date">2015-04-27 11:10</span> <a id="a_comment_author_3170999" href="http://www.cnblogs.com/hongyan5682/" target="_blank">洪研</a> <a href="http://msg.cnblogs.com/send/%E6%B4%AA%E7%A0%94" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3170999" class="blog_comment_body">看了楼主几篇文章了，很有用。谢谢，齐飞。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3170999,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3170999,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/youring2/p/3551463.html#3226027" class="layer">#4楼</a><a name="3226027" id="comment_anchor_3226027"></a>  <span class="comment_date">2015-07-11 20:09</span> <a id="a_comment_author_3226027" href="http://www.cnblogs.com/tangchun/" target="_blank">.Net菜鸟123</a> <a href="http://msg.cnblogs.com/send/.Net%E8%8F%9C%E9%B8%9F123" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3226027" class="blog_comment_body"><img src="./Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园_files/112008376748965.png" alt="" border="0" "=""><br><img src="./Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园_files/112008452682646.png" alt="" border="0" "=""><br><br>不知道为什么出错了</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3226027,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3226027,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/youring2/p/3551463.html#3226029" class="layer">#5楼</a><a name="3226029" id="comment_anchor_3226029"></a><span id="comment-maxId" style="display:none;">3226029</span><span id="comment-maxDate" style="display:none;">2015/7/11 20:13:50</span>  <span class="comment_date">2015-07-11 20:13</span> <a id="a_comment_author_3226029" href="http://www.cnblogs.com/tangchun/" target="_blank">.Net菜鸟123</a> <a href="http://msg.cnblogs.com/send/.Net%E8%8F%9C%E9%B8%9F123" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3226029" class="blog_comment_body">我知道错了 我把方法写成私有的了 应该是protected</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3226029,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3226029,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	<div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="http://www.cnblogs.com/youring2/p/3551463.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://www.cnblogs.com/youring2/p/3551463.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】50万行VC++源码: 大型组态工控、电力仿真CAD与GIS源码库</a><br><a href="http://www.rongcloud.cn/" target="_blank">【推荐】融云即时通讯云－豆果美食、Faceu等亿级APP都在用</a><br><a href="http://www.gcpowertools.com.cn/products/activereports/excel.htm?utm_source=cnblogs&amp;utm_medium=blogpage&amp;utm_term=bottom&amp;utm_content=AR&amp;utm_campaign=community" target="_blank">【推荐】报表开发别头大！类Excel 复杂报表开发实例，即学即用</a><br><a href="http://group.cnblogs.com/topic/74774.html" target="_blank">【推荐】福利Time，讯飞开放平台注册即送好礼！</a><br><a href="http://group.cnblogs.com/topic/74539.html" target="_blank">【推荐】阿里云万网域名：.xin .com将推出重磅优惠</a><br></div>
+<div id="opt_under_post"></div>
+<div id="ad_c1" class="c_ad_block"><a href="https://www.wilddog.com/?utm_source=cnblog&amp;utm_medium=banner&amp;utm_content=contenct_bottom&amp;utm_campaign=0619homepage" target="_blank"><img width="300" height="250" src="./Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园_files/cnblogs-300x250-x2-1.jpg" alt=""></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/547666/" target="_blank">易到用车彭钢：滴滴Uber模式已做到极致，要靠差异化生存</a><br> ·  <a href="http://news.cnblogs.com/n/547665/" target="_blank">我打赌你不知道苹果手机能做这十件事</a><br> ·  <a href="http://news.cnblogs.com/n/547664/" target="_blank">一枚火箭用四次 贝索斯的廉价太空游越来越靠谱</a><br> ·  <a href="http://news.cnblogs.com/n/547663/" target="_blank">有戏有料有野心，一部反映硅谷创业的美剧《硅谷》是怎么炼成的？</a><br> ·  <a href="http://news.cnblogs.com/n/547661/" target="_blank">什么值得买：一家论坛式导购网站的自我修养</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="ad_c2" class="c_ad_block"><a href="https://www.jiguang.cn/?from=cnblogs01" target="_blank"><img width="468" height="60" src="./Ext.Net学习笔记02：Ext.Net用法概览 - Qi Fei - 博客园_files/24442-20160613130538213-1713265809.jpg" alt=""></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/547656/" target="_blank">情感化设计中的手绘应用表现</a><br> ·  <a href="http://kb.cnblogs.com/page/547526/" target="_blank">学习如何学习</a><br> ·  <a href="http://kb.cnblogs.com/page/547251/" target="_blank">一个32岁入门的70后程序员给我的启示</a><br> ·  <a href="http://kb.cnblogs.com/page/539205/" target="_blank">技术发展瓶颈的突破</a><br> ·  <a href="http://kb.cnblogs.com/page/536334/" target="_blank">高效编程之道：好好休息</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+$(function () {
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);    
+});
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/youring2/">Qi Fei</a><br>园龄：<a href="http://home.cnblogs.com/u/youring2/" title="入园时间：2008-11-27">7年6个月</a><br>粉丝：<a href="http://home.cnblogs.com/u/youring2/followers/">900</a><br>关注：<a href="http://home.cnblogs.com/u/youring2/followees/">23</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="cnblogs.UserManager.FollowBlogger(&#39;bf03470b-63cf-dd11-9e4d-001cf0cd104b&#39;)">+加关注</a></div></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block"></div><div id="sidebar_recentposts" class="sidebar-block">
+<div class="catListEssay">
+<h3 class="catListTitle">最新随笔</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/youring2/p/4929149.html">1. SQL Server编程（06）触发器</a></li><li><a href="http://www.cnblogs.com/youring2/p/4917447.html">2. SQL Server编程（05）游标【转载】</a></li><li><a href="http://www.cnblogs.com/youring2/p/4917393.html">3. SQL Server编程（04）基本语法【转载】</a></li><li><a href="http://www.cnblogs.com/youring2/p/4917333.html">4. SQL Server编程（03）自定义存储过程</a></li><li><a href="http://www.cnblogs.com/youring2/p/4916400.html">5. SQL Server编程（02）自定义函数</a></li><li><a href="http://www.cnblogs.com/youring2/p/4916396.html">6. SQL Server编程（01）流程控制</a></li><li><a href="http://www.cnblogs.com/youring2/p/4908258.html">7. 适可而止：YAGNI原则</a></li><li><a href="http://www.cnblogs.com/youring2/p/4908244.html">8. DRY原则</a></li><li><a href="http://www.cnblogs.com/youring2/p/4908240.html">9. SOLID原则</a></li><li><a href="http://www.cnblogs.com/youring2/p/4894536.html">10. 在C#中使用官方驱动操作MongoDB</a></li>
+</ul>
+</div>
+</div><div id="sidebar_categories">
+<div id="sidebar_postcategory" class="catListPostCategory sidebar-block">
+<h3 class="catListTitle">随笔分类<span style="font-size:11px;font-weight:normal">(403)</span></h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/youring2/category/165527.html">【00】CSharp(51)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/youring2/category/165538.html">【01】ASP.NET(56)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/youring2/category/307177.html">【02】ASP.NET MVC(21)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="http://www.cnblogs.com/youring2/category/749032.html">【03】SQL Server(6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_4" href="http://www.cnblogs.com/youring2/category/311100.html">【04】数据结构和算法(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_5" href="http://www.cnblogs.com/youring2/category/311101.html">【05】设计模式和原则(6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_6" href="http://www.cnblogs.com/youring2/category/373901.html">【06】解决方案和实践(6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_7" href="http://www.cnblogs.com/youring2/category/385981.html">【07】翻译(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_8" href="http://www.cnblogs.com/youring2/category/170307.html">【08】零金碎玉(63)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_9" href="http://www.cnblogs.com/youring2/category/193388.html">cpp(16)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_10" href="http://www.cnblogs.com/youring2/category/386158.html">dojo(4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_11" href="http://www.cnblogs.com/youring2/category/553040.html">Ext.Net(24)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_12" href="http://www.cnblogs.com/youring2/category/406783.html">ExtJS(36)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_13" href="http://www.cnblogs.com/youring2/category/387021.html">javascript(36)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_14" href="http://www.cnblogs.com/youring2/category/386640.html">jquery(5)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_15" href="http://www.cnblogs.com/youring2/category/311205.html">linq(4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_16" href="http://www.cnblogs.com/youring2/category/437879.html">Lucene.net(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_17" href="http://www.cnblogs.com/youring2/category/745890.html">MongoDB(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_18" href="http://www.cnblogs.com/youring2/category/385980.html">ORM(10)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_19" href="http://www.cnblogs.com/youring2/category/459649.html">Web前端(8)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_20" href="http://www.cnblogs.com/youring2/category/290638.html">Windows Phone(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_21" href="http://www.cnblogs.com/youring2/category/289337.html">WPF(4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_22" href="http://www.cnblogs.com/youring2/category/459659.html">操作系统(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_23" href="http://www.cnblogs.com/youring2/category/531313.html">读书笔记(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_24" href="http://www.cnblogs.com/youring2/category/165578.html">数据库开发(19)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_25" href="http://www.cnblogs.com/youring2/category/459651.html">网站建设(10)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_26" href="http://www.cnblogs.com/youring2/category/386636.html">正则表达式(4)</a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/youring2/archive/2013/03/01/2938661.html">1. jquery easyui datagrid使用参考(92348)</a></li><li><a href="http://www.cnblogs.com/youring2/archive/2012/07/13/2590010.html">2. SWFUpload 2.5.0版 官方说明文档 中文翻译版(83916)</a></li><li><a href="http://www.cnblogs.com/youring2/archive/2009/11/07/1597786.html">3. C#中正则表达式的使用(69424)</a></li><li><a href="http://www.cnblogs.com/youring2/archive/2013/03/08/2949455.html">4. WebAPI用法(62698)</a></li><li><a href="http://www.cnblogs.com/youring2/p/3269503.html">5. ExtJS 4.2 教程-01：Hello ExtJS(45736)</a></li></ul></div>
+</div>
+</div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2016 Qi Fei
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+</body></html>

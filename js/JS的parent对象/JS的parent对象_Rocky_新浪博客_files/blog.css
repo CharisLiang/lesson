@@ -1,0 +1,1602 @@
+.searchAtc_blk {
+	HEIGHT: 24px; PADDING-BOTTOM: 20px; PADDING-TOP: 15px; PADDING-LEFT: 11px; CLEAR: both; PADDING-RIGHT: 0px
+}
+.searchAtc_blk .SG_input {
+	WIDTH: 100px; VERTICAL-ALIGN: middle; MARGIN-RIGHT: 10px
+}
+.articleSearch_txt {
+	FONT-SIZE: 14px; HEIGHT: 35px; FONT-FAMILY: "宋体"; WIDTH: 480px; WHITE-SPACE: nowrap; FLOAT: left; PADDING-TOP: 6px; LINE-HEIGHT: 20px
+}
+.articleSearch_tip {
+	FONT-SIZE: 12px
+}
+.articleSearch_blk {
+	WIDTH: 200px; FLOAT: right; TEXT-ALIGN: right
+}
+.articleSearch_blk .searchAtc_blk {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN-TOP: 4px; PADDING-RIGHT: 0px
+}
+.searchAtc_nodata {
+	FONT-SIZE: 14px; PADDING-BOTTOM: 300px; TEXT-ALIGN: left; PADDING-TOP: 50px; PADDING-LEFT: 217px; CLEAR: both
+}
+.searchAtc_nodata UL {
+	PADDING-TOP: 15px; CLEAR: both
+}
+.searchAtc_nodata LI {
+	LINE-HEIGHT: 24px
+}
+.searchAtcList {
+	PADDING-BOTTOM: 20px; CLEAR: both
+}
+.searchAtcCell {
+	BACKGROUND-POSITION: left bottom; ZOOM: 1; PADDING-BOTTOM: 10px; PADDING-TOP: 14px; PADDING-LEFT: 0px; CLEAR: both; PADDING-RIGHT: 0px
+}
+.searchAtc_top {
+	OVERFLOW: hidden; CLEAR: both
+}
+.searchAtc_top .searchAtc_title {
+	FONT-SIZE: 14px; FONT-FAMILY: "宋体"; BACKGROUND-POSITION: 0px 5px; FLOAT: left; FONT-WEIGHT: normal; PADDING-LEFT: 10px
+}
+.searchAtc_top .searchAtc_tm {
+	FONT-SIZE: 10px; FLOAT: right
+}
+.searchAtc_para {
+	FONT-SIZE: 12px; FONT-FAMILY: "宋体"; WORD-BREAK: break-all; PADDING-TOP: 5px; PADDING-LEFT: 10px; CLEAR: both; LINE-HEIGHT: 21px
+}
+.atcTitLists {
+	OVERFLOW: hidden; WIDTH: 188px; PADDING-BOTTOM: 14px; PADDING-TOP: 5px; PADDING-LEFT: 11px; CLEAR: both; PADDING-RIGHT: 11px; _padding-bottom: 12px
+}
+.atcTitList {
+	OVERFLOW: hidden; WIDTH: 188px; PADDING-BOTTOM: 14px; PADDING-TOP: 5px; PADDING-LEFT: 11px; CLEAR: both; PADDING-RIGHT: 11px; _padding-bottom: 12px
+}
+.atcTitList LI {
+	BACKGROUND-POSITION: left bottom; PADDING-BOTTOM: 9px; PADDING-TOP: 8px; PADDING-LEFT: 0px; CLEAR: both; PADDING-RIGHT: 0px
+}
+.atcTitList LI .atcTitCell_tit {
+	OVERFLOW: hidden; FONT-SIZE: 12px; FONT-FAMILY: "宋体"; WHITE-SPACE: nowrap; BACKGROUND-POSITION: left 5px; PADDING-LEFT: 7px; CLEAR: both
+}
+.atcTitList LI .atcTitCell_tm {
+	FONT-SIZE: 10px; PADDING-TOP: 6px; PADDING-LEFT: 7px; CLEAR: both
+}
+.atcTitList LI .atcTitCell_nm {
+	OVERFLOW: hidden; FONT-SIZE: 12px; FONT-FAMILY: "宋体"; WHITE-SPACE: nowrap; PADDING-TOP: 4px; PADDING-LEFT: 7px; CLEAR: both
+}
+.atcTit_more {
+	TEXT-ALIGN: right; PADDING-TOP: 10px; CLEAR: both
+}
+.natcTit_more {
+	TEXT-ALIGN: right; PADDING-TOP: 10px; CLEAR: both
+}
+.relaPic {
+	OVERFLOW: hidden; BACKGROUND-POSITION: left bottom; ZOOM: 1; PADDING-TOP: 10px; CLEAR: both
+}
+.relaPic LI {
+	OVERFLOW: hidden; FONT-SIZE: 12px; HEIGHT: 103px; FONT-FAMILY: "宋体"; WIDTH: 86px; WORD-BREAK: break-all; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN-LEFT: 4px; CLEAR: none; DISPLAY: inline; LINE-HEIGHT: 18px; PADDING-RIGHT: 0px; MARGIN-RIGHT: 4px
+}
+.relaPic LI IMG {
+	MARGIN-BOTTOM: 1px; BORDER-TOP: #dcdcdc 1px solid; BORDER-RIGHT: #dcdcdc 1px solid; BORDER-BOTTOM: #dcdcdc 1px solid; BORDER-LEFT: #dcdcdc 1px solid; _margin-bottom: 2px
+}
+.relaPic LI.videoImg2 {
+	HEIGHT: 117px
+}
+.relaPic LI.videoImg2 IMG.videoImg {
+	BORDER-TOP-STYLE: none; BACKGROUND: url(../../images/blog/relaVideo_bg.png) no-repeat left top; BORDER-BOTTOM-STYLE: none; PADDING-BOTTOM: 13px; PADDING-TOP: 3px; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 3px; BORDER-LEFT-STYLE: none; PADDING-RIGHT: 3px
+}
+.relaPic .clearfix {
+	OVERFLOW: hidden; HEIGHT: 0px
+}
+.clearfix:after {
+	OVERFLOW: hidden; HEIGHT: 0px; CONTENT: "."; CLEAR: both; DISPLAY: block; VISIBILITY: hidden
+}
+.clearfix {
+	DISPLAY: inline-table
+}
+* HTML .clearfix {
+	HEIGHT: 1%
+}
+.clearfix {
+	DISPLAY: block
+}
+* + HTML .clearfix {
+	MIN-HEIGHT: 1%
+}
+.artical {
+	ZOOM: 1; PADDING-BOTTOM: 0px; PADDING-TOP: 24px; PADDING-LEFT: 20px; CLEAR: both; PADDING-RIGHT: 20px
+}
+.artical .jiugongge {
+	WIDTH: 490px; PADDING-BOTTOM: 40px; TEXT-ALIGN: right; PADDING-TOP: 20px
+}
+.artical .jiugongge .SG_aBtn {
+	MARGIN-RIGHT: 0px
+}
+.articalTitle {
+	PADDING-BOTTOM: 10px; CLEAR: both; LINE-HEIGHT: 20px
+}
+.articalTitle SPAN {
+	WHITE-SPACE: nowrap
+}
+.articalTitle .titName {
+	FONT-SIZE: 18px; FONT-FAMILY: "微软雅黑","黑体"; FONT-WEIGHT: 300; DISPLAY: inline
+}
+.articalTitle .img1 {
+	VERTICAL-ALIGN: 2px; MARGIN-RIGHT: 2px
+}
+.articalTitle .img1 IMG {
+	MARGIN-RIGHT: 2px
+}
+.articalTitle .img2 {
+	PADDING-TOP: 4px
+}
+.articalTitle .img2 IMG {
+	VERTICAL-ALIGN: text-bottom; MARGIN-LEFT: 5px
+}
+.articalTitle .time {
+	FONT-SIZE: 10px; FONT-FAMILY: Arial; MARGIN-LEFT: 5px; MARGIN-RIGHT: 13px
+}
+.articalTitle .edit {
+	
+}
+.articalTag {
+	WIDTH: 100%; WORD-BREAK: break-all; CLEAR: both; LINE-HEIGHT: 20px
+}
+.articalTag TD {
+	VERTICAL-ALIGN: top
+}
+.articalTag .blog_tag {
+	PADDING-RIGHT: 10px
+}
+.articalTag .blog_tag SPAN IMG {
+	VERTICAL-ALIGN: -3px; MARGIN-RIGHT: 3px
+}
+.articalTag .blog_tag SPAN A {
+	WHITE-SPACE: nowrap
+}
+.articalTag .blog_tag H3 {
+	FONT-SIZE: 12px; FONT-WEIGHT: normal; DISPLAY: inline; MARGIN-RIGHT: 5px
+}
+.articalTag .blog_tag H3 IMG {
+	VERTICAL-ALIGN: -3px; MARGIN-RIGHT: 3px
+}
+.articalTag .blog_tag H3 A {
+	WHITE-SPACE: nowrap
+}
+.articalTag .blog_class {
+	WIDTH: 220px; WHITE-SPACE: nowrap
+}
+.articalTag .blog_tag {
+	FONT-FAMILY: "宋体"
+}
+.articalTag .blog_tag SPAN {
+	FONT-FAMILY: "宋体"
+}
+.articalTag .blog_tag A {
+	FONT-FAMILY: "宋体"
+}
+.articalTag .blog_class {
+	FONT-FAMILY: "宋体"
+}
+.articalTag .blog_class SPAN {
+	FONT-FAMILY: "宋体"
+}
+.articalTag .blog_class A {
+	FONT-FAMILY: "宋体"
+}
+.articalMusic {
+	PADDING-TOP: 28px; CLEAR: both
+}
+.articalContent {
+	OVERFLOW: hidden; WORD-WRAP: break-word; FONT-SIZE: 14px; FONT-FAMILY: simsun; WIDTH: 690px; WORD-BREAK: break-all; PADDING-BOTTOM: 30px; PADDING-TOP: 18px; CLEAR: both; LINE-HEIGHT: 150%
+}
+.articalContent UL LI {
+	LIST-STYLE-TYPE: disc; MARGIN-LEFT: 30px
+}
+.articalContent OL LI {
+	LIST-STYLE-TYPE: decimal; MARGIN-LEFT: 30px
+}
+.articalContent {
+	WORD-WRAP: normal; WORD-BREAK: normal
+}
+.articalContent P {
+	WORD-WRAP: normal; WORD-BREAK: normal
+}
+.articalContent SPAN {
+	WORD-WRAP: normal; WORD-BREAK: normal
+}
+.articalContent FONT {
+	WORD-WRAP: normal; WORD-BREAK: normal
+}
+.articalContent A {
+	TEXT-DECORATION: underline
+}
+.articalContent P EM {
+	FONT-STYLE: italic
+}
+.articalContent {
+	LINE-HEIGHT: 150%
+}
+.articalContent P {
+	LINE-HEIGHT: 150%
+}
+.articalContent P FONT {
+	LINE-HEIGHT: 150%
+}
+.articalContent FONT {
+	LINE-HEIGHT: 150%
+}
+.articalContent SPAN {
+	LINE-HEIGHT: 150%
+}
+.articalContent TABLE TD {
+	LINE-HEIGHT: 150%
+}
+.articalContent PRE {
+	WHITE-SPACE: normal
+}
+.articalContent EM {
+	FONT-STYLE: italic
+}
+.articalContent STRONG {
+	FONT-WEIGHT: bold
+}
+.articalContent P {
+	MARGIN-BOTTOM: 5px
+}
+.articalContent TABLE {
+	LINE-HEIGHT: normal
+}
+.fontSize_S .articalContent {
+	FONT-SIZE: 12px
+}
+.fontSize_S .articalVote {
+	FONT-SIZE: 12px
+}
+.fontSize_S .articalVote .vHead {
+	FONT-SIZE: 12px
+}
+.fontSize_S .articalList {
+	FONT-SIZE: 12px
+}
+.fontSize_S .articalList .listTit {
+	FONT-SIZE: 12px
+}
+.fontSize_S .articalList LI LABEL {
+	FONT-SIZE: 12px
+}
+.fontSize_M {
+	
+}
+.fontSize_L .articalContent {
+	FONT-SIZE: 16px
+}
+.fontSize_L .articalVote {
+	FONT-SIZE: 16px
+}
+.fontSize_L .articalVote .vHead {
+	FONT-SIZE: 16px
+}
+.fontSize_L .articalList {
+	FONT-SIZE: 16px
+}
+.fontSize_L .articalList LI LABEL {
+	FONT-SIZE: 16px
+}
+.fontSize_L .articalList .listTit {
+	FONT-SIZE: 16px
+}
+.fontSize_L .articalVote .vBom .vBtn .result {
+	FONT-SIZE: 14px
+}
+.fontSize_L .articalVote .vBom .vLink {
+	FONT-SIZE: 14px
+}
+.fontSize_L .articalVote .vContent .choosed LABEL EM {
+	FONT-SIZE: 14px
+}
+.fontSize_L .articalVote .vContent .num {
+	FONT-SIZE: 14px
+}
+.fontSize_L .articalVote .vContent .choosed LABEL SPAN {
+	FONT-SIZE: 14px
+}
+.fontSize_L .articalVote .vTit EM {
+	FONT-SIZE: 14px
+}
+.fontSize_L .articalVote .vTime {
+	FONT-SIZE: 14px
+}
+.fontSize_L .articalList LI SPAN {
+	FONT-SIZE: 12px
+}
+.fontSize_S .article_main TH {
+	FONT-SIZE: 12px
+}
+.fontSize_S .article_main TD {
+	FONT-SIZE: 12px
+}
+.fontSize_S .worldcupRecord {
+	FONT-SIZE: 12px
+}
+.fontSize_L .article_main TH {
+	FONT-SIZE: 14px
+}
+.fontSize_L .article_main TD {
+	FONT-SIZE: 14px
+}
+.fontSize_L .worldcupRecord {
+	FONT-SIZE: 14px
+}
+.articalVote {
+	WIDTH: 648px; CLEAR: both; MARGIN: 15px auto 20px
+}
+.articalVote .addbtn {
+	PADDING-BOTTOM: 0px; TEXT-ALIGN: right; PADDING-TOP: 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 20px
+}
+.articalVote .addbtn A:link {
+	TEXT-DECORATION: underline; FONT-WEIGHT: 400
+}
+.articalVote .addbtn A:visited {
+	TEXT-DECORATION: underline; FONT-WEIGHT: 400
+}
+.articalVote .addbtn .SG_linka .SG_icon33 {
+	MARGIN-TOP: 0px
+}
+.articalVote .addbtn .SG_linka .SG_icon110 {
+	
+}
+.articalVote .newVoteList {
+	PADDING-TOP: 20px; MARGIN: 0px 20px 20px
+}
+.articalVote .newVoteList UL LI {
+	OVERFLOW: hidden; HEIGHT: 100%; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.articalVote .newVoteList UL LI .SG_dot {
+	HEIGHT: 3px; WIDTH: 3px; BACKGROUND-POSITION: 0px 0px; FLOAT: left; MARGIN: 7px 5px 0px 0px
+}
+.articalVote .newVoteList UL LI .txt {
+	WORD-WRAP: break-word; WIDTH: 600px; WORD-BREAK: break-all; FLOAT: left; LINE-HEIGHT: 18px
+}
+.articalVote .newVoteList UL LI EM {
+	FONT-FAMILY: "宋体"
+}
+.articalVote .newVoteList .nVtit {
+	MARGIN-BOTTOM: 8px; FONT-FAMILY: simsun; FONT-WEIGHT: bold
+}
+.articalVote .newVoteList .nVtxt {
+	MARGIN-BOTTOM: 4px
+}
+.articalVote .newVoteList .nVtxt A {
+	FONT-WEIGHT: bold; MARGIN-LEFT: 8px; LINE-HEIGHT: 1.4em
+}
+.articalVote .newVoteList .nVtit_up {
+	MARGIN-BOTTOM: 2px
+}
+.articalVote .newVoteList .nVtit_down {
+	MARGIN-BOTTOM: 2px
+}
+.articalVote .newVoteList .nVtit_down EM {
+	HEIGHT: 10px; WIDTH: 7px; BACKGROUND: url(../../images/blog/menuArrow_default.gif) no-repeat left -20px; MARGIN: 0px 5px; DISPLAY: inline-block; _background-position: left -17px
+}
+.articalVote .newVoteList .nVtit_up EM {
+	HEIGHT: 10px; WIDTH: 7px; BACKGROUND: url(../../images/blog/menuArrow_default.gif) no-repeat left top; MARGIN: 0px 5px; DISPLAY: inline-block; _background-position: left 3px
+}
+.articalVote .vContentRe {
+	WIDTH: 205px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 13px; PADDING-LEFT: 0px; MARGIN-LEFT: 15px; DISPLAY: inline; PADDING-RIGHT: 0px
+}
+.articalVote .vContentRe LI {
+	FONT-FAMILY: simsun; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 10px; LINE-HEIGHT: 18px; PADDING-RIGHT: 10px
+}
+.articalVote .vContentRe .choosed {
+	OVERFLOW: hidden; FONT-FAMILY: simsun; WIDTH: 185px; FLOAT: left; LINE-HEIGHT: 18px
+}
+.articalVote .vContentRe .choosed INPUT {
+	FLOAT: left; MARGIN-RIGHT: 6px
+}
+.articalVote .vContentRe .choosed LABEL {
+	OVERFLOW: hidden; WIDTH: 155px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.articalVote .vContentRe .choosed LABEL EM {
+	WIDTH: 20px; FLOAT: left; _padding-top: 1px
+}
+.articalVote .vContentRe .choosed LABEL SPAN {
+	OVERFLOW: hidden; WORD-WRAP: break-word; WIDTH: 135px; WORD-BREAK: break-all; FLOAT: left; _padding: 1px 0 0
+}
+.articalVote .vContentPic {
+	FLOAT: left
+}
+.articalVote .vContentPic01 {
+	FLOAT: left
+}
+.articalVote .vShape {
+	OVERFLOW: hidden; HEIGHT: 100%; PADDING-BOTTOM: 15px; PADDING-TOP: 10px; PADDING-LEFT: 0px; CLEAR: both; PADDING-RIGHT: 0px
+}
+.articalVote .vShape UL {
+	FLOAT: right; MARGIN-RIGHT: 5px
+}
+.articalVote .vShape UL LI {
+	FLOAT: left
+}
+.articalVote .vShape UL LI.line {
+	MARGIN: -2px 8px 0px; DISPLAY: block
+}
+.articalVote .vShape UL LI.cur {
+	FONT-WEIGHT: bold
+}
+.articalVote .voteBg {
+	PADDING-BOTTOM: 20px; PADDING-TOP: 10px; PADDING-LEFT: 15px; CLEAR: both; PADDING-RIGHT: 13px
+}
+.articalVote .vHead {
+	FONT-SIZE: 14px; LINE-HEIGHT: 19px
+}
+.articalVote STRONG {
+	WIDTH: 28px; FLOAT: left
+}
+.articalVote .vTit {
+	OVERFLOW: hidden; FONT-FAMILY: simsun; WIDTH: 565px; FLOAT: left
+}
+.articalVote .vTit SPAN {
+	FONT-WEIGHT: 600; PADDING-RIGHT: 10px
+}
+.articalVote .vTit EM {
+	FONT-SIZE: 12px; FONT-FAMILY: simsun; WHITE-SPACE: nowrap
+}
+.articalVote .vTime {
+	FONT-SIZE: 12px; FONT-FAMILY: simsun; PADDING-TOP: 2px; PADDING-LEFT: 27px; CLEAR: both
+}
+.articalVote .vContent {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 13px; PADDING-LEFT: 0px; MARGIN-LEFT: 15px; PADDING-RIGHT: 0px
+}
+.articalVote .vContent LI {
+	WIDTH: 450px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px
+}
+.articalVote .vContent LI.cur {
+	WIDTH: 450px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 9px; PADDING-RIGHT: 9px
+}
+.articalVote .vContent .choosed {
+	OVERFLOW: hidden; FONT-FAMILY: simsun; WIDTH: 185px; FLOAT: left; LINE-HEIGHT: 18px
+}
+.articalVote .vContent .choosed INPUT {
+	FLOAT: left; MARGIN-RIGHT: 6px
+}
+.articalVote .vContent .choosed LABEL {
+	OVERFLOW: hidden; WIDTH: 155px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.articalVote .vContent .choosed LABEL EM {
+	WIDTH: 20px; FLOAT: left; _padding-top: 1px
+}
+.articalVote .vContent .choosed LABEL SPAN {
+	OVERFLOW: hidden; WORD-WRAP: break-word; WIDTH: 135px; WORD-BREAK: break-all; FLOAT: left; _padding: 1px 0 0
+}
+.articalVote .vContent .linebg {
+	BORDER-TOP: #d4d4d4 1px solid; HEIGHT: 9px; BORDER-RIGHT: #d4d4d4 1px solid; WIDTH: 170px; BACKGROUND: #e6e6e6; BORDER-BOTTOM: #d4d4d4 1px solid; POSITION: relative; FLOAT: left; MARGIN: 5px 13px 0px 5px; BORDER-LEFT: #d4d4d4 1px solid
+}
+.articalVote .vContent .linebg .color {
+	OVERFLOW: hidden; HEIGHT: 9px; WIDTH: auto; BACKGROUND: url(../../images/blog/blogvote.png) repeat-x; POSITION: absolute; LEFT: -1px; DISPLAY: block; TOP: -1px
+}
+.articalVote .vContent .linebg .c1 {
+	BORDER-TOP: #8d458e 1px solid; BORDER-RIGHT: #8d458e 1px solid; BORDER-BOTTOM: #8d458e 1px solid; BACKGROUND-POSITION: 0px 0px; BORDER-LEFT: #8d458e 1px solid
+}
+.articalVote .vContent .linebg .c2 {
+	BORDER-TOP: #578425 1px solid; BORDER-RIGHT: #578425 1px solid; BORDER-BOTTOM: #578425 1px solid; BACKGROUND-POSITION: 0px -14px; BORDER-LEFT: #578425 1px solid
+}
+.articalVote .vContent .linebg .c3 {
+	BORDER-TOP: #89ba00 1px solid; BORDER-RIGHT: #89ba00 1px solid; BORDER-BOTTOM: #89ba00 1px solid; BACKGROUND-POSITION: 0px -28px; BORDER-LEFT: #89ba00 1px solid
+}
+.articalVote .vContent .linebg .c4 {
+	BORDER-TOP: #008d8e 1px solid; BORDER-RIGHT: #008d8e 1px solid; BORDER-BOTTOM: #008d8e 1px solid; BACKGROUND-POSITION: 0px -42px; BORDER-LEFT: #008d8e 1px solid
+}
+.articalVote .vContent .linebg .c5 {
+	BORDER-TOP: #7da4cf 1px solid; BORDER-RIGHT: #7da4cf 1px solid; BORDER-BOTTOM: #7da4cf 1px solid; BACKGROUND-POSITION: 0px -56px; BORDER-LEFT: #7da4cf 1px solid
+}
+.articalVote .vContent .linebg .c6 {
+	BORDER-TOP: #d54545 1px solid; BORDER-RIGHT: #d54545 1px solid; BORDER-BOTTOM: #d54545 1px solid; BACKGROUND-POSITION: 0px -70px; BORDER-LEFT: #d54545 1px solid
+}
+.articalVote .vContent .linebg .c7 {
+	BORDER-TOP: #ff8d46 1px solid; BORDER-RIGHT: #ff8d46 1px solid; BORDER-BOTTOM: #ff8d46 1px solid; BACKGROUND-POSITION: 0px -84px; BORDER-LEFT: #ff8d46 1px solid
+}
+.articalVote .vContent .linebg .c8 {
+	BORDER-TOP: #f6bd0e 1px solid; BORDER-RIGHT: #f6bd0e 1px solid; BORDER-BOTTOM: #f6bd0e 1px solid; BACKGROUND-POSITION: 0px -98px; BORDER-LEFT: #f6bd0e 1px solid
+}
+.articalVote .vContent .linebg .c9 {
+	BORDER-TOP: #008dd5 1px solid; BORDER-RIGHT: #008dd5 1px solid; BORDER-BOTTOM: #008dd5 1px solid; BACKGROUND-POSITION: 0px -112px; BORDER-LEFT: #008dd5 1px solid
+}
+.articalVote .vContent .linebg .c10 {
+	BORDER-TOP: #b2aa01 1px solid; BORDER-RIGHT: #b2aa01 1px solid; BORDER-BOTTOM: #b2aa01 1px solid; BACKGROUND-POSITION: 0px -126px; BORDER-LEFT: #b2aa01 1px solid
+}
+.articalVote .vContent .linebg .c11 {
+	BORDER-TOP: #d045c0 1px solid; BORDER-RIGHT: #d045c0 1px solid; BORDER-BOTTOM: #d045c0 1px solid; BACKGROUND-POSITION: 0px -140px; BORDER-LEFT: #d045c0 1px solid
+}
+.articalVote .vContent .linebg .c12 {
+	BORDER-TOP: #0dcab9 1px solid; BORDER-RIGHT: #0dcab9 1px solid; BORDER-BOTTOM: #0dcab9 1px solid; BACKGROUND-POSITION: 0px -154px; BORDER-LEFT: #0dcab9 1px solid
+}
+.articalVote .vContent .linebg .c13 {
+	BORDER-TOP: #14da63 1px solid; BORDER-RIGHT: #14da63 1px solid; BORDER-BOTTOM: #14da63 1px solid; BACKGROUND-POSITION: 0px -168px; BORDER-LEFT: #14da63 1px solid
+}
+.articalVote .vContent .linebg .c14 {
+	BORDER-TOP: #e96a8d 1px solid; BORDER-RIGHT: #e96a8d 1px solid; BORDER-BOTTOM: #e96a8d 1px solid; BACKGROUND-POSITION: 0px -182px; BORDER-LEFT: #e96a8d 1px solid
+}
+.articalVote .vContent .linebg .c15 {
+	BORDER-TOP: #6a7ae9 1px solid; BORDER-RIGHT: #6a7ae9 1px solid; BORDER-BOTTOM: #6a7ae9 1px solid; BACKGROUND-POSITION: 0px -196px; BORDER-LEFT: #6a7ae9 1px solid
+}
+.articalVote .vContent .num {
+	FONT-FAMILY: simsun; FLOAT: left; LINE-HEIGHT: 19px
+}
+.articalVote .vContent .num SPAN {
+	
+}
+.articalVote .vBom {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 15px; PADDING-LEFT: 15px; CLEAR: both; PADDING-RIGHT: 0px; _padding: 15px 0 0 15px
+}
+.articalVote .vBom .vBtn {
+	WIDTH: 280px; FLOAT: left; PADDING-LEFT: 13px
+}
+.articalVote .vBom .vBtn .btn {
+	FLOAT: left; MARGIN-RIGHT: 17px
+}
+.articalVote .vBom .vBtn .btn A:link {
+	TEXT-DECORATION: none; HEIGHT: 23px; WIDTH: 51px; BACKGROUND: url(../../images/blog/blogvote_2.png) no-repeat left top; DISPLAY: block
+}
+.articalVote .vBom .vBtn .btn A:visited {
+	TEXT-DECORATION: none; HEIGHT: 23px; WIDTH: 51px; BACKGROUND: url(../../images/blog/blogvote_2.png) no-repeat left top; DISPLAY: block
+}
+.articalVote .vBom .vBtn .btn A:hover {
+	TEXT-DECORATION: none; BACKGROUND: url(../../images/blog/blogvote_2.png) no-repeat left bottom
+}
+.articalVote .vBom .vBtn .btn A INPUT {
+	BORDER-LEFT-WIDTH: 0px; HEIGHT: 23px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 51px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; COLOR: #333; PADDING-BOTTOM: 0px; BORDER-TOP-WIDTH: 0px
+}
+.articalVote .vBom .vBtn .voteState {
+	FLOAT: left; FONT-WEIGHT: 600; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 20px
+}
+.articalVote .vBom .vBtn .result {
+	FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.articalVote .vBom .vBtn .result A {
+	TEXT-DECORATION: underline
+}
+.articalVote .vBom .vLink {
+	OVERFLOW: hidden; HEIGHT: 20px; WIDTH: 200px; FLOAT: right; TEXT-ALIGN: right; LINE-HEIGHT: 23px
+}
+.articalVote .vBom .vLink A {
+	TEXT-DECORATION: underline
+}
+.articalList {
+	WIDTH: 648px; CLEAR: both; MARGIN: 0px auto 20px
+}
+.articalList .listBg {
+	PADDING-BOTTOM: 15px; PADDING-TOP: 20px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px
+}
+.articalList .listTit {
+	FONT-SIZE: 14px; PADDING-BOTTOM: 10px; PADDING-TOP: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 0px
+}
+.articalList LI {
+	HEIGHT: 16px; BACKGROUND-REPEAT: repeat-x; BACKGROUND-POSITION: left top; PADDING-BOTTOM: 4px; PADDING-TOP: 5px; PADDING-LEFT: 0px; LINE-HEIGHT: 18px; PADDING-RIGHT: 0px
+}
+.articalList LI LABEL {
+	FONT-SIZE: 14px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left 6px; PADDING-LEFT: 10px; MARGIN-LEFT: 10px
+}
+.articalList LI LABEL IMG {
+	VERTICAL-ALIGN: -2px
+}
+.articalList LI SPAN {
+	FONT-SIZE: 10px
+}
+.articalInfo {
+	PADDING-TOP: 10px; CLEAR: both
+}
+.articalInfo .IL {
+	WIDTH: 65%; FLOAT: left; PADDING-TOP: 1px
+}
+.articalInfo .IL SPAN.SG_txtb {
+	FONT-FAMILY: "宋体"
+}
+.articalInfo .IL EM {
+	MARGIN: 0px 3px; _margin: 0 2px
+}
+.articalInfo .IL B {
+	FONT-SIZE: 9px; FONT-FAMILY: Verdana,Helvetica
+}
+.articalInfo .IR {
+	WIDTH: 35%; FLOAT: right
+}
+.articalInfo .IR TABLE {
+	FLOAT: right
+}
+.articalInfo .IR TD {
+	VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+.articalInfo .IR TH {
+	VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+.articalInfo .IR TH {
+	WIDTH: 60px; TEXT-ALIGN: right
+}
+.articalInfo .IR SPAN {
+	HEIGHT: 22px; MARGIN-RIGHT: 5px
+}
+.articalInfo .IR SPAN IMG {
+	MARGIN-RIGHT: -2px
+}
+.articalInfo .IR SPAN A {
+	WORD-BREAK: break-all
+}
+.articalInfo .IR .IR_list {
+	FLOAT: left
+}
+.articalInfo .IR .IR_list SPAN {
+	WHITE-SPACE: nowrap; FLOAT: left; DISPLAY: block
+}
+.articalInfo .IR .IR_list P {
+	HEIGHT: 15px; PADDING-BOTTOM: 8px; CLEAR: both
+}
+.articalInfo .IR .IR_list P IMG {
+	FLOAT: left; MARGIN-RIGHT: 4px
+}
+.articalInfo .IR .IR_list P A {
+	FLOAT: left; PADDING-TOP: 2px
+}
+.articalInfo .toMiniblog {
+	OVERFLOW: hidden; HEIGHT: 18px; PADDING-BOTTOM: 10px; CLEAR: both
+}
+.articalInfo .toMiniblog_link {
+	HEIGHT: 18px; FLOAT: right; PADDING-RIGHT: 5px
+}
+.articalInfo .toMiniblog A {
+	HEIGHT: 18px; BACKGROUND: url(../../images/blog/miniblog_icon_l.gif) no-repeat left top; FLOAT: right; PADDING-LEFT: 20px; DISPLAY: block; LINE-HEIGHT: 18px
+}
+.articalfrontback {
+	FONT-SIZE: 14px; PADDING-BOTTOM: 24px; PADDING-TOP: 24px; PADDING-LEFT: 0px; CLEAR: both; MARGIN: 20px 0px 0px; PADDING-RIGHT: 0px
+}
+.articalfrontback DIV {
+	FONT-FAMILY: "宋体"; MIN-HEIGHT: 24px; LINE-HEIGHT: 24px; _height: 24px
+}
+.articalfrontback DIV.SG_floatL SPAN {
+	CLEAR: both; DISPLAY: block
+}
+.articalfrontback DIV.SG_floatR SPAN {
+	CLEAR: both; DISPLAY: block
+}
+.articalfrontback DIV.SG_floatR {
+	TEXT-ALIGN: right
+}
+.articalfrontback DIV.SG_floatL {
+	WIDTH: 340px
+}
+.articalfrontback DIV.SG_floatR {
+	WIDTH: 340px
+}
+.articalfrontback2 {
+	PADDING-TOP: 0px; MARGIN-TOP: 0px
+}
+.blog_evaluation {
+	
+}
+.blog_evaluation IMG {
+	VERTICAL-ALIGN: middle; WHITE-SPACE: nowrap; MARGIN: -2px 2px 0px 0px
+}
+.articalTag .blog_tag SPAN.blog_evaluation IMG {
+	VERTICAL-ALIGN: middle; WHITE-SPACE: nowrap; MARGIN: -2px 2px 0px 0px
+}
+.blogreco {
+	OVERFLOW: hidden
+}
+.blogreco .TB {
+	WIDTH: 100%; POSITION: absolute
+}
+.blogreco .TB A {
+	HEIGHT: 14px; WIDTH: 15px; FLOAT: right; MARGIN: 5px 5px 5px 0px; DISPLAY: block
+}
+.blogreco .TB .btnClose {
+	BACKGROUND: url(http://i2.sinaimg.cn/blog/mini/08olympic/blogrecommend_hz_003.gif)
+}
+.blogreco .TB .btnMin {
+	BACKGROUND: url(http://i2.sinaimg.cn/blog/mini/08olympic/blogrecommend_hz_004.gif)
+}
+.blogreco .TB .btnMax {
+	BACKGROUND: url(http://i1.sinaimg.cn/blog/mini/08olympic/yzq_001.gif)
+}
+.blogreco .IF {
+	BORDER-LEFT-WIDTH: 0px; HEIGHT: 190px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 260px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px
+}
+.blogzz_abstract .blogzz_ainfo A:link {
+	TEXT-DECORATION: none
+}
+.blogzz_abstract .blogzz_ainfo A:visited {
+	TEXT-DECORATION: none
+}
+.blogzz_abstract .blogzz_ainfo A:active {
+	TEXT-DECORATION: none
+}
+.blogzz_abstract .blogzz_ainfo A:hover {
+	TEXT-DECORATION: underline
+}
+.blogzz_abstract .blogzz_acon {
+	
+}
+.blogzz_clear {
+	OVERFLOW: hidden; HEIGHT: 0px; CLEAR: both; DISPLAY: block; VISIBILITY: hidden
+}
+.the_triangle {
+	HEIGHT: 5px; WIDTH: 50%; TEXT-ALIGN: right; MARGIN-TOP: 5px; _margin-bottom: -0px
+}
+.blogzz_zzlist {
+	MARGIN-BOTTOM: 20px; PADDING-BOTTOM: 0px; PADDING-TOP: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px
+}
+.blogzz_zzlist .zzlist_mleft {
+	MARGIN-LEFT: 10px
+}
+.blogzz_zzlist .zzlist_mright {
+	MARGIN-RIGHT: 10px
+}
+.blogzz_zzlist H3 {
+	FONT-SIZE: 12px; HEIGHT: 24px; BACKGROUND: url(../../images/common/SG_linedot.gif) repeat-x left bottom; MARGIN: 0px 5px; LINE-HEIGHT: 24px
+}
+.blogzz_zzlist UL.ul_zzlist LI A:link {
+	TEXT-DECORATION: none; COLOR: #905e40
+}
+.blogzz_zzlist UL.ul_zzlist LI A:visited {
+	TEXT-DECORATION: none; COLOR: #905e40
+}
+.blogzz_zzlist UL.ul_zzlist LI A:active {
+	TEXT-DECORATION: none; COLOR: #905e40
+}
+.blogzz_zzlist UL.ul_zzlist LI A:hover {
+	TEXT-DECORATION: underline
+}
+.blogzz_zzlist A.blogzz_adel {
+	
+}
+.blogzz_zzlist UL.ul_zzlist {
+	MARGIN: 0px 5px
+}
+.blogzz_zzlist UL.ul_zzlist LI {
+	OVERFLOW: hidden; HEIGHT: 100%; BACKGROUND: url(../../images/common/SG_linedot.gif) repeat-x left bottom; COLOR: #666; PADDING-BOTTOM: 8px; PADDING-TOP: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 0px
+}
+.blogzz_zzlist UL.ul_zzlist LI EM {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana
+}
+.blogzz_zzlist UL.ul_zzlist LI P {
+	PADDING-LEFT: 8px; _margin-bottom: 2px
+}
+.blogzz_zzlist UL.ul_zzlist LI .CP_a_fuc {
+	MARGIN-LEFT: 10px
+}
+.blogzz_zzlist .blogzz_pinfo {
+	WORD-WRAP: break-word; BACKGROUND: url(../../images/common/SG_dot.gif) no-repeat left 4px; WORD-BREAK: break-all; _background-position: left 6px
+}
+.blogzz_pinfo .blogzz_bname {
+	
+}
+.blogzz_paged {
+	HEIGHT: 40px; FLOAT: right; LINE-HEIGHT: 40px
+}
+.blogzz_closepic {
+	HEIGHT: 10px; WIDTH: 10px; BACKGROUND: url(../../images/common/topbar/tb_layer/tb_layer.png) no-repeat -5px -293px; DISPLAY: block
+}
+.blogzz_link {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+.blogzz_paged LI.SG_s_pgprev A {
+	HEIGHT: 40px; MARGIN-TOP: 2px; LINE-HEIGHT: 38px
+}
+.blogzz_paged LI.SG_s_pgnext A {
+	HEIGHT: 40px; MARGIN-TOP: 2px; LINE-HEIGHT: 38px
+}
+.turnBoxzz {
+	FLOAT: right
+}
+.turnBoxzz .SG_turn {
+	WIDTH: 86px; ZOOM: 1; LETTER-SPACING: 5px
+}
+.turnBoxzz .SG_turn CITE {
+	WIDTH: 34px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 32px; DISPLAY: inline-block !important; PADDING-RIGHT: 20px
+}
+.turnBoxzz .SG_turn .arrow {
+	FONT-SIZE: 7px; RIGHT: 10px; POSITION: absolute; TOP: 1px; -webkit-text-size-adjust: none
+}
+.turnBoxzz A.SG_turn IMG {
+	LEFT: 11px
+}
+.arrow_zz {
+	HEIGHT: 4px; WIDTH: 7px; BACKGROUND: url(../../images/blog/arrow_zz.gif) no-repeat 0px 0px; MARGIN-LEFT: 2px; DISPLAY: inline
+}
+.blogzz_paged .SG_turntxt {
+	FLOAT: left; MARGIN-LEFT: 230px; _margin-left: 110px
+}
+.articalInfo .IL EM.arrow {
+	FONT-SIZE: 9px; FONT-FAMILY: Verdana,Helvetica
+}
+.articalInfo .IL .SG_icon {
+	VERTICAL-ALIGN: -1px
+}
+.articalInfo .IL A IMG {
+	TEXT-DECORATION: none
+}
+.articalInfo .IL .zznum {
+	FONT-FAMILY: "宋体"
+}
+.blogzz_btn {
+	HEIGHT: 1px; POSITION: relative
+}
+.blogzz_btn .SG_turn {
+	POSITION: relative; TEXT-ALIGN: center; LEFT: 46%; TOP: 8px; _left: 40%; _position: absolute
+}
+.blogzz_btn A:link {
+	TEXT-DECORATION: none
+}
+.blogzz_btn A:visited {
+	TEXT-DECORATION: none
+}
+.blogzz_btn A:active {
+	TEXT-DECORATION: none
+}
+.blogzz_zzlist UL.ul_zzlist LI .SG_floatR {
+	WIDTH: 150px; TEXT-ALIGN: right
+}
+.atc_photoblog {
+	OVERFLOW: hidden; WIDTH: 608px; PADDING-BOTTOM: 0px; PADDING-TOP: 20px; PADDING-LEFT: 20px; CLEAR: both; MARGIN: 20px; PADDING-RIGHT: 20px
+}
+.articalContent A:link {
+	TEXT-DECORATION: none
+}
+.articalContent A:visited {
+	TEXT-DECORATION: none
+}
+.articalContent A:hover {
+	TEXT-DECORATION: underline
+}
+.atc_photoblog_title {
+	FONT-SIZE: 14px; PADDING-BOTTOM: 20px; CLEAR: both
+}
+.atc_photoblog .myPhotoblog_list {
+	WIDTH: 620px; PADDING-LEFT: 10px; CLEAR: both
+}
+.atc_photoblog .myPhotoblog_cell {
+	WIDTH: 155px; OVERFLOW-X: hidden; FLOAT: left; PADDING-BOTTOM: 20px; MIN-HEIGHT: 90px; _height: 90px
+}
+.atc_photoblog .myPhotoblog_view {
+	OVERFLOW: hidden; BORDER-TOP: #dcdcdc 1px solid; HEIGHT: 90px; BORDER-RIGHT: #dcdcdc 1px solid; WIDTH: 120px; BORDER-BOTTOM: #dcdcdc 1px solid; POSITION: relative; BORDER-LEFT: #dcdcdc 1px solid
+}
+.atc_photoblog .myPhotoblog_area {
+	HEIGHT: 200px; WIDTH: 200px; POSITION: absolute; LEFT: -40px; TOP: -55px
+}
+.atc_photoblog .myPhotoblog_area TABLE {
+	HEIGHT: 200px; WIDTH: 200px; VERTICAL-ALIGN: middle; BORDER-COLLAPSE: collapse; TEXT-ALIGN: center; BORDER-SPACING: 0
+}
+.atc_photoblog .myPhotoblog_area TD {
+	HEIGHT: 200px; WIDTH: 200px; VERTICAL-ALIGN: middle; BORDER-COLLAPSE: collapse; TEXT-ALIGN: center; BORDER-SPACING: 0
+}
+.atc_photoblog .myPhotoblog_cover {
+	OVERFLOW: hidden; FONT-SIZE: 12px; HEIGHT: 18px; WIDTH: 117px; TEXT-ALIGN: right; LINE-HEIGHT: 18px; PADDING-RIGHT: 5px; BACKGROUND-COLOR: #f3f3f3
+}
+.atc_photoblog .myPhotoblog_nm {
+	FONT-SIZE: 12px; WIDTH: 130px; PADDING-TOP: 10px; CLEAR: both
+}
+.atc_photoblog .myPhotoblog_nm .SG_icon {
+	MARGIN-RIGHT: 3px
+}
+.popBox UL {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+.popBox LI {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+.popBox IMG {
+	BORDER-TOP-STYLE: none; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none
+}
+.popBox {
+	OVERFLOW: hidden; FONT-SIZE: 12px; HEIGHT: 267px; FONT-FAMILY: "宋体"; WIDTH: 263px; POSITION: relative; COLOR: #333
+}
+.popBox .popBox_bg {
+	HEIGHT: 267px; WIDTH: 263px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left top
+}
+.popBox .popMain_bg {
+	OVERFLOW: hidden; HEIGHT: 185px; WIDTH: 253px; BACKGROUND-REPEAT: no-repeat; POSITION: absolute; BACKGROUND-POSITION: left top; LEFT: 5px; TOP: 42px
+}
+.popBox .popFlash {
+	HEIGHT: 60px; WIDTH: 293px; POSITION: absolute; LEFT: 0px; TOP: 0px
+}
+.popBox .popMain {
+	HEIGHT: 185px; WIDTH: 250px; POSITION: absolute; LEFT: 9px; TOP: 53px
+}
+.popBox .popBox_btn {
+	OVERFLOW: hidden; HEIGHT: 14px; WIDTH: 45px; RIGHT: 0px; POSITION: absolute; TOP: 0px
+}
+.popBox .popBox_btn A {
+	HEIGHT: 14px; WIDTH: 15px; FLOAT: left; MARGIN-LEFT: 5px; DISPLAY: block
+}
+.popBox .popBox_btn A.mini {
+	BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left top
+}
+.popBox .popBox_btn A.close {
+	BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: -20px top
+}
+.popBox .line1 {
+	CLEAR: both
+}
+.popBox .line1 .pic {
+	OVERFLOW: hidden; HEIGHT: 82px; WIDTH: 82px; FLOAT: left; MARGIN-RIGHT: 5px
+}
+.popBox .line1 .pic IMG {
+	BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid
+}
+.popBox .line1 .list1 {
+	OVERFLOW: hidden; WIDTH: 160px; FLOAT: left
+}
+.popBox .line1 .list1 LI {
+	CLEAR: both; LINE-HEIGHT: 20px
+}
+.popBox .list2 {
+	PADDING-TOP: 3px; CLEAR: both
+}
+.popBox .list2 .b {
+	FONT-WEIGHT: bold; PADDING-LEFT: 10px
+}
+.popBox .list2 LI {
+	LINE-HEIGHT: 22px
+}
+.popBox A:link {
+	TEXT-DECORATION: none; COLOR: #333
+}
+.popBox A:visited {
+	TEXT-DECORATION: none; COLOR: #333
+}
+.popBox A:hover {
+	TEXT-DECORATION: underline; COLOR: #f00
+}
+.popBox .red {
+	COLOR: #f00
+}
+.popBox .red A:link {
+	COLOR: #f00
+}
+.popBox .red A:visited {
+	COLOR: #f00
+}
+.voteapp_btnMore {
+	FONT-FAMILY: "宋体"; POSITION: relative; FONT-WEIGHT: bold; PADDING-BOTTOM: 20px; TEXT-ALIGN: right; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 30px
+}
+.voteapp_btnMore A:link {
+	TEXT-DECORATION: underline
+}
+.voteapp_btnMore A:visited {
+	TEXT-DECORATION: underline
+}
+.voteapp_btnMore A:hover {
+	TEXT-DECORATION: underline
+}
+.voteapp_btnMore .SG_icon11 {
+	RIGHT: 13px; POSITION: absolute; TOP: -4px
+}
+.baby_hot2 {
+	WIDTH: 648px; CLEAR: both; MARGIN: 0px auto 20px
+}
+.baby_hot2 .listBg {
+	PADDING-BOTTOM: 15px; PADDING-TOP: 20px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px
+}
+.baby_hot2 .babu_hotTit {
+	WIDTH: 490px
+}
+.baby_hot2 UL {
+	LIST-STYLE-TYPE: none; WIDTH: 490px
+}
+.baby_hot2 UL LI {
+	LIST-STYLE-TYPE: none; OVERFLOW: hidden; HEIGHT: 25px; BACKGROUND-POSITION: left 8px; PADDING-LEFT: 8px; MARGIN-LEFT: 0px; LINE-HEIGHT: 25px
+}
+.baby_hot2 LI .tit {
+	FONT-SIZE: 14px; FLOAT: left
+}
+.baby_hot2 LI .tit A {
+	FLOAT: left
+}
+.baby_hot2 LI .tit IMG {
+	FLOAT: left; MARGIN-LEFT: 3px; MARGIN-TOP: 5px
+}
+.baby_hot2 LI .author {
+	FONT-SIZE: 12px; FLOAT: right; COLOR: #999; TEXT-ALIGN: right; PADDING-TOP: 1px
+}
+.picShareFlt {
+	OVERFLOW: hidden; _zoom: 1
+}
+.picShareQing {
+	OVERFLOW: hidden; _zoom: 1
+}
+.picSlideBtn {
+	OVERFLOW: hidden; _zoom: 1
+}
+.picAward {
+	OVERFLOW: hidden; _zoom: 1
+}
+.picShareFlt .share {
+	OVERFLOW: hidden; CURSOR: pointer; FONT-SIZE: 12px; HEIGHT: 24px; BACKGROUND: url(../../images/common/btn_share.png) right 0px; FLOAT: left; LINE-HEIGHT: 26px
+}
+.picShareQing .share {
+	OVERFLOW: hidden; CURSOR: pointer; FONT-SIZE: 12px; HEIGHT: 24px; BACKGROUND: url(../../images/common/btn_share.png) right 0px; FLOAT: left; LINE-HEIGHT: 26px
+}
+.picShareQing .share {
+	BACKGROUND: url(../../images/common/btn_sharetoqing.png) right 0px
+}
+.picShareFlt .share A {
+	FLOAT: left; MARGIN: 0px 4px; DISPLAY: inline
+}
+.picShareQing .share A {
+	FLOAT: left; MARGIN: 0px 4px; DISPLAY: inline
+}
+.picShareFlt .share SPAN {
+	FLOAT: left; COLOR: #5e0900; MARGIN: 0px 6px 0px 29px; DISPLAY: inline
+}
+.picShareQing .share SPAN {
+	FLOAT: left; COLOR: #5e0900; MARGIN: 0px 6px 0px 29px; DISPLAY: inline
+}
+.picShareQing .share SPAN {
+	COLOR: #0b4295; MARGIN: 0px 4px 0px 26px
+}
+.picSlideBtn A {
+	FONT-SIZE: 12px; HEIGHT: 21px; WIDTH: 64px; BACKGROUND: url(../../../images/common/multishow_bg.png) no-repeat -21px -873px; COLOR: #fff; TEXT-ALIGN: center; DISPLAY: block; LINE-HEIGHT: 21px
+}
+.picSlideBtn A.picSlideBtn:link A:visited {
+	FONT-SIZE: 12px; HEIGHT: 21px; WIDTH: 64px; BACKGROUND: url(../../../images/common/multishow_bg.png) no-repeat -21px -873px; COLOR: #fff; TEXT-ALIGN: center; DISPLAY: block; LINE-HEIGHT: 21px
+}
+.posters {
+	OVERFLOW: hidden; WIDTH: auto
+}
+.SG_colW73 .posters .tet {
+	OVERFLOW: hidden; WIDTH: 475px; FLOAT: left
+}
+.posters .introduction {
+	FONT-SIZE: 12px; WIDTH: 200px; FLOAT: right; DISPLAY: inline
+}
+.posters .introduction .movies {
+	PADDING-BOTTOM: 9px; PADDING-TOP: 4px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px
+}
+.posters .introduction .movies .movieslist {
+	MARGIN: 8px 0px
+}
+.posters .introduction .movies .movieslist LI {
+	LIST-STYLE-TYPE: none; MARGIN-BOTTOM: 5px; TEXT-ALIGN: center; MARGIN-LEFT: 0px; LINE-HEIGHT: 20px
+}
+.posters .introduction .movies .movieslist LI .b {
+	OVERFLOW: hidden; WORD-WRAP: break-word; WIDTH: 10em; VERTICAL-ALIGN: top; WORD-BREAK: break-all; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 3px; PADDING-LEFT: 0px; DISPLAY: inline-block; PADDING-RIGHT: 0px
+}
+.posters .introduction .movies .movieslist LI.btn {
+	PADDING-BOTTOM: 4px; TEXT-ALIGN: right; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.posters .introduction .movies .movieslist A {
+	TEXT-ALIGN: center
+}
+.posters .introduction .movies .movieslist LI .blog_evaluation {
+	TEXT-ALIGN: center
+}
+.posters .introduction .movies .txt {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 8px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.posters .introduction .movies .impAD_pL {
+	WIDTH: auto; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.posters .introduction .movies .impAD_pL UL LI {
+	LIST-STYLE-TYPE: none; OVERFLOW: hidden; WIDTH: 178px; WHITE-SPACE: nowrap; PADDING-BOTTOM: 0px; MARGIN: 0px
+}
+.posters .introduction .movies .more {
+	PADDING-BOTTOM: 10px; TEXT-ALIGN: right; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.posters .introduction .movies .btn {
+	TEXT-ALIGN: center; CLEAR: both
+}
+.posters .introduction .movies .btn A {
+	TEXT-DECORATION: none
+}
+.posters2 {
+	OVERFLOW: hidden; WIDTH: auto
+}
+.SG_colW73 .posters2 .tet {
+	OVERFLOW: hidden; WIDTH: 572px; FLOAT: left
+}
+.SG_colW51 .posters2 .tet {
+	OVERFLOW: hidden; WIDTH: 352px; FLOAT: left
+}
+.posters2 .tet {
+	WIDTH: 572px
+}
+.posters2 .introduction {
+	FONT-SIZE: 12px; WIDTH: 108px; FLOAT: right; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; PADDING-LEFT: 0px; DISPLAY: inline; PADDING-RIGHT: 0px
+}
+.posters2 .movies {
+	PADDING-BOTTOM: 4px
+}
+.posters2 .movieslist {
+	OVERFLOW: hidden; PADDING-BOTTOM: 8px; PADDING-TOP: 8px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px
+}
+.posters2 .movieslist LI {
+	LIST-STYLE-TYPE: none; OVERFLOW: hidden; ZOOM: 1; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; DISPLAY: block; PADDING-RIGHT: 0px
+}
+.posters2 .movieslist LI STRONG {
+	OVERFLOW: hidden; WIDTH: 2.8em; WHITE-SPACE: nowrap; FLOAT: left; FONT-WEIGHT: normal; LINE-HEIGHT: 150%
+}
+.posters2 .movieslist LI .txt {
+	OVERFLOW: hidden; HEIGHT: 18px; WIDTH: 7em; TEXT-ALIGN: center; MARGIN: 0px auto; DISPLAY: block; LINE-HEIGHT: 150%
+}
+.posters2 .movieslist LI.pic {
+	PADDING-BOTTOM: 6px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.posters2 .movieslist LI.pic IMG {
+	VERTICAL-ALIGN: top
+}
+.posters2 .movieslist LI .blog_evaluation {
+	TEXT-ALIGN: center; MARGIN-TOP: 5px; DISPLAY: block
+}
+.posters2 .movieslist LI .blog_evaluation IMG {
+	MARGIN-RIGHT: 1px
+}
+.posters2 P.btn {
+	TEXT-ALIGN: center
+}
+.posters2 P.btn A.SG_aBtn {
+	MARGIN-RIGHT: 0px
+}
+.hotmovies {
+	WIDTH: 188px; ZOOM: 1; FLOAT: none; MARGIN: 0px 0px 0px 13px; DISPLAY: inline
+}
+.hotmovies UL {
+	
+}
+.hotmovies UL LI {
+	FONT-FAMILY: "宋体"
+}
+.hotmovies UL LI {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.hotmovies UL LI .SG_dot {
+	OVERFLOW: hidden; HEIGHT: 3px; WIDTH: 7px; FLOAT: left; MARGIN-TOP: 12px
+}
+.hotmovies UL LI.cur {
+	OVERFLOW: auto; ZOOM: 1; PADDING-BOTTOM: 0px; PADDING-TOP: 10px; PADDING-LEFT: 0px; CLEAR: both; LINE-HEIGHT: 1.5em; PADDING-RIGHT: 0px
+}
+.hotmovies UL LI.cur IMG {
+	MARGIN-BOTTOM: 12px; HEIGHT: 134px; WIDTH: 90px; FLOAT: left; MARGIN-RIGHT: 10px
+}
+.hotmovies UL LI.cur .vltxt {
+	OVERFLOW: hidden; WIDTH: 83px; FLOAT: left; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px
+}
+.hotmovies UL LI.cur .vp_midd_txt {
+	WIDTH: 390px; FLOAT: left
+}
+.hotmovies UL LI.cur .vltime {
+	OVERFLOW: hidden; FONT-SIZE: 10px; FONT-FAMILY: Arial
+}
+.hotmovies UL LI UL {
+	WIDTH: 88px; FLOAT: right; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 5px 0px 0px; PADDING-RIGHT: 0px
+}
+.hotmovies UL LI UL LI {
+	LIST-STYLE-TYPE: none; OVERFLOW: hidden; HEIGHT: 19px; WIDTH: 6em; BACKGROUND: url(../../images/common/SG_dot.gif) no-repeat 0px 7px; PADDING-LEFT: 5px; MARGIN: 0px
+}
+.filmPlug {
+	
+}
+.filmPlug {
+	
+}
+.filmPlug UL {
+	
+}
+.filmPlug LI {
+	OVERFLOW: hidden; WORD-WRAP: break-word; WORD-BREAK: break-all; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 5em; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px
+}
+.filmPlug LI.name {
+	
+}
+.filmPlug LI.name .txt {
+	FONT-WEIGHT: bold
+}
+.filmPlug LI .txt {
+	
+}
+.filmPlug LI.pic {
+	PADDING-BOTTOM: 5px; TEXT-ALIGN: center; PADDING-TOP: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.filmPlug LI.pic IMG {
+	BORDER-TOP: #d3d3d3 1px solid; BORDER-RIGHT: #d3d3d3 1px solid; BORDER-BOTTOM: #d3d3d3 1px solid; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 1px; BORDER-LEFT: #d3d3d3 1px solid; PADDING-RIGHT: 1px
+}
+.filmPlug LI STRONG {
+	WIDTH: 5em; FONT-WEIGHT: normal; MARGIN: 0px 0px 0px -5em
+}
+.filmPlug .btn {
+	PADDING-BOTTOM: 8px; TEXT-ALIGN: center; PADDING-TOP: 8px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.transferWrap {
+	OVERFLOW: auto; ZOOM: 1; CLEAR: both
+}
+.transferWrap .introduction {
+	MARGIN-TOP: 30px
+}
+.filmReviewList {
+	PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 18px; PADDING-RIGHT: 18px
+}
+.filmReview {
+	OVERFLOW: hidden; MARGIN-BOTTOM: 18px; WIDTH: 100%; POSITION: relative; ZOOM: 1; PADDING-BOTTOM: 18px
+}
+.filmReview .pic {
+	WIDTH: 87px; POSITION: relative; FLOAT: left; DISPLAY: inline; MARGIN-RIGHT: -100%
+}
+.filmReview .pic IMG {
+	OVERFLOW: hidden; MARGIN-BOTTOM: 10px; HEIGHT: 110px; WIDTH: 85px; DISPLAY: block
+}
+.filmReview .pic .borderc {
+	BACKGROUND: url(../../images/me/noposter85x110.png) no-repeat
+}
+.filmReviewList .filmReview .pic .borderc {
+	HEIGHT: 110px; WIDTH: 85px
+}
+.filmReview .pic A.SG_aBtn_ico {
+	MARGIN-RIGHT: 0px
+}
+.filmReview .pic A.SG_aBtn_ico CITE {
+	PADDING-RIGHT: 8px
+}
+.filmReview .pic A.SG_aBtn_ico CITE IMG {
+	OVERFLOW: hidden; HEIGHT: 15px; WIDTH: 15px
+}
+.filmReview .info {
+	WIDTH: 100%; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.filmReview .info .con {
+	PADDING-LEFT: 97px
+}
+.filmReview .info .con STRONG {
+	FONT-SIZE: 14px
+}
+.filmReview .info .con .des {
+	OVERFLOW: auto; ZOOM: 1; CLEAR: both; MARGIN-TOP: 5px; LINE-HEIGHT: 18px
+}
+.filmReview .info .con .des A {
+	FLOAT: left; MARGIN-RIGHT: 6px
+}
+.filmReview .info .con .des SPAN {
+	FLOAT: left; MARGIN-RIGHT: 6px
+}
+.filmReview .info .con .des SPAN.blog_evaluation {
+	MARGIN-TOP: 0px; _margin-top: 2px
+}
+.filmReview .info .con P {
+	MARGIN-TOP: 10px; LINE-HEIGHT: 18px
+}
+.filmReview .info .con P A {
+	MARGIN-LEFT: 15px
+}
+.filmReview .edit {
+	RIGHT: 0px; POSITION: absolute; TOP: 0px
+}
+.filmReview .edit A {
+	MARGIN-LEFT: 4px
+}
+.filmReviewList .SG_j_linedot1 {
+	BACKGROUND-POSITION: 50% bottom
+}
+.moviesApp_txtlink {
+	FLOAT: right; PADDING-BOTTOM: 0px; PADDING-TOP: 8px; PADDING-LEFT: 15px; PADDING-RIGHT: 10px
+}
+.moviesApp_txtlink A {
+	OUTLINE-STYLE: none
+}
+.center_pageL {
+	FLOAT: left
+}
+.center_pageL .SG_icon {
+	VERTICAL-ALIGN: middle
+}
+.artical .sc {
+	POSITION: relative
+}
+.diarynotis {
+	BACKGROUND: url(../../images/common/quotations/center_lx_png.png); PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 16px; MARGIN: 20px 0px 10px; PADDING-RIGHT: 16px; border-radius: 5px 5px 5px 5px; -moz-border-radius: 5px 5px 5px 5px; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/common/quotations/center_lx_png.png', sizingMethod='crop')
+}
+.diarynotis P {
+	LINE-HEIGHT: 16px
+}
+.diarynotis .notisfr {
+	TEXT-ALIGN: right; PADDING-TOP: 10px
+}
+.qtt_feed LI {
+	OVERFLOW: hidden; WIDTH: 690px; FLOAT: left; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px
+}
+.qtt_feed LI .fl_date {
+	HEIGHT: 63px; FONT-FAMILY: Arial; WIDTH: 57px; BACKGROUND: url(../../images/common/quotations/bg_data.gif) no-repeat; POSITION: relative; FLOAT: left; TEXT-ALIGN: center; MARGIN-TOP: 15px
+}
+.qtt_feed LI .fl_date .year {
+	WIDTH: 57px; COLOR: #fff; LINE-HEIGHT: 20px
+}
+.qtt_feed LI .fl_date .months {
+	FONT-SIZE: 32px; WIDTH: 57px; COLOR: #333; LINE-HEIGHT: 40px
+}
+.qtt_feed LI .day {
+	HEIGHT: 34px; BACKGROUND-POSITION: 0px -62px
+}
+.qtt_feed LI .dateday {
+	FONT-SIZE: 16px; FONT-WEIGHT: bold; LINE-HEIGHT: 36px
+}
+.qtt_feed LI .qtt_feed_c {
+	WIDTH: 591px; FLOAT: right; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 15px; DISPLAY: inline; PADDING-RIGHT: 15px; MARGIN-RIGHT: 10px; border-radius: 5px 5px 5px 5px; -moz-border-radius: 5px 5px 5px 5px
+}
+.qtt_assign {
+	WIDTH: 474px; CLEAR: both; MARGIN: 0px 5px 10px 0px
+}
+.qtt_feed LI .qtt_arrow {
+	HEIGHT: 19px; WIDTH: 11px; BACKGROUND: url(../../images/common/quotations/bg_arrow.gif) no-repeat 0px 0px; RIGHT: -11px; POSITION: absolute; FLOAT: left; DISPLAY: block; TOP: 13px
+}
+.qtt_asarrow_t {
+	OVERFLOW: hidden; HEIGHT: 11px; WIDTH: 19px; BACKGROUND: url(../../images/common/quotations/bg_arrow.gif) no-repeat 0px -31px; POSITION: relative; MARGIN: 0px 0px -2px 53px
+}
+.qtt_assign .qtt_assign_t {
+	OVERFLOW: hidden; HEIGHT: 5px; WIDTH: 474px
+}
+.qtt_assign .qtt_assign_b {
+	OVERFLOW: hidden; HEIGHT: 5px; WIDTH: 474px
+}
+.qtt_assign .qtt_assign_c {
+	OVERFLOW: hidden; WIDTH: 472px; PADDING-BOTTOM: 6px; PADDING-TOP: 6px; PADDING-LEFT: 17px; MARGIN: 0px 0px 0px 6px; LINE-HEIGHT: 1.7em; PADDING-RIGHT: 17px; border-radius: 5px 5px 5px 5px; -moz-border-radius: 5px 5px 5px 5px
+}
+.qtt_feed LI .qtt_feed_c .sms {
+	FONT-SIZE: 14px; PADDING-BOTTOM: 10px; PADDING-TOP: 15px; PADDING-LEFT: 0px; LINE-HEIGHT: 20px; PADDING-RIGHT: 0px
+}
+.qtt_feed LI .qtt_feed_c .sms .data {
+	FONT-SIZE: 12px; PADDING-LEFT: 4px
+}
+.qtt_feed LI .qtt_feed_c .sms .inputaera {
+	WIDTH: 20px; FLOAT: left; PADDING-TOP: 2px
+}
+.qtt_feed LI .qtt_feed_c .sms .contentaera {
+	WIDTH: 588px; FLOAT: right; MARGIN: 0px 0px 10px; LINE-HEIGHT: 22px
+}
+.qtt_assign .qtt_assign_c .source {
+	PADDING-BOTTOM: 6px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.qtt_assign .qtt_assign_c .feed_img {
+	POSITION: relative; FLOAT: left; MARGIN: 0px 8px 10px 0px
+}
+.feed_preview .feed_img {
+	POSITION: relative; FLOAT: left; MARGIN: 0px 8px 10px 0px
+}
+.SG_colW51 .qtt_feed LI {
+	WIDTH: 470px
+}
+.SG_colW51 .qtt_feed LI .qtt_feed_c {
+	OVERFLOW: hidden; WIDTH: 371px
+}
+.SG_colW51 .qtt_feed LI .qtt_feed_c .sms .contentaera {
+	WIDTH: 370px
+}
+.feed_preview .feed_img .imgicon {
+	MARGIN-BOTTOM: 10px
+}
+.SG_colW51 .qtt_assign .qtt_assign_c .source {
+	WIDTH: 330px
+}
+.articalContent UL.qtt_feed LI {
+	MARGIN-LEFT: 0px
+}
+.wrtBlog_sub {
+	_right: 171px
+}
+.wondPic {
+	OVERFLOW: hidden; BACKGROUND-POSITION: left bottom; ZOOM: 1; PADDING-TOP: 10px; CLEAR: both
+}
+.wondPic UL {
+	OVERFLOW: hidden; WIDTH: 100%
+}
+.wondPic LI {
+	OVERFLOW: hidden; MARGIN-BOTTOM: 10px; FONT-SIZE: 12px; FONT-FAMILY: "宋体"; WIDTH: 87px; WHITE-SPACE: nowrap; WORD-BREAK: break-all; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN-LEFT: 4px; CLEAR: none; DISPLAY: inline; LINE-HEIGHT: 18px; PADDING-RIGHT: 0px; MARGIN-RIGHT: 5px; _margin-left: 0
+}
+.wondPic LI.SG_j_linedot1 {
+	PADDING-BOTTOM: 7px
+}
+.wondPic LI.videoImg2 {
+	POSITION: relative
+}
+.wondPic LI .ico_play {
+	OVERFLOW: hidden; HEIGHT: 37px; WIDTH: 37px; BACKGROUND: url(../../images/blog/wondpic_play.png) no-repeat; POSITION: absolute; _background: url(../../images/blog/wondpic_play.gif) no-repeat
+}
+.wondPic LI.videoImg2 .ico_play {
+	LEFT: 25px; TOP: 28px
+}
+.wondPic LI.bigImg {
+	OVERFLOW: hidden; WIDTH: 172px; FLOAT: none; MARGIN: 0px auto; DISPLAY: block
+}
+.wondPic LI .pic {
+	OVERFLOW: hidden; MARGIN-BOTTOM: 6px; HEIGHT: 80px; WIDTH: 80px
+}
+.wondPic LI .pic IMG {
+	OVERFLOW: hidden; HEIGHT: 80px; WIDTH: 80px
+}
+.wondPic LI.bigImg .pic {
+	OVERFLOW: hidden; HEIGHT: 132px; WIDTH: 172px
+}
+.wondPic LI.bigImg .ico_play {
+	LEFT: 73px; TOP: 50px
+}
+.wondPic LI.bigImg IMG {
+	HEIGHT: auto; WIDTH: auto
+}
+.wondPic .clearfix {
+	OVERFLOW: hidden; HEIGHT: 0px
+}
+.wondPic UL.wondPicList {
+	PADDING-BOTTOM: 7px; MARGIN-LEFT: 4px; MARGIN-TOP: 10px
+}
+.wondPic UL.wondTxtList LI {
+	HEIGHT: 132px; PADDING-BOTTOM: 5px; MARGIN: 0px 4px 0px 3px
+}
+.wondPic UL.wondTxtList {
+	PADDING-BOTTOM: 7px; MARGIN-LEFT: 4px; MARGIN-TOP: 10px
+}
+.wondPic UL.wondTxtList LI {
+	FLOAT: none; MARGIN: 0px 4px 0px 3px
+}
+.wondPic UL.wondPicList {
+	PADDING-BOTTOM: 7px; MARGIN-LEFT: 4px
+}
+.wondPic UL.wondPicList LI {
+	HEIGHT: 126px; PADDING-BOTTOM: 5px; MARGIN: 0px 1px 0px 4px
+}
+.wondPicnSlide {
+	OVERFLOW: hidden; HEIGHT: 132px; WIDTH: 172px; POSITION: relative; BACKGROUND-POSITION: 50% bottom; ZOOM: 1; PADDING-BOTTOM: 11px; MARGIN: 0px auto
+}
+.wondPicnSlide UL {
+	WIDTH: 1032px; POSITION: absolute; LEFT: 0px; Z-INDEX: 9; TOP: 0px
+}
+.wondPicnSlide UL LI {
+	OVERFLOW: hidden; HEIGHT: 132px; WIDTH: 172px; POSITION: relative; FLOAT: left; MARGIN: 0px; _display: inline
+}
+.wondPicnSlide UL LI IMG {
+	WIDTH: 172px
+}
+.wondPicnSlide UL LI SPAN {
+	CURSOR: pointer; FONT-SIZE: 13px; TEXT-DECORATION: none; HEIGHT: 32px; WIDTH: 172px; BACKGROUND: url(../../images/common/op_black50.png); POSITION: absolute; COLOR: #ced2d1; TEXT-ALIGN: center; LEFT: 0px; LINE-HEIGHT: 32px; TOP: 0px
+}
+.wondPicnSlide .sNo {
+	HEIGHT: 9px; WIDTH: 37px; RIGHT: 6px; POSITION: absolute; Z-INDEX: 10; BOTTOM: 18px
+}
+.wondPicnSlide .sNo A {
+	OVERFLOW: hidden; HEIGHT: 9px; WIDTH: 9px; BACKGROUND: url(../../images/blog/qingrec_slideico.png) -12px 0px; MARGIN-LEFT: 3px; DISPLAY: inline-block; LINE-HEIGHT: 100px; TEXT-INDENT: 0px; _background: url(../../images/blog/qingrec_slideico.gif) -12px 0 repeat
+}
+.wondPicnSlide .sNo A:link {
+	OVERFLOW: hidden; HEIGHT: 9px; WIDTH: 9px; BACKGROUND: url(../../images/blog/qingrec_slideico.png) -12px 0px; MARGIN-LEFT: 3px; DISPLAY: inline-block; LINE-HEIGHT: 100px; TEXT-INDENT: 0px; _background: url(../../images/blog/qingrec_slideico.gif) -12px 0 repeat
+}
+.wondPicnSlide .sNo A.current {
+	BACKGROUND-POSITION: 0px 0px
+}
+.wondPicnSlide .sNo A.current:link {
+	BACKGROUND-POSITION: 0px 0px
+}
+.relaList .atcTit_more {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.relaList .natcTit_more {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.wondPicSlide {
+	PADDING-TOP: 8px
+}
+.wondPicSlide .pic {
+	OVERFLOW: hidden; HEIGHT: 132px; WIDTH: 172px; POSITION: relative; MARGIN: 0px auto
+}
+.wondPicSlide .pic SPAN {
+	HEIGHT: 25px; WIDTH: 100%; BACKGROUND: url(../../images/common/op_black50.png); POSITION: absolute; COLOR: #fff; TEXT-ALIGN: center; LEFT: 0px; LINE-HEIGHT: 25px; BOTTOM: 0px; _background: #000
+}
+.wondPicSlide .pic A:hover {
+	CURSOR: pointer; TEXT-DECORATION: none
+}
+.wondPicSlide .pic IMG {
+	WIDTH: 172px
+}
+.wondPicSlide UL {
+	OVERFLOW: hidden; WIDTH: 172px; BACKGROUND-POSITION: left bottom; PADDING-BOTTOM: 10px; MARGIN: 10px auto 0px; DISPLAY: block
+}
+.wondPicSlide UL LI {
+	OVERFLOW: hidden; HEIGHT: 50px; WIDTH: 50px; FLOAT: left; MARGIN-RIGHT: 11px; _display: inline
+}
+.wondPicSlide UL LI A {
+	BACKGROUND: url(../../images/common/sg_trans.gif)
+}
+.wondPicSlide UL LI A:link {
+	BACKGROUND: url(../../images/common/sg_trans.gif)
+}
+.wondPicSlide UL LI.mgr {
+	MARGIN-RIGHT: 0px
+}
+.wondPicSlide UL LI IMG {
+	HEIGHT: 48px; WIDTH: 48px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px
+}
+.wondPicSlide UL LI.current A IMG {
+	BORDER-TOP: #fff 1px solid; BORDER-RIGHT: #fff 1px solid; BORDER-BOTTOM: #fff 1px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: #fff 1px solid; PADDING-RIGHT: 0px
+}
+.wondPicSlide UL LI A:hover IMG {
+	BORDER-TOP: #fff 1px solid; BORDER-RIGHT: #fff 1px solid; BORDER-BOTTOM: #fff 1px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: #fff 1px solid; PADDING-RIGHT: 0px
+}
+.relaList .atcTitList {
+	WIDTH: 174px; PADDING-BOTTOM: 13px; PADDING-TOP: 0px; PADDING-LEFT: 18px; PADDING-RIGHT: 18px
+}
+.taofair {
+	
+}
+.taofair .commodity {
+	WIDTH: 402px; BACKGROUND: #f3f3f3; BORDER-BOTTOM: #e0e7e5 1px solid
+}
+.taofair .commodity .commodityinfor {
+	BORDER-TOP: #e0e7e5 1px; BORDER-RIGHT: #e0e7e5 1px solid; BORDER-BOTTOM: #c2c8c6 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #e0e7e5 1px solid
+}
+.taofair .commodity .commodityinfor IMG {
+	MAX-WIDTH: 400px
+}
+.taofair .commodity .fairtxt {
+	FONT-SIZE: 14px; BACKGROUND: #fff; COLOR: #666; PADDING-BOTTOM: 10px; TEXT-ALIGN: left; PADDING-TOP: 18px; PADDING-LEFT: 20px; PADDING-RIGHT: 18px
+}
+.taofair .commodity .fairtxt P {
+	PADDING-BOTTOM: 10px
+}
+.taofair .commodity .fairtxt A {
+	FONT-WEIGHT: bold; COLOR: #000
+}
+.taofair .commodity .fairtxt .black {
+	FONT-WEIGHT: bold; COLOR: #000
+}
+.taofair .commodity .fairbtn {
+	HEIGHT: 38px; TEXT-ALIGN: right; PADDING-TOP: 10px; CLEAR: both; LINE-HEIGHT: 38px
+}
+.taofair .commodity .fairbtn IMG {
+	FLOAT: left
+}
+.taofair .commodity .fairbtn A {
+	FONT-WEIGHT: normal; COLOR: #00798a
+}
+.tao .filmReview .pic .borderc {
+	BACKGROUND: url(../../images/me/notemp.jpg) no-repeat 0px 0px
+}
+.cal365show {
+	MARGIN-BOTTOM: 30px; HEIGHT: 136px; WIDTH: 672px; PADDING-BOTTOM: 19px; PADDING-TOP: 19px; PADDING-LEFT: 16px; PADDING-RIGHT: 0px
+}
+.cal365show .links {
+	FONT-SIZE: 14px
+}
+.cal365show .links .flr {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MARGIN-RIGHT: 18px
+}
+.cal365show .swrap {
+	OVERFLOW: hidden; BACKGROUND-POSITION: 50% bottom; PADDING-BOTTOM: 16px; MARGIN: 0px 19px 15px 0px
+}
+.cal365show .swrap .tit {
+	FONT-SIZE: 12px; HEIGHT: 35px; WIDTH: 57px; FLOAT: left; PADDING-BOTTOM: 25px; TEXT-ALIGN: center; PADDING-TOP: 25px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.cal365show UL {
+	OVERFLOW: hidden; FLOAT: left; _display: inline
+}
+.cal365show UL LI {
+	OVERFLOW: hidden; BORDER-TOP: #e5e5e5 1px solid; HEIGHT: 85px; BORDER-RIGHT: #e5e5e5 1px solid; WIDTH: 85px; BACKGROUND: #fff; BORDER-BOTTOM: #e5e5e5 1px solid; POSITION: relative; FLOAT: left; MARGIN-LEFT: 12px; BORDER-LEFT: #e5e5e5 1px solid; _display: inline
+}
+.cal365show UL LI .pic {
+	HEIGHT: 75px; WIDTH: 75px; BACKGROUND: url(../../images/activity/act365/cal365_nobgs.png) no-repeat; POSITION: relative; MARGIN: 5px
+}
+.cal365show UL LI EM {
+	CURSOR: pointer; FONT-SIZE: 9px; HEIGHT: 21px; WIDTH: 45px; BACKGROUND: #000; RIGHT: 0px; POSITION: absolute; COLOR: #fff; TEXT-ALIGN: center; LINE-HEIGHT: 21px; BOTTOM: 0px
+}
+.cal365show UL LI IMG {
+	HEIGHT: 75px; WIDTH: 75px
+}
+.cal365show UL LI.today {
+	BACKGROUND: #cee3e4
+}
+.cal365show UL LI.today .pic {
+	BACKGROUND-POSITION: 0px -140px
+}
+.cal365show UL LI.coming .pic {
+	BACKGROUND-POSITION: 0px -280px
+}
+.cal365show UL LI.default .pic {
+	BACKGROUND-POSITION: 0px -420px
+}
+.cal365show .btn_preview {
+	HEIGHT: 18px; WIDTH: 13px; BACKGROUND: url(../../images/activity/act365/cal365show_btn.png) no-repeat 0px 0px; POSITION: absolute; LEFT: 0px; TOP: 35px
+}
+.cal365show .btn_next {
+	HEIGHT: 18px; WIDTH: 13px; BACKGROUND: url(../../images/activity/act365/cal365show_btn.png) no-repeat 0px 0px; POSITION: absolute; LEFT: 0px; TOP: 35px
+}
+.cal365show .btn_next {
+	RIGHT: 0px; BACKGROUND-POSITION: 0px -36px; LEFT: auto
+}

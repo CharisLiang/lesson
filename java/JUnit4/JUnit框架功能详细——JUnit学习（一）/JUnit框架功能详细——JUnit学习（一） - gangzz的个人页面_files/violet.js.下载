@@ -1,0 +1,208 @@
+/**
+ * Created by Jill on 17/5/9.
+ */
+/**
+ * 记录用户行为
+ */
+;(function ($) {
+    //数据请求接口
+    var url = 'http://192.168.1.58:8080/addBehavior';
+    var com_url = compile(url);
+    localStorage.setItem("violet_url", com_url);
+
+    /**
+     * 全局变量
+     */
+    var second = 0,//停留时间
+        flag = false,//记录用户action行为开关
+        pendingRequests = {},//防止用户重复请求
+        get_url = uncompile(localStorage.getItem("violet_url"));//数据请求接口
+
+    /**
+     * 全局使用的DOM元素
+     */
+    var share = $('[data-violet="share" ]'),//分享
+        collect = $('[data-violet="collect"]'),//收藏
+        comment = $('[data-violet="comment"]'),//评论
+        favor = $('[data-violet="favor"]'),//点赞
+        deliver = $('[data-violet="deliver"]'),//投递
+        grade = $('[data-violet="grade"]'),//评分
+        quiz = $('[data-violet="quiz"]'),//提问
+        support = $('[data-violet="support"]'),//顶贴
+        reward = $('[data-violet="reward"]'),//打赏
+        join_trans = $('[data-violet="join_trans"]'),//参与翻译
+        uuid = $('#uu').val(),
+        oscid = $('#oo').val();
+
+    if (flag) {
+        initAction();
+    }
+
+    /**
+     * 当用户进入页面，启动一个定时器，记录用户在该页面浏览时间
+     */
+    window.setInterval(function () {
+        second++;
+    }, 1000);
+
+    //加密
+    function compile(code) {
+        var c = String.fromCharCode(code.charCodeAt(0) + code.length);
+        for (var i = 1; i < code.length; i++) {
+            c += String.fromCharCode(code.charCodeAt(i) + code.charCodeAt(i - 1));
+        }
+        return escape(c);
+    }
+
+    //解密
+    function uncompile(code) {
+        code = unescape(code);
+        var c = String.fromCharCode(code.charCodeAt(0) - code.length);
+        for (var i = 1; i < code.length; i++) {
+            c += String.fromCharCode(code.charCodeAt(i) - c.charCodeAt(i - 1));
+        }
+        return c;
+    }
+
+
+    //监听关闭页面
+    window.onbeforeunload = function () {
+        localStorage.clear();
+        //定义存储数据的变量 saveVioletData ，如果已经存到 localStorage 则从中读取，没有则初始化数据。
+        var saveVioletData = localStorage.getItem("aa") ? localStorage.getItem("aa") : '';
+        //定义一个json用来存储用户浏览数据
+        var recordVdate = {
+            'uuid': uuid,
+            'oscid': oscid,
+            'status': false,
+            'url': location.href,
+            'refer': getReferrer(),
+            'time': second,
+            'timeIn': Date.parse(new Date()),
+            'timeOut': Date.parse(new Date()) + (second * 1000),
+            'action': 'browse'
+        };
+        //数据解析和存储过程
+        saveVioletData = eval('(' + saveVioletData + ')');
+        saveVioletData.push(recordVdate);
+        saveVioletData = JSON.stringify(recordVdate);
+        localStorage.setItem("aa", saveVioletData);
+        $.ajax({
+            type: 'POST',
+            url: 'http://192.168.1.46:8080/addBehavior',
+            data: {
+                'vDate': localStorage.getItem("aa")
+            },
+            success: function (result) {
+                alert(456);
+            },
+            error: function (request, status, err) {
+                console.log(err);
+            }
+        });
+    };
+
+    //初始化action事件
+    function initAction() {
+        var isShare = true;
+        var isCollect = true;
+        var isComment = true;
+        var isFavor = true;
+        var isDeliver = true;
+        var isGrade = true;
+        var isQuiz = true;
+        var isSupport = true;
+        var isReward = true;
+        var isJoin_trans = true;
+        var isError_correction = true;
+        monitorClick(share, isShare, "share");
+        monitorClick(collect, isCollect, "collect");
+        monitorClick(comment, isComment, "comment");
+        monitorClick(favor, isFavor, "favor");
+        monitorClick(deliver, isDeliver, "deliver");
+        monitorClick(grade, isGrade, "grade");
+        monitorClick(quiz, isQuiz, "quiz");
+        monitorClick(support, isSupport, "support");
+        monitorClick(reward, isReward, "reward");
+        monitorClick(join_trans, isJoin_trans, "join_trans");
+    }
+
+    //监听点击
+    function monitorClick(event, flag, action) {
+        event.on("click", function (e) {
+            if (flag) {
+                alert(123);
+                saveDate(action);
+                flag = false;
+            } else {
+                return;
+            }
+        });
+    }
+
+    //防止重复提交
+    jQuery.ajaxPrefilter(function (options, originalOptions, jqXHR) {
+        var key = options.url;
+        console.log(key);
+        if (!pendingRequests[key]) {
+            pendingRequests[key] = jqXHR;
+        } else {
+            //jqXHR.abort();    //放弃后触发的提交
+            pendingRequests[key].abort();   // 放弃先触发的提交
+        }
+
+        var complete = options.complete;
+        options.complete = function (jqXHR, textStatus) {
+            pendingRequests[key] = null;
+            if (jQuery.isFunction(complete)) {
+                complete.apply(this, arguments);
+            }
+        };
+    });
+
+    //交互数据
+    function saveDate(action) {
+        //定义一个json用来存储用户浏览数据
+        var recordVdate = {
+            'uuid': uuid,
+            'oscid': oscid,
+            'url': location.href,
+            'action': action
+        };
+        //数据解析和存储过程
+        var saveVioletData = JSON.stringify(recordVdate);
+        $.ajax({
+            type: 'POST',
+            url: get_url,
+            data: {
+                'vDate': saveVioletData
+            },
+            success: function (result) {
+                console.log(result);
+            },
+            error: function (request, status, err) {
+                console.log(err);
+            }
+        });
+    }
+
+    //获取用户来路url
+    function getReferrer() {
+        var referrer = '';
+        try {
+            referrer = window.top.document.referrer;
+        } catch (e) {
+            if (window.parent) {
+                try {
+                    referrer = window.parent.document.referrer;
+                } catch (e2) {
+                    referrer = '';
+                }
+            }
+        }
+        if (referrer === '') {
+            referrer = document.referrer;
+        }
+        return referrer;
+    }
+})(jQuery);

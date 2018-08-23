@@ -1,0 +1,7 @@
+/*代码*/
+pre.code { background: #FFFFCE; border: silver 1px dashed; padding: 10px;  margin:10px 0; border-radius: 8px; font-family: "Consolas", "Courier New", "宋体", Courier, mono, serif; }
+
+/*文章底部签名*/
+#MySignature .favor { line-height: 60px; font-size: 18px; color: Red; }
+#MySignature .content { border: dashed 1px #999999; padding: 10px; background: #F0F8FF url(http://images.cnblogs.com/cnblogs_com/youring2/369959/o_o_info.png) no-repeat scroll 15px 50%; padding-left: 80px; }
+#MySignature .content div { line-height: 150%; }

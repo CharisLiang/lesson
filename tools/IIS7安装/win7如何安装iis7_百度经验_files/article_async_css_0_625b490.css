@@ -1,0 +1,69 @@
+.app-dl-mdl {
+	height: 79px; border-bottom-color: rgb(241, 241, 241); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.app-dl-icon {
+	width: 94px; height: 69px; text-align: center; padding-top: 10px; border-right-color: rgb(241, 241, 241); border-right-width: 1px; border-right-style: solid; float: left;
+}
+.app-dl-icon img {
+	width: 48px; height: 48px;
+}
+.app-dl-info {
+	padding: 0px 10px; width: 346px; height: 79px; border-right-color: rgb(241, 241, 241); border-right-width: 1px; border-right-style: solid; float: left;
+}
+.app-dl-info .app-dl-titl {
+	height: 39px; color: rgb(102, 102, 102); line-height: 39px; border-bottom-color: rgb(241, 241, 241); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+.app-dl-info .mdl-item-name {
+	color: rgb(102, 102, 102);
+}
+.app-dl-info .mdl-item-value {
+	color: rgb(51, 51, 51);
+}
+.app-dl-info .app-dl-meta {
+	height: 39px; line-height: 39px; font-size: 12px;
+}
+.app-dl-info .app-dl-meta .s-line {
+	padding: 0px 10px; top: -1px; color: rgb(241, 241, 241); font-weight: 400; display: inline-block; position: relative;
+}
+.app-dl-link {
+	height: 79px; float: left;
+}
+.app-dl-link a {
+	background: url("http://exp.bdstatic.com/static/article/widget/ui/auto-app/app_dl_icon_7eeadd8.png") no-repeat; margin: 15px 19px 5px; width: 106px; height: 30px; display: block;
+}
+.app-dl-link span {
+	color: rgb(204, 204, 204); font-size: 12px; margin-left: 10px;
+}
+.scroll-tip {
+	background: url("http://exp.bdstatic.com/static/article/widget/ui/auto-locate-pic/img/scroll-step_193b85c.png") no-repeat; left: 0px; top: 0px; width: 133px; height: 133px; position: absolute;
+}
+.list-icon-link {
+	background: url("http://img.baidu.com/img/iknow/exp/global/step_ico_bg.png") no-repeat 0px -68px; width: 32px; height: 34px; text-align: center; color: rgb(255, 255, 255); line-height: 32px; font-size: 16px; text-decoration: none; display: block; cursor: pointer;
+}
+.list-icon-current {
+	background-position: 0px 0px;
+}
+.list-icon-link:hover {
+	background-position: 0px 0px; text-decoration: none;
+}
+.list-icon-link:visited {
+	color: rgb(255, 255, 255);
+}
+.unorder-ico-group {
+	
+}
+.unorder-ico-group .list-icon-link {
+	background: url("http://img.baidu.com/img/iknow/exp/global/step_ico_s_bg.png") no-repeat 0px -26px; width: 11px; height: 13px; overflow: hidden;
+}
+.unorder-ico-group .list-icon-current {
+	background-position: 0px 0px;
+}
+.complex-unorder-first {
+	margin-left: -11px;
+}
+.complex-unorder-first .unorder-ico-group {
+	padding-left: 11px;
+}
+.complex-order-first .unorder-ico-group {
+	padding-left: 12px;
+}

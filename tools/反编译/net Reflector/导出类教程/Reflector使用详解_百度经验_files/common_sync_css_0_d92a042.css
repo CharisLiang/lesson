@@ -1,0 +1,2388 @@
+.footer {
+	font: 12px/1.5 Arial; text-align: center; color: rgb(119, 119, 204); clear: both; white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.footer a:link {
+	font: 12px/1.5 Arial; text-align: center; color: rgb(119, 119, 204); clear: both; white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.footer a:visited {
+	font: 12px/1.5 Arial; text-align: center; color: rgb(119, 119, 204); clear: both; white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.nav {
+	background: rgb(101, 102, 109); margin: 13px auto 0px; height: 40px; font-family: "Microsoft Yahei","Î¢ÈíÑÅºÚ",arial,"ËÎÌå",sans-serif;
+}
+.nav .nav-wrap {
+	margin: 0px auto; width: 980px; position: relative;
+}
+.nav .main-menu li {
+	height: 40px; float: left;
+}
+.nav .main-menu a {
+	background: url("http://exp.bdstatic.com/static/common/widget/nav/img/line_d6714b4.png") no-repeat 0px 13px; margin: 0px auto; padding: 0px 22px 0px 23px; outline: 0px; height: 40px; color: rgb(255, 255, 255); line-height: 42px; overflow: hidden; font-size: 16px; text-decoration: none; float: left; display: block; position: relative; z-index: 1000; -ms-zoom: 1; _line-height: 44px	;
+}
+.nav .main-menu a:visited {
+	color: rgb(255, 255, 255);
+}
+.nav .main-menu a:hover {
+	background: rgb(85, 87, 92); padding: 0px 22px; margin-right: -1px; border-right-color: rgb(78, 81, 85); border-left-color: rgb(78, 81, 85); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; z-index: 1001;
+}
+.nav .main-menu .current {
+	z-index: 1003;
+}
+.nav .main-menu .current a {
+	background: rgb(78, 80, 84); padding: 0px 22px; margin-right: -1px; border-right-color: rgb(62, 65, 68); border-left-color: rgb(62, 65, 68); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; z-index: 1003;
+}
+.nav .main-menu .current .dir-icon {
+	background-position: -190px -130px;
+}
+.nav .main-menu li.last {
+	background: url("http://exp.bdstatic.com/static/common/widget/nav/img/line_d6714b4.png") no-repeat right 13px;
+}
+.nav .main-menu .all-category {
+	position: relative;
+}
+.nav .main-menu .all-category a {
+	padding-right: 35px;
+}
+.nav .main-menu .all-category a:hover {
+	padding-right: 35px;
+}
+.nav .main-menu .all-category a.all-category-hover {
+	background: rgb(85, 87, 92); padding: 0px 35px 0px 22px; margin-right: -1px; border-right-color: rgb(78, 81, 85); border-left-color: rgb(78, 81, 85); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; position: relative; z-index: 1002;
+}
+.nav .main-menu .dir-icon {
+	background: url("http://img.baidu.com/img/iknow/exp/global/nav-share.png") no-repeat -190px -134px; left: 62px; top: 18px; width: 7px; height: 4px; display: inline-block; position: absolute; z-index: 1003; cursor: pointer; _overflow: hidden;
+}
+.nav .main-menu .dir-icon-hover {
+	background-position: -190px -130px;
+}
+.nav .share-exp-e {
+	background: url("http://img.baidu.com/img/iknow/exp/global/nav-share.png") no-repeat 0px 0px; width: 202px; height: 40px; float: right; display: block;
+}
+.nav .share-exp-e:hover {
+	background-position: 0px -40px;
+}
+.nav .share-exp-e:active {
+	background-position: 0px -80px;
+}
+.nav .category-list {
+	background: rgb(252, 252, 252); border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(153, 153, 153) rgb(153, 153, 153); border-image: none; left: 77px; top: 40px; width: 195px; position: absolute; z-index: 1100;
+}
+.nav .category-list li {
+	padding: 13px 0px 0px 25px; width: 59px; letter-spacing: 1px; float: left;
+}
+.nav .category-list li.first-line {
+	padding-top: 17px;
+}
+.nav .category-list li.last-line {
+	padding-bottom: 17px;
+}
+.nav .category-list li.even {
+	padding-right: 20px; padding-left: 27px;
+}
+.nav .category-list a:link {
+	color: rgb(45, 100, 179);
+}
+.nav .category-list a:visited {
+	color: rgb(45, 100, 179);
+}
+.pg {
+	margin: 0px auto; padding: 12px 0px; width: 583px; height: 24px; text-align: center; line-height: 24px; font-family: arial; font-size: 13px; display: block;
+}
+.pg a {
+	border: 1px solid rgb(231, 236, 240); border-image: none; width: 25px; text-align: center; color: rgb(0, 0, 205); line-height: 24px; text-decoration: none; margin-right: 5px; display: inline-block;
+}
+.pg .padding8 {
+	padding: 0px 8px; width: auto;
+}
+.pg b {
+	width: 25px; text-align: center; color: rgb(0, 0, 0); margin-right: 5px; display: inline-block;
+}
+.pg a:hover {
+	background-color: rgb(233, 241, 247);
+}
+.album-box-layer {
+	left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; position: fixed; z-index: 10000; opacity: 0.9; background-color: rgb(51, 51, 51);
+}
+.album-playlist-container {
+	margin: 0px auto; height: 100%; overflow: hidden; position: relative;
+}
+.album-playlist {
+	position: absolute;
+}
+.album-box {
+	left: 0px; width: 100%; height: 100%; position: absolute; z-index: 10001;
+}
+.album-box-content {
+	text-align: center; position: relative;
+}
+.album-box-content .img-wrap {
+	width: 890px; overflow: hidden; padding-right: 10px; background-color: rgb(255, 255, 255);
+}
+.album-box-bottom {
+	width: 100%; height: 66px; bottom: 0px; position: absolute; background-color: rgb(0, 0, 0);
+}
+.tangram-scrollbar-track {
+	background-color: rgb(255, 255, 255);
+}
+.manual-box.album-box-bottom {
+	height: 40px; bottom: 0px; color: rgb(255, 255, 255); position: absolute; opacity: 0.85; background-color: rgb(51, 51, 51); _background-color: #1c1c1c;
+}
+.manual-box.album-box-bottom .manual-box-wrap {
+	margin: 0px auto; width: 900px; height: 100%; overflow: hidden; position: relative;
+}
+.manual-box.album-box-bottom .manual-box-wrap .manual-download {
+	background: url("http://img.baidu.com/img/iknow/exp/global/manual-download-icon.png") no-repeat 15px; width: 80px; height: 40px; color: rgb(255, 255, 255); line-height: 3; text-indent: 35px; font-size: 14px; text-decoration: none; float: left;
+}
+.manual-box.album-box-bottom .manual-box-wrap .manual-pager {
+	width: 100px; height: 40px; text-align: center; font-family: ËÎÌå; font-size: 14px; float: right;
+}
+.manual-box.album-box-bottom .manual-box-wrap .manual-pager .m-p-inner {
+	top: 8px; position: relative;
+}
+.manual-box.album-box-bottom .manual-box-wrap .manual-pager .m-p-i {
+	margin: 0px 5px; display: inline-block;
+}
+.manual-box.album-box-bottom .manual-box-wrap .manual-pager #m-pager {
+	outline: 0px; border: 1px solid rgb(94, 94, 94); border-image: none; top: -1px; width: 29px; height: 23px; text-align: center; color: rgb(255, 255, 255); font-family: ËÎÌå; font-size: 14px; position: relative; background-color: rgb(74, 74, 74);
+}
+.manual-box.album-box-bottom .manual-box-wrap .manual-pager .border-hover#m-pager {
+	border: 1px solid rgb(225, 225, 225); border-image: none;
+}
+.manual-box.album-box-bottom .manual-box-wrap .manual-zoom {
+	float: right;
+}
+.manual-box.album-box-bottom .manual-box-wrap .manual-zoom .manual-zoom-lager {
+	background: url("http://img.baidu.com/img/iknow/exp/global/manaul-zoom-lager.png") no-repeat center; width: 40px; height: 40px; border-right-color: rgb(94, 94, 94); border-left-color: rgb(94, 94, 94); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; display: inline-block;
+}
+.manual-box.album-box-bottom .manual-box-wrap .manual-zoom .manual-zoom-smaller {
+	background: url("http://img.baidu.com/img/iknow/exp/global/manaul-zoom-smaller.png") no-repeat center; width: 40px; height: 40px; border-right-color: rgb(94, 94, 94); border-right-width: 1px; border-right-style: solid; display: inline-block;
+}
+.manual-box.album-box-bottom .manual-box-wrap .manual-zoom .bg-hover {
+	cursor: pointer; opacity: 1; background-color: rgb(0, 0, 0);
+}
+.manual-box.album-box-bottom .manual-box-wrap .bg-hover {
+	cursor: pointer; opacity: 1; background-color: rgb(0, 0, 0);
+}
+.album-box-bottom img {
+	margin: 8px 4px; border: 2px solid rgb(0, 0, 0); transition:ease-in-out, 0.3s; border-image: none; width: 65px; height: 50px; overflow: hidden; cursor: pointer; opacity: 0.4; -webkit-transition: ease-in-out, .3s; -moz-transition: ease-in-out, .3s; -o-transition: ease-in-out, .3s;
+}
+.album-box-bottom img:hover {
+	opacity: 1;
+}
+.album-box-bottom img.current {
+	border: 2px solid rgb(78, 175, 50); border-image: none; opacity: 1;
+}
+.album-box a.close-btn {
+	background: url("http://img.baidu.com/img/iknow/exp/global/album-close-btn.png") no-repeat 20px 20px; top: 0px; width: 55px; height: 55px; right: 0px; display: block; position: absolute; z-index: 10002; cursor: pointer;
+}
+.album-box a.close-btn:hover {
+	background-position: 20px -27px;
+}
+.left-area {
+	background: rgb(255, 255, 255); top: 0px; position: absolute; z-index: 10001; opacity: 0;
+}
+.right-area {
+	background: rgb(255, 255, 255); top: 0px; position: absolute; z-index: 10001; opacity: 0;
+}
+.left-area {
+	left: 0px; cursor: url(http://img.baidu.com/img/iknow/exp/global/pic-left-arrow.cur), auto;
+}
+.right-area {
+	right: 0px; cursor: url(http://img.baidu.com/img/iknow/exp/global/pic-right-arrow.cur), auto;
+}
+.first-last-tip {
+	width: 181px; height: 51px; position: absolute; z-index: 1004;
+}
+.first-tip {
+	background: url("http://img.baidu.com/img/iknow/exp/global/album-fist-tip.png") no-repeat 0px 0px; _background: 0 0;
+}
+.last-tip {
+	background: url("http://img.baidu.com/img/iknow/exp/global/album-last-tip.png") no-repeat 0px 0px; _background: 0 0;
+}
+.next-series {
+	background: url("http://img.baidu.com/img/iknow/exp/global/album-next-series.png") no-repeat 0px 0px; text-align: center; color: rgb(255, 255, 255); line-height: 3.5; font-family: Î¢ÈíÑÅºÚ; font-size: 14px; _background: 0 0;
+}
+.next-series a {
+	color: rgb(255, 255, 255); text-decoration: underline;
+}
+.fis-inline-block {
+	vertical-align: middle; display: inline-block; -moz-box-orient: vertical;
+}
+.captcha-box {
+	margin: 20px;
+}
+.captcha-box .captcha-input {
+	height: 36px; line-height: 36px;
+}
+.captcha-box .captcha-input dl {
+	vertical-align: middle; display: inline-block; -moz-box-orient: vertical;
+}
+.captcha-box .captcha-input .captcha-input-status {
+	vertical-align: middle; display: inline-block; -moz-box-orient: vertical;
+}
+.captcha-box .captcha-input .captcha-input-title {
+	height: 36px; font-size: 14px; margin-right: 10px; float: left;
+}
+.captcha-box .captcha-input dl {
+	border: 1px solid rgb(204, 204, 204); border-image: none; width: 223px; overflow: hidden;
+}
+.captcha-box .captcha-input dl dt {
+	width: 45px; height: 34px; overflow: hidden;
+}
+.captcha-box .captcha-input dl dd {
+	width: 45px; height: 34px; overflow: hidden;
+}
+.captcha-box .captcha-input dl dd {
+	background-position: -1000px; border-right-color: rgb(221, 221, 221); border-right-width: 1px; border-right-style: solid; float: left;
+}
+.captcha-box .captcha-input dl dt.captcha-backspace {
+	background: url("http://exp.bdstatic.com/static/common/widget/ui/captcha/sudoku/img/del_56c6545.png") no-repeat; width: 40px; margin-right: -1px; float: right; cursor: pointer;
+}
+.captcha-box .captcha-content {
+	margin: 0px auto; width: 186px;
+}
+.captcha-box .captcha-content .captcha-content-tip {
+	color: rgb(102, 102, 102); font-size: 12px; margin-top: 5px;
+}
+.captcha-box .captcha-content .error.captcha-content-tip {
+	color: red;
+}
+.captcha-box .captcha-content .captcha-img-wrap {
+	background-position: 0px 3px; width: 110px; height: 36px; vertical-align: middle; display: inline-block; -moz-box-orient: vertical;
+}
+.captcha-box .captcha-content .captcha-img-change {
+	color: rgb(45, 100, 179);
+}
+.captcha-box .captcha-content .captcha-grid-buttons {
+	overflow: hidden; margin-top: 5px;
+}
+.captcha-box .captcha-content .captcha-grid-buttons a {
+	border-width: 1px; border-style: solid; border-color: rgb(224, 224, 224) rgb(224, 224, 224) rgb(191, 191, 191); margin: 0px 5px 5px 0px; outline: 0px; border-image: none; float: left; display: block; -ms-zoom: 1;
+}
+.captcha-box .captcha-content .captcha-grid-buttons a div {
+	background-position: -1000px; width: 54px; height: 40px; cursor: pointer;
+}
+.captcha-box .captcha-content .captcha-grid-buttons a .captcha-btn-1 {
+	background-position: -4px -32px;
+}
+.captcha-box .captcha-content .captcha-grid-buttons a .captcha-btn-4 {
+	background-position: 0px -83px;
+}
+.captcha-box .captcha-content .captcha-grid-buttons a .captcha-btn-7 {
+	background-position: -2px -135px;
+}
+.captcha-box .captcha-content .captcha-grid-buttons a .captcha-btn-2 {
+	background-position: -53px -39px;
+}
+.captcha-box .captcha-content .captcha-grid-buttons a .captcha-btn-5 {
+	background-position: -53px -85px;
+}
+.captcha-box .captcha-content .captcha-grid-buttons a .captcha-btn-8 {
+	background-position: -53px -135px;
+}
+.captcha-box .captcha-content .captcha-grid-buttons a .captcha-btn-3 {
+	background-position: -96px -38px;
+}
+.captcha-box .captcha-content .captcha-grid-buttons a .captcha-btn-6 {
+	background-position: -96px -86px;
+}
+.captcha-box .captcha-content .captcha-grid-buttons a .captcha-btn-9 {
+	background-position: -96px -135px;
+}
+.blue-book-dialog {
+	border-radius: 6px;
+}
+.income-book-dialog {
+	border-radius: 6px;
+}
+.blue-book-dialog .tangram-dialog-title {
+	top: 6px; right: 6px; position: absolute; z-index: 1000;
+}
+.income-book-dialog .tangram-dialog-title {
+	top: 6px; right: 6px; position: absolute; z-index: 1000;
+}
+.blue-book-dialog .tangram-dialog-title .tangram-dialog-title-inner {
+	display: none;
+}
+.income-book-dialog .tangram-dialog-title .tangram-dialog-title-inner {
+	display: none;
+}
+.blue-book-dialog .tangram-dialog-title .tangram-dialog-close {
+	top: -30px; width: 46px; height: 46px; right: -30px;
+}
+.income-book-dialog .tangram-dialog-title .tangram-dialog-close {
+	top: -30px; width: 46px; height: 46px; right: -30px;
+}
+.blue-book-dialog .tangram-dialog-content .pop-alert-info {
+	position: relative; -ms-zoom: 1;
+}
+.income-book-dialog .tangram-dialog-content .pop-alert-info {
+	position: relative; -ms-zoom: 1;
+}
+.blue-book-dialog .tangram-dialog-content .pop-alert-info .dialog-content {
+	height: 125px; text-align: center; padding-top: 125px; background-color: rgb(255, 255, 255);
+}
+.income-book-dialog .tangram-dialog-content .pop-alert-info .dialog-content {
+	height: 125px; text-align: center; padding-top: 125px; background-color: rgb(255, 255, 255);
+}
+.blue-book-dialog .tangram-dialog-content .pop-alert-info .dialog-content .upgrade-tip {
+	font: 18px/24px ""; padding: 15px 0px; font-size-adjust: none; font-stretch: normal;
+}
+.income-book-dialog .tangram-dialog-content .pop-alert-info .dialog-content .upgrade-tip {
+	font: 18px/24px ""; padding: 15px 0px; font-size-adjust: none; font-stretch: normal;
+}
+.blue-book-dialog .tangram-dialog-footer .pop-alert-btn {
+	right: 132px; bottom: 18px;
+}
+.income-book-dialog .tangram-dialog-footer .pop-alert-btn {
+	right: 132px; bottom: 18px;
+}
+.blue-book-dialog .tangram-dialog-footer .pop-alert-btn .g-btn-com {
+	border-width: 0px 0px 3px; border-style: none none solid; border-color: currentColor currentColor rgb(69, 145, 35); outline: 0px; border-radius: 4px; border-image: none; width: 137px; height: 34px; color: rgb(255, 255, 255); font-size: 16px; cursor: pointer; text-shadow: 1px 0px 1px #6a6a6a; background-image: none; background-color: rgb(114, 193, 79);
+}
+.income-book-dialog .tangram-dialog-footer .pop-alert-btn .g-btn-com {
+	border-width: 0px 0px 3px; border-style: none none solid; border-color: currentColor currentColor rgb(69, 145, 35); outline: 0px; border-radius: 4px; border-image: none; width: 137px; height: 34px; color: rgb(255, 255, 255); font-size: 16px; cursor: pointer; text-shadow: 1px 0px 1px #6a6a6a; background-image: none; background-color: rgb(114, 193, 79);
+}
+.blue-book-dialog .tangram-dialog-footer .pop-alert-btn .g-btn-com:hover {
+	background-color: rgb(105, 188, 68);
+}
+.income-book-dialog .tangram-dialog-footer .pop-alert-btn .g-btn-com:hover {
+	background-color: rgb(105, 188, 68);
+}
+.blue-book-dialog {
+	border: 8px solid rgb(49, 108, 168); border-image: none; background-color: rgb(49, 108, 168);
+}
+.blue-book-dialog .tangram-dialog-title .tangram-dialog-close {
+	background: url("http://exp.bdstatic.com/static/common/widget/ui/check-bluebook-upgrade/close_cbd63d2.png") no-repeat;
+}
+.blue-book-dialog .tangram-dialog-content {
+	border: 6px solid rgb(101, 147, 191); border-image: none;
+}
+.blue-book-dialog .tangram-dialog-content .dialog-content {
+	background: url("http://exp.bdstatic.com/static/common/widget/ui/check-bluebook-upgrade/book_6915c1a.png") no-repeat 50% 28px rgb(255, 255, 255);
+}
+.blue-book-dialog .tangram-dialog-content .dialog-content .upgrade-tip {
+	color: rgb(50, 109, 169);
+}
+.income-book-dialog {
+	border: 8px solid rgb(206, 82, 14); border-image: none; background-color: rgb(206, 82, 14);
+}
+.income-book-dialog .tangram-dialog-title .tangram-dialog-close {
+	background: url("http://exp.bdstatic.com/static/common/widget/ui/check-bluebook-upgrade/close-income_8400caa.png") no-repeat;
+}
+.income-book-dialog .tangram-dialog-content {
+	border: 6px solid rgb(250, 165, 50); border-image: none;
+}
+.income-book-dialog .tangram-dialog-content .dialog-content {
+	background: url("http://exp.bdstatic.com/static/common/widget/ui/check-bluebook-upgrade/income_085fe71.png") no-repeat 50% 28px rgb(255, 255, 255);
+}
+.income-book-dialog .tangram-dialog-content .dialog-content .upgrade-tip {
+	color: rgb(206, 82, 14);
+}
+body {
+	margin: 0px; padding: 0px;
+}
+h1 {
+	margin: 0px; padding: 0px;
+}
+h2 {
+	margin: 0px; padding: 0px;
+}
+h3 {
+	margin: 0px; padding: 0px;
+}
+h4 {
+	margin: 0px; padding: 0px;
+}
+h5 {
+	margin: 0px; padding: 0px;
+}
+h6 {
+	margin: 0px; padding: 0px;
+}
+hr {
+	margin: 0px; padding: 0px;
+}
+p {
+	margin: 0px; padding: 0px;
+}
+blockquote {
+	margin: 0px; padding: 0px;
+}
+dl {
+	margin: 0px; padding: 0px;
+}
+dt {
+	margin: 0px; padding: 0px;
+}
+dd {
+	margin: 0px; padding: 0px;
+}
+ul {
+	margin: 0px; padding: 0px;
+}
+ol {
+	margin: 0px; padding: 0px;
+}
+li {
+	margin: 0px; padding: 0px;
+}
+pre {
+	margin: 0px; padding: 0px;
+}
+form {
+	margin: 0px; padding: 0px;
+}
+fieldset {
+	margin: 0px; padding: 0px;
+}
+legend {
+	margin: 0px; padding: 0px;
+}
+button {
+	margin: 0px; padding: 0px;
+}
+textarea {
+	margin: 0px; padding: 0px;
+}
+th {
+	margin: 0px; padding: 0px;
+}
+td {
+	margin: 0px; padding: 0px;
+}
+body {
+	font: 12px/1.5 arial, "ËÎÌå", sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+button {
+	font: 12px/1.5 arial, "ËÎÌå", sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+select {
+	font: 12px/1.5 arial, "ËÎÌå", sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+textarea {
+	font: 12px/1.5 arial, "ËÎÌå", sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+h1 {
+	font-size: 100%;
+}
+h2 {
+	font-size: 100%;
+}
+h3 {
+	font-size: 100%;
+}
+h4 {
+	font-size: 100%;
+}
+h5 {
+	font-size: 100%;
+}
+h6 {
+	font-size: 100%;
+}
+address {
+	font-style: normal;
+}
+cite {
+	font-style: normal;
+}
+dfn {
+	font-style: normal;
+}
+var {
+	font-style: normal;
+}
+code {
+	font-family: courier new,courier,monospace;
+}
+kbd {
+	font-family: courier new,courier,monospace;
+}
+pre {
+	font-family: courier new,courier,monospace;
+}
+samp {
+	font-family: courier new,courier,monospace;
+}
+small {
+	font-size: 12px;
+}
+ul {
+	list-style: none;
+}
+ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+sup {
+	vertical-align: text-top;
+}
+sub {
+	vertical-align: text-bottom;
+}
+legend {
+	color: rgb(0, 0, 0);
+}
+fieldset {
+	border: 0px currentColor; border-image: none;
+}
+img {
+	border: 0px currentColor; border-image: none;
+}
+button {
+	font-size: 100%;
+}
+select {
+	font-size: 100%;
+}
+textarea {
+	font-size: 100%;
+}
+embed {
+	clear: both; display: block;
+}
+table {
+	border-collapse: collapse; border-spacing: 0;
+}
+.w984 {
+	width: 984px;
+}
+.clear {
+	clear: both;
+}
+.hide {
+	display: none;
+}
+body {
+	-ms-word-break: break-all;
+}
+header {
+	margin: 0px; padding: 0px;
+}
+section {
+	margin: 0px; padding: 0px;
+}
+aside {
+	margin: 0px; padding: 0px;
+}
+footer {
+	margin: 0px; padding: 0px;
+}
+header {
+	display: block;
+}
+footer {
+	display: block;
+}
+article {
+	display: block;
+}
+section {
+	display: block;
+}
+hgroup {
+	display: block;
+}
+nav {
+	display: block;
+}
+figure {
+	display: block;
+}
+body {
+	background: url("about:blank") fixed 0px 0px rgb(255, 255, 255);
+}
+.header {
+	width: 980px; margin-right: auto; margin-left: auto;
+}
+.body {
+	width: 980px; margin-right: auto; margin-left: auto;
+}
+.footer {
+	width: 980px; margin-right: auto; margin-left: auto;
+}
+.body-wrapper {
+	margin: 0px auto;
+}
+.footer {
+	padding: 30px 0px;
+}
+.l-main-col {
+	float: left; display: inline;
+}
+.l-aside {
+	width: 280px; float: left;
+}
+.grid-980 {
+	margin: 0px auto; padding: 0px;
+}
+.grid-960 {
+	margin: 0px auto; padding: 0px;
+}
+.grid-730 {
+	margin: 0px auto; padding: 0px;
+}
+.grid-710 {
+	margin: 0px auto; padding: 0px;
+}
+.grid-690 {
+	margin: 0px auto; padding: 0px;
+}
+.grid-290 {
+	margin: 0px auto; padding: 0px;
+}
+.grid-270 {
+	margin: 0px auto; padding: 0px;
+}
+.grid-250 {
+	margin: 0px auto; padding: 0px;
+}
+.grid-210 {
+	margin: 0px auto; padding: 0px;
+}
+.grid-80 {
+	margin: 0px auto; padding: 0px;
+}
+.grid-70 {
+	margin: 0px auto; padding: 0px;
+}
+.grid-60 {
+	margin: 0px auto; padding: 0px;
+}
+.grid-30 {
+	margin: 0px auto; padding: 0px;
+}
+.grid-10 {
+	margin: 0px auto; padding: 0px;
+}
+.grid-980 {
+	width: 980px;
+}
+.grid-960 {
+	width: 960px;
+}
+.grid-730 {
+	width: 730px;
+}
+.grid-710 {
+	width: 710px;
+}
+.grid-690 {
+	width: 690px;
+}
+.grid-290 {
+	width: 290px;
+}
+.grid-270 {
+	width: 270px;
+}
+.grid-250 {
+	width: 250px;
+}
+.grid-210 {
+	width: 210px;
+}
+.grid-80 {
+	width: 80px;
+}
+.grid-70 {
+	width: 70px;
+}
+.grid-60 {
+	width: 60px;
+}
+.grid-30 {
+	width: 30px;
+}
+.grid-10 {
+	width: 10px;
+}
+.header {
+	padding: 0px;
+}
+.body a {
+	color: rgb(45, 100, 179); text-decoration: none;
+}
+.body a:hover {
+	text-decoration: underline;
+}
+.body a:visited {
+	color: rgb(45, 100, 179); text-decoration: none;
+}
+.block {
+	display: block;
+}
+.inline {
+	display: inline;
+}
+.inline-block {
+	display: inline-block;
+}
+.link-color {
+	color: rgb(1, 116, 146);
+}
+.tx-right {
+	text-align: right;
+}
+.tx-left {
+	text-align: left;
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+.mt15 {
+	margin-top: 15px;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.mt4 {
+	margin-top: 4px;
+}
+.center {
+	text-align: center;
+}
+.f-1f83a1 {
+	color: rgb(31, 131, 161);
+}
+.f-666 {
+	color: rgb(102, 102, 102);
+}
+.f-999 {
+	color: rgb(153, 153, 153);
+}
+.f-red {
+	color: red;
+}
+.gray {
+	color: rgb(102, 102, 102);
+}
+.red {
+	color: red;
+}
+.blue {
+	color: rgb(1, 116, 146);
+}
+.fbold {
+	font-weight: 700;
+}
+.f18 {
+	font-size: 18px;
+}
+.f14 {
+	font-size: 14px;
+}
+.f12 {
+	font-size: 12px;
+}
+.no-bd-bottom {
+	border-bottom-style: none;
+}
+input.toline {
+	border-width: 0px 0px 1px; border-style: none none solid; border-color: currentColor currentColor rgb(102, 102, 102); border-image: none;
+}
+td.c {
+	text-align: center; padding-right: 0px;
+}
+th.c {
+	text-align: center; padding-right: 0px;
+}
+td.l {
+	text-align: left; padding-left: 0px;
+}
+th.l {
+	text-align: left; padding-left: 0px;
+}
+td.r {
+	text-align: right; padding-right: 0px;
+}
+th.r {
+	text-align: right; padding-right: 0px;
+}
+.border-padding {
+	padding: 1px; border: 1px solid rgb(247, 248, 248); border-image: none; background-color: rgb(241, 242, 242);
+}
+.border-outer {
+	border: 1px solid rgb(233, 234, 234); border-image: none;
+}
+.border-inner {
+	border: 1px solid rgb(203, 217, 219); border-image: none; background-color: rgb(255, 255, 255);
+}
+#ti-numRight {
+	line-height: 35px;
+}
+#ti-numError {
+	line-height: 35px;
+}
+#ti-numError {
+	color: red; font-size: 14px;
+}
+em#ti-numLen {
+	margin: 0px 5px; font-size: 20px; vertical-align: -2px;
+}
+.advise {
+	padding: 1px; border: 1px solid rgb(247, 248, 248); border-image: none; margin-top: 4px; background-color: rgb(241, 242, 242);
+}
+.tousu {
+	margin: 15px; display: block;
+}
+.protocol {
+	padding: 5px;
+}
+.clearfix::after {
+	height: 0px; line-height: 0; clear: both; font-size: 0px; display: block; visibility: hidden; content: ".";
+}
+.clearfix {
+	-ms-zoom: 1;
+}
+.bc-f3fafc {
+	background: rgb(243, 250, 252);
+}
+.bc-ffa242 {
+	color: rgb(255, 162, 66);
+}
+.border-e1e1e1 {
+	border: 1px solid rgb(225, 225, 225); border-image: none;
+}
+.line-1FABC9 {
+	color: rgb(31, 171, 201);
+}
+.pl30 {
+	padding-left: 30px;
+}
+.pl20 {
+	padding-left: 20px;
+}
+.pb15 {
+	padding-bottom: 15px;
+}
+.pb20 {
+	padding-bottom: 20px;
+}
+.mt8 {
+	margin-top: 8px;
+}
+.mt35 {
+	margin-top: 35px;
+}
+.mt30 {
+	margin-top: 30px;
+}
+.mt25 {
+	margin-top: 25px;
+}
+.mt20 {
+	margin-top: 20px;
+}
+.mt15 {
+	margin-top: 15px;
+}
+.mb35 {
+	margin-bottom: 35px;
+}
+.mb30 {
+	margin-bottom: 30px;
+}
+.mb25 {
+	margin-bottom: 25px;
+}
+.mb20 {
+	margin-bottom: 20px;
+}
+.mb15 {
+	margin-bottom: 15px;
+}
+.pt25 {
+	padding-top: 25px;
+}
+.wd775 {
+	width: 775px;
+}
+.wd185 {
+	width: 185px;
+}
+.ml25 {
+	margin-left: 25px;
+}
+.ml20 {
+	margin-left: 20px;
+}
+.ht190 {
+	height: 190px;
+}
+.ht160 {
+	height: 160px;
+}
+.wd725 {
+	width: 725px;
+}
+.title-bar {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_button.png") repeat-x 0px -596px; height: 33px; line-height: 33px; padding-left: 12px;
+}
+.title-bar h3 {
+	font-size: 14px;
+}
+.border-ffb500 {
+	border: 1px solid rgb(255, 181, 0); border-image: none;
+}
+.border-cbd9db {
+	border: 1px solid rgb(203, 217, 219); border-image: none;
+}
+.border-add6df {
+	border: 1px solid rgb(173, 214, 223); border-image: none;
+}
+.border-c1dee2 {
+	border: 1px solid rgb(193, 222, 226); border-image: none;
+}
+.border-e1e1e1 {
+	border: 1px solid rgb(225, 225, 225); border-image: none;
+}
+.no-border-rect .hd {
+	line-height: 16px; padding-bottom: 4px; margin-bottom: -2px; border-bottom-color: rgb(193, 222, 226); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.no-border-rect .bd {
+	background: url("http://img.baidu.com/img/iknow/exp/home/bg.png") no-repeat 0px -603px; padding: 17px 0px 0px;
+}
+.i-suc {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.i-good-exp {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.i-video {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.i-insert-img {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.i-insert-img-over {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.i-insert-img-down {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.i-excel-comment {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.i-del-comment {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.i-del-excel {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.i-add-excel {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.mark {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.tick {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.i-score {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.i-ul {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.i-new {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.i-original {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.i-msg-close {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.i-suc {
+	background-position: 0px -69px; padding: 0px 0px 0px 18px;
+}
+.i-good-exp {
+	padding: 0px 0px 0px 15px; vertical-align: 2px;
+}
+.i-video {
+	background-position: 0px -20px; padding: 0px 0px 0px 3px; width: 12px; height: 13px; display: inline-block;
+}
+.i-original {
+	background-position: 0px -919px; padding: 0px 0px 0px 3px; width: 15px; height: 16px; vertical-align: -2px; display: inline-block; _vertical-align: auto;
+}
+.i-excel-comment {
+	background-position: 0px -652px; width: 13px; height: 13px; vertical-align: middle; display: inline-block;
+}
+.i-del-comment {
+	background-position: 0px -668px; height: 13px; padding-left: 15px; display: inline-block;
+}
+.i-del-excel {
+	background-position: 0px -702px; height: 13px; padding-left: 14px; display: inline-block;
+}
+.i-add-excel {
+	background-position: 0px -684px; height: 13px; padding-left: 14px; display: inline-block;
+}
+.i-insert-img {
+	background-position: 0px -589px; height: 16px; display: inline-block;
+}
+.i-insert-img:hover {
+	background-position: 0px -610px; height: 16px; display: inline-block;
+}
+.i-insert-img-over {
+	background-position: 0px -610px; height: 16px; display: inline-block;
+}
+.i-insert-img:active {
+	background-position: 0px -631px; height: 16px; display: inline-block;
+}
+.i-insert-img-down {
+	background-position: 0px -631px; height: 16px; display: inline-block;
+}
+.i-score {
+	background-position: 0px -50px; padding: 1px 0px 0px 12px;
+}
+.mark {
+	background: url("http://img.baidu.com/img/iknow/exp/uc/uc-income-sprite.png") no-repeat -225px -209px; height: 24px; color: rgb(51, 51, 51); line-height: 24px; padding-left: 30px; font-size: 16px; font-weight: 700;
+}
+.tick {
+	background: url("http://img.baidu.com/img/iknow/exp/uc/uc-income-sprite.png") no-repeat -225px -313px; height: 24px; color: rgb(51, 51, 51); line-height: 24px; padding-left: 34px; font-size: 16px; font-weight: 700;
+}
+.followed-vote-pop {
+	margin: 20px 0px 0px 52px;
+}
+.mlt54 {
+	margin: 7px 0px; color: rgb(102, 102, 102); padding-left: 3px;
+}
+.mlt54 a {
+	color: rgb(45, 100, 179);
+}
+.ml54 {
+	padding-left: 2px;
+}
+.i-ul {
+	background-position: -17px -455px; padding-left: 12px;
+}
+.i-new {
+	background-position: 0px -886px; width: 21px; height: 11px; text-indent: -9999px; font-size: 11px; display: inline-block;
+}
+.i-msg-close {
+	background: url("http://img.baidu.com/img/iknow/exp/global/close_icon.gif") no-repeat 0px 0px; width: 19px; height: 20px; line-height: 20; margin-top: -5px; margin-right: -5px; float: right; cursor: pointer; _display: inline;
+}
+.i-msg-close:hover {
+	background-position: 0px -20px;
+}
+.i-msg-close:active {
+	background-position: 0px -40px;
+}
+.author-icon-lv1 {
+	background: url("http://img.baidu.com/img/iknow/exp/usr_lv_ico.png") no-repeat; width: 16px; height: 16px; vertical-align: text-top; display: inline-block; -ms-zoom: 1;
+}
+.author-icon-lv2 {
+	background: url("http://img.baidu.com/img/iknow/exp/usr_lv_ico.png") no-repeat; width: 16px; height: 16px; vertical-align: text-top; display: inline-block; -ms-zoom: 1;
+}
+.author-icon-lv3 {
+	background: url("http://img.baidu.com/img/iknow/exp/usr_lv_ico.png") no-repeat; width: 16px; height: 16px; vertical-align: text-top; display: inline-block; -ms-zoom: 1;
+}
+.author-icon-lv2 {
+	background-position: 0px -29px;
+}
+.author-icon-lv3 {
+	background-position: 0px -59px;
+}
+.author-title-lv1 {
+	background: url("http://img.baidu.com/img/iknow/exp/navigator-qb.png") no-repeat 0px 0px; width: 16px; height: 16px; margin-right: 5px; vertical-align: text-top; display: inline-block;
+}
+.author-title-lv2 {
+	background: url("http://img.baidu.com/img/iknow/exp/navigator-qb.png") no-repeat 0px 0px; width: 16px; height: 16px; margin-right: 5px; vertical-align: text-top; display: inline-block;
+}
+.author-title-lv1 {
+	background-position: -49px 0px; width: 55px; height: 17px;
+}
+.author-title-lv2 {
+	background-position: 0px 0px; width: 44px; height: 17px;
+}
+.g-btn-com {
+	background: url("http://img.baidu.com/img/iknow/exp/global/dialog_btn_bg.png") no-repeat 0px 0px; border: 0px currentColor; border-image: none; width: 73px; height: 30px; color: rgb(255, 255, 255); font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.g-btn-long {
+	background: url("http://img.baidu.com/img/iknow/exp/global/dialog_btn_bg.png") no-repeat 0px 0px; border: 0px currentColor; border-image: none; width: 73px; height: 30px; color: rgb(255, 255, 255); font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.g-btn-2long {
+	background: url("http://img.baidu.com/img/iknow/exp/global/dialog_btn_bg.png") no-repeat 0px 0px; border: 0px currentColor; border-image: none; width: 73px; height: 30px; color: rgb(255, 255, 255); font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.g-btn-com-hover {
+	background: url("http://img.baidu.com/img/iknow/exp/global/dialog_btn_bg.png") no-repeat 0px 0px; border: 0px currentColor; border-image: none; width: 73px; height: 30px; color: rgb(255, 255, 255); font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.g-btn-long-hover {
+	background: url("http://img.baidu.com/img/iknow/exp/global/dialog_btn_bg.png") no-repeat 0px 0px; border: 0px currentColor; border-image: none; width: 73px; height: 30px; color: rgb(255, 255, 255); font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.g-btn-2long-hover {
+	background: url("http://img.baidu.com/img/iknow/exp/global/dialog_btn_bg.png") no-repeat 0px 0px; border: 0px currentColor; border-image: none; width: 73px; height: 30px; color: rgb(255, 255, 255); font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.g-btn-com:hover {
+	background-position: 0px -40px;
+}
+.g-btn-com-hover {
+	background-position: 0px -40px;
+}
+.g-btn-long {
+	background-position: -90px 0px;
+}
+.g-btn-long:hover {
+	background-position: -90px -40px;
+}
+.g-btn-long-hover {
+	background-position: -90px -40px;
+}
+.g-btn-cancel {
+	background-position: -90px 0px; color: rgb(102, 197, 87);
+}
+.g-btn-cancel:hover {
+	background-position: -90px -40px;
+}
+.g-btn-2long {
+	background-position: -180px 0px; width: 110px;
+}
+.g-btn-2long:hover {
+	background-position: -180px -40px;
+}
+.g-btn-2long-hover {
+	background-position: -180px -40px;
+}
+.g-btn-disabled {
+	color: gray;
+}
+.g-ipt {
+	padding: 3px 1px; height: 22px; font-size: 14px;
+}
+.b-release {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_button.png") no-repeat 0px 0px;
+}
+.b-release-noinput {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_button.png") no-repeat 0px 0px;
+}
+.b-reply-release {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_button.png") no-repeat 0px 0px;
+}
+.b-reply-release-noinput {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_button.png") no-repeat 0px 0px;
+}
+.b-followed {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_button.png") no-repeat 0px 0px;
+}
+.b-vote {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_button.png") no-repeat 0px 0px;
+}
+.b-small-followed {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_button.png") no-repeat 0px 0px;
+}
+.b-small-vote {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_button.png") no-repeat 0px 0px;
+}
+.b-release {
+	background-position: -206px -639px; width: 94px; height: 31px; display: inline-block; cursor: pointer;
+}
+.b-release-noinput {
+	background-position: -206px -711px; width: 94px; height: 31px; display: inline-block; cursor: pointer;
+}
+.b-release:hover {
+	background-position: -206px -675px;
+}
+.b-reply-release-noinput {
+	background-position: -243px -115px; width: 57px; height: 26px; display: inline-block;
+}
+.b-reply-release {
+	background-position: -243px -81px; width: 57px; height: 26px; display: inline-block;
+}
+.b-followed {
+	background-position: -199px -150px; width: 101px; height: 27px; display: inline-block;
+}
+.b-followed:hover {
+	background-position: -199px -180px;
+}
+.b-vote {
+	background-position: 0px -773px; width: 101px; height: 27px; display: inline-block;
+}
+.b-vote:hover {
+	background-position: -109px -773px;
+}
+.b-small-vote {
+	background-position: 0px -808px; width: 73px; height: 22px; display: inline-block;
+}
+.b-small-vote:hover {
+	background-position: -81px -808px;
+}
+.b-small-vote:active {
+	background-position: -162px -808px;
+}
+.b-small-followed {
+	background-position: 0px -838px; width: 61px; height: 22px; display: inline-block;
+}
+.b-small-followed:hover {
+	background-position: -81px -838px;
+}
+.b-small-followed:active {
+	background-position: -162px -838px;
+}
+#editorBD .edui-editor {
+	z-index: 1000 !important;
+}
+.rank li {
+	background: url("http://img.baidu.com/img/iknow/exp/home/bg.png") no-repeat 0px 0px; padding: 0px 0px 2px 20px; margin-top: 3px;
+}
+.rank li span {
+	color: rgb(153, 153, 153); float: right;
+}
+.rank .no1 {
+	background-position: 0px -124px;
+}
+.rank .no2 {
+	background-position: 0px -144px;
+}
+.rank .no3 {
+	background-position: 0px -165px;
+}
+.rank .no4 {
+	background-position: 0px -186px;
+}
+.rank .no5 {
+	background-position: 0px -207px;
+}
+.rank .no6 {
+	background-position: 0px -228px;
+}
+.rank .no7 {
+	background-position: 0px -249px;
+}
+.rank .no8 {
+	background-position: 0px -270px;
+}
+.rank .no9 {
+	background-position: 0px -291px;
+}
+.rank .no10 {
+	background-position: 0px -312px;
+}
+.pop-alert-info {
+	margin: 0px 10px; font-size: 14px;
+}
+.pop-alert-btn {
+	right: 40px; bottom: 25px; position: absolute;
+}
+.tangram-dialog {
+	background: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); border-image: none;
+}
+.tangram-dialog-title {
+	background: rgb(252, 252, 252); color: rgb(51, 51, 51); line-height: 34px; padding-left: 20px; font-size: 14px; font-weight: 700; border-bottom-color: rgb(242, 242, 242); border-bottom-width: 1px; border-bottom-style: solid; cursor: move; -moz-user-select: none;
+}
+.tangram-dialog-titletext {
+	margin: 0px 10px; line-height: 24px;
+}
+.tangram-dialog-close {
+	background: url("http://img.baidu.com/img/iknow/exp/possportui.png") 0px -493px; top: 11px; width: 14px; height: 13px; right: 11px; position: absolute; cursor: pointer;
+}
+.tangram-dialog-close-hover {
+	background-position: 0px -511px;
+}
+.tangram-dialog-close-press {
+	background-position: 0px -529px;
+}
+.tangram-dialog-content {
+	background: rgb(255, 255, 255); padding: 5px; position: relative;
+}
+.pop-confirm-btn {
+	right: 93px; bottom: 15px; position: absolute;
+}
+.pop-cancel-btn {
+	right: 10px; bottom: 15px; position: absolute;
+}
+.pop-cancel-btn .g-btn-com {
+	background-position: -90px 0px; color: rgb(102, 197, 87);
+}
+.pop-cancel-btn .g-btn-com:hover {
+	background-position: -90px -40px;
+}
+.pop-cancel-btn .g-btn-com-hover {
+	background-position: -90px -40px;
+}
+.pop-confirm-btn input {
+	margin-right: 10px;
+}
+.pop-cancel-btn input {
+	margin-right: 10px;
+}
+.pop-confirm-info {
+	text-align: left; font-size: 14px; margin-top: 10px; margin-left: 10px;
+}
+.tangram-passport {
+	background: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); border-image: none;
+}
+.tangram-passport-title {
+	background: rgb(252, 252, 252); line-height: 35px; padding-left: 20px; font-size: 14px; font-weight: 700; border-bottom-color: rgb(242, 242, 242); border-bottom-width: 1px; border-bottom-style: solid; cursor: move; -moz-user-select: none;
+}
+.tangram-passport-titletext {
+	margin: 0px 10px; line-height: 24px;
+}
+.tangram-passport-content {
+	background: rgb(255, 255, 255); padding: 5px; position: relative;
+}
+.tangram-passport-close {
+	background: url("http://img.baidu.com/img/iknow/exp/possportui.png") 0px -493px; top: 11px; width: 14px; height: 13px; right: 11px; position: absolute; cursor: pointer;
+}
+.tangram-passport-close-hover {
+	background-position: 0px -511px;
+}
+.tangram-passport-close-press {
+	background-position: 0px -529px;
+}
+.exp-dialog a {
+	outline: 0px !important;
+}
+.exp-dialog .exp-dialog-title {
+	background: rgb(243, 243, 243); height: 48px; line-height: 48px;
+}
+.exp-dialog .exp-dialog-footer {
+	background: rgb(243, 243, 243); height: 48px; line-height: 48px;
+}
+.exp-dialog .tangram-dialog-title {
+	font-size: 18px;
+}
+.exp-dialog .tangram-dialog-title .tangram-dialog-close {
+	top: 18px; width: 15px; height: 15px; right: 18px; background-repeat: no-repeat;
+}
+.exp-dialog .tangram-dialog-content {
+	margin: 0px;
+}
+.exp-dialog .tangram-dialog-content .pop-confirm-info {
+	margin: 0px;
+}
+.exp-dialog .tangram-dialog-footer .pop-confirm-btn {
+	bottom: 0px;
+}
+.exp-dialog .tangram-dialog-footer .pop-cancel-btn {
+	bottom: 0px;
+}
+.exp-dialog .tangram-dialog-footer .pop-confirm-btn {
+	left: 50%; margin-left: -80px;
+}
+.exp-dialog .tangram-dialog-footer .pop-cancel-btn {
+	left: 50%; margin-left: 30px;
+}
+.exp-dialog .exp-content {
+	margin: 22px 0px 0px 43px;
+}
+.exp-dialog .exp-content .bear {
+	width: 118px; height: 172px; margin-right: 36px; background-repeat: no-repeat;
+}
+.exp-dialog .exp-content .bear .i-warn {
+	margin: 112px 0px 0px 37px; width: 39px; height: 32px; background-repeat: no-repeat;
+}
+.exp-dialog .exp-content .bear .i-success {
+	margin: 114px 0px 0px 37px; width: 42px; height: 29px; background-repeat: no-repeat;
+}
+.exp-dialog .exp-content .bear .i-error {
+	margin: 110px 0px 0px 40px; width: 37px; height: 37px; background-repeat: no-repeat;
+}
+.exp-dialog .exp-content .content-text {
+	width: 280px;
+}
+.no-footer.exp-dialog .tangram-dialog-footer {
+	display: none;
+}
+.fav-exp-pop h3 {
+	background: url("http://img.baidu.com/img/iknow/exp/uc/uc-income-sprite.png") no-repeat -225px -313px; color: rgb(51, 51, 51); padding-left: 30px; font-size: 16px; font-weight: 700; margin-bottom: 20px;
+}
+.fav-exp-pop p {
+	color: rgb(51, 51, 51); padding-left: 3px; font-size: 14px;
+}
+.fav-exp-pop span.icon {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px -1001px; width: 16px; height: 16px; margin-right: 10px; margin-bottom: 20px; float: left; display: block;
+}
+.fav-exp-pop .my-exp {
+	color: rgb(45, 100, 179);
+}
+.fav-exp-pop .red {
+	padding: 0px 2px; color: red;
+}
+.fav-exp-pop .black {
+	padding: 0px 2px; color: rgb(0, 0, 0);
+}
+#pop-share {
+	margin-top: 40px;
+}
+#pop-share span {
+	top: -2px; margin-right: 8px; position: relative; _top: 0;
+}
+#pop-share a {
+	width: 16px; height: 16px; margin-right: 8px; display: inline-block;
+}
+.to-renren {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.to-qqzone {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.to-kaixin {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.to-sina {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.to-tencent {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.to-163 {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.to-sohu {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon.png") no-repeat 0px 0px;
+}
+.to-renren {
+	background-position: 0px -187px;
+}
+.to-qqzone {
+	background-position: 0px -208px;
+}
+.to-kaixin {
+	background-position: 0px -229px;
+}
+.to-sina {
+	background-position: 0px -249px;
+}
+.to-tencent {
+	background-position: 0px -820px;
+}
+.to-sohu {
+	background-position: 0px -842px;
+}
+.to-163 {
+	background-position: 0px -864px;
+}
+.lazy-load-img {
+	display: block; visibility: hidden;
+}
+.income-share-dialog {
+	border: 0px currentColor; border-image: none;
+}
+.income-share-dialog .income-share-dialog-title {
+	background: rgb(57, 179, 73); color: rgb(255, 255, 255);
+}
+.income-share-dialog .income-share-dialog-title .income-share-dialog-close {
+	width: 13px; height: 13px; background-repeat: no-repeat;
+}
+.income-share-dialog .income-share-dialog-content {
+	padding: 0px; font-size: 14px; position: relative;
+}
+.income-share-dialog .income-share-dialog-content .sun {
+	left: 50%; top: -20px; width: 181px; height: 182px; margin-left: -90px; position: absolute; background-repeat: no-repeat;
+}
+.income-share-dialog .income-share-dialog-content .money {
+	left: 0px; top: 130px; width: 100%; text-align: center; position: absolute;
+}
+.income-share-dialog .income-share-dialog-content .money span {
+	margin: 0px 5px; height: 26px; color: rgb(249, 170, 51); line-height: 26px; font-size: 26px;
+}
+.income-share-dialog .income-share-dialog-content .share-container {
+	background: rgb(244, 244, 244); padding: 0px; width: 100%; height: 130px; text-align: center; bottom: 0px; border-top-color: rgb(232, 232, 232); border-top-width: 1px; border-top-style: solid; position: absolute;
+}
+.income-share-dialog .income-share-dialog-content .share-container .bdsharebuttonbox {
+	margin: 20px auto 0px; width: 160px;
+}
+.income-share-dialog .income-share-dialog-content .share-container .desc {
+	margin-top: 20px;
+}
+.income-share-dialog .income-share-dialog-content .share-container .desc a {
+	color: rgb(81, 154, 242);
+}
+.income-share-dialog .income-share-dialog-content .share-container .desc a:link {
+	color: rgb(81, 154, 242);
+}
+.income-share-dialog .income-share-dialog-content .share-container .bdshare-button-style0-32 .bds_tsina {
+	background-position: 0px -104px !important;
+}
+.income-share-dialog .income-share-dialog-content .share-container .bdshare-button-style0-32 .bds_qzone {
+	background-position: 0px -52px !important;
+}
+.income-share-dialog .income-share-dialog-content .share-container .bdshare-button-style0-32 .bds_tqq {
+	background-position: 0px -260px !important;
+}
+#bdshare_weixin_qrcode_dialog {
+	z-index: 111001;
+}
+.bdshare_popup_box {
+	z-index: 111000;
+}
+.may-medal-dialog {
+	background: none; border: 0px currentColor; border-image: none; font-family: "Microsoft Yahei","Î¢ÈíÑÅºÚ",arial,"ËÎÌå",sans-serif;
+}
+.may-medal-dialog .tangram-dialog-title {
+	height: 0px; display: none;
+}
+.may-medal-dialog .tangram-dialog-content {
+	background: none; padding: 0px;
+}
+.may-medal-dialog .may-medal-container {
+	padding: 26px; width: 790px; height: 498px; color: rgb(126, 107, 91); position: relative;
+}
+.may-medal-dialog .may-medal-container .pos-abs {
+	position: absolute;
+}
+.may-medal-dialog .may-medal-container .border-top-left {
+	left: 0px; top: 0px; width: 200px; height: 199px; background-repeat: no-repeat;
+}
+.may-medal-dialog .may-medal-container .border-top-right {
+	top: 0px; width: 200px; height: 200px; right: 0px; background-repeat: no-repeat;
+}
+.may-medal-dialog .may-medal-container .border-bottom-left {
+	left: 0px; width: 200px; height: 201px; bottom: 0px; background-repeat: no-repeat;
+}
+.may-medal-dialog .may-medal-container .border-bottom-right {
+	width: 200px; height: 201px; right: 0px; bottom: 0px; background-repeat: no-repeat;
+}
+.may-medal-dialog .content {
+	background: rgb(230, 212, 150); padding: 16px; width: 758px; height: 468px;
+}
+.may-medal-dialog .content .content-inner {
+	background: url("http://exp.bdstatic.com/static/common/widget/ui/may-medal/img/bkg_a16a1db.png"); width: 100%; height: 100%;
+}
+.may-medal-dialog .content .content-text {
+	padding: 48px 0px 0px 40px; width: 470px;
+}
+.may-medal-dialog .content h1 {
+	line-height: 36px; font-size: 36px; margin-bottom: 38px;
+}
+.may-medal-dialog .content p {
+	line-height: 2; font-size: 14px;
+}
+.may-medal-dialog .content h2 {
+	margin: 15px 0px 30px; font-size: 20px; font-weight: 400;
+}
+.may-medal-dialog .content .f-red {
+	color: red;
+}
+.may-medal-dialog .content .f-green {
+	color: rgb(54, 168, 3);
+}
+.may-medal-dialog .content .f-blue {
+	color: rgb(45, 100, 179);
+}
+.may-medal-dialog .medal-elem {
+	top: 26px; width: 225px; height: 239px; right: 26px;
+}
+.may-medal-dialog .gold.medal-elem {
+	background-repeat: no-repeat;
+}
+.may-medal-dialog .silver.medal-elem {
+	background-repeat: no-repeat;
+}
+.may-medal-dialog .bronze.medal-elem {
+	background-repeat: no-repeat;
+}
+.may-medal-dialog .exp-sign {
+	width: 128px; height: 128px; right: 87px; bottom: 77px; background-repeat: no-repeat;
+}
+.may-medal-dialog .share-box {
+	margin-top: 40px;
+}
+.may-medal-dialog .share-box .guide-text {
+	display: inline-block;
+}
+.may-medal-dialog .share-box .bdsharebuttonbox {
+	display: inline-block;
+}
+.may-medal-dialog .share-box .guide-text {
+	height: 44px; line-height: 44px; vertical-align: top;
+}
+.may-medal-dialog .share-box .bdsharebuttonbox .bds_more {
+	background-position: 0px 0px !important; background-image: url("http://bdimg.share.baidu.com/static/api/img/share/icons_0_32.png?v=acc572ea.png") !important;
+}
+.may-medal-dialog .share-box .bdsharebuttonbox .bds_tsina {
+	background-position: 0px -104px !important;
+}
+.may-medal-dialog .share-box .bdsharebuttonbox .bds_weixin {
+	background-position: 0px -1612px !important;
+}
+.may-medal-dialog .share-box .bdsharebuttonbox .bds_douban {
+	background-position: 0px -468px !important;
+}
+.may-medal-dialog .share-box .bdsharebuttonbox .bds_qzone {
+	background-position: 0px -52px !important;
+}
+.may-medal-dialog .may-x-layer {
+	top: 50px; width: 21px; height: 21px; right: 50px; cursor: pointer; background-repeat: no-repeat;
+}
+.bdshare_dialog_box {
+	z-index: 100000 !important;
+}
+.ui-note .side {
+	background: url("http://img.baidu.com/img/iknow/exp/arrow.gif") no-repeat 0px 0px; overflow: hidden; position: absolute; z-index: 100;
+}
+.ui-note .up {
+	background: url("http://img.baidu.com/img/iknow/exp/arrow.gif") no-repeat 0px 0px; overflow: hidden; position: absolute; z-index: 100;
+}
+.ui-note .down {
+	background: url("http://img.baidu.com/img/iknow/exp/arrow.gif") no-repeat 0px 0px; overflow: hidden; position: absolute; z-index: 100;
+}
+.ui-note .side {
+	width: 11px; height: 21px;
+}
+.ui-note .up {
+	width: 21px; height: 11px;
+}
+.ui-note .down {
+	background-position: 0px -10px; width: 21px; height: 11px;
+}
+.red-bao-dialog {
+	background: 0px 0px; border: 0px currentColor; border-image: none;
+}
+.red-bao-dialog-title {
+	display: none;
+}
+.red-bao-dialog-content {
+	background: url("http://exp.bdstatic.com/static/common/widget/ui/red-bao/img/red-bao_1fe159b.png") no-repeat center;
+}
+.red-bao-dialog-content .red-bao-close {
+	left: 368px; top: 81px; width: 30px; height: 30px; display: block; position: absolute;
+}
+.red-bao-dialog-content .red-bao-desc {
+	left: 185px; top: 275px; width: 210px; text-align: center; color: rgb(217, 145, 49); position: absolute;
+}
+.red-bao-dialog-content .red-bao-desc span {
+	color: rgb(51, 104, 178);
+}
+.red-bao-dialog-content .num-wrap {
+	left: 256px; top: 182px; width: 140px; position: absolute;
+}
+.red-bao-dialog-content .num-wrap .number {
+	width: 60px; height: 66px; float: left; background-repeat: no-repeat;
+}
+.red-bao-dialog-content .num-wrap .num-dot {
+	width: 20px; height: 66px; float: left; background-repeat: no-repeat;
+}
+.red-bao-dialog-content .num-wrap .rnum1 {
+	background-repeat: no-repeat;
+}
+.red-bao-dialog-content .num-wrap .rnum2 {
+	background-repeat: no-repeat;
+}
+.red-bao-dialog-content .num-wrap .rnum3 {
+	background-repeat: no-repeat;
+}
+.red-bao-dialog-content .num-wrap .rnum4 {
+	background-repeat: no-repeat;
+}
+.red-bao-dialog-content .num-wrap .rnum5 {
+	background-repeat: no-repeat;
+}
+.red-bao-dialog-content .num-wrap .rnum6 {
+	background-repeat: no-repeat;
+}
+.red-bao-dialog-content .num-wrap .rnum7 {
+	background-repeat: no-repeat;
+}
+.red-bao-dialog-content .num-wrap .rnum8 {
+	background-repeat: no-repeat;
+}
+.red-bao-dialog-content .num-wrap .rnum9 {
+	background-repeat: no-repeat;
+}
+.red-bao-dialog-content .num-wrap .rnum0 {
+	background-repeat: no-repeat;
+}
+.tangram-scrollbar {
+	width: 100%; height: 100%;
+}
+.tangram-scrollbar-track {
+	width: 100%; height: 100%; overflow: hidden;
+}
+.tangram-scrollbar-slider {
+	width: 100%; height: 100%;
+}
+.tangram-scrollbar-slider-thumb {
+	width: 100%; height: 100%;
+}
+.tangram-scrollbar-prev {
+	font-size: 0px;
+}
+.tangram-scrollbar-next {
+	font-size: 0px;
+}
+.tangram-scrollbar-thumb-btn {
+	font-size: 0px;
+}
+.scrollbar-y {
+	background: url("http://img.baidu.com/img/iknow/exp/global/exp-scroll.gif") no-repeat 3px;
+}
+.scrollbar-y-hover {
+	background-position: -3px;
+}
+.scrollbar-y-prev {
+	width: 9px; height: 0px; overflow: hidden;
+}
+.scrollbar-y-next {
+	width: 9px; height: 0px; overflow: hidden;
+}
+.scrollbar-y-thumb-btn {
+	background: url("http://img.baidu.com/img/iknow/exp/global/exp-scroll.gif") no-repeat -12px; width: 100%; height: 100%; position: relative;
+}
+.scrollbar-y-thumb-prev {
+	background: url("http://img.baidu.com/img/iknow/exp/global/exp-scroll.gif") -36px 0px; top: 0px; width: 100%; height: 4px; font-size: 0px; position: absolute;
+}
+.scrollbar-y-thumb-next {
+	background: url("http://img.baidu.com/img/iknow/exp/global/exp-scroll.gif") -36px -4px; width: 100%; height: 4px; bottom: 0px !important; font-size: 0px; position: absolute;
+}
+.scrollbar-y-thumb-btn-hover {
+	background-position: -24px;
+}
+.scrollbar-y-thumb-btn-hover .scrollbar-y-thumb-prev {
+	background-position: -36px -11px;
+}
+.scrollbar-y-thumb-btn-hover .scrollbar-y-thumb-next {
+	background-position: -36px -15px;
+}
+.userbar {
+	font: 12px/normal arial; top: 4px; text-align: right; right: 0px; color: rgb(153, 153, 153); padding-right: 10px; position: absolute; z-index: 1003; font-size-adjust: none; font-stretch: normal;
+}
+.userbar a:link {
+	color: rgb(85, 85, 85); text-decoration: none;
+}
+.userbar a:visited {
+	color: rgb(85, 85, 85); text-decoration: none;
+}
+.userbar a:hover {
+	text-decoration: underline;
+}
+.userbar .g-un {
+	font-weight: 700;
+}
+.userbar span {
+	
+}
+.userbar .my-info {
+	padding-bottom: 5px; vertical-align: top; display: inline; position: relative; -ms-zoom: 1;
+}
+.userbar .i-arrow-down {
+	background: url("http://exp.bdstatic.com/static/common/widget/userbar/img/arrow-b_0461cb3.png") no-repeat 3px 4px; width: 16px; height: 16px; vertical-align: middle; display: inline-block; -moz-box-orient: vertical;
+}
+.userbar .dropdown-menu {
+	background: rgb(255, 255, 255); border: 1px solid rgb(155, 155, 155); border-image: none; left: 2px; top: 19px; width: 70px; display: none; position: absolute; box-shadow: 1px 1px 2px #ccc; -moz-box-shadow: 1px 1px 2px #CCC; -webkit-box-shadow: 1px 1px 2px #CCC;
+}
+.userbar .dropdown-menu a {
+	padding: 6px; text-align: left; line-height: 12px; text-decoration: none; border-bottom-color: rgb(235, 235, 235); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+.userbar .dropdown-menu a:hover {
+	background-color: rgb(235, 235, 235);
+}
+.userbar .menu-show .dropdown-menu {
+	display: block;
+}
+.userbar .menu-hide .dropdown-menu {
+	display: none;
+}
+#my-income {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon_v2.png") no-repeat 0px -404px; padding: 1px 0px 1px 20px; height: 16px;
+}
+.icon-wrp {
+	width: 140px; height: 24px; margin-top: 10px;
+}
+.icon-wrp .u-icon {
+	background: url("http://img.baidu.com/img/iknow/exp/user-badge-small.png") no-repeat; outline: 0px; width: 24px; height: 24px; margin-right: 4px; float: left; display: block;
+}
+.icon-wrp .cpm3 {
+	background-position: 0px 0px;
+}
+.icon-wrp .cpm4 {
+	background-position: 0px -24px;
+}
+.icon-wrp .cpm5 {
+	background-position: 0px -48px;
+}
+.icon-wrp .privilege1 {
+	background-position: -48px 0px;
+}
+.icon-wrp .privilege2 {
+	background-position: -48px -24px;
+}
+.icon-wrp .admin1 {
+	background-position: -72px 0px;
+}
+.icon-wrp .medal-gold {
+	background-repeat: no-repeat;
+}
+.icon-wrp .medal-silver {
+	background-repeat: no-repeat;
+}
+.icon-wrp .medal-bronze {
+	background-repeat: no-repeat;
+}
+.new-share-exp {
+	padding: 30px 0px 20px;
+}
+.new-share-exp .share-exp {
+	background: url("http://img.baidu.com/img/iknow/exp/global/exp_new_bg.png") no-repeat 0px -70px; margin: 0px auto; width: 210px; height: 42px; display: block;
+}
+.new-share-exp a.share-exp:hover {
+	background-position: -220px -70px; text-decoration: none;
+}
+.new-share-exp a.share-exp:active {
+	background-position: -440px -70px;
+}
+.new-share-exp .share-exp-reward {
+	margin: 12px auto 0px; width: 210px; text-align: left; display: block;
+}
+.top-search-box {
+	overflow: hidden; font-family: arial,tahoma,"Microsoft YaHei","ËÎÌå"; position: relative; -ms-zoom: 1 !important;
+}
+.top-search-box .inner-warp {
+	height: 100%; margin-left: 152px;
+}
+.top-search-box a.logo {
+	left: 0px; bottom: 2px; position: absolute;
+}
+.top-search-box a.logo img {
+	width: 137px; height: 46px;
+}
+.top-search-box ul.channel {
+	padding: 19px 0px 0px; line-height: 16px; float: left;
+}
+.top-search-box ul.channel li {
+	font-size: 14px; margin-right: 18px; float: left; -ms-zoom: 1;
+}
+.top-search-box ul.channel li a {
+	color: rgb(85, 85, 85); text-decoration: none;
+}
+.top-search-box ul.channel li a:visited {
+	color: rgb(85, 85, 85); text-decoration: none;
+}
+.top-search-box ul.channel li a:hover {
+	text-decoration: underline;
+}
+.top-search-box .s-nav {
+	height: 43px;
+}
+.top-search-box a {
+	text-decoration: underline;
+}
+.top-search-box a:visited {
+	text-decoration: underline;
+}
+.top-search-box input {
+	padding: 0px; border: 0px currentColor; border-image: none;
+}
+.top-search-form {
+	margin: 0px; clear: both; position: relative; z-index: 1000;
+}
+.top-search-form .s-ipt-wr {
+	border-width: 1px; border-style: solid; border-color: rgb(184, 184, 184) rgb(184, 184, 184) rgb(204, 204, 204); border-image: none; width: 508px; height: 32px; margin-right: -1px; vertical-align: top; float: left; display: inline-block;
+}
+.top-search-form .s-ipt-wr:hover {
+	border-color: rgb(171, 171, 171);
+}
+.top-search-form .s-ipt-wr:focus {
+	border-color: rgb(150, 150, 150);
+}
+.top-search-form .hdi {
+	font: 16px/22px arial, tahoma, "Microsoft YaHei", "ËÎÌå", sans-serif; margin: 5px 0px 0px 8px; outline: 0px; width: 492px; height: 22px; color: rgb(0, 0, 0); font-size-adjust: none; font-stretch: normal;
+}
+.top-search-form .s-btn-wr {
+	width: 100px; height: 34px; vertical-align: top; float: left; display: inline-block; z-index: 0;
+}
+.top-search-form .s-btn {
+	background: -ms-linear-gradient(rgb(252, 252, 252), rgb(241, 241, 241)); outline: 0px; border: 1px solid rgb(204, 204, 204); border-image: none; width: 100px; height: 34px; color: rgb(51, 51, 51); line-height: 32px; font-family: arial,tahoma,"Microsoft YaHei","ËÎÌå"; font-size: 16px; float: left; cursor: pointer;
+}
+.top-search-form .s-btn:hover {
+	background: -ms-linear-gradient(rgb(248, 248, 248), rgb(233, 233, 233)); border-color: rgb(171, 171, 171);
+}
+.top-search-form .s-tools {
+	padding: 8px 0px 0px 15px; color: rgb(153, 153, 153); float: left; display: inline-block;
+}
+.top-search-form .s-tools a {
+	color: rgb(60, 124, 224); -ms-zoom: 1;
+}
+#top-img-box {
+	background-position: right; top: 0px; width: 980px; height: 88px; position: absolute; background-repeat: no-repeat;
+}
+#top-img-box div {
+	height: 88px; right: -30px; position: relative; z-index: -1; background-repeat: no-repeat;
+}
+#top-img-link {
+	background: none; top: 25px; width: 175px; height: 56px; right: -19px; display: block; position: absolute; z-index: 1002;
+}
+.jingyan-dialog {
+	background: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); border-image: none;
+}
+.jingyan-dialog-title {
+	background: rgb(252, 252, 252); color: rgb(51, 51, 51); line-height: 34px; padding-left: 20px; font-size: 14px; font-weight: 700; border-bottom-color: rgb(242, 242, 242); border-bottom-width: 1px; border-bottom-style: solid; cursor: move; -moz-user-select: none;
+}
+.jingyan-dialog-close {
+	background: url("http://img.baidu.com/img/iknow/exp/possportui.png") 0px -493px; top: 11px; width: 14px; height: 13px; right: 11px; position: absolute; cursor: pointer;
+}
+.jingyan-dialog-close-hover {
+	background-position: 0px -511px;
+}
+.jingyan-dialog-close-press {
+	background-position: 0px -529px;
+}
+.u-btn-com {
+	background: url("http://img.baidu.com/img/iknow/exp/uc/uc-income-sprite.png") no-repeat; outline: 0px; width: 73px; height: 30px; margin-right: 10px; display: block;
+}
+.jingyan-dialog-accept .u-btn-com {
+	background-position: 0px 0px;
+}
+.jingyan-dialog-accept-hover .u-btn-com:hover {
+	background-position: 0px -30px;
+}
+.jingyan-dialog-accept-hover .u-btn-com {
+	background-position: 0px -30px;
+}
+.jingyan-dialog-accept-press .u-btn-com:active {
+	background-position: 0px -60px;
+}
+.jingyan-dialog-accept-press .u-btn-com {
+	background-position: 0px -60px;
+}
+.jingyan-dialog-cancel .u-btn-com {
+	background-position: -73px 0px;
+}
+.jingyan-dialog-cancel-hover .u-btn-com:hover {
+	background-position: -73px -30px;
+}
+.jingyan-dialog-cancel-hover .u-btn-com {
+	background-position: -73px -30px;
+}
+.jingyan-dialog-cancel-press .u-btn-com:active {
+	background-position: -73px -60px;
+}
+.jingyan-dialog-cancel-press .u-btn-com {
+	background-position: -73px -60px;
+}
+.u-btn-com {
+	border: 0px currentColor; border-image: none; width: 73px; height: 30px; color: rgb(255, 255, 255); font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.u-pop-alert-info {
+	margin: 0px 10px; font-size: 14px;
+}
+.u-pop-alert-btn {
+	left: 40%; bottom: 15px; position: absolute;
+}
+.u-pop-confirm-btn {
+	right: 93px; bottom: 20px; position: absolute;
+}
+.u-pop-cancel-btn {
+	right: 10px; bottom: 20px; position: absolute;
+}
+.u-pop-confirm-info {
+	text-align: left; font-size: 14px; margin-top: 10px; margin-left: 10px;
+}
+.g-btn-com {
+	background: url("http://img.baidu.com/img/iknow/exp/global/dialog_btn_bg.png") no-repeat 0px 0px; border: 0px currentColor; border-image: none; width: 73px; height: 30px; color: rgb(255, 255, 255); font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.g-btn-long {
+	background: url("http://img.baidu.com/img/iknow/exp/global/dialog_btn_bg.png") no-repeat 0px 0px; border: 0px currentColor; border-image: none; width: 73px; height: 30px; color: rgb(255, 255, 255); font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.g-btn-2long {
+	background: url("http://img.baidu.com/img/iknow/exp/global/dialog_btn_bg.png") no-repeat 0px 0px; border: 0px currentColor; border-image: none; width: 73px; height: 30px; color: rgb(255, 255, 255); font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.g-btn-com-hover {
+	background: url("http://img.baidu.com/img/iknow/exp/global/dialog_btn_bg.png") no-repeat 0px 0px; border: 0px currentColor; border-image: none; width: 73px; height: 30px; color: rgb(255, 255, 255); font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.g-btn-long-hover {
+	background: url("http://img.baidu.com/img/iknow/exp/global/dialog_btn_bg.png") no-repeat 0px 0px; border: 0px currentColor; border-image: none; width: 73px; height: 30px; color: rgb(255, 255, 255); font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.g-btn-2long-hover {
+	background: url("http://img.baidu.com/img/iknow/exp/global/dialog_btn_bg.png") no-repeat 0px 0px; border: 0px currentColor; border-image: none; width: 73px; height: 30px; color: rgb(255, 255, 255); font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.dialog-animate-main .dialog-animate {
+	background: 0px 0px; border: 0px currentColor; border-image: none;
+}
+.dialog-animate-main .dialog-animate-title {
+	background: 0px 0px; border: 0px currentColor; border-image: none;
+}
+.dialog-animate-main .dialog-animate-content {
+	background: 0px 0px; border: 0px currentColor; border-image: none;
+}
+.dialog-animate-main .pop-confirm-info {
+	margin: 0px;
+}
+.shop-dialog-address {
+	font: 12px/24px arial, "Microsoft Yahei", sans-serif; color: rgb(68, 68, 68); font-size-adjust: none; font-stretch: normal;
+}
+.shop-dialog-address .shop-dialog-address-title {
+	background: rgb(255, 255, 255); height: 22px; border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.shop-dialog-address .shop-dialog-address-close {
+	top: 8px; right: 10px;
+}
+.shop-dialog-address .dialog-container {
+	padding: 0px 15px 15px;
+}
+.shop-dialog-address .hd-title {
+	padding-bottom: 10px; font-size: 16px; font-weight: 700; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.shop-dialog-address .main {
+	margin-bottom: 10px;
+}
+.shop-dialog-address .main .add-form {
+	margin-bottom: 20px;
+}
+.shop-dialog-address .main .add-form .line {
+	margin-top: 10px;
+}
+.shop-dialog-address .main .add-form input {
+	font-family: "Microsoft Yahei"; font-size: 14px;
+}
+.shop-dialog-address .main .add-form select {
+	font-family: "Microsoft Yahei"; font-size: 14px;
+}
+.shop-dialog-address .main .add-form label {
+	height: 35px; text-align: right; line-height: 35px; margin-right: 10px; vertical-align: middle; display: inline-block; -moz-box-orient: vertical;
+}
+.shop-dialog-address .main .add-form label.error {
+	visibility: hidden; position: absolute;
+}
+#lbl-province {
+	width: 104px;
+}
+#lbl-address {
+	width: 104px;
+}
+#lbl-name {
+	width: 104px;
+}
+#lbl-zipcode {
+	width: 104px;
+}
+#lbl-tel {
+	width: 104px;
+}
+.shop-dialog-address .main .add-form input {
+	padding: 5px; border-radius: 2px; border: 1px solid rgb(221, 221, 221); border-image: none; height: 20px; line-height: 20px; vertical-align: middle; display: inline-block; -moz-box-orient: vertical; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+}
+.shop-dialog-address .main .add-form .select {
+	padding: 5px; border-radius: 2px; border: 1px solid rgb(221, 221, 221); border-image: none; height: 20px; line-height: 20px; vertical-align: middle; display: inline-block; -moz-box-orient: vertical; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+}
+.shop-dialog-address .main .add-form .select {
+	margin-right: 10px;
+}
+.shop-dialog-address .main .add-form select {
+	padding: 0px; border: 0px currentColor; border-image: none; height: 20px;
+}
+.shop-dialog-address .main .add-form input {
+	outline: 0px;
+}
+select {
+	outline: 0px;
+}
+.shop-dialog-address .main .add-form .error {
+	border: 1px solid rgb(217, 98, 1); border-image: none;
+}
+.shop-dialog-address .main .add-form .focus {
+	padding: 8px; border: 2px solid rgb(76, 181, 3); border-image: none;
+}
+#sel-province {
+	width: 79px;
+}
+#sel-city {
+	width: 79px;
+}
+#sel-district {
+	width: 79px;
+}
+#ipt-address {
+	width: 500px;
+}
+#ipt-name {
+	width: 104px;
+}
+#ipt-tel {
+	width: 104px;
+}
+#ipt-zipcode {
+	width: 104px;
+}
+.shop-dialog-address .main .add-form .tangram-validator {
+	display: none;
+}
+.shop-dialog-address .main .add-form .info {
+	margin-top: 14px; margin-left: 114px;
+}
+.shop-dialog-address .main .submit-btn {
+	border-radius: 2px; border: 1px solid rgb(222, 222, 222); border-image: none; width: 100px; height: 30px; text-align: center; color: rgb(63, 199, 0); line-height: 30px; font-size: 14px; text-decoration: none; margin-left: 45px; vertical-align: middle; display: inline-block; cursor: pointer; -moz-box-orient: vertical; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+}
+.shop-dialog-address .ft {
+	margin-left: 45px;
+}
+.shop-dialog-address .f-red {
+	color: red;
+}
+.chest-msg-tip {
+	text-align: center; margin-top: 40px;
+}
+.no-result {
+	height: 80px; text-align: center; color: rgb(255, 255, 255); line-height: 80px;
+}
+.join-share-dialog {
+	margin: 30px 50px 0px 60px; color: rgb(51, 51, 51); font-size: 14px;
+}
+.join-share-dialog a {
+	color: rgb(45, 100, 179);
+}
+.join-share-dialog .join-progress {
+	background: url("http://img.baidu.com/img/iknow/exp/uc/hx-popu-btn.png") no-repeat; width: 439px; height: 48px;
+}
+.join-share-dialog .step1 .caption {
+	margin: 30px 0px;
+}
+.join-share-dialog .step2 .join-progress {
+	background-position: 0px -48px;
+}
+.join-share-dialog .step2 .caption {
+	margin: 25px 0px;
+}
+.join-share-dialog .step3 .join-progress {
+	background-position: 0px -96px;
+}
+.join-share-dialog .step3 .begin-share-exp {
+	left: 168px; top: 138px; position: absolute;
+}
+.join-share-dialog .step3 .begin-share-exp a {
+	background: url("http://img.baidu.com/img/iknow/exp/uc/hx-popu-btn.png") no-repeat 0px -144px; outline: 0px; width: 211px; height: 51px; margin-left: 0px; display: block;
+}
+.join-share-dialog .step3 .begin-share-exp a:hover {
+	background-position: 0px -195px;
+}
+.join-share-dialog .step3 .begin-share-exp a:active {
+	background-position: 0px -246px;
+}
+.join-share-dialog .step3 .how-write-exp {
+	left: 168px; top: 200px; font-size: 12px; position: absolute;
+}
+.join-share-dialog .agreement .no-agree-tip {
+	background: url("http://img.baidu.com/img/iknow/exp/uc/uc-income-sprite.png") no-repeat -235px -159px; color: rgb(242, 121, 0); padding-left: 18px; font-size: 12px; margin-left: 40px; display: none;
+}
+.join-share-dialog .share-to-sns {
+	text-align: center;
+}
+.join-share-dialog .share-to-sns li {
+	width: 100px; text-align: center; color: rgb(153, 153, 153); font-size: 12px; float: left;
+}
+.join-share-dialog .share-to-sns li a {
+	background: url("http://img.baidu.com/img/iknow/exp/uc/hx-share-icon.png") no-repeat; margin: 0px 30px; transition:0.2s; width: 50px; height: 50px; display: block; -webkit-transition: .2s; -moz-transition: .2s; -o-transition: .2s;
+}
+.join-share-dialog .share-to-sns li a:hover {
+	transform: scale(1.1); -moz-transform: scale(1.1); -webkit-transform: scale(1.1);
+}
+.join-share-dialog .share-to-sns li a.tieba {
+	background-position: 0px -50px;
+}
+.join-share-dialog .share-to-sns li a.qweibo {
+	background-position: 0px -100px;
+}
+.join-share-dialog .share-to-sns li a.renren {
+	background-position: 0px -150px;
+}
+.msg-dialog-box {
+	margin: 25px 40px;
+}
+.msg-dialog-box a {
+	color: rgb(45, 100, 179);
+}
+.msg-dialog-box h3 {
+	background: url("http://img.baidu.com/img/iknow/exp/uc/uc-income-sprite.png") no-repeat -226px -209px; height: 24px; color: rgb(51, 51, 51); line-height: 27px; padding-left: 32px; font-size: 16px;
+}
+.msg-dialog-box .caption {
+	color: rgb(102, 102, 102); line-height: 24px; padding-left: 32px; font-size: 14px; margin-top: 5px;
+}
+.msg-dialog-box .confirm-dialog-btn {
+	background: url("http://img.baidu.com/img/iknow/exp/uc/uc-income-sprite.png") no-repeat 0px 0px; outline: 0px; width: 73px; height: 30px; right: 40px; bottom: 25px; display: block; position: absolute;
+}
+.msg-dialog-box .confirm-dialog-btn:hover {
+	background-position: 0px -30px;
+}
+.msg-dialog-box .confirm-dialog-btn:active {
+	background-position: 0px -60px;
+}
+.exp-dialog .tangram-dialog-title .tangram-dialog-close {
+	background-position: -210px 0px;
+}
+.exp-dialog .exp-content .bear {
+	background-position: -107px -18px;
+}
+.exp-dialog .exp-content .bear .i-warn {
+	background-position: -186px -193px;
+}
+.exp-dialog .exp-content .bear .i-success {
+	background-position: -183px -228px;
+}
+.exp-dialog .exp-content .bear .i-error {
+	background-position: -188px -260px;
+}
+.income-share-dialog .income-share-dialog-title .income-share-dialog-close {
+	background-position: -212px -300px;
+}
+.income-share-dialog .income-share-dialog-content .sun {
+	background-position: -44px -316px;
+}
+.may-medal-dialog .may-medal-container .border-top-left {
+	background-position: -25px -501px;
+}
+.may-medal-dialog .may-medal-container .border-top-right {
+	background-position: -25px -703px;
+}
+.may-medal-dialog .may-medal-container .border-bottom-left {
+	background-position: -25px -906px;
+}
+.may-medal-dialog .may-medal-container .border-bottom-right {
+	background-position: -25px -1110px;
+}
+.may-medal-dialog .gold.medal-elem {
+	background-position: 0px -1314px;
+}
+.may-medal-dialog .silver.medal-elem {
+	background-position: 0px -1556px;
+}
+.may-medal-dialog .bronze.medal-elem {
+	background-position: 0px -1798px;
+}
+.may-medal-dialog .exp-sign {
+	background-position: -97px -2040px;
+}
+.may-medal-dialog .may-x-layer {
+	background-position: -204px -2171px;
+}
+.red-bao-dialog-content .num-wrap .num-dot {
+	background-position: -205px -2195px;
+}
+.red-bao-dialog-content .num-wrap .rnum1 {
+	background-position: -165px -2264px;
+}
+.red-bao-dialog-content .num-wrap .rnum2 {
+	background-position: -165px -2333px;
+}
+.red-bao-dialog-content .num-wrap .rnum3 {
+	background-position: -165px -2402px;
+}
+.red-bao-dialog-content .num-wrap .rnum4 {
+	background-position: -165px -2471px;
+}
+.red-bao-dialog-content .num-wrap .rnum5 {
+	background-position: -165px -2540px;
+}
+.red-bao-dialog-content .num-wrap .rnum6 {
+	background-position: -165px -2608px;
+}
+.red-bao-dialog-content .num-wrap .rnum7 {
+	background-position: -165px -2677px;
+}
+.red-bao-dialog-content .num-wrap .rnum8 {
+	background-position: -165px -2746px;
+}
+.red-bao-dialog-content .num-wrap .rnum9 {
+	background-position: -165px -2815px;
+}
+.red-bao-dialog-content .num-wrap .rnum0 {
+	background-position: -165px -2884px;
+}
+.icon-wrp .medal-gold {
+	background-position: -201px -2953px;
+}
+.icon-wrp .medal-silver {
+	background-position: -201px -2980px;
+}
+.icon-wrp .medal-bronze {
+	background-position: -201px -3007px;
+}
+.exp-dialog .tangram-dialog-title .tangram-dialog-close {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.exp-dialog .exp-content .bear {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.exp-dialog .exp-content .bear .i-warn {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.exp-dialog .exp-content .bear .i-success {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.exp-dialog .exp-content .bear .i-error {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.income-share-dialog .income-share-dialog-title .income-share-dialog-close {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.income-share-dialog .income-share-dialog-content .sun {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.may-medal-dialog .may-medal-container .border-top-left {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.may-medal-dialog .may-medal-container .border-top-right {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.may-medal-dialog .may-medal-container .border-bottom-left {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.may-medal-dialog .may-medal-container .border-bottom-right {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.may-medal-dialog .gold.medal-elem {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.may-medal-dialog .silver.medal-elem {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.may-medal-dialog .bronze.medal-elem {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.may-medal-dialog .exp-sign {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.may-medal-dialog .may-x-layer {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.red-bao-dialog-content .num-wrap .num-dot {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.red-bao-dialog-content .num-wrap .rnum1 {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.red-bao-dialog-content .num-wrap .rnum2 {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.red-bao-dialog-content .num-wrap .rnum3 {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.red-bao-dialog-content .num-wrap .rnum4 {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.red-bao-dialog-content .num-wrap .rnum5 {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.red-bao-dialog-content .num-wrap .rnum6 {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.red-bao-dialog-content .num-wrap .rnum7 {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.red-bao-dialog-content .num-wrap .rnum8 {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.red-bao-dialog-content .num-wrap .rnum9 {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.red-bao-dialog-content .num-wrap .rnum0 {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.icon-wrp .medal-gold {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.icon-wrp .medal-silver {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}
+.icon-wrp .medal-bronze {
+	background-image: url("http://exp.bdstatic.com/static/common/pkg/common_sync_css_0_z_493b602.png");
+}

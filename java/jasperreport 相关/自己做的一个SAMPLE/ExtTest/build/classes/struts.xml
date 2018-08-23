@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="false" />
+	<!-- 将Action的创建交给spring来管理 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.i18n.reload" value="false" />
+	<constant name="struts.convention.result.path" value="/WEB-INF/pages/" />
+	<constant name="struts.convention.package.locators" value="action" />
+	<constant name="struts.convention.action.suffix" value="Action"/>
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	
+	<package name="default" extends="jasperreports-default">
+	<action name="pdf" class="action.ReportAction">  
+           <!-- jasper结果类型 -->  
+           <result name="success" type="jasper">  
+              <!-- jasper文件位置 -->  
+              <param name="location">/jasper/report.jasper.jasper</param>  
+              <!-- 报表类型 -->  
+              <param name="format">PDF</param>  
+              <!-- 报表数据源：getUser()方法的返回值作为数据源 -->  
+              <param name="dataSource">user</param>  
+           </result>  
+       </action> 
+	</package>
+	
+	<package name="robot" extends="json-default,struts-default">
+	
+	 
+       	
+	<action name="loginPro" class="action.LoginAction">
+		<result>Window.jsp</result>
+	</action>
+	
+	<action name="*">
+		<result name="success">/WEB-INF/{1}.jsp</result>
+		<result name="login">/redirectLogin.jsp</result>
+	</action>
+	
+	</package>
+</struts>    

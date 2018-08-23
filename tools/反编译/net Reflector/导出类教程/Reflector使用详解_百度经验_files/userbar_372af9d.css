@@ -1,0 +1,42 @@
+.userbar {
+	font: 12px/normal arial; top: 4px; text-align: right; right: 0px; color: rgb(153, 153, 153); padding-right: 10px; position: absolute; z-index: 1003; font-size-adjust: none; font-stretch: normal;
+}
+.userbar a:link {
+	color: rgb(85, 85, 85); text-decoration: none;
+}
+.userbar a:visited {
+	color: rgb(85, 85, 85); text-decoration: none;
+}
+.userbar a:hover {
+	text-decoration: underline;
+}
+.userbar .g-un {
+	font-weight: 700;
+}
+.userbar span {
+	
+}
+.userbar .my-info {
+	padding-bottom: 5px; vertical-align: top; display: inline; position: relative; -ms-zoom: 1;
+}
+.userbar .i-arrow-down {
+	background: url("http://exp.bdstatic.com/static/common-jquery/widget/userbar/img/arrow-b_e9c380c.png") no-repeat 3px 4px; width: 16px; height: 16px; vertical-align: middle; display: inline-block; -moz-box-orient: vertical;
+}
+.userbar .dropdown-menu {
+	background: rgb(255, 255, 255); border: 1px solid rgb(155, 155, 155); border-image: none; left: 2px; top: 19px; width: 70px; display: none; position: absolute; box-shadow: 1px 1px 2px #ccc; -moz-box-shadow: 1px 1px 2px #ccc; -webkit-box-shadow: 1px 1px 2px #ccc;
+}
+.userbar .dropdown-menu a:hover {
+	background-color: rgb(235, 235, 235);
+}
+.userbar .dropdown-menu a {
+	padding: 6px; text-align: left; line-height: 12px; text-decoration: none; border-bottom-color: rgb(235, 235, 235); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+.userbar .menu-show .dropdown-menu {
+	display: block;
+}
+.userbar .menu-hide .dropdown-menu {
+	display: none;
+}
+#my-income {
+	background: url("http://img.baidu.com/img/iknow/exp/global/bg_icon_v2.png") no-repeat 0px -404px; padding: 1px 0px 1px 20px; height: 16px; display: inline-block;
+}

@@ -1,0 +1,171 @@
+#exp-msgbox-wrapper {
+	top: 30px; width: 180px; right: 75px; position: absolute; z-index: 2099;
+}
+.exp-msgbox {
+	padding: 8px; height: auto; position: relative; -ms-zoom: 1;
+}
+.msg-item-box {
+	display: none;
+}
+.exp-msgbox-hover .msg-item-box {
+	display: block;
+}
+:root .arrow {
+	top: -9px;
+}
+.arrow {
+	left: 19px; top: -10px; position: absolute; z-index: 2101;
+}
+.arrow em {
+	width: 17px; height: 19px; line-height: 21px; overflow: hidden; font-family: Simsun; font-size: 16px; position: absolute;
+}
+.arrow span {
+	width: 17px; height: 19px; line-height: 21px; overflow: hidden; font-family: Simsun; font-size: 16px; position: absolute;
+}
+.arrow em {
+	color: rgb(232, 204, 161); font-style: normal;
+}
+.arrow span {
+	top: 2px; color: rgb(254, 253, 237);
+}
+.exp-msgbox {
+	background: rgb(254, 253, 237); border-radius: 2px; border: 1px solid rgb(232, 204, 161); border-image: none; box-shadow: 2px 2px 4px rgba(0,0,0,0.15); -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, .15); -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, .15); -webkit-border-radius: 2px; -moz-border-radius: 2px;
+}
+.exp-msgbox a {
+	color: rgb(45, 100, 179);
+}
+.exp-msgbox a:visited {
+	color: rgb(45, 100, 179);
+}
+.exp-msgbox .n-title {
+	padding: 3px 10px; border-bottom-color: rgb(248, 240, 219); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.exp-msgbox .n-title .notice-close {
+	background: url("http://img.baidu.com/img/iknow/exp/global/notice-icon.png") no-repeat 0px -40px; width: 14px; height: 14px; float: right; cursor: pointer;
+}
+.exp-msgbox .n-item {
+	padding: 4px 13px 4px 10px; height: 18px;
+}
+.exp-msgbox .n-item a {
+	float: left;
+}
+.exp-msgbox .n-item a:hover {
+	text-decoration: none;
+}
+.exp-msgbox .n-item b {
+	color: rgb(255, 120, 0); padding-right: 2px; padding-left: 2px; font-size: 12px; cursor: pointer;
+}
+.exp-msgbox .n-item span {
+	width: 19px; height: 18px; float: right;
+}
+.exp-msgbox .n-cms-in {
+	height: auto; border-top-color: rgb(248, 240, 219); border-top-width: 1px; border-top-style: solid; position: relative;
+}
+.exp-msgbox .n-cms-in span {
+	top: 4px; right: 6px; position: absolute;
+}
+.exp-msgbox .n-cms {
+	height: auto; position: relative;
+}
+.exp-msgbox .n-cms span {
+	top: 4px; right: 6px; position: absolute;
+}
+.exp-msgbox .n-cms-first {
+	border-top-color: rgb(248, 240, 219); border-top-width: 1px; border-top-style: solid;
+}
+.exp-msgbox .first {
+	border-top-color: currentColor; border-top-width: 0px; border-top-style: none;
+}
+.exp-msgbox-close {
+	float: right; cursor: pointer;
+}
+.itemhover {
+	background-color: rgb(251, 248, 223);
+}
+.itemhover span {
+	background: url("http://img.baidu.com/img/iknow/exp/global/close_icon.gif") no-repeat 0px 0px; width: 19px; height: 18px; line-height: 18; margin-right: -5px; cursor: pointer;
+}
+.exp-msgbox-tip {
+	padding: 0px 8px; color: rgb(45, 100, 179);
+}
+.exp-msgbox-tip b {
+	color: rgb(255, 120, 0);
+}
+.exp-msgbox-content {
+	display: none;
+}
+.msg-mouse-over .exp-msgbox-tip {
+	display: none;
+}
+.msg-mouse-over .exp-msgbox-content {
+	display: block;
+}
+.que-rol-pop {
+	margin: 25px 20px 0px; font-family: "Microsoft Yahei","Î¢ÈíÑÅºÚ",arial,"ËÎÌå",sans-serif;
+}
+.que-rol-pop h3 {
+	background: url("http://img.baidu.com/img/iknow/exp/uc/uc-income-sprite.png") no-repeat -225px -313px; color: rgb(51, 51, 51); padding-left: 30px; font-size: 16px; font-weight: 700; margin-bottom: 15px;
+}
+.que-rol-pop p {
+	color: rgb(51, 51, 51); padding-left: 3px; font-size: 14px;
+}
+.tangram-suggestion {
+	background: rgb(255, 255, 255); border: 1px solid rgb(184, 184, 184); border-image: none; z-index: 3000;
+}
+.tangram-suggestion td.tangram-suggestion-current {
+	background-color: rgb(235, 235, 235);
+}
+.tangram-suggestion table {
+	width: 100%;
+}
+.tangram-suggestion td {
+	font: 700 14px/26px arial; padding: 0px 8px; color: rgb(0, 0, 0); cursor: pointer; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255);
+}
+.tangram-suggestion b {
+	font-weight: 400;
+}
+.sug-content {
+	margin-top: -63px; margin-left: 90px; _margin-top: -58px;
+}
+.sug-content h2 {
+	height: 18px; line-height: 18px; vertical-align: middle;
+}
+.sug-content strong {
+	color: rgb(153, 153, 153); font-size: 12px; font-weight: 400;
+}
+.sug-tag {
+	margin: 0px -8px; padding: 6px 0px 6px 8px; width: 432px; height: 62px; border-top-color: rgb(235, 235, 235); border-top-width: 1px; border-top-style: solid;
+}
+.sug-tag img {
+	border: 1px solid rgb(225, 225, 225); border-image: none; width: 80px; height: 60px;
+}
+.sug-tag em {
+	color: rgb(153, 153, 153); font-size: 12px;
+}
+.sug-close {
+	height: 22px; text-align: right; color: rgb(136, 136, 136); line-height: 22px; padding-right: 8px; text-decoration: underline; border-top-color: rgb(235, 235, 235); border-top-width: 1px; border-top-style: solid; display: block; cursor: pointer;
+}
+.intro-self {
+	margin: 10px;
+}
+.intro-self textarea {
+	background: url("http://img.baidu.com/img/iknow/exp/uc/bg.gif") no-repeat 0px 0px; padding: 7px; outline: 0px; border: 1px solid rgb(149, 210, 140); border-image: none; width: 468px; height: 100px; color: rgb(153, 153, 153); overflow: auto; font-size: 12px; resize: none;
+}
+.intro-self .self-prompt {
+	color: red; font-size: 12px;
+}
+.intro-success {
+	text-align: center; margin-top: 50px;
+}
+#resume-area {
+	padding: 10px; border: 1px solid rgb(149, 210, 140); border-image: none; width: 527px; height: 128px; color: rgb(153, 153, 153); font-size: 14px; background-color: rgb(255, 255, 255);
+}
+#resume-area {
+	background: url("http://img.baidu.com/img/iknow/exp/uc/bg.gif") no-repeat 0px 0px;
+}
+#img-input-e {
+	background: url("http://img.baidu.com/img/iknow/exp/uc/bg.gif") no-repeat 0px 0px;
+}
+.self-prompt {
+	color: red; font-size: 12px;
+}

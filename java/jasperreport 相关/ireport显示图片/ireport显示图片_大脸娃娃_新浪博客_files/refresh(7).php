@@ -1,0 +1,1 @@
+geetest_1496635742340({"status": "error", "error_code": "error_00", "error": "refresh too much"})

@@ -1,0 +1,1 @@
+geetest_1496632487518({"type": "slide", "challenge": "c367b8ad41b8a4b723a70fc113de5daflw", "link": "", "slice": "pictures/gt/aec181a90/slice/503a3462.png", "bg": "pictures/gt/aec181a90/bg/503a3462.jpg", "fullbg": "pictures/gt/aec181a90/aec181a90.jpg", "height": 116, "ypos": 13, "xpos": 0, "id": "", "feedback": "http://www.geetest.com/contact#report"})

@@ -1,0 +1,83 @@
+#cnblogs_post_body {
+    font-size: 16px;
+    line-height: 1.6;
+    counter-reset: h2; }
+    #cnblogs_post_body blockquote {
+      margin: 32px 28px;
+      padding-left: 14px;
+      border-left: 3px solid #ccc;
+      line-height: 1.6; }
+    #cnblogs_post_body p {
+      margin-top: 18px;
+      margin-bottom: 18px; }
+    #cnblogs_post_body a {
+      color: #3187db;
+      text-decoration: none; }
+      #cnblogs_post_body a:hover {
+        color: #333;
+        text-decoration: underline; }
+    #cnblogs_post_body em {
+      border-bottom: 1px dotted;
+      margin-right: 0.25em;
+      text-decoration: none;
+      font-style: normal; }
+      #cnblogs_post_body pre ol.linenums {
+        margin-top: 0;
+        margin-bottom: 0; }
+        #cnblogs_post_body pre ol.linenums li {
+          list-style-type: decimal; }
+      #cnblogs_post_body pre code {
+        margin: 0;
+        padding: 0;
+        border: 0 none;
+        background: none;
+        border-radius: 0;
+        font-size: inherit;
+        line-height: 1.5; }
+    #cnblogs_post_body ul, #cnblogs_post_body ol {
+      margin: auto;
+      padding-left: 40px; }
+      #cnblogs_post_body ul li, #cnblogs_post_body ol li {
+        list-style: inherit; }
+    #cnblogs_post_body h2 {
+      counter-reset: h3;
+      counter-increment: h2; }
+      #cnblogs_post_body h2:before {
+        content: counter(h2) " "; }
+    #cnblogs_post_body h3 {
+      counter-increment: h3; }
+      #cnblogs_post_body h3:before {
+        content: counter(h2) "_" counter(h3) " "; }
+    #cnblogs_post_body code {
+      *zoom: 1;
+      *display: inline;
+      display: inline-block;
+      line-height: normal;
+      margin: 0 0.25em;
+      padding: 0 0.4em;
+      border: 1px solid #ddd;
+      background-color: #f8f8f8;
+      border-radius: 3px; }
+  .article .article-title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e2e2; }
+    .article .article-title h1 {
+      font-size: 18px;
+      line-height: 32px;
+      font-weight: normal;
+      margin: 8px 0 0;
+      vertical-align: middle; }
+    .article .article-title h2 {
+      margin: 20px 0; }
+    .article .article-title a {
+      text-decoration: none;
+      color: #269f3f;
+      font-size: 12px; }
+    .article .article-title .article_tag {
+      background: #fc4f1e;
+      color: #fff;
+      font-size: 12px;
+      font-weight: normal;
+      border-radius: 2px;
+      padding: 2px 4px;
+      line-height: 30px; }

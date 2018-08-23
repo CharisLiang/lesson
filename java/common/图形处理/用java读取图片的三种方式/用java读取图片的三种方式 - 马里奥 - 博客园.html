@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://www.cnblogs.com/zxp_9527/archive/2009/03/20/1417504.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./用java读取图片的三种方式 - 马里奥 - 博客园_files/analytics.js.下载"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>用java读取图片的三种方式 - 马里奥 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./用java读取图片的三种方式 - 马里奥 - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./用java读取图片的三种方式 - 马里奥 - 博客园_files/bundle-newblue.css">
+<link id="mobile-style" media="only screen and (max-width: 768px)" type="text/css" rel="stylesheet" href="./用java读取图片的三种方式 - 马里奥 - 博客园_files/bundle-newblue-mobile.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/zxp_9527/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/zxp_9527/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/zxp_9527/wlwmanifest.xml">
+<script src="./用java读取图片的三种方式 - 马里奥 - 博客园_files/jquery.js.下载" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'zxp_9527', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="./用java读取图片的三种方式 - 马里奥 - 博客园_files/blog-common.js.下载" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+
+<div class="pagelayout">
+    
+<table width="97%" align="center" cellpadding="2" cellspacing="0">
+<tbody><tr>
+	<td class="mytitle" align="center" width="30%"><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/zxp_9527/">浮躁的技术之路</a></td>
+	<td>&nbsp;</td>
+	<td width="50%">
+		<table height="30" cellspacing="0" cellpadding="0" width="100%" border="0">
+		<tbody><tr>
+			<td width="100"><a href="http://www.cnblogs.com/"><img src="./用java读取图片的三种方式 - 马里奥 - 博客园_files/icon_hjblog.gif" border="0"></a></td>
+			<td width="10"><a href="http://www.cnblogs.com/logout.aspx"><img src="./用java读取图片的三种方式 - 马里奥 - 博客园_files/out.gif" border="0"></a></td>
+			
+		</tr>
+		</tbody></table>	
+	</td>
+</tr>
+<tr>
+	<td colspan="3" background="./用java读取图片的三种方式 - 马里奥 - 博客园_files/top.jpg" height="184" valign="middle" align="center">Self Control!!!</td>
+</tr>
+</tbody></table>
+
+    <table width="90%" align="center" cellpadding="5" cellspacing="0" border="0" id="main">
+        <tbody><tr>
+            <td valign="top" id="sidebar">
+                <div>
+                    
+<div class="listtitle">公告</div>
+<ul class="list">
+		<li class="listitem">
+			<center><div id="blog-news"><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/zxp_9527/">马里奥</a><br>园龄：<a href="http://home.cnblogs.com/u/zxp_9527/" title="入园时间：2008-12-23">8年5个月</a><br>粉丝：<a href="http://home.cnblogs.com/u/zxp_9527/followers/">3</a><br>关注：<a href="http://home.cnblogs.com/u/zxp_9527/followees/">1</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;10ee16b0-1cf5-dd11-9e4d-001cf0cd104b&#39;)">+加关注</a></div></div></div><script type="text/javascript">loadBlogNews();</script></center>
+	</li>
+</ul>
+                    <div class="listtitle">日历</div>
+                    <table width="100%" height="200">
+                        <tbody><tr>
+                            <td>
+                                <div id="blog-calendar" style=""><table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="Calendar">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2017/05/01&#39;);return false;">&lt;</a></td><td align="center">2017年6月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2017/07/01&#39;);return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" align="center" abbr="日" scope="col">日</th><th class="CalDayHeader" align="center" abbr="一" scope="col">一</th><th class="CalDayHeader" align="center" abbr="二" scope="col">二</th><th class="CalDayHeader" align="center" abbr="三" scope="col">三</th><th class="CalDayHeader" align="center" abbr="四" scope="col">四</th><th class="CalDayHeader" align="center" abbr="五" scope="col">五</th><th class="CalDayHeader" align="center" abbr="六" scope="col">六</th></tr><tr><td class="CalOtherMonthDay" align="center">28</td><td class="CalOtherMonthDay" align="center">29</td><td class="CalOtherMonthDay" align="center">30</td><td class="CalOtherMonthDay" align="center">31</td><td align="center">1</td><td class="CalTodayDay" align="center">2</td><td class="CalWeekendDay" align="center">3</td></tr><tr><td class="CalWeekendDay" align="center">4</td><td align="center">5</td><td align="center">6</td><td align="center">7</td><td align="center">8</td><td align="center">9</td><td class="CalWeekendDay" align="center">10</td></tr><tr><td class="CalWeekendDay" align="center">11</td><td align="center">12</td><td align="center">13</td><td align="center">14</td><td align="center">15</td><td align="center">16</td><td class="CalWeekendDay" align="center">17</td></tr><tr><td class="CalWeekendDay" align="center">18</td><td align="center">19</td><td align="center">20</td><td align="center">21</td><td align="center">22</td><td align="center">23</td><td class="CalWeekendDay" align="center">24</td></tr><tr><td class="CalWeekendDay" align="center">25</td><td align="center">26</td><td align="center">27</td><td align="center">28</td><td align="center">29</td><td align="center">30</td><td class="CalOtherMonthDay" align="center">1</td></tr><tr><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td><td class="CalOtherMonthDay" align="center">7</td><td class="CalOtherMonthDay" align="center">8</td></tr>
+</tbody></table></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                    
+                        
+                        
+<h1 class="listtitle">导航</h1>
+<ul class="list">
+			<li class="listitem"><a id="blog_nav_sitehome" class="listitem" href="http://www.cnblogs.com/">博客园</a></li>
+			<li class="listitem"><a id="blog_nav_myhome" href="http://www.cnblogs.com/zxp_9527/">首页</a>
+			</li><li class="listitem"><a id="blog_nav_newpost" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">发新随笔</a>
+			</li><li class="listitem"><a id="MyLinks1_NewArticleLink" class="listitem" href="http://www.cnblogs.com/EnterMyBlog.aspx?NewArticle=1">发新文章</a></li>
+			<li class="listitem"><a id="blog_nav_contact" accesskey="9" class="listitem" rel="nofollow" href="https://msg.cnblogs.com/send/%E9%A9%AC%E9%87%8C%E5%A5%A5">联系</a></li>
+			<li class="listitem"><a id="blog_nav_rss" class="listitem" href="http://www.cnblogs.com/zxp_9527/rss">订阅</a><a id="blog_nav_rss_image" href="http://www.cnblogs.com/zxp_9527/rss"><img src="./用java读取图片的三种方式 - 马里奥 - 博客园_files/xml.gif" alt="订阅"></a>
+			</li><li class="listitem"><a id="blog_nav_admin" class="listitem" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+                        <div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+
+</div>
+</div>
+
+</div><div id="sidebar_shortcut" class="sidebar-block">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/zxp_9527/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="http://www.cnblogs.com/zxp_9527/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="http://www.cnblogs.com/zxp_9527/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="http://www.cnblogs.com/zxp_9527/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="http://www.cnblogs.com/zxp_9527/tag/" title="我的博客的标签列表">我的标签</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+
+</div></div><div id="sidebar_toptags" class="sidebar-block"></div><div id="sidebar_categories">
+		<h1 class="listtitle">随笔分类</h1>
+		
+				<ul class="list">
+			
+				<li class="listitem"><a id="CatList_LinkList_0_Link_0" class="listitem" href="http://www.cnblogs.com/zxp_9527/category/169627.html">Java(14)</a>  </li>
+			
+				<li class="listitem"><a id="CatList_LinkList_0_Link_1" class="listitem" href="http://www.cnblogs.com/zxp_9527/category/169628.html">Linux(3)</a>  </li>
+			
+				<li class="listitem"><a id="CatList_LinkList_0_Link_2" class="listitem" href="http://www.cnblogs.com/zxp_9527/category/170060.html">SQL</a>  </li>
+			
+				<li class="listitem"><a id="CatList_LinkList_0_Link_3" class="listitem" href="http://www.cnblogs.com/zxp_9527/category/186820.html">WhoAmI(1)</a>  </li>
+			
+				</ul>
+			
+	
+		<h1 class="listtitle">随笔档案</h1>
+		
+				<ul class="list">
+			
+				<li class="listitem"><a id="CatList_LinkList_1_Link_0" class="listitem" href="http://www.cnblogs.com/zxp_9527/archive/2009/05.html">2009年5月 (1)</a>  </li>
+			
+				<li class="listitem"><a id="CatList_LinkList_1_Link_1" class="listitem" href="http://www.cnblogs.com/zxp_9527/archive/2009/04.html">2009年4月 (2)</a>  </li>
+			
+				<li class="listitem"><a id="CatList_LinkList_1_Link_2" class="listitem" href="http://www.cnblogs.com/zxp_9527/archive/2009/03.html">2009年3月 (1)</a>  </li>
+			
+				<li class="listitem"><a id="CatList_LinkList_1_Link_3" class="listitem" href="http://www.cnblogs.com/zxp_9527/archive/2009/02.html">2009年2月 (7)</a>  </li>
+			
+				<li class="listitem"><a id="CatList_LinkList_1_Link_4" class="listitem" href="http://www.cnblogs.com/zxp_9527/archive/2009/01.html">2009年1月 (1)</a>  </li>
+			
+				<li class="listitem"><a id="CatList_LinkList_1_Link_5" class="listitem" href="http://www.cnblogs.com/zxp_9527/archive/2008/12.html">2008年12月 (7)</a>  </li>
+			
+				</ul>
+			
+	
+</div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<h3 class="catListTitle">阅读排行榜</h3>
+<div class="RecentComment" id="TopViewPosts"> 
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/zxp_9527/archive/2008/12/24/1361911.html">1. JAVA_OPTS参数-Xms和-Xmx的作用(15312)</a></li><li><a href="http://www.cnblogs.com/zxp_9527/archive/2009/03/20/1417504.html">2. 用java读取图片的三种方式(13389)</a></li><li><a href="http://www.cnblogs.com/zxp_9527/archive/2009/05/07/1452253.html">3. encodeURL() vs encodeRedirectURL()(4189)</a></li><li><a href="http://www.cnblogs.com/zxp_9527/archive/2009/04/21/1440814.html">4. getAttribute getParameter 区别(1657)</a></li><li><a href="http://www.cnblogs.com/zxp_9527/archive/2009/02/11/1388315.html">5. xml解析器(1551)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div class="RecentComment">
+	<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/zxp_9527/archive/2008/12/24/1361911.html">1. JAVA_OPTS参数-Xms和-Xmx的作用(1)</a></li><li><a href="http://www.cnblogs.com/zxp_9527/archive/2009/02/25/1398272.html">2. 常用课程的英文翻(1)</a></li><li><a href="http://www.cnblogs.com/zxp_9527/archive/2009/02/06/1385409.html">3. HttpSession 学习(1)</a></li></ul></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+                    
+                    <div class="spacer">&nbsp;</div>
+                </div>
+            </td>
+            <td valign="top" id="content">
+                <div>
+                    
+<div id="post_detail">
+<div class="singlepost">
+	<div class="posttitle">
+		<a id="cb_post_title_url" class="singleposttitle" href="http://www.cnblogs.com/zxp_9527/archive/2009/03/20/1417504.html">用java读取图片的三种方式</a>
+	</div>
+	<div id="cnblogs_post_body"><p>
+</p><p>&nbsp;说明：把图片显示在label上；常用api的作用；使用JFrame等时&nbsp;&nbsp; 关闭窗口--退出调试的代码。</p>
+<p>完整代码，已编译执行成功</p>
+<p>import javax.imageio.*;//for ImageIO.read<br>import java.awt.*;//for JFrame and JLabel etc<br>import javax.swing.*;//for JFrame and JLabel etc<br>import java.net.*;//for URL<br>import java.io.*;//for catch (IOException e),File,InputStream, BufferedInputStream,and FileInputStream ect<br>public class HelloJava{<br>&nbsp;&nbsp; public static void main (String[] args){<br>&nbsp;&nbsp; Image image = null;<br>&nbsp;&nbsp;&nbsp; try {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Read from a file<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; File sourceimage = new File("source.gif");&nbsp; //source.gif图片要与HelloJava.java同在一目录下<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; image = ImageIO.read(sourceimage);<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Read from an input stream<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InputStream is = new BufferedInputStream(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new FileInputStream("mid.jpg"));&nbsp; //mid.jpg图片要与HelloJava.java同在一目录下<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; image = ImageIO.read(is);<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Read from a URL<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; URL url = new URL("<a href="http://www.javaworld.com/images/012407-tipsbox.jpg">http://www.javaworld.com/images/012407-tipsbox.jpg</a>");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; image = ImageIO.read(url);<br>&nbsp;&nbsp;&nbsp; } catch (IOException e) {<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp; // Use a label to display the image<br>&nbsp;&nbsp;&nbsp; JFrame frame = new JFrame();<br>&nbsp;&nbsp;&nbsp; JLabel label = new JLabel(new ImageIcon(image));<br>&nbsp;&nbsp;&nbsp; frame.getContentPane().add(label, BorderLayout.CENTER);<br>&nbsp;&nbsp;&nbsp; frame.pack();<br>&nbsp;&nbsp;&nbsp; frame.setVisible(true);&nbsp;<br>&nbsp;&nbsp;&nbsp; //关闭窗口--退出调试<br>&nbsp;&nbsp;&nbsp;&nbsp; frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>}</p>
+<p></p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="http://www.cnblogs.com/zxp_9527/category/169627.html" target="_blank">Java</a></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(1417504,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;10ee16b0-1cf5-dd11-9e4d-001cf0cd104b&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./用java读取图片的三种方式 - 马里奥 - 博客园_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./用java读取图片的三种方式 - 马里奥 - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/zxp_9527/" target="_blank"><img src="./用java读取图片的三种方式 - 马里奥 - 博客园_files/u46467.jpg" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/zxp_9527/">马里奥</a><br>
+            <a href="http://home.cnblogs.com/u/zxp_9527/followees">关注 - 1</a><br>
+            <a href="http://home.cnblogs.com/u/zxp_9527/followers">粉丝 - 3</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;10ee16b0-1cf5-dd11-9e4d-001cf0cd104b&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(1417504,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">0</span>
+    </div>
+    <div class="buryit" onclick="votePost(1417504,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/zxp_9527/archive/2009/02/27/1399658.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/zxp_9527/archive/2009/02/27/1399658.html" title="发布于2009-02-27 16:32">JavaScript 的 parseInt('08')</a><br><a href="http://www.cnblogs.com/zxp_9527/archive/2009/04/20/1439492.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/zxp_9527/archive/2009/04/20/1439492.html" title="发布于2009-04-20 10:29">Who Am I?</a><br></div>
+</div>
+
+
+	<div class="itemdesc">
+		posted on <span id="post-date">2009-03-20 11:30</span> <a href="http://www.cnblogs.com/zxp_9527/">马里奥</a> 阅读(<span id="post_view_count">13388</span>) 评论(<span id="post_comment_count">0</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=1417504" rel="nofollow">编辑</a> <a href="http://www.cnblogs.com/zxp_9527/archive/2009/03/20/1417504.html#" onclick="AddToWz(1417504);return false;">收藏</a>
+	</div>
+</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=50057,cb_entryId=1417504,cb_blogApp=currentBlogApp,cb_blogUserGuid='10ee16b0-1cf5-dd11-9e4d-001cf0cd104b',cb_entryCreatedDate='2009/3/20 11:30:00';loadViewCount(cb_entryId);</script>
+	
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="http://www.cnblogs.com/zxp_9527/archive/2009/03/20/1417504.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://www.cnblogs.com/zxp_9527/archive/2009/03/20/1417504.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】50万行VC++源码: 大型组态工控、电力仿真CAD与GIS源码库</a><br></div>
+<div id="opt_under_post"></div>
+<div id="cnblogs_c1" class="c_ad_block"><a href="http://www.gcpowertools.com.cn/products/componentoneenterprise/visualstudio.htm?utm_source=cnblogs&amp;utm_medium=blogpage&amp;utm_term=bottom&amp;utm_content=C1&amp;utm_campaign=community" target="_blank"><img width="300" height="250" src="./用java读取图片的三种方式 - 马里奥 - 博客园_files/24442-20170531232608899-508438133.png" alt="C1"></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/570677/" target="_blank">Google Sheet更新：通过自然语音命令更轻松创建图表</a><br> ·  <a href="http://news.cnblogs.com/n/570676/" target="_blank">三星Connect Home无线路由器上市：169.99美元起售</a><br> ·  <a href="http://news.cnblogs.com/n/570675/" target="_blank">WWDC临近 苹果开始在圣何塞布置会场周边</a><br> ·  <a href="http://news.cnblogs.com/n/570674/" target="_blank">统计数据：浏览器市场份额几乎保持不变，Chrome继续占主导地位</a><br> ·  <a href="http://news.cnblogs.com/n/570668/" target="_blank">程维爆料：自行车厂家捷安特可能被ofo收购</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="cnblogs_c2" class="c_ad_block"><a href="http://click.aliyun.com/m/17215/" target="_blank"><img width="468" height="60" src="./用java读取图片的三种方式 - 马里奥 - 博客园_files/24442-20170417123605337-535991337.jpg" alt="阿里云E4"></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/569992/" target="_blank">程序员的工作、学习与绩效</a><br> ·  <a href="http://kb.cnblogs.com/page/569056/" target="_blank">软件开发为什么很难</a><br> ·  <a href="http://kb.cnblogs.com/page/565901/" target="_blank">唱吧DevOps的落地，微服务CI/CD的范本技术解读</a><br> ·  <a href="http://kb.cnblogs.com/page/566523/" target="_blank">程序员，如何从平庸走向理想？</a><br> ·  <a href="http://kb.cnblogs.com/page/566318/" target="_blank">我为什么鼓励工程师写blog</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+                    <div class="spacer">&nbsp;</div>
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+
+
+    
+
+<table width="97%" align="center" cellpadding="2" cellspacing="0" border="0">
+<tbody><tr>
+	<td colspan="2" align="center"><a href="http://www.cnblogs.com/"><img src="./用java读取图片的三种方式 - 马里奥 - 博客园_files/footer.gif" border="0"></a></td>
+</tr>
+<tr>
+	<td align="right" width="45%">Copyright © 马里奥</td><td align="left">
+	Powered by: <a href="http://www.cnblogs.com/">博客园</a>	模板提供：<a href="http://blog.hjenglish.com/">沪江博客</a>
+	</td>
+</tr></tbody></table>
+
+
+
+	
+
+</div>
+
+<!--PageEndHtml Block Begin-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./用java读取图片的三种方式 - 马里奥 - 博客园_files/ga.js.下载" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7462443-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!--PageEndHtml Block End-->
+
+
+</body></html>

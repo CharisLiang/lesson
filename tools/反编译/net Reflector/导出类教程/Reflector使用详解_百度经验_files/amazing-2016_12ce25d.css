@@ -1,0 +1,45 @@
+.dialog-amazing {
+	background: url("http://exp.bdstatic.com/static/common-jquery/widget/js/logic/msg/amazing-2016/img/dialog-bg_5037228.png?__scripte") no-repeat !important; border: 0px currentColor !important; border-image: none !important; width: 637px; height: 342px;
+}
+.dialog-amazing .mr-34 {
+	margin-top: 18px !important;
+}
+.dialog-amazing .wrapper {
+	margin: 0px 62px; width: 437px; height: 264px;
+}
+.dialog-amazing .content {
+	text-align: center; font-size: 18px; margin-top: 24px;
+}
+.dialog-amazing .content em {
+	color: rgb(53, 122, 42);
+}
+.dialog-amazing .content h2 {
+	color: rgb(72, 132, 58); font-size: 16px; margin-top: 44px;
+}
+.dialog-amazing .content p {
+	text-align: center; color: rgb(79, 79, 79); margin-top: 43px;
+}
+.dialog-amazing .content .amazing-btn {
+	background: rgb(64, 178, 45); margin: 8px auto; padding: 5px 10px; border-radius: 5px; width: 190px; text-align: center; color: rgb(255, 255, 255); font-size: 24px; cursor: pointer;
+}
+.dialog-amazing .ui-dialog-titlebar-close {
+	opacity: 0 !important;
+}
+.dialog-amazing .ui-dialog-title {
+	opacity: 0 !important;
+}
+.dialog-amazing .ui-widget-header {
+	border-bottom-color: currentColor !important; border-bottom-width: 0px !important; border-bottom-style: none !important;
+}
+.dialog-amazing .ui-dialog-titlebar {
+	background: url("http://exp.bdstatic.com/static/common-jquery/widget/js/logic/msg/amazing-2016/img/icon_4576b47.png?__scripte") no-repeat; top: -19px; width: 27px; height: 25px; right: 120px; position: absolute !important;
+}
+.dialog-amazing .ui-icon-closethick {
+	margin: -35px -8px; width: 27px; height: 27px;
+}
+.dialog-amazing .ui-button-text {
+	margin: -35px -8px; width: 27px; height: 27px;
+}
+.dialog-amazing .ui-dialog-buttonpane {
+	opacity: 0;
+}

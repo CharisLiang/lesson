@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://www.cnblogs.com/nier/archive/2012/06/04/2534761.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>js中神奇的函数指针 - 李荣飞 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./js中神奇的函数指针 - 李荣飞 - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./js中神奇的函数指针 - 李荣飞 - 博客园_files/bundle-CodingLife.css">
+<link type="text/css" rel="stylesheet" href="./js中神奇的函数指针 - 李荣飞 - 博客园_files/105285.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/nier/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/nier/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/nier/wlwmanifest.xml">
+<script src="./js中神奇的函数指针 - 李荣飞 - 博客园_files/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'nier', cb_enable_mathjax=false;</script>
+<script src="./js中神奇的函数指针 - 李荣飞 - 博客园_files/blog-common.js" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/nier/"><img id="blogLogo" src="./js中神奇的函数指针 - 李荣飞 - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/nier/">李荣飞</a></h1>
+<h2></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="MyLinks1_HomeLink" class="menu" href="http://www.cnblogs.com/">博客园</a></li>
+<li><a id="MyLinks1_MyHomeLink" class="menu" href="http://www.cnblogs.com/nier/">首页</a></li>
+<li><a id="MyLinks1_NewPostLink" class="menu" rel="nofollow" href="http://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="MyLinks1_ContactLink" class="menu" rel="nofollow" href="http://msg.cnblogs.com/send/%E6%9D%8E%E8%8D%A3%E9%A3%9E">联系</a></li>
+<li>
+<!----></li>
+<li><a id="MyLinks1_Admin" class="menu" rel="nofollow" href="http://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			
+<span id="stats_post_count">随笔 - 38&nbsp; </span>
+<span id="stats_article_count">文章 - 0&nbsp; </span>
+<span id="stats-comment_count">评论 - 13</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/nier/archive/2012/06/04/2534761.html">js中神奇的函数指针</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><p style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">js中的函数指针是一个神奇的东西</p>
+<ol style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
+<li>定义function check(){};对于上面这个函数,check(函数名)就是函数指针,check指向函数主体,如果alert(ckeck),那么弹出的信息就是function(){…}</li>
+<li>函数名就是函数指针,并且指向函数匿名函数主体,实际最好是替换,你可以将函数名替换为一个匿名函数即:function(){…},记住每个函数名都可以这样替换</li>
+<li>这里想说的是函数名运用时的几个注意点:</li>
+<ul>
+<li>第一个例子:</li>
+</ul>
+</ol>
+<p><span style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; display: inline !important; font: 18px 微软雅黑; white-space: normal; orphans: 2; float: none; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; function &nbsp;hanshu(){</span></p>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alert("我被执行了");</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; function diaoyong(){</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return hanshu();//注意这里,看似返回了函数,实际是什么都没返回,代码效果是在这执行了这个函数,你可以按照上面所说将匿名函数代进去看看.</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 正确的应该是return hanshu;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; var obj=diaoyong();</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><ol>
+<ul>
+<li>第二个例子</li>
+</ul>
+</ol>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; obj.addEventListener("click",hanshu());&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 或者</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; obj.onclick=hanshu();</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 如果你这么写就大错特错了,原因还是一样,你根本都没添加任何监听事件,代码效果就好比,hanshu();一样,也就是在这个代码段中奖函数执行了一边</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 正确的写法应该是</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;obj.addEventListener("click",hanshu);&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 或者</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; obj.onclick=hanshu;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
+<ul>
+<ul>
+<li>第三个例子</li>
+</ul>
+</ul>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; setInterval("hanshu()",1000);</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 经过上面那两个例子,你是不是认为这样做也错了,这样写是对的,也只能这样写,因为这个hanshu()外面有引号,意思就是每个1秒,执行引号里面的内容即:hanshu(),</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 你可以这样理解setInterval("alert('引号就好比作用域一样,外面加个引号,就好比加个匿名函数包围')");</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;懂了吧</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">实际总结就是,只要外面没加引号,函数名加个括号就代表执行函数,特别是你返回一个函数时,一定要注意这点,你如果想传递一个函数,那么只需传递函数名就可以了 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">最好的方法就是记住函数名替换思想&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;</div>
+<div style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; font: 18px 微软雅黑; white-space: normal; orphans: 2; color: #000000; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">&nbsp;</div></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="http://www.cnblogs.com/nier/category/344850.html">JavaScript</a></div>
+<div id="EntryTag">标签: <a href="http://www.cnblogs.com/nier/tag/js%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88/">js函数指针</a></div>
+<div id="blog_post_info"><div id="green_channel">
+<a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(2534761,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+<a id="green_channel_follow" onclick="c_follow();" href="javascript:void(0);">关注我</a>
+<a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a><a id="green_channel_contact" href="http://msg.cnblogs.com/send/%E6%9D%8E%E8%8D%A3%E9%A3%9E" target="_blank">联系我</a>
+<a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./js中神奇的函数指针 - 李荣飞 - 博客园_files/icon_weibo_24.png" alt=""></a>
+<a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./js中神奇的函数指针 - 李荣飞 - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+<div id="author_profile_info" class="author_profile_info">
+<a href="http://home.cnblogs.com/u/nier/" target="_blank"><img src="./js中神奇的函数指针 - 李荣飞 - 博客园_files/sample_face.gif" class="author_avatar" alt=""></a>
+<div id="author_profile_detail" class="author_profile_info">
+<a href="http://home.cnblogs.com/u/nier/">李荣飞</a><br>
+<a href="http://home.cnblogs.com/u/nier/followees">关注 - 1</a><br>
+<a href="http://home.cnblogs.com/u/nier/followers">粉丝 - 10</a>
+</div>
+</div>
+<div class="clear"></div>
+<div id="author_profile_honor"></div>
+<div id="author_profile_follow">
+    <a href="javascript:void(0);" onclick="c_follow();return false;">+加关注</a>
+</div>
+</div>
+<div id="div_digg">										
+    <div class="diggit" onclick="votePost(2534761,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">0</span>
+    </div>
+	<div class="buryit" onclick="votePost(2534761,&#39;Bury&#39;)"> 
+		<span class="burynum" id="bury_count">0</span>
+	</div>
+	<div class="clear"></div>	
+	<div class="diggword" id="digg_tips">
+    (请您对文章做出评价)
+    </div>	
+</div>
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/nier/archive/2012/06/04/2472074.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/nier/archive/2012/06/04/2472074.html" title="发布于2012-06-04 15:15">js浏览器兼容总结</a><br><a href="http://www.cnblogs.com/nier/archive/2012/07/20/2601619.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/nier/archive/2012/07/20/2601619.html" title="发布于2012-07-20 19:31">框架高度随内容改变</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2012-06-04 15:19</span> <a href="http://www.cnblogs.com/nier/">李荣飞</a> 阅读(<span id="post_view_count">5005</span>) 评论(<span id="post_comment_count">2</span>)  <a href="http://i.cnblogs.com/EditPosts.aspx?postid=2534761" rel="nofollow">编辑</a> <a href="http://www.cnblogs.com/nier/archive/2012/06/04/2534761.html#" onclick="AddToWz(2534761);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,isLogined=true,cb_blogId=105285,cb_entryId=2534761,cb_blogApp=currentBlogApp,cb_blogUserGuid='f51bf5ec-012d-e111-b988-842b2b196315',cb_entryCreatedDate='2012/6/4 15:19:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<br>
+<div class="feedback_area_title">评论列表</div>
+<div class="feedbackNoItems"></div>	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(2721985,&#39;GDffB7nJ/tUOm1oejlkBmdkaaKnqx2T9hlMqD3zw7Jsu0nufRfPzRQ==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(2721985,&#39;GDffB7nJ/tUOm1oejlkBmdkaaKnqx2T9hlMqD3zw7Jsu0nufRfPzRQ==&#39;)">引用</a></span>
+				</div>
+				<a href="http://www.cnblogs.com/nier/archive/2012/06/04/2534761.html#2721985" class="layer">#1楼</a><a name="2721985" id="comment_anchor_2721985"></a>  <span class="comment_date">2013-07-08 02:54</span> <a id="a_comment_author_2721985" href="http://www.cnblogs.com/moshenks/" target="_blank">toda</a> <a href="http://msg.cnblogs.com/send/toda" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2721985" class="blog_comment_body">有函数指针基础的下意识都不会加括号吧</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2721985,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2721985,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2721985_avatar" style="display:none;">http://pic.cnblogs.com/face/264644/20160225121248.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(2890791,&#39;H4Wm6/1fk2Wv9dHSTu7dWYEPbrAOtyJ/l3k+iGdhq6Sb7PK8RGEUlw==&#39;)">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(2890791,&#39;H4Wm6/1fk2Wv9dHSTu7dWYEPbrAOtyJ/l3k+iGdhq6Sb7PK8RGEUlw==&#39;)">引用</a></span>
+				</div>
+				<a href="http://www.cnblogs.com/nier/archive/2012/06/04/2534761.html#2890791" class="layer">#2楼</a><a name="2890791" id="comment_anchor_2890791"></a><span id="comment-maxId" style="display:none;">2890791</span><span id="comment-maxDate" style="display:none;">2014/3/7 21:22:57</span>  <span class="comment_date">2014-03-07 21:22</span> <a id="a_comment_author_2890791" href="http://www.cnblogs.com/johannisberg/" target="_blank">Johannisberg</a> <a href="http://msg.cnblogs.com/send/Johannisberg" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2890791" class="blog_comment_body">其实只要明白函数名之后加（）就是立即执行的意思就可以了，不要把问题复杂化了</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2890791,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2890791,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2890791_avatar" style="display:none;">http://pic.cnblogs.com/face/480831/20130130163749.png</span>
+			</div>
+		</div>
+	<div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="http://www.cnblogs.com/nier/archive/2012/06/04/2534761.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://www.cnblogs.com/nier/archive/2012/06/04/2534761.html#top">返回顶部</a></div>
+<div id="comment_form_container">
+<div id="commentform_title">发表评论</div>
+<span id="tip_comment" style="color:Red"></span>
+<p>
+昵称：<input type="text" id="tbCommentAuthor" class="author" disabled="disabled" size="50" value="lch_2016">
+</p>
+<div class="commentbox_main">
+<div class="commentbox_title">
+<div class="commentbox_title_left">评论内容：</div>
+<div class="commentbox_title_right">
+<img id="ubb_quote" class="comment_icon" src="./js中神奇的函数指针 - 李荣飞 - 博客园_files/quote.gif" alt="引用" title="添加引用" onclick="insertUBB(&#39;tbCommentBody&#39;,&#39;quote&#39;)">
+<img id="ubb_bold" class="comment_icon" src="./js中神奇的函数指针 - 李荣飞 - 博客园_files/b.png" alt="粗体" title="添加粗体" onclick="insertUBB(&#39;tbCommentBody&#39;,&#39;b&#39;)">
+<img id="ubb_url" class="comment_icon" src="./js中神奇的函数指针 - 李荣飞 - 博客园_files/lk.png" alt="链接" title="添加链接" onclick="insertUbbUrl(&#39;tbCommentBody&#39;)">
+<img id="ubb_indent" class="comment_icon" src="./js中神奇的函数指针 - 李荣飞 - 博客园_files/indent.png" alt="缩进" title="添加首行缩进" onclick="insertIndent(&#39;tbCommentBody&#39;)">
+<img id="ubb_code" class="comment_icon" src="./js中神奇的函数指针 - 李荣飞 - 博客园_files/InsertCode.gif" alt="代码" title="添加代码" onclick="insertUbbCode()">
+<img id="ubb_img" class="comment_icon" src="./js中神奇的函数指针 - 李荣飞 - 博客园_files/img.gif" alt="图片" title="上传图片" onclick="OpenImageUploadWindow();">
+</div>
+</div>
+<div class="clear"></div>
+<textarea id="tbCommentBody" class="comment_textarea"></textarea>
+</div>
+<p id="commentbox_opt">
+<input id="btn_comment_submit" type="button" class="comment_btn" value="提交评论">
+<span id="span_comment_canceledit" style="display:none"><a href="javascript:void(0);" onclick="return CancelCommentEdit()">不改了</a></span>
+<a href="javascript:void(0);" onclick="return logout();">退出登录</a>
+        <a id="commentbox_opt_sub" href="javascript:void(0);" title="订阅后有新评论时会邮件通知您" onclick="commentManager.Subscribe()">订阅评论</a>
+</p>
+<div id="tip_comment2" style="color:Red"></div>
+<p>
+[Ctrl+Enter快捷键提交]
+</p>
+<div style="display:none">
+<span id="comment_edit_id"></span><span id="span_parentcomment_id"></span>
+<span id="span_parent_id"></span>
+<span id="span_comment_replyto"></span>
+<span id="span_comment_posted"></span>
+</div>
+</div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】50万行VC++源码: 大型组态工控、电力仿真CAD与GIS源码库</a><br><a href="http://www.rongcloud.cn/" target="_blank">【推荐】融云即时通讯云－豆果美食、Faceu等亿级APP都在用</a><br><a href="http://www.gcpowertools.com.cn/products/activereports/excel.htm?utm_source=cnblogs&amp;utm_medium=blogpage&amp;utm_term=bottom&amp;utm_content=AR&amp;utm_campaign=community" target="_blank">【推荐】报表开发别头大！类Excel 复杂报表开发实例，即学即用</a><br><a href="http://group.cnblogs.com/topic/74774.html" target="_blank">【推荐】福利Time，讯飞开放平台注册即送好礼！</a><br><a href="http://group.cnblogs.com/topic/74539.html" target="_blank">【推荐】阿里云万网域名：.xin .com将推出重磅优惠</a><br></div>
+<div id="opt_under_post"></div>
+<div id="ad_c1" class="c_ad_block"><a href="https://www.wilddog.com/?utm_source=cnblog&amp;utm_medium=banner&amp;utm_content=contenct_bottom&amp;utm_campaign=suzhoucodingcamp" target="_blank"><img width="300" height="250" src="./js中神奇的函数指针 - 李荣飞 - 博客园_files/cnblogs-300x250-x2-1.jpg" alt=""></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/547411/" target="_blank">刚在戛纳拿到年度广告主奖的三星，告诉你为什么动不动黑苹果</a><br> ·  <a href="http://news.cnblogs.com/n/547410/" target="_blank">NASA正招募火星志愿者 看了这些宣传画你也想上火星</a><br> ·  <a href="http://news.cnblogs.com/n/547409/" target="_blank">俄罗斯互联网投资人米尔纳欲投1亿美元探索太空 寻找地外生命</a><br> ·  <a href="http://news.cnblogs.com/n/547408/" target="_blank">以校园分期购物起家 分期乐完成D轮系列首笔2.35亿美元融资</a><br> ·  <a href="http://news.cnblogs.com/n/547407/" target="_blank">超一半网民通过社交媒体获取新闻 付费新闻出版商面临挑战</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="ad_c2" class="c_ad_block"><a href="https://www.jiguang.cn/?from=cnblogs01" target="_blank"><img width="468" height="60" src="./js中神奇的函数指针 - 李荣飞 - 博客园_files/24442-20160613130538213-1713265809.jpg" alt=""></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/547251/" target="_blank">一个32岁入门的70后程序员给我的启示</a><br> ·  <a href="http://kb.cnblogs.com/page/539205/" target="_blank">技术发展瓶颈的突破</a><br> ·  <a href="http://kb.cnblogs.com/page/536334/" target="_blank">高效编程之道：好好休息</a><br> ·  <a href="http://kb.cnblogs.com/page/545476/" target="_blank">快速学习者的高效学习策略</a><br> ·  <a href="http://kb.cnblogs.com/page/545784/" target="_blank">一个前端的自我修养</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+$(function () {
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);    
+});
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/nier/">李荣飞</a><br>园龄：<a href="http://home.cnblogs.com/u/nier/" title="入园时间：2011-12-23">4年5个月</a><br>粉丝：<a href="http://home.cnblogs.com/u/nier/followers/">10</a><br>关注：<a href="http://home.cnblogs.com/u/nier/followees/">1</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="cnblogs.UserManager.FollowBlogger(&#39;f51bf5ec-012d-e111-b988-842b2b196315&#39;)">+加关注</a></div></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+<div id="widget_my_google" class="div_my_zzk"><input type="text" name="google_q" id="google_q" onkeydown="return google_go_enter(event)" class="input_my_zzk">&nbsp;<input onclick="google_go()" type="button" value="谷歌搜索" class="btn_my_zzk"></div>
+</div>
+</div>
+
+</div><div id="sidebar_shortcut" class="sidebar-block">
+<div class="catListLink">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/nier/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="http://www.cnblogs.com/nier/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="http://www.cnblogs.com/nier/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="http://www.cnblogs.com/nier/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="http://www.cnblogs.com/nier/tag/" title="我的博客的标签列表">我的标签</a></li>
+<li><a id="itemListLink" onclick="this.blur();WarpClass(&#39;itemListLink&#39;, &#39;itemListLin_con&#39;);return false;" href="http://www.cnblogs.com/nier/archive/2012/06/04/2534761.html#">更多链接</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+<ul>
+
+</ul>
+</div>
+</div></div><div id="sidebar_toptags" class="sidebar-block">
+<div class="catListTag">
+<h3 class="catListTitle">我的标签</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/nier/tag/javascript%20%E5%88%A4%E6%96%AD%E6%B5%8F%E8%A7%88%E5%99%A8/">javascript 判断浏览器</a>(1)</li><li><a href="http://www.cnblogs.com/nier/tag/js%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%89%88%E6%9C%AC/">js 浏览器版本</a>(1)</li><li><a href="http://www.cnblogs.com/nier/tag/js%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88/">js函数指针</a>(1)</li><li><a href="http://www.cnblogs.com/nier/tag/%E5%85%BC%E5%AE%B9%E7%81%AB%E7%8B%90%E6%8F%92%E5%85%A5%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90/">兼容火狐插入背景音乐</a>(1)</li>
+</ul>
+</div></div><div id="sidebar_categories">
+<div id="sidebar_postcategory" class="catListPostCategory sidebar-block">
+<h3 class="catListTitle">随笔分类</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/nier/category/364341.html">Axure</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/nier/category/344849.html">CSS(5)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/nier/category/365192.html">Flash动画(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="http://www.cnblogs.com/nier/category/344752.html">Java</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_4" href="http://www.cnblogs.com/nier/category/344850.html">JavaScript(18)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_5" href="http://www.cnblogs.com/nier/category/344851.html">Jquery(5)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_6" href="http://www.cnblogs.com/nier/category/364397.html">Photoshop</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_7" href="http://www.cnblogs.com/nier/category/370120.html">UI设计(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_8" href="http://www.cnblogs.com/nier/category/834880.html">工具技巧(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_9" href="http://www.cnblogs.com/nier/category/385593.html">最新技术(1)</a> </li>
+
+</ul>
+
+</div>
+
+<div id="sidebar_postarchive" class="catListPostArchive sidebar-block">
+<h3 class="catListTitle">随笔档案</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_1_Link_0" href="http://www.cnblogs.com/nier/archive/2016/05.html">2016年5月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_1" href="http://www.cnblogs.com/nier/archive/2012/08.html">2012年8月 (10)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_2" href="http://www.cnblogs.com/nier/archive/2012/07.html">2012年7月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_3" href="http://www.cnblogs.com/nier/archive/2012/06.html">2012年6月 (5)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_4" href="http://www.cnblogs.com/nier/archive/2012/05.html">2012年5月 (7)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_5" href="http://www.cnblogs.com/nier/archive/2012/04.html">2012年4月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_6" href="http://www.cnblogs.com/nier/archive/2012/03.html">2012年3月 (7)</a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/nier/archive/2012/03/18/2404836.html">1. jquery datatable 参数(12)</a></li><li><a href="http://www.cnblogs.com/nier/archive/2012/03/22/2411267.html">2. jquery datatable 常用例子(1)</a></li><li><a href="http://www.cnblogs.com/nier/archive/2012/06/04/2472074.html">3. js浏览器兼容总结(1)</a></li></ul></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2016 李荣飞
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+</body></html>

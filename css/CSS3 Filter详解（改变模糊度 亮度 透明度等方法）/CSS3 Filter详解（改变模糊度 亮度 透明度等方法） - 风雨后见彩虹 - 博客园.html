@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://www.cnblogs.com/moqiutao/p/4843437.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/bundle-CodingLife.css">
+<link type="text/css" rel="stylesheet" href="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/172908.css">
+<link id="mobile-style" media="only screen and (max-width: 768px)" type="text/css" rel="stylesheet" href="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/bundle-CodingLife-mobile.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/moqiutao/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/moqiutao/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/moqiutao/wlwmanifest.xml">
+<script async="" src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/analytics.js.下载"></script><script src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/jquery.js.下载" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'moqiutao', cb_enable_mathjax=true;var isLogined=false;</script>
+<script src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/blog-common.js.下载" type="text/javascript"></script>
+<script type="text/x-mathjax-config;executed=true">MathJax.Hub.Config({
+  tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] },
+  TeX: { equationNumbers: { autoNumber: ['AMS'], useLabelIds: true }, extensions: ['extpfeil.js'] },
+  'HTML-CSS': { linebreaks: { automatic: true } },
+  SVG: { linebreaks: { automatic: true } }});</script><script type="text/javascript" src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/MathJax.js.下载"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+<body><div id="MathJax_Message" style="display: none;"></div>
+<a name="top"></a>
+<!--PageBeginHtml Block Begin-->
+<!--
+<script src="http://files.cnblogs.com/files/moqiutao/highlight.pack.js"></script>
+<script>
+$(document).ready(function() {
+
+hljs.initHighlightingOnLoad();
+});
+$(document).ready(function() {
+  $('pre').each(function(i, block) {
+   $(this).find('span').removeAttr('style');
+    hljs.highlightBlock(block);
+  });
+ $(".cnblogs_code_toolbar").remove();
+});
+
+</script>
+-->
+<!--PageBeginHtml Block End-->
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/moqiutao/"><img id="blogLogo" src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/moqiutao/">风雨后见彩虹</a></h1>
+<h2>无论什么时候开始，重要的是不要停止。</h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/moqiutao/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E9%A3%8E%E9%9B%A8%E5%90%8E%E8%A7%81%E5%BD%A9%E8%99%B9">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/moqiutao/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/moqiutao/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 236&nbsp; </span>
+<span id="stats_article_count">文章 - 0&nbsp; </span>
+<span id="stats-comment_count">评论 - 43</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/moqiutao/p/4843437.html">CSS3 Filter详解（改变模糊度 亮度 透明度等方法）</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><p><span class="wp_keywordlink_affiliate" style="font-family: &#39;Microsoft YaHei&#39;;">CSS3&nbsp;Filter（<span class="wp_keywordlink_affiliate">滤镜）属性提供了提供模糊和改变元素颜色的功能。<span class="wp_keywordlink_affiliate">CSS3&nbsp;Fitler 常用于调整图像的渲染、背景或边框显示效果。</span></span></span></p>
+<p><span style="font-family: &#39;Microsoft YaHei&#39;;">-webkit-filter是css3的一个属性，Webkit率先支持了这几个功能，感觉效果很不错。下面咱们就学习一下filter这个属性吧。</span></p>
+<p><span style="font-family: &#39;Microsoft YaHei&#39;;">现在规范中支持的效果有：</span></p>
+<ul>
+<li><span style="font-family: &#39;Microsoft YaHei&#39;;">grayscale 灰度 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 值为0-1之间的小数&nbsp;</span></li>
+<li><span style="font-family: &#39;Microsoft YaHei&#39;;">sepia 褐色　　　　　　 &nbsp; 值为0-1之间的小数</span></li>
+<li><span style="font-family: &#39;Microsoft YaHei&#39;;">saturate 饱和度　　　　 值为num</span></li>
+<li><span style="font-family: &#39;Microsoft YaHei&#39;;">hue-rotate 色相旋转　　值为angle</span></li>
+<li><span style="font-family: &#39;Microsoft YaHei&#39;;">invert 反色　　　　　　 &nbsp;值为0-1之间的小数</span></li>
+<li><span style="font-family: &#39;Microsoft YaHei&#39;;">opacity 透明度　　　　　值为0-1之间的小数</span></li>
+<li><span style="font-family: &#39;Microsoft YaHei&#39;;">brightness 亮度　　　　&nbsp;值为0-1之间的小数</span></li>
+<li><span style="font-family: &#39;Microsoft YaHei&#39;;">contrast 对比度　　　　&nbsp;值为num</span></li>
+<li><span style="font-family: &#39;Microsoft YaHei&#39;;">blur 模糊　　　　　　 &nbsp; &nbsp; 值为length</span></li>
+<li><span style="font-family: &#39;Microsoft YaHei&#39;;">drop-shadow 阴影</span></li>
+</ul>
+<p><span style="font-family: &#39;Microsoft YaHei&#39;;">没加什么效果的图片：</span></p>
+<p><span style="font-family: &#39;Microsoft YaHei&#39;;"><img src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/595142-20150928100017996-251631387.jpg" alt=""></span></p>
+<p><span style="font-family: &#39;Microsoft YaHei&#39;;">&nbsp;&nbsp; &nbsp; 无效果 &nbsp;&nbsp;-webkit-filter:none;</span></p>
+<h2 id="articleHeader0">&nbsp;<span style="font-family: &#39;Microsoft YaHei&#39;;">1.模糊</span></h2>
+<div>
+<pre class="code ng-binding">-webkit-filter: blur(9px);
+filter: blur(9px);</pre>
+<span style="font-family: &#39;Microsoft YaHei&#39;;"><img src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/595142-20150928100147308-100024639.png" alt=""></span>
+<h2 class="code ng-binding" id="articleHeader1"><span style="font-family: &#39;Microsoft YaHei&#39;;">2.灰度</span></h2>
+<pre class="code ng-binding"><span style="font-family: &#39;Microsoft YaHei&#39;;">-webkit-filter: grayscale(1);
+filter: grayscale(1);</span><br><br></pre>
+<span style="font-family: &#39;Microsoft YaHei&#39;;"><img src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/595142-20150928100739215-1082419384.png" alt=""></span>
+<h2 class="code ng-binding" id="articleHeader2">3.亮度</h2>
+<pre class="code ng-binding"><span style="font-family: &#39;Microsoft YaHei&#39;;">-webkit-filter: brightness(2.3);
+filter: brightness(2.3);</span></pre>
+<span style="font-family: &#39;Microsoft YaHei&#39;;"><img src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/595142-20150928100848418-2118437763.png" alt=""></span>
+<h2 class="code ng-binding" id="articleHeader3">4.对比度</h2>
+<pre class="code ng-binding"><span style="font-family: &#39;Microsoft YaHei&#39;;">-webkit-filter: contrast(4.4);
+filter: contrast(4.4);</span></pre>
+<p><span style="font-family: &#39;Microsoft YaHei&#39;;"><img src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/595142-20150928101015855-616671488.png" alt=""></span></p>
+<h2 id="articleHeader4"><span style="font-family: &#39;Microsoft YaHei&#39;;">5.饱和度</span></h2>
+<pre class="code ng-binding"><span style="font-family: &#39;Microsoft YaHei&#39;;">-webkit-filter: saturate(3.6);
+filter: saturate(3.6);</span></pre>
+<span style="font-family: &#39;Microsoft YaHei&#39;;"><img src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/595142-20150928101129886-1347508746.png" alt=""></span></div>
+<div>
+<h2 id="articleHeader5"><span style="font-family: &#39;Microsoft YaHei&#39;;">6.色相旋转</span></h2>
+<pre class="code ng-binding"><span style="font-family: &#39;Microsoft YaHei&#39;;">-webkit-filter: hue-rotate(185deg);
+filter: hue-rotate(185deg);</span></pre>
+<span style="font-family: &#39;Microsoft YaHei&#39;;"><img src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/595142-20150928101237402-2020482377.png" alt=""></span></div>
+<div>
+<h2 id="articleHeader6"><span style="font-family: &#39;Microsoft YaHei&#39;;">7.反色</span></h2>
+<pre class="code ng-binding"><span style="font-family: &#39;Microsoft YaHei&#39;;">-webkit-filter: invert(1);
+filter: invert(1);</span></pre>
+<span style="font-family: &#39;Microsoft YaHei&#39;;"><img src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/595142-20150928101336449-1782187112.png" alt=""></span></div>
+<div>
+<h2 id="articleHeader7"><span style="font-family: &#39;Microsoft YaHei&#39;;">8.阴影&nbsp;</span></h2>
+<pre class="code ng-binding"><span style="font-family: &#39;Microsoft YaHei&#39;;">-webkit-filter: drop-shadow(0px 0px 5px #000);
+filter: drop-shadow(0px 0px 5px #000);</span></pre>
+<span style="font-family: &#39;Microsoft YaHei&#39;;"><img src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/595142-20150928101508152-2141222235.png" alt=""></span>
+<h2 class="code ng-binding" id="articleHeader8">9.透明度</h2>
+<pre class="code ng-binding"><span style="font-family: &#39;Microsoft YaHei&#39;;">-webkit-filter: opacity(55%);
+filter: opacity(55%);</span></pre>
+<span style="font-family: &#39;Microsoft YaHei&#39;;"><img src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/595142-20150928101623558-981861011.png" alt=""></span>
+<h2 class="code ng-binding" id="articleHeader9">10.褐色</h2>
+<pre class="code ng-binding"><span style="font-family: &#39;Microsoft YaHei&#39;;">-webkit-filter: sepia(0.77);
+filter: sepia(0.77);</span></pre>
+<span style="font-family: &#39;Microsoft YaHei&#39;;"><img src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/595142-20150928101700371-228184144.png" alt=""></span>
+<pre class="code ng-binding"><br><br></pre>
+<pre><span style="font-family: &#39;Microsoft YaHei&#39;;">这里给大家分享的这个网站，大家可以体验下&nbsp;CSS3&nbsp;对图片的处理效果，例如灰度，模糊，饱和，老照片等。</span><br><br><span style="font-family: &#39;Microsoft YaHei&#39;;"><a href="http://www.cssreflex.com/css-generators/filter" target="_blank"><span style="font-size: 18px; color: #000000;"><strong>体验地址：http://www.cssreflex.com/css-generators/filter<br><br></strong></span></a></span></pre>
+<pre><br><br></pre>
+</div></div><div id="MySignature" style="display: block;"><div class="content"><div>作者：<a href="http://www.cnblogs.com/moqiutao/" target="_blank" style="color:#ff7300;">风雨后见彩虹</a></div><div>出处：<a href="http://www.cnblogs.com/moqiutao/" style="color:#ff7300;" target="_blank">http://www.cnblogs.com/moqiutao/</a></div><div>声明：如果您觉得本文对您的学习有所帮助，请多关注支持与鼓励。</div><div>正在看本人博客的这位童鞋，我看你气度不凡，谈吐间隐隐有王者之气，日后必有一番作为！屏幕右下角有<span style="color:red;font-weight:bold;">“推荐”</span>二字，如果觉得对你有帮助，你就顺手把它点了吧。</div></div></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="http://www.cnblogs.com/moqiutao/category/572637.html" target="_blank">css3/html5</a></div>
+<div id="EntryTag">标签: <a href="http://www.cnblogs.com/moqiutao/tag/css3/">css3</a>, <a href="http://www.cnblogs.com/moqiutao/tag/filter/">filter</a></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(4843437,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;bd35e4b2-fd6e-e311-8d02-90b11c0b17d6&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/moqiutao/" target="_blank"><img src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/20140218205155.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/moqiutao/">风雨后见彩虹</a><br>
+            <a href="http://home.cnblogs.com/u/moqiutao/followees">关注 - 18</a><br>
+            <a href="http://home.cnblogs.com/u/moqiutao/followers">粉丝 - 155</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;bd35e4b2-fd6e-e311-8d02-90b11c0b17d6&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(4843437,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">0</span>
+    </div>
+    <div class="buryit" onclick="votePost(4843437,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/moqiutao/p/4841234.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/moqiutao/p/4841234.html" title="发布于2015-09-26 20:25">HTML meta viewport属性详解</a><br><a href="http://www.cnblogs.com/moqiutao/p/4843760.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/moqiutao/p/4843760.html" title="发布于2015-09-28 13:01">AngularJS 简介</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2015-09-28 10:25</span> <a href="http://www.cnblogs.com/moqiutao/">风雨后见彩虹</a> 阅读(<span id="post_view_count">6490</span>) 评论(<span id="post_comment_count">0</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=4843437" rel="nofollow">编辑</a> <a href="http://www.cnblogs.com/moqiutao/p/4843437.html#" onclick="AddToWz(4843437);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=172908,cb_entryId=4843437,cb_blogApp=currentBlogApp,cb_blogUserGuid='bd35e4b2-fd6e-e311-8d02-90b11c0b17d6',cb_entryCreatedDate='2015/9/28 10:25:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="http://www.cnblogs.com/moqiutao/p/4843437.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://www.cnblogs.com/moqiutao/p/4843437.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】50万行VC++源码: 大型组态工控、电力仿真CAD与GIS源码库</a><br><a href="http://click.aliyun.com/m/21970/" target="_blank">【阿里云】云计算科技红利邀您免费体验！云服务器、云数据库等35+产品，6个月免费使用！</a><br><a href="https://cloud.tencent.com/developer/labs?fromSource=gwzcw.241259.241259.241259" target="_blank">【免费】从零开始学编程，开发者专属实验平台免费实践！</a><br><a href="https://www.upyun.com/618?utm_source=cnblogs&amp;utm_medium=referral&amp;utm_content=618" target="_blank">【推荐】又拍云年中大促！现在注册，充值最高送4800元</a><br></div>
+<div id="opt_under_post"></div>
+<div id="cnblogs_c1" class="c_ad_block"><a href="https://cn.udacity.com/dand/?utm_source=cnblog&amp;utm_medium=referral&amp;utm_campaign=dand04" target="_blank"><img width="300" height="250" src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/24442-20170622211528820-758499309.jpg" alt="优达学城_FaceBook_0623"></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/572422/" target="_blank">内测者的Windows商店开始提供 部分Linux发行版下载服务</a><br> ·  <a href="http://news.cnblogs.com/n/572421/" target="_blank">揭秘贝索斯的商业帝国：谷歌、Uber都接受过他的投资</a><br> ·  <a href="http://news.cnblogs.com/n/572420/" target="_blank">四三九九招股书多处数据“打架” 面临23起诉讼纠纷</a><br> ·  <a href="http://news.cnblogs.com/n/572419/" target="_blank">微软新专利：笔记本被偷/丢失不怕了</a><br> ·  <a href="http://news.cnblogs.com/n/572418/" target="_blank">董明珠：我们完全可以做出媲美德日的指甲刀</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="cnblogs_c2" class="c_ad_block"><a href="https://www.mtyun.com/activity-anniversary?site=cnblogs&amp;campaign=20170601sales" target="_blank"><img width="468" height="60" src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/24442-20170615095125603-13625507.png" alt="美团云"></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/570194/" target="_blank">小printf的故事：什么是真正的程序员？</a><br> ·  <a href="http://kb.cnblogs.com/page/569992/" target="_blank">程序员的工作、学习与绩效</a><br> ·  <a href="http://kb.cnblogs.com/page/569056/" target="_blank">软件开发为什么很难</a><br> ·  <a href="http://kb.cnblogs.com/page/565901/" target="_blank">唱吧DevOps的落地，微服务CI/CD的范本技术解读</a><br> ·  <a href="http://kb.cnblogs.com/page/566523/" target="_blank">程序员，如何从平庸走向理想？</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain" style="display: block;">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><style>
+    .ads01{ background: #fff;
+    padding: 8px;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-top: 0!important;
+    border:0;
+    border-bottom:1px dashed #e1e1e1;
+    border-right:0;
+
+
+}
+
+</style>
+<div class="ads01">
+<p>本博客主要是记录自己的学习点滴~，文章来源于总结，转载，还有在工作中实际碰到的问题以记录，时间原因博文部分为用心打磨，部分仅为临时记录。还有一些不正确老博文随着后续的认识会不断的更正。
+</p>
+<h3><strong>成功，唯有积累，没有奇迹。</strong></h3>
+</div><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/moqiutao/">风雨后见彩虹</a><br>园龄：<a href="http://home.cnblogs.com/u/moqiutao/" title="入园时间：2013-12-27">3年5个月</a><br>粉丝：<a href="http://home.cnblogs.com/u/moqiutao/followers/">155</a><br>关注：<a href="http://home.cnblogs.com/u/moqiutao/followees/">18</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;bd35e4b2-fd6e-e311-8d02-90b11c0b17d6&#39;)">+加关注</a></div></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+
+</div>
+</div>
+
+</div><div id="sidebar_recentposts" class="sidebar-block">
+<div class="catListEssay">
+<h3 class="catListTitle">最新随笔</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/moqiutao/p/7047860.html">1. jQuery效果 - 简单的手风琴效果</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/7047592.html">2. [前端机汤] 学完这些去阿里！</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/7017708.html">3. requirejs 多页面，多入口js文件打包总结</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/7007098.html">4. 使用requirejs模块化开发多页面一个入口js的使用方式</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/6991159.html">5. 小tips：window.location属性</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/6991140.html">6. 小tips：js中的pixelTop属性</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/6959163.html">7. 怎样实现图片的懒加载以及jquery.lazyload.js的使用</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/6949625.html">8. 小tips：正则表达式中的RegExp.$1</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/6909185.html">9. web前端知识小笔记（一）</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/6927061.html">10. 前端开发必备的11项技能</a></li>
+</ul>
+</div>
+</div><div id="sidebar_categories">
+<div id="sidebar_postcategory" class="catListPostCategory sidebar-block">
+<h3 class="catListTitle">随笔分类</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/moqiutao/category/739576.html">angular.js(8)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/moqiutao/category/803439.html">bootstrap(5)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/moqiutao/category/553637.html">css/html(29)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="http://www.cnblogs.com/moqiutao/category/572637.html">css3/html5(26)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_4" href="http://www.cnblogs.com/moqiutao/category/805064.html">git/grunt(4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_5" href="http://www.cnblogs.com/moqiutao/category/553636.html">javascript(62)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_6" href="http://www.cnblogs.com/moqiutao/category/553638.html">jquery(26)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_7" href="http://www.cnblogs.com/moqiutao/category/804582.html">less(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_8" href="http://www.cnblogs.com/moqiutao/category/923230.html">vuejs(10)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_9" href="http://www.cnblogs.com/moqiutao/category/734132.html">案例与效果(20)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_10" href="http://www.cnblogs.com/moqiutao/category/936924.html">操作系统(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_11" href="http://www.cnblogs.com/moqiutao/category/734131.html">常见问题(6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_12" href="http://www.cnblogs.com/moqiutao/category/982881.html">红皮书系列(5)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_13" href="http://www.cnblogs.com/moqiutao/category/805942.html">前端面试题(4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_14" href="http://www.cnblogs.com/moqiutao/category/903414.html">我的笔记(20)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_15" href="http://www.cnblogs.com/moqiutao/category/576213.html">综合学习(14)</a> </li>
+
+</ul>
+
+</div>
+
+<div id="sidebar_links996955" class="catList sidebar-block">
+<h3 class="catListTitle">javascript学习资源</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_1_Link_0" href="http://es6.ruanyifeng.com/" rel="nofollow" target="_blank">es6教程</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_1" href="http://www.cnblogs.com/aaronjs/p/3279314.html" rel="nofollow" target="_blank">jQuery源码分析系列</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_2" href="http://www.imooc.com/learn/172" rel="nofollow" target="_blank">jQuery源码解析（慕课网）</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_3" href="http://www.jquery123.com/" rel="nofollow" target="_blank">jQuery中文文档</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_4" href="http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html" target="_blank">深入理解JavaScript系列</a> </li>
+
+</ul>
+
+</div>
+
+<div id="sidebar_links998460" class="catList sidebar-block">
+<h3 class="catListTitle">我的常用链接</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_2_Link_0" href="http://www.gruntjs.net/api/grunt" rel="nofollow" target="_blank">grunt使用</a> </li>
+
+<li><a id="CatList_LinkList_2_Link_1" href="http://www.iconfont.cn/" rel="nofollow" target="_blank">阿里图标库 </a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_scorerank" class="sidebar-block">
+<div class="catListBlogRank">
+<h3 class="catListTitle">积分与排名</h3>
+<ul>
+	<li class="liScore">
+		积分 -	114466
+	</li>
+	<li class="liRank">
+		排名 -	2166
+	</li>
+</ul>
+</div>
+
+
+</div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/moqiutao/p/4807792.html">1. div中的内容垂直居中的五种方法(40143)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4837364.html">2. html5 实现video标签的自定义播放进度条(6534)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4843437.html">3. CSS3 Filter详解（改变模糊度 亮度 透明度等方法）(6491)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4783526.html">4. CSS设置滚动条样式(6387)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/6366463.html">5. vuejs-指令详解(3377)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4783494.html">6. CSS3属性选择器与(:not)选择器(2800)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/5093861.html">7. js数组中的常用方法总结(2647)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/6428632.html">8. vuejs2.0实现分页组件，使用$emit进行事件监听数据传递(2575)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/6394681.html">9. vuejs2.0实现一个简单的分页(2483)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4912784.html">10. js的event.srcElement与event.target（触发事件对象）(2465)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topcommentedposts" class="sidebar-block"><div id="topfeedback_posts_wrap">
+<div class="catListFeedback">
+<h3 class="catListTitle">评论排行榜</h3>
+	<div id="TopFeedbackPostsBlock"><ul><li><a href="http://www.cnblogs.com/moqiutao/p/4753501.html">1. 【总结】CSS/CSS3常用样式与web移动端资源(5)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/6365113.html">2. HTML5 拖放（Drag 和 Drop）详解与实例(4)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/6408252.html">3. CSS3效果 - 5种预载动画效果(2)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4754459.html">4. 特效代码：tab切换(2)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4783896.html">5. CSS 属性 :before &amp;&amp; :after的用法，伪类和伪元素的区别(2)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4771134.html">6. jquery实现整屏翻屏效果：jquery.mousewheel（一）(2)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4764694.html">7. jquery实现点击radio，当选中‘其它’时，显示后面输入框；否则隐藏(2)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/5263433.html">8. js面向对象与原型(1)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/5257402.html">9. js事件绑定及深入(1)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4857947.html">10. fontAwesome代替网页icon小图标(1)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/moqiutao/p/4776615.html">1. Web前端研发工程师编程能力飞升之路(7)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/6408252.html">2. CSS3效果 - 5种预载动画效果(5)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4807792.html">3. div中的内容垂直居中的五种方法(4)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/5093861.html">4. js数组中的常用方法总结(4)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4854221.html">5. 五个有用的jquery小技巧(4)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4753839.html">6. css3的媒体查询(Media Queries)(3)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4753501.html">7. 【总结】CSS/CSS3常用样式与web移动端资源(3)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4857947.html">8. fontAwesome代替网页icon小图标(2)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/5341828.html">9. less及编译工具介绍(2)</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4766146.html">10. 【总结】web前端开发常用到代码片段(2)</a></li></ul></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	<div class="parentsDiv"><div class="directoryDiv" style="height: 345px;"><div class="catListTitle">文章目录</div><div class="dirInner"><div class="highlight-title"></div><div class="listCon"><ul data-level="1" class="nav"><li><a href="http://www.cnblogs.com/moqiutao/p/4843437.html#articleHeader0" id="articleHeader0">1.模糊</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4843437.html#articleHeader1" id="articleHeader1">2.灰度</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4843437.html#articleHeader2" id="articleHeader2">3.亮度</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4843437.html#articleHeader3" id="articleHeader3">4.对比度</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4843437.html#articleHeader4" id="articleHeader4">5.饱和度</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4843437.html#articleHeader5" id="articleHeader5">6.色相旋转</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4843437.html#articleHeader6" id="articleHeader6">7.反色</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4843437.html#articleHeader7" id="articleHeader7">8.阴影</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4843437.html#articleHeader8" id="articleHeader8">9.透明度</a></li><li><a href="http://www.cnblogs.com/moqiutao/p/4843437.html#articleHeader9" id="articleHeader9">10.褐色</a></li></ul></div></div></div></div></div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2017 风雨后见彩虹
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+<!--PageEndHtml Block Begin-->
+<style>
+#sideBar{position: relative;}
+#sideBar .directoryDiv ul{padding:0;/*list-style-type: square;*/list-style-type:none;}
+#sideBar .directoryDiv ul.nav{position:relative;z-index:2;font-family: Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,WenQuanYi Micro Hei,Microsoft Yahei,sans-serif;}
+#sideBar li{/*list-style-type:square;list-style-position: inside;*/padding-left:18px;color:#009a61;}
+#sideBar .directoryDiv ul li a{position: relative;padding:3px 0;color:#009a61;display:block;text-decoration: none;/*white-space:nowrap;text-overflow:ellipsis;overflow:hidden;*/font-size:14px;box-sizing:border-box;}
+#sideBar .directoryDiv ul li a:before{content:'';position:absolute;left:-10px;top:14px;width:5px;height:5px;background:#009a61;}
+#sideBar .directoryDiv{width:100%;background:none;}
+#sideBar .directoryDiv .dirInner{padding:0 12px;overflow:hidden;position:relative;}
+#sideBar .directoryDiv .dirInner:before{content:'';position:absolute;top:0;left:0;width:3px; height:100%;background:#ddd;}
+#sideBar .directoryDiv .dirInner .highlight-title{
+	position:absolute;left: 0;
+    right: 0;
+    background: #f3f3f3;
+    z-index: 1;
+    border-left: 3px solid #009A61;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+#sideBar .directoryDiv .dirInner .listCon{overflow:hidden;height:100%;background:#fff;}
+#sideBar .directoryDiv ul li.active-current>a{color:#000;}
+#sideBar .directoryDiv ul li a:hover{color:#000;text-decoration: underline;}
+#sideBar .directoryDiv.fixed{position:fixed;top:0;width:310px;overflow:hidden;}
+</style>
+<script src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/bootstrap.scrollspy.js.下载"></script>
+<script src="./CSS3 Filter详解（改变模糊度 亮度 透明度等方法） - 风雨后见彩虹 - 博客园_files/generateDir.js.下载"></script>
+<style>
+.footercont{width:1300px;padding-bottom:10px;overflow: hidden;font-family:"微软雅黑";margin:10px auto 0;}
+.footercont .contentLink{padding:0 20px;}
+/*
+.contentLink .sameDiv{    padding: 20px 30px;
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;}
+*/
+.contentLink .sameDiv{font-family: Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,WenQuanYi Micro Hei,Microsoft Yahei,sans-serif;}
+.contentLink .sameDiv ul{float:left;width:25%;}
+.contentLink .sameDiv ul li h5{font-size: 17px;color:#333;}
+.contentLink .sameDiv ul:last-child{margin-right: 0;}
+.contentLink .sameDiv ul li{margin-bottom: 0;list-style: none;}
+.contentLink .sameDiv ul li:first-child{margin-bottom: 10px;}
+.contentLink .sameDiv ul li.last{}
+.contentLink .sameDiv ul li.last a{font-size: 14px;color:#777;}
+.contentLink .sameDiv ul li a{font-size: 13px;color:#3c6f1d;color:#333;}
+.contentLink .sameDiv ul li a:hover{color:red;text-decoration: underline;}
+
+
+@media (max-width: 768px){
+.footercont{width:100%;}
+.contentLink .sameDiv ul{width:50%;}
+.parentsDiv{display:none;}
+}
+@media (min-width: 768px){
+.footercont{width:100%;}
+}
+@media (min-width: 1200px){
+.footercont{width:1200px;width:100%;max-width:1600px;}
+}
+</style>
+<div class="footercont">
+    <div class="contentLink clearfix">
+        <div class="sameDiv clearfix">
+            <ul>
+                <li><h5>推荐团队与博客</h5></li>
+                <li><a href="http://www.cnblogs.com/TomXu/" target="_blank">汤姆大叔博客</a></li>
+                <li><a href="http://www.zhangxinxu.com/wordpress/" target="_blank">张鑫旭博客</a></li>
+                <li><a href="http://www.w3school.com.cn/" target="_blank">w3school</a></li>
+                <li><a href="http://www.w3cplus.com/source/front-end-developer-excellent-tool.html" target="_blank">70+优秀的前端工具 </a></li>              
+                <li><a href="http://www.alloyteam.com/" target="_blank">腾讯Web前端 Alloy 团队 Blog </a></li>
+                <li><a href="http://www.qianduan.net/" target="_blank">前端观察</a></li>
+                <li><a href="http://www.w3cplus.com/" target="_blank">w3cplus</a></li>
+            </ul>
+
+            <ul>
+                <li><h5>CSS3/HTML5</h5></li>
+                <li><a href="http://isux.tencent.com/css3/index.html" target="_blank">CSS3动画手册</a></li>
+                <li><a href="http://css3lib.alloyteam.com/" target="_blank">CSS3 UI库</a></li>
+                <li><a href="http://www.php100.com/manual/css3_0/index.html" target="_blank">CSS3.0在线手册</a></li>
+                <li><a href="http://www.w3school.com.cn/h.asp" target="_blank">w3school</a></li>
+                <li><a href="http://www.cnblogs.com/PeunZhang/articles/2391540.html">HTML资源（推荐）</a></li>
+                <li><a href="http://css3please.com/" target="_blank">CSS3使用例子</a></li>
+                <li><a href="http://css3test.com/" target="_blank">css3test</a></li>
+                <li><a href="http://javascript.ruanyifeng.com/htmlapi/canvas.html" target="_blank">Canvas API</a></li>
+
+            </ul>
+
+             <ul>
+                <li><h5>前端常用API</h5></li>
+                <li><a href="http://www.createcss3.com/" target="_blank">createcss3</a></li>
+                <li><a href="http://createjs.com/" target="_blank">createjs</a></li>
+                <li><a href="http://zeptojs.com/" target="_blank">zeptojs</a></li>
+                <li><a href="http://www.css88.com/doc/zeptojs_api/" target="_blank">zeptojs中文版</a></li>
+                <li><a href="http://www.gafish.net/api/iScroll.html" target="_blank">iScroll中文API</a></li>
+                <li><a href="http://docs.emmet.io/cheat-sheet/" target="_blank">Emmet API</a></li>
+                <li><a href="http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html" target="_blank">微信JS-SDK说明文档</a></li>
+
+            </ul>
+
+            <ul>
+                <li><h5>前端常用工具</h5></li>
+                <li><a href="https://github.com/peunzhang/mobileTech" target="_blank">手机开发资源</a></li>
+                <li><a href="http://tool.css-js.com/base64.html?b2" target="_blank">图片转base64</a></li>
+                <li><a href="http://tongji.baidu.com/data/mobile/device/" target="_blank">移动设备市场份额</a></li>
+                <li><a href="http://www.fontsquirrel.com/tools/webfont-generator" target="_blank">@font-face字体格式生成工具</a></li>
+                <li><a href="http://csslint.net/" target="_blank">检测CSS语法是否正确</a></li>
+              
+            </ul>
+        </div>
+    </div>
+ <div style="color:#666666;margin:0 auto;width:100%;font-size:14px;text-align:center;clear:both;">Copyright ©2017 风雨后见彩虹</div>
+</div>
+<script>
+   $(function(){
+     var tttString='<div class="content">'+
+'<div>作者：<a href="http://www.cnblogs.com/moqiutao/" target="_blank" style="color:#ff7300;">风雨后见彩虹</a></div>'+
+'<div>出处：<a href="http://www.cnblogs.com/moqiutao/" style="color:#ff7300;" target="_blank">http://www.cnblogs.com/moqiutao/</a></div>'+
+'<div>声明：如果您觉得本文对您的学习有所帮助，请多关注支持与鼓励。</div>'+
+'<div>正在看本人博客的这位童鞋，我看你气度不凡，谈吐间隐隐有王者之气，日后必有一番作为！屏幕右下角有<span style="color:red;font-weight:bold;">“推荐”</span>二字，如果觉得对你有帮助，你就顺手把它点了吧。</div>'+
+'</div>';
+
+var article_btm='<div class="article-btm">'+
+    '<div class="article-btm-line">'+            
+        '<div class="ico ico-star" onclick="AddToWz(cb_entryId)"></div>'+
+        '<div class="txt" onclick="AddToWz(cb_entryId)">我要收藏</div>'+         
+    '</div>'+
+    '<div class="article-btm-line">'+          
+        '<div class="ico ico-move-up" id="totop"></div>'+
+        '<div class="txt" id="totop">返回顶部</div>'+
+    '</div>'+
+    '<div class="article-btm-line">'+          
+        '<div class="ico ico-move-down" id="toBottom"></div>'+
+        '<div class="txt" id="toBottom">跳到底部</div>'+
+    '</div>'+
+'</div>';
+     $("#MySignature").show();
+     $("#MySignature").append(tttString);
+     
+});
+
+$(function(){
+    var totop = $('#totop');
+    $(totop).on("click",function(){
+        $('html, body').animate({scrollTop:0}, 500); return false;
+    });
+
+    var toBottom = $('#toBottom');
+    $(toBottom).on("click",function(){
+        var scrollBottom = $(document).height() - $(window).height() 
+        $('html, body').animate({scrollTop:scrollBottom}, 500); return false;
+    });
+
+})
+
+</script>
+<!--PageEndHtml Block End-->
+
+
+</body></html>
