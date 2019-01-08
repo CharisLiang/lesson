@@ -1,0 +1,14 @@
+## 问题
+当一个对象依赖于另一个对象，而被依赖的对象存在至少两个类，该怎么配置？
+### 使用@Qualifier 指定被依赖的类
+```java
+@Autowired
+@Qualifier("pctEightPortTstDeviceService")
+private TstDeviceService tstDeviceService;
+```
+
+### SPRING 注解BEAN默认名称规则
+#### 1.　
+在使用@Component、@Repository、@Service、@Controller等注解创建bean时，如果不指定bean名称，bean名称的默认规则是类名的首字母小写，如SysConfig - sysConfig，Tools - tools。
+#### 2.
+如果类名前两个或以上个字母都是大写，那么bean名称与类名一样，如RBACUserLog - RBACUserLog，RBACUser - RBACUser，RBACRole - RBACRole
